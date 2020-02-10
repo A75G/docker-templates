@@ -13,7 +13,7 @@
   <Category/>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://i.imgur.com/g9YRYcx.png</Icon>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/db-backup.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

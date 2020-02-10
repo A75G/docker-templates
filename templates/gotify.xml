@@ -13,7 +13,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
-  <Icon>https://gotify.net/img/logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/gotify.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

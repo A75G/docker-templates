@@ -13,7 +13,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
   <TemplateURL/>
-  <Icon>https://i.ibb.co/PMGkhdz/logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dashmachine.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
