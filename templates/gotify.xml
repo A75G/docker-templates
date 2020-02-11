@@ -61,3 +61,4 @@
   <Config Name="Path 2" Target="/etc/gotify" Default="" Mode="rw" Description="/etc/gotify" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/gotify/config/</Config>
   <Config Name="PUID" Target="PUID" Default="" Mode="" Description="PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="" Mode="" Description="PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+</Container>
