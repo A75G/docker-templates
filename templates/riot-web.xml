@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>riot-web</Name>
+  <Repository>vectorim/riot-web</Repository>
+  <Registry>https://hub.docker.com/r/vectorim/riot-web/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/vectorim/riot-web/</Support>
+  <Project/>
+  <Overview>[br]Open, secure and interoperable communication for work and home.[/br] [br]wget -O /mnt/user/appdata/riot-web/config/config.json https://riot.im/develop/config.json[/br]&#xD;
+</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/riot-web.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1581761819</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>[br]Open, secure and interoperable communication for work and home.[/br] [br]mkdir -p /mnt/user/appdata/riot-web/config/[/br]&#xD;
+wget -O /mnt/user/appdata/riot-web/config/config.json https://riot.im/develop/config.json&#xD;
+</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8075</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/riot-web/config/config.json</HostDir>
+      <ContainerDir>/app/config.json</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Port 1" Target="80" Default="" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">8075</Config>
+  <Config Name="Host Path 1" Target="/app/config.json" Default="" Mode="rw" Description="Container Path: /app/config.json" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/riot-web/config/config.json</Config>
+</Container>
