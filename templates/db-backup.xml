@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1583615401</DateInstalled>
+  <DateInstalled>1583616784</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Backup Multiple DB Servers (Influx, Maria/Mysql/Mongo/Postgres/Redis/Rethink) based on Alpine.Manual Backups can be performed by entering the container and typing backup-now</Description>
@@ -46,11 +46,6 @@
     <Variable>
       <Value>&lt;DATABASE_IP&gt;</Value>
       <Name>DB_HOST</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>database</Value>
-      <Name>DB_NAME</Name>
       <Mode/>
     </Variable>
     <Variable>
@@ -105,19 +100,18 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Backup Location" Target="/backup" Default="" Mode="rw" Description="Database Dump Location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/backups/db/</Config>
+  <Config Name="Backup Location" Target="/backup" Default="" Mode="rw" Description="Database Dump Location" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/backups/db/</Config>
   <Config Name="Key 1" Target="COMPRESSION" Default="" Mode="" Description="Gzip " Type="Variable" Display="always" Required="false" Mask="false">GZ</Config>
-  <Config Name="Key 2" Target="DB_TYPE" Default="" Mode="" Description="couch influx mysql pgsql mongo redis rethink" Type="Variable" Display="always" Required="true" Mask="false">&lt;Database_Type&gt;</Config>
+  <Config Name="Key 2" Target="DB_TYPE" Default="" Mode="" Description="couch influx mysql pgsql mongo redis rethink" Type="Variable" Display="always" Required="false" Mask="false">&lt;Database_Type&gt;</Config>
   <Config Name="Key 3" Target="DB_HOST" Default="" Mode="" Description="Database Hostname" Type="Variable" Display="always" Required="false" Mask="false">&lt;DATABASE_IP&gt;</Config>
-  <Config Name="Key 4" Target="DB_NAME" Default="" Mode="" Description="Database name." Type="Variable" Display="always" Required="false" Mask="false">database</Config>
-  <Config Name="Key 5" Target="DB_USER" Default="" Mode="" Description="Database User - use root to backup all MySQL of them." Type="Variable" Display="always" Required="false" Mask="false">root</Config>
-  <Config Name="Key 6" Target="DB_PASS" Default="" Mode="" Description="Database Password" Type="Variable" Display="always" Required="false" Mask="false">&lt;DATABASE_PASSWORD&gt;</Config>
-  <Config Name="Key 7" Target="DB_PORT" Default="" Mode="" Description="Database Port" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
-  <Config Name="Key 8" Target="DB_DUMP_FREQ" Default="" Mode="" Description="How often to dump DB Minutes Defaults 1440 = Day" Type="Variable" Display="always" Required="false" Mask="false">1440</Config>
-  <Config Name="Key 9" Target="DB_DUMP_BEGIN" Default="" Mode="" Description="What Time to Dump HHMM" Type="Variable" Display="always" Required="false" Mask="false">0300</Config>
-  <Config Name="Key 10" Target="DB_CLEANUP_TIME" Default="" Mode="" Description="Value in minutes to delete old backups. 10080 = One Week. If you want all backup delete this key." Type="Variable" Display="always" Required="false" Mask="false">10080</Config>
-  <Config Name="Key 11" Target="PARALLEL_COMPRESSION" Default="TRUE" Mode="" Description="Multiple cores for compressing" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
-  <Config Name="Key 12" Target="MD5" Default="TRUE" Mode="" Description="Generate MD5 Sum in Directory." Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
-  <Config Name="Key 13" Target="SPLIT_DB" Default="FALSE" Mode="" Description="Seperate DB Backups" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
+  <Config Name="Key 4" Target="DB_USER" Default="" Mode="" Description="Database User - use root to backup all MySQL of them." Type="Variable" Display="always" Required="false" Mask="false">root</Config>
+  <Config Name="Key 5" Target="DB_PASS" Default="" Mode="" Description="Database Password" Type="Variable" Display="always" Required="false" Mask="false">&lt;DATABASE_PASSWORD&gt;</Config>
+  <Config Name="Key 6" Target="DB_PORT" Default="" Mode="" Description="Database Port" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
+  <Config Name="Key 7" Target="DB_DUMP_FREQ" Default="" Mode="" Description="How often to dump DB Minutes Defaults 1440 = Day" Type="Variable" Display="always" Required="false" Mask="false">1440</Config>
+  <Config Name="Key 8" Target="DB_DUMP_BEGIN" Default="" Mode="" Description="What Time to Dump HHMM" Type="Variable" Display="always" Required="false" Mask="false">0300</Config>
+  <Config Name="Key 9" Target="DB_CLEANUP_TIME" Default="" Mode="" Description="Value in minutes to delete old backups. 10080 = One Week. If you want all backup delete this key." Type="Variable" Display="always" Required="false" Mask="false">10080</Config>
+  <Config Name="Key 10" Target="PARALLEL_COMPRESSION" Default="TRUE" Mode="" Description="Multiple cores for compressing" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+  <Config Name="Key 11" Target="MD5" Default="TRUE" Mode="" Description="Generate MD5 Sum in Directory." Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+  <Config Name="Key 12" Target="SPLIT_DB" Default="FALSE" Mode="" Description="Seperate DB Backups" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
   <Config Name="Key 14" Target="DEBUG_MODE" Default="false" Mode="" Description="DEBUG_MODE" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
 </Container>
