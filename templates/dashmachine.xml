@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>dashmachine</Name>
-  <Repository>rmountjoy/dashmachine</Repository>
+  <Repository>rmountjoy/dashmachine:latest</Repository>
   <Registry>https://hub.docker.com/r/rmountjoy/dashmachine/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/rmountjoy/dashmachine/</Support>
-  <Project/>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://hub.docker.com/r/rmountjoy/dashmachine/</Project>
   <Overview>Another web application bookmark dashboard, with fun features.[br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]admin[/B][/u][br]Password: [B][u]adminadmin[/B][/u][/b]</Overview>
-  <Category/>
+  <Category>Productivity: Network:Web Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/dashmachine.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dashmachine.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1581287327</DateInstalled>
+  <DateInstalled>1583615569</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Another web application bookmark dashboard, with fun features.[br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]admin[/B][/u][br]Password: [B][u]adminadmin[/B][/u][/b]</Description>

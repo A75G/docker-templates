@@ -1,26 +1,26 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>gotify</Name>
-  <Repository>gotify/server</Repository>
+  <Repository>gotify/server:latest</Repository>
   <Registry>https://hub.docker.com/r/gotify/server/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/gotify/server/</Support>
-  <Project/>
-  <Overview>A simple server for sending and receiving messages.[br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]admin[/B][/u][br]Password: [B][u]admin[/B][/u][/b][br][br]Download config.yml[/br][/br]wget -O /mnt/user/appdata/gotify/config/config.yml https://raw.githubusercontent.com/gotify/server/master/config.example.yml</Overview>
-  <Category/>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/?do=edit</Support>
+  <Project>https://gotify.net/</Project>
+  <Overview>A simple server for sending and receiving messages.[br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]admin[/B][/u][br]Password: [B][u]admin[/B][/u][/b][br][br]Download config.yml[/br]mkdir -p /mnt/user/appdata/gotify/config/[/br]wget -O /mnt/user/appdata/gotify/config/config.yml https://raw.githubusercontent.com/gotify/server/master/config.example.yml</Overview>
+  <Category>Productivity: Tools: Network:Management Network:Messenger Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/gotify.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/gotify.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1581339177</DateInstalled>
+  <DateInstalled>1583615201</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>A simple server for sending and receiving messages.[br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]admin[/B][/u][br]Password: [B][u]admin[/B][/u][/b][br][br]Download config.yml[/br][/br]wget -O /mnt/user/appdata/gotify/config/config.yml https://raw.githubusercontent.com/gotify/server/master/config.example.yml</Description>
+  <Description>A simple server for sending and receiving messages.[br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]admin[/B][/u][br]Password: [B][u]admin[/B][/u][/b][br][br]Download config.yml[/br]mkdir -p /mnt/user/appdata/gotify/config/[/br]wget -O /mnt/user/appdata/gotify/config/config.yml https://raw.githubusercontent.com/gotify/server/master/config.example.yml</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>

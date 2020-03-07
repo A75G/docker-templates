@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>mailpile</Name>
-  <Repository>rroemhild/mailpile</Repository>
+  <Repository>rroemhild/mailpile:latest</Repository>
   <Registry>https://hub.docker.com/r/rroemhild/mailpile/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/rroemhild/mailpile/</Support>
-  <Project/>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://www.mailpile.is/</Project>
   <Overview>Mailpile is software, an e-mail client. It runs on your desktop or laptop computer and you interact with it by using your web browser. The goal of Mailpile is to allow people to send e-mail in a more secure and private manner than before.</Overview>
-  <Category/>
+  <Category>Productivity: Network:Web Network:Messenger Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:33411]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/mailpile.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/mailpile.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1581354570</DateInstalled>
+  <DateInstalled>1583614982</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Mailpile is software, an e-mail client. It runs on your desktop or laptop computer and you interact with it by using your web browser. The goal of Mailpile is to allow people to send e-mail in a more secure and private manner than before.</Description>

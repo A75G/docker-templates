@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>cyberchef</Name>
-  <Repository>mpepping/cyberchef</Repository>
+  <Repository>mpepping/cyberchef:latest</Repository>
   <Registry>https://hub.docker.com/r/mpepping/cyberchef/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/mpepping/cyberchef/</Support>
-  <Project/>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://gchq.github.io/CyberChef/</Project>
   <Overview>The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.</Overview>
-  <Category/>
+  <Category>Productivity: Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/cyberchef.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cyberchef.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1581355422</DateInstalled>
+  <DateInstalled>1583615667</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.</Description>

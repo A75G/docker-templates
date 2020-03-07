@@ -1,29 +1,26 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>riot-web</Name>
-  <Repository>vectorim/riot-web</Repository>
+  <Repository>vectorim/riot-web:latest</Repository>
   <Registry>https://hub.docker.com/r/vectorim/riot-web/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/vectorim/riot-web/</Support>
-  <Project/>
-  <Overview>[br]Open, secure and interoperable communication for work and home.[/br] [br]wget -O /mnt/user/appdata/riot-web/config/config.json https://riot.im/develop/config.json[/br]&#xD;
-</Overview>
-  <Category/>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project> https://riot.im/</Project>
+  <Overview>Open, secure and interoperable communication for work and home. before the running the docker run [br]mkdir -p /mnt/user/appdata/riot-web/config [/br]wget -O /mnt/user/appdata/riot-web/config/config.json https://riot.im/develop/config.json </Overview>
+  <Category>Cloud: Productivity: Network:Messenger Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/riot-web.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/riot-web.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1581761819</DateInstalled>
+  <DateInstalled>1583614638</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>[br]Open, secure and interoperable communication for work and home.[/br] [br]mkdir -p /mnt/user/appdata/riot-web/config/[/br]&#xD;
-wget -O /mnt/user/appdata/riot-web/config/config.json https://riot.im/develop/config.json&#xD;
-</Description>
+  <Description>Open, secure and interoperable communication for work and home. before the running the docker run [br]mkdir -p /mnt/user/appdata/riot-web/config [/br]wget -O /mnt/user/appdata/riot-web/config/config.json https://riot.im/develop/config.json </Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>

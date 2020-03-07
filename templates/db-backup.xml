@@ -1,26 +1,26 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>db-backup</Name>
-  <Repository>tiredofit/db-backup</Repository>
+  <Repository>tiredofit/db-backup:latest</Repository>
   <Registry>https://hub.docker.com/r/tiredofit/db-backup/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/tiredofit/db-backup/</Support>
-  <Project/>
-  <Overview>Backup Multiple DB Servers (Influx, Maria/Mysql/Mongo/Postgres/Redis/Rethink) based on Alpine.[br][br]Manual Backups can be perforemd by entering the container and typing backup-now[/br][/br]</Overview>
-  <Category/>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://hub.docker.com/r/tiredofit/db-backup/</Project>
+  <Overview>Backup Multiple DB Servers (Influx, Maria/Mysql/Mongo/Postgres/Redis/Rethink) based on Alpine.Manual Backups can be performed by entering the container and typing backup-now</Overview>
+  <Category>Backup: Status:Stable</Category>
   <WebUI/>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/db-backup.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/db-backup.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1581292532</DateInstalled>
+  <DateInstalled>1583615401</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>Backup Multiple DB Servers (Influx, Maria/Mysql/Mongo/Postgres/Redis/Rethink) based on Alpine.[br][br]Manual Backups can be perforemd by entering the container and typing backup-now[/br][/br]</Description>
+  <Description>Backup Multiple DB Servers (Influx, Maria/Mysql/Mongo/Postgres/Redis/Rethink) based on Alpine.Manual Backups can be performed by entering the container and typing backup-now</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish/>
@@ -105,9 +105,9 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Backup Location" Target="/backup" Default="" Mode="rw" Description="Database Dump Location" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/backups/db/</Config>
+  <Config Name="Backup Location" Target="/backup" Default="" Mode="rw" Description="Database Dump Location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/backups/db/</Config>
   <Config Name="Key 1" Target="COMPRESSION" Default="" Mode="" Description="Gzip " Type="Variable" Display="always" Required="false" Mask="false">GZ</Config>
-  <Config Name="Key 2" Target="DB_TYPE" Default="" Mode="" Description="couch influx mysql pgsql mongo redis rethink" Type="Variable" Display="always" Required="false" Mask="false">&lt;Database_Type&gt;</Config>
+  <Config Name="Key 2" Target="DB_TYPE" Default="" Mode="" Description="couch influx mysql pgsql mongo redis rethink" Type="Variable" Display="always" Required="true" Mask="false">&lt;Database_Type&gt;</Config>
   <Config Name="Key 3" Target="DB_HOST" Default="" Mode="" Description="Database Hostname" Type="Variable" Display="always" Required="false" Mask="false">&lt;DATABASE_IP&gt;</Config>
   <Config Name="Key 4" Target="DB_NAME" Default="" Mode="" Description="Database name." Type="Variable" Display="always" Required="false" Mask="false">database</Config>
   <Config Name="Key 5" Target="DB_USER" Default="" Mode="" Description="Database User - use root to backup all MySQL of them." Type="Variable" Display="always" Required="false" Mask="false">root</Config>
