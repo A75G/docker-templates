@@ -7,10 +7,10 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/?do=edit</Support>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://gotify.net/</Project>
   <Overview>A simple server for sending and receiving messages.[br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]admin[/B][/u][br]Password: [B][u]admin[/B][/u][/b][br][br]Download config.yml[/br]mkdir -p /mnt/user/appdata/gotify/config/[/br]wget -O /mnt/user/appdata/gotify/config/config.yml https://raw.githubusercontent.com/gotify/server/master/config.example.yml</Overview>
-  <Category>Productivity: Tools: Network:Management Network:Messenger Status:Stable</Category>
+  <Category>Productivity: Tools: Network:Messenger Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/gotify.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/gotify.png</Icon>

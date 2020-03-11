@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>kiwix-serve</Name>
+  <Repository>kiwix/kiwix-serve</Repository>
+  <Registry>https://hub.docker.com/r/kiwix/kiwix-serve/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://www.kiwix.org/</Project>
+  <Overview>Kiwix enables you to have the whole Wikipedia at hand wherever you go! [br]Remove download link after download complete.[/br]</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/kiwix.png</Icon>
+  <ExtraParams/>
+  <PostArgs>*.zim</PostArgs>
+  <CPUset/>
+  <DateInstalled>1583904132</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Kiwix enables you to have the whole Wikipedia at hand wherever you go! [br]Remove download link after download complete.[/br]</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8040</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/kiwix-serve/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>http://download.kiwix.org/zim/wikipedia_en_chemistry_nopic.zim</Value>
+      <Name>DOWNLOAD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="80" Default="" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false">8040</Config>
+  <Config Name="Host Path 1" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/kiwix-serve/</Config>
+  <Config Name="Host Key 1" Target="DOWNLOAD" Default="" Mode="" Description="Add download link here to download contents https://wiki.kiwix.org/wiki/Content" Type="Variable" Display="always" Required="false" Mask="false">http://download.kiwix.org/zim/wikipedia_en_chemistry_nopic.zim</Config>
+</Container>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>homer</Name>
+  <Repository>b4bz/homer</Repository>
+  <Registry>https://hub.docker.com/r/b4bz/homer/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/bastienwirtz/homer</Project>
+  <Overview>A dead simple static HOMe for your servER to keep your services on hand from a simple yaml config.[br][br]Download config.yml[/br][/br]wget -O /mnt/user/appdata/homer/config/config.yml https://raw.githubusercontent.com/bastienwirtz/homer/master/config.yml</Overview>
+  <Category>Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/homer.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1583907477</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>A dead simple static HOMe for your servER to keep your services on hand from a simple yaml config.[br][br]Download config.yml[/br][/br]wget -O /mnt/user/appdata/homer/config.yml https://raw.githubusercontent.com/bastienwirtz/homer/master/config.yml</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/homer/assets/</HostDir>
+      <ContainerDir>/www/assets</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/homer/config.yml</HostDir>
+      <ContainerDir>/www/config.yml</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Port 1" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Host Path 1" Target="/www/assets" Default="" Mode="rw" Description="Container Path: /www/assets" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/homer/assets/</Config>
+  <Config Name="Host Path 2" Target="/www/config.yml" Default="" Mode="rw" Description="Container Path: /www/config.yml" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/homer/config/config.yml</Config>
+</Container>
