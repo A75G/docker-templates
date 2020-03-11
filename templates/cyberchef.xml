@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>cyberchef</Name>
-  <Repository>mpepping/cyberchef:latest</Repository>
-  <Registry>https://hub.docker.com/r/mpepping/cyberchef/</Registry>
+  <Repository>aude/cyberchef:latest</Repository>
+  <Registry>https://hub.docker.com/r/aude/cyberchef/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
-  <Project>https://gchq.github.io/CyberChef/</Project>
+  <Project>https://github.com/aude/cyberchef-docker</Project>
   <Overview>The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.</Overview>
   <Category>Productivity: Tools: Status:Stable</Category>
-  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/cyberchef.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cyberchef.png</Icon>
   <ExtraParams/>
@@ -26,7 +26,7 @@
     <Publish>
       <Port>
         <HostPort>8000</HostPort>
-        <ContainerPort>8000</ContainerPort>
+        <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -34,5 +34,5 @@
   <Data/>
   <Environment/>
   <Labels/>
-  <Config Name="Host Port 1" Target="8000" Default="8000" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="Host Port 1" Target="80" Default="8000" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
 </Container>
