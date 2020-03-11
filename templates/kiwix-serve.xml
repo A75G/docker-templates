@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>kiwix-serve</Name>
-  <Repository>kiwix/kiwix-serve</Repository>
+  <Repository>kiwix/kiwix-serve:latest</Repository>
   <Registry>https://hub.docker.com/r/kiwix/kiwix-serve/</Registry>
   <Network>bridge</Network>
   <MyIP/>

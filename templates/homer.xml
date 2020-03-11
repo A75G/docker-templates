@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>homer</Name>
-  <Repository>b4bz/homer</Repository>
+  <Repository>b4bz/homer:latest</Repository>
   <Registry>https://hub.docker.com/r/b4bz/homer/</Registry>
   <Network>bridge</Network>
   <MyIP/>
