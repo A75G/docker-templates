@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>filerun</Name>
+  <Repository>afian/filerun</Repository>
+  <Registry>https://hub.docker.com/r/afian/filerun/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://filerun.com/</Project>
+  <Overview>FileRun is a self-hosted Google Drive alternative. [br]Default username and password is superuser.[/br]</Overview>
+  <Category>Cloud:</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/filerun.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1584464405</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>FileRun is a self-hosted Google Drive alternative. [br]Default username and password is superuser.[/br]</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/filerun/</HostDir>
+      <ContainerDir>/user-files</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/filerun/</HostDir>
+      <ContainerDir>/var/www/html</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>Database Hostname</Value>
+      <Name>FR_DB_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>3306</Value>
+      <Name>FR_DB_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>filerun</Value>
+      <Name>FR_DB_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>filerun</Value>
+      <Name>FR_DB_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>password</Value>
+      <Name>FR_DB_PASS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>33</Value>
+      <Name>APACHE_RUN_USER_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>www-data</Value>
+      <Name>APACHE_RUN_GROUP</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>33</Value>
+      <Name>APACHE_RUN_GROUP_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>www-data</Value>
+      <Name>APACHE_RUN_USER</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="80" Default="" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="Database Hostname" Target="FR_DB_HOST" Default="Hostname" Mode="" Description="Database Hostname" Type="Variable" Display="always" Required="false" Mask="false">Database Hostname</Config>
+  <Config Name="Database Port" Target="FR_DB_PORT" Default="3306" Mode="" Description="Database Port" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
+  <Config Name="Database Name" Target="FR_DB_NAME" Default="" Mode="" Description="Database Name" Type="Variable" Display="always" Required="false" Mask="false">filerun</Config>
+  <Config Name="Database User" Target="FR_DB_USER" Default="" Mode="" Description="Database User" Type="Variable" Display="always" Required="false" Mask="false">filerun</Config>
+  <Config Name="Database Password" Target="FR_DB_PASS" Default="" Mode="" Description="Database Password" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="Filerun Files Folder" Target="/user-files" Default="" Mode="rw" Description="Filerun Files Folder" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/filerun/</Config>
+  <Config Name="Appdata" Target="/var/www/html" Default="" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/filerun/</Config>
+  <Config Name="Host Key 7" Target="APACHE_RUN_USER_ID" Default="" Mode="" Description="Container Variable: APACHE_RUN_USER_ID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">33</Config>
+  <Config Name="Host Key 8" Target="APACHE_RUN_GROUP" Default="" Mode="" Description="Container Variable: APACHE_RUN_GROUP" Type="Variable" Display="advanced-hide" Required="false" Mask="false">www-data</Config>
+  <Config Name="Host Key 9" Target="APACHE_RUN_GROUP_ID" Default="" Mode="" Description="Container Variable: APACHE_RUN_GROUP_ID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">33</Config>
+  <Config Name="Host Key 6" Target="APACHE_RUN_USER" Default="" Mode="" Description="Container Variable: APACHE_RUN_USER" Type="Variable" Display="advanced-hide" Required="false" Mask="false">www-data</Config>
+</Container>
