@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>golinks</Name>
-  <Repository>prologic/golinks</Repository>
+  <Repository>prologic/golinks:latest</Repository>
   <Registry>https://hub.docker.com/r/prologic/golinks/</Registry>
   <Network>bridge</Network>
   <MyIP/>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>filerun</Name>
-  <Repository>afian/filerun</Repository>
+  <Repository>afian/filerun:latest</Repository>
   <Registry>https://hub.docker.com/r/afian/filerun/</Registry>
   <Network>bridge</Network>
   <MyIP/>
