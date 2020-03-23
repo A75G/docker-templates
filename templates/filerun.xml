@@ -11,7 +11,7 @@
   <Project>https://filerun.com/</Project>
   <Overview>FileRun is a self-hosted Google Drive alternative. [br]Default username and password is superuser.[/br]</Overview>
   <Category>Cloud:</Category>
-  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/filerun.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/filerun.png</Icon>
   <ExtraParams/>
