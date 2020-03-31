@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>matrix</Name>
+  <Repository>avhost/docker-matrix:latest</Repository>
+  <Registry>https://hub.docker.com/r/avhost/docker-matrix/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://hub.docker.com/r/avhost/docker-matrix</Project>
+  <Overview>Docker Image for the matrix chat server.</Overview>
+  <Category>Productivity: Network:Voip Network:Messenger</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/matrix.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1585680124</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Docker Image for the matrix chat server.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8008</HostPort>
+        <ContainerPort>8008</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8448</HostPort>
+        <ContainerPort>8448</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>3478</HostPort>
+        <ContainerPort>3478</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/matrix/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>matrix</Value>
+      <Name>SERVER_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>no</Value>
+      <Name>REPORT_STATS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0.5</Value>
+      <Name>SYNAPSE_CACHE_FACTOR</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>MATRIX_UID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>MATRIX_GID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="HTTP" Target="8008" Default="8008" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="false" Mask="false">8008</Config>
+  <Config Name="HTTPS" Target="8448" Default="8448" Mode="tcp" Description="HTTPS" Type="Port" Display="always" Required="false" Mask="false">8448</Config>
+  <Config Name="STUN TCP" Target="3478" Default="3478" Mode="tcp" Description="STUN TCP" Type="Port" Display="always" Required="false" Mask="false">3478</Config>
+  <Config Name="Appdata" Target="/data" Default="" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/matrix/</Config>
+  <Config Name="Server Name" Target="SERVER_NAME" Default="" Mode="" Description="Server and domain name, mandatory, needed only for generate" Type="Variable" Display="always" Required="false" Mask="false">matrix</Config>
+  <Config Name="Report Stats" Target="REPORT_STATS" Default="" Mode="" Description="statistic report, mandatory, values: yes or no, needed only for generate" Type="Variable" Display="always" Required="false" Mask="false">no</Config>
+  <Config Name="CACHE_FACTOR" Target="SYNAPSE_CACHE_FACTOR" Default="0.5" Mode="" Description="https://github.com/matrix-org/synapse#id19" Type="Variable" Display="always" Required="false" Mask="false">0.5</Config>
+  <Config Name="UID" Target="MATRIX_UID" Default="" Mode="" Description="UID" Type="Variable" Display="always-hide" Required="false" Mask="false">99</Config>
+  <Config Name="GID" Target="MATRIX_GID" Default="" Mode="" Description="GID" Type="Variable" Display="always-hide" Required="false" Mask="false">100</Config>
+</Container>
