@@ -64,6 +64,6 @@
   <Config Name="PostgresDB" Target="DATABASE_URL" Default="" Mode="" Description="PostgresDB" Type="Variable" Display="always" Required="false" Mask="false">postgres://miniflux:secret@&lt;Hostname&gt;/miniflux?sslmode=disable</Config>
   <Config Name="Admin Username" Target="ADMIN_USERNAME" Default="" Mode="" Description="Admin Username" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
   <Config Name="Admin Password" Target="ADMIN_PASSWORD" Default="" Mode="" Description="Admin Password" Type="Variable" Display="always" Required="false" Mask="false">test123</Config>
-  <Config Name="Host Key 1" Target="CREATE_ADMIN" Default="" Mode="" Description="CREATE_ADMIN" Type="Variable" Display="advanced" Required="false" Mask="false">1</Config>
+  <Config Name="Create Admin" Target="CREATE_ADMIN" Default="" Mode="" Description="CREATE_ADMIN" Type="Variable" Display="advanced" Required="false" Mask="false">1</Config>
   <Config Name="Migrate" Target="RUN_MIGRATIONS" Default="" Mode="" Description="Migrate" Type="Variable" Display="advanced" Required="false" Mask="false">1</Config>
 </Container>
