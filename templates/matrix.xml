@@ -11,7 +11,7 @@
   <Project>https://hub.docker.com/r/avhost/docker-matrix</Project>
   <Overview>Docker Image for the matrix chat server.</Overview>
   <Category>Productivity: Network:Voip Network:Messenger</Category>
-  <WebUI/>
+  <WebUI>http://[IP]:[PORT:8008]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/matrix.png</Icon>
   <ExtraParams/>
