@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>freepbx</Name>
+  <Repository>tiredofit/freepbx:15-latest</Repository>
+  <Registry>https://hub.docker.com/r/tiredofit/freepbx/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/tiredofit/freepbx/</Support>
+  <Project>https://github.com/tiredofit/docker-freepbx/</Project>
+  <Overview>FreePBX is a web-based open-source graphical user interface that manages Asterisk, a voice over IP and telephony server. [br]Admin Setup http://hostname/admin/config.php &amp;lt;- add /admin/config.php at the end [/br]</Overview>
+  <Category>Productivity: Network:Voip Network:Messenger</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/freepbx15.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1585888120</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>FreePBX is a web-based open-source graphical user interface that manages Asterisk, a voice over IP and telephony server. [br]Admin Setup http://hostname/admin/config.php &amp;lt;- add /admin/config.php at the end [/br]</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8150</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>4150</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5060</HostPort>
+        <ContainerPort>5060</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5160</HostPort>
+        <ContainerPort>5160</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>18000-18100</HostPort>
+        <ContainerPort>18000-18100</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>4445</HostPort>
+        <ContainerPort>4445</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/freepbx/data/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/freepbx/logs/</HostDir>
+      <ContainerDir>/var/log</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/freepbx/www/</HostDir>
+      <ContainerDir>/var/www/html</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/freepbx/certs/</HostDir>
+      <ContainerDir>/certs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>10.0.10.5</Value>
+      <Name>DB_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>3306</Value>
+      <Name>DB_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>test</Value>
+      <Name>DB_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>test</Value>
+      <Name>DB_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>password</Value>
+      <Name>DB_PASS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>FALSE</Value>
+      <Name>DB_EMBEDDED</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>TRUE</Value>
+      <Name>ENABLE_FAIL2BAN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>TRUE</Value>
+      <Name>ENABLE_FOP</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>FALSE</Value>
+      <Name>ENABLE_SSL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>FALSE</Value>
+      <Name>ENABLE_XMPP</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>INSTALL_ADDITIONAL_MODULES</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>18000</Value>
+      <Name>RTP_START</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>18100</Value>
+      <Name>RTP_FINISH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>cert.pem</Value>
+      <Name>TLS_CERT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>key.pem</Value>
+      <Name>TLS_KEY</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="HTTP" Target="80" Default="80" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="false" Mask="false">8150</Config>
+  <Config Name="HTTPS" Target="443" Default="443" Mode="tcp" Description="HTTPS" Type="Port" Display="always" Required="false" Mask="false">4150</Config>
+  <Config Name="PJSIP" Target="5060" Default="5060" Mode="udp" Description="PJSIP" Type="Port" Display="always" Required="false" Mask="false">5060</Config>
+  <Config Name="SIP" Target="5160" Default="5160" Mode="udp" Description="SIP" Type="Port" Display="always" Required="false" Mask="false">5160</Config>
+  <Config Name="RTP Ports" Target="18000-18100" Default="18000-18100" Mode="udp" Description="RTP Ports" Type="Port" Display="always" Required="false" Mask="false">18000-18100</Config>
+  <Config Name="FOP" Target="4445" Default="4445" Mode="tcp" Description="FOP" Type="Port" Display="always" Required="false" Mask="false">4445</Config>
+  <Config Name="Data" Target="/data" Default="/mnt/user/appdata/freepbx/data/" Mode="rw" Description="Data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/freepbx/data/</Config>
+  <Config Name="Log" Target="/var/log" Default="" Mode="rw" Description="Log" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/freepbx/logs/</Config>
+  <Config Name="WWW" Target="/var/www/html" Default="" Mode="rw" Description="WWW" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/freepbx/www/</Config>
+  <Config Name="Certs" Target="/certs" Default="/mnt/user/appdata/freepbx/certs/" Mode="rw" Description="Certs" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/freepbx/certs/</Config>
+  <Config Name="DB_HOST" Target="DB_HOST" Default="freepbx-db" Mode="" Description="DB_HOST" Type="Variable" Display="always" Required="false" Mask="false">10.0.10.5</Config>
+  <Config Name="DB_PORT" Target="DB_PORT" Default="3306" Mode="" Description="DB_PORT" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
+  <Config Name="DB_NAME" Target="DB_NAME" Default="asterisk" Mode="" Description="DB_NAME" Type="Variable" Display="always" Required="false" Mask="false">test</Config>
+  <Config Name="DB_USER" Target="DB_USER" Default="password" Mode="" Description="DB_USER" Type="Variable" Display="always" Required="false" Mask="false">test</Config>
+  <Config Name="DB_EMBEDDED" Target="DB_EMBEDDED" Default="FALSE" Mode="" Description="Allows you to use an internally provided MariaDB Server e.g. TRUE or FALSE" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
+  <Config Name="ENABLE_FAIL2BAN" Target="ENABLE_FAIL2BAN" Default="TRUE" Mode="" Description="ENABLE_FAIL2BAN" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+  <Config Name="Flash Operator Panel" Target="ENABLE_FOP" Default="TRUE" Mode="" Description="Enable Flash Operator Panel" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+  <Config Name="ENABLE_SSL" Target="ENABLE_SSL" Default="FALSE" Mode="" Description="Enable HTTPd to serve SSL requests - Default FALSE" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
+  <Config Name="ENABLE_XMPP" Target="ENABLE_XMPP" Default="FALSE" Mode="" Description="Enable XMPP Module with MongoDB - Default FALSE" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
+  <Config Name="INSTALL_ADDITIONAL_MODULES" Target="INSTALL_ADDITIONAL_MODULES" Default="" Mode="" Description="Comma seperated list of modules to additionally install on first container startup" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="RTP_START" Target="RTP_START" Default="18000" Mode="" Description="What port to start RTP Transmissions" Type="Variable" Display="always" Required="false" Mask="false">18000</Config>
+  <Config Name="RTP_FINISH" Target="RTP_FINISH" Default="20000" Mode="" Description="What port to end RTP Transmissions" Type="Variable" Display="always" Required="false" Mask="false">18100</Config>
+  <Config Name="TLS_CERT" Target="TLS_CERT" Default="cert.pem" Mode="" Description="TLS Certificate to drop in /certs for HTTPS if no reverse proxy" Type="Variable" Display="always" Required="false" Mask="false">cert.pem</Config>
+  <Config Name="TLS_KEY" Target="TLS_KEY" Default="key.pem" Mode="" Description="TLS Key to drop in /certs for HTTPS if no reverse proxy" Type="Variable" Display="always" Required="false" Mask="false">key.pem</Config>
+  <Config Name="DB_PASS" Target="DB_PASS" Default="password" Mode="" Description="Container Variable: DB_PASS" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+</Container>
