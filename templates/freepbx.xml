@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/tiredofit/freepbx/</Support>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://github.com/tiredofit/docker-freepbx/</Project>
   <Overview>FreePBX is a web-based open-source graphical user interface that manages Asterisk, a voice over IP and telephony server. [br]Admin Setup http://hostname/admin/config.php &amp;lt;- add /admin/config.php at the end [/br]</Overview>
   <Category>Productivity: Network:Voip Network:Messenger</Category>
