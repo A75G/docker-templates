@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1585680124</DateInstalled>
+  <DateInstalled>1586065209</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Docker Image for the matrix chat server.</Description>
@@ -38,6 +38,11 @@
         <HostPort>3478</HostPort>
         <ContainerPort>3478</ContainerPort>
         <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>3478</HostPort>
+        <ContainerPort>3478</ContainerPort>
+        <Protocol>udp</Protocol>
       </Port>
     </Publish>
   </Networking>
@@ -79,6 +84,7 @@
   <Config Name="HTTP" Target="8008" Default="8008" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="false" Mask="false">8008</Config>
   <Config Name="HTTPS" Target="8448" Default="8448" Mode="tcp" Description="HTTPS" Type="Port" Display="always" Required="false" Mask="false">8448</Config>
   <Config Name="STUN TCP" Target="3478" Default="3478" Mode="tcp" Description="STUN TCP" Type="Port" Display="always" Required="false" Mask="false">3478</Config>
+  <Config Name="STUN UDP" Target="3478" Default="3478" Mode="udp" Description="STUN UDP" Type="Port" Display="always" Required="false" Mask="false">3478</Config>
   <Config Name="Appdata" Target="/data" Default="" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/matrix/</Config>
   <Config Name="Server Name" Target="SERVER_NAME" Default="" Mode="" Description="Server and domain name, mandatory, needed only for generate" Type="Variable" Display="always" Required="false" Mask="false">matrix</Config>
   <Config Name="Report Stats" Target="REPORT_STATS" Default="" Mode="" Description="statistic report, mandatory, values: yes or no, needed only for generate" Type="Variable" Display="always" Required="false" Mask="false">no</Config>
