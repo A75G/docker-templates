@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>wallabag</Name>
+  <Repository>wallabag/wallabag:latest</Repository>
+  <Registry>https://hub.docker.com/r/wallabag/wallabag/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://www.wallabag.org</Project>
+  <Overview>Wallabag is a self hostable application for saving web pages. Unlike other services, wallabag is free (as in freedom) and open source. [br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]wallabag[/B][/u][br]Password: [B][u]wallabag[/B][/u][/b]</Overview>
+  <Category>Productivity: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/wallabag.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1586224337</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Wallabag is a self hostable application for saving web pages. Unlike other services, wallabag is free (as in freedom) and open source. [br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]wallabag[/B][/u][br]Password: [B][u]wallabag[/B][/u][/b]</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>6500</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/wallabag/</HostDir>
+      <ContainerDir>/var/www/wallabag/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/wallabag/images/</HostDir>
+      <ContainerDir>/var/www/wallabag/web/assets/images</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>http://&lt;IP&gt;:6500</Value>
+      <Name>SYMFONY__ENV__DOMAIN_NAME</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Port" Target="80" Default="6500" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">6500</Config>
+  <Config Name="Appdata" Target="/var/www/wallabag/data" Default="/mnt/user/appdata/wallabag/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/wallabag/</Config>
+  <Config Name="Images" Target="/var/www/wallabag/web/assets/images" Default="/mnt/user/appdata/wallabag/images/" Mode="rw" Description="Images" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/wallabag/images/</Config>
+  <Config Name="Domain" Target="SYMFONY__ENV__DOMAIN_NAME" Default="" Mode="" Description="Domain" Type="Variable" Display="always" Required="true" Mask="false">http://&lt;IP&gt;:6500</Config>
+</Container>
