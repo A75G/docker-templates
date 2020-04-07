@@ -4,101 +4,19 @@
   <Repository>tiredofit/db-backup:latest</Repository>
   <Registry>https://hub.docker.com/r/tiredofit/db-backup/</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://hub.docker.com/r/tiredofit/db-backup/</Project>
   <Overview>Backup Multiple DB Servers (Influx, Maria/Mysql/Mongo/Postgres/Redis/Rethink) based on Alpine.Manual Backups can be performed by entering the container and typing backup-now</Overview>
   <Category>Backup: Status:Stable</Category>
-  <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/db-backup.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/db-backup.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1583616784</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Backup Multiple DB Servers (Influx, Maria/Mysql/Mongo/Postgres/Redis/Rethink) based on Alpine.Manual Backups can be performed by entering the container and typing backup-now</Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish/>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/backups/db/</HostDir>
-      <ContainerDir>/backup</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment>
-    <Variable>
-      <Value>GZ</Value>
-      <Name>COMPRESSION</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>&lt;Database_Type&gt;</Value>
-      <Name>DB_TYPE</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>&lt;DATABASE_IP&gt;</Value>
-      <Name>DB_HOST</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>root</Value>
-      <Name>DB_USER</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>&lt;DATABASE_PASSWORD&gt;</Value>
-      <Name>DB_PASS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>3306</Value>
-      <Name>DB_PORT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>1440</Value>
-      <Name>DB_DUMP_FREQ</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>0300</Value>
-      <Name>DB_DUMP_BEGIN</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>10080</Value>
-      <Name>DB_CLEANUP_TIME</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>TRUE</Value>
-      <Name>PARALLEL_COMPRESSION</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>TRUE</Value>
-      <Name>MD5</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>FALSE</Value>
-      <Name>SPLIT_DB</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>false</Value>
-      <Name>DEBUG_MODE</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
   <Labels/>
   <Config Name="Backup Location" Target="/backup" Default="" Mode="rw" Description="Database Dump Location" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/backups/db/</Config>
   <Config Name="Key 1" Target="COMPRESSION" Default="" Mode="" Description="Gzip " Type="Variable" Display="always" Required="false" Mask="false">GZ</Config>

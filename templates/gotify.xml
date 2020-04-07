@@ -4,7 +4,6 @@
   <Repository>gotify/server:latest</Repository>
   <Registry>https://hub.docker.com/r/gotify/server/</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
@@ -16,45 +15,9 @@
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/gotify.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1583615201</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>A simple server for sending and receiving messages.[br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]admin[/B][/u][br]Password: [B][u]admin[/B][/u][/b][br][br]Download config.yml[/br]mkdir -p /mnt/user/appdata/gotify/config/[/br]wget -O /mnt/user/appdata/gotify/config/config.yml https://raw.githubusercontent.com/gotify/server/master/config.example.yml</Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8070</HostPort>
-        <ContainerPort>80</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/gotify/</HostDir>
-      <ContainerDir>/app/data</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/gotify/config/</HostDir>
-      <ContainerDir>/etc/gotify</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment>
-    <Variable>
-      <Value>99</Value>
-      <Name>PUID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>100</Value>
-      <Name>PGID</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
   <Labels/>
   <Config Name="Host Port 1" Target="80" Default="8070" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">8070</Config>
   <Config Name="Path 1" Target="/app/data" Default="/mnt/user/appdata/gotify/" Mode="rw" Description="/app/data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/gotify/</Config>

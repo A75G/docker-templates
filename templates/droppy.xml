@@ -4,7 +4,6 @@
   <Repository>silverwind/droppy:latest</Repository>
   <Registry>https://hub.docker.com/r/silverwind/droppy/</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
@@ -12,49 +11,13 @@
   <Overview>Self-hosted file storage server with a web interface and capabilities to edit files and view media directly in the browser. </Overview>
   <Category>Cloud:</Category>
   <WebUI>http://[IP]:[PORT:8989]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/droppy.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/droppy.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1584096557</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Self-hosted file storage server with a web interface and capabilities to edit files and view media directly in the browser. </Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8686</HostPort>
-        <ContainerPort>8989</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/doppy/</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/droppy/</HostDir>
-      <ContainerDir>/files</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment>
-    <Variable>
-      <Value>99</Value>
-      <Name>UID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>100</Value>
-      <Name>GID</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
   <Labels/>
   <Config Name="Port" Target="8989" Default="8686" Mode="tcp" Description="Container Port: 8989" Type="Port" Display="always" Required="false" Mask="false">8686</Config>
   <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/doppy/</Config>

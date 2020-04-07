@@ -4,7 +4,6 @@
   <Repository>tiredofit/freepbx:15-latest</Repository>
   <Registry>https://hub.docker.com/r/tiredofit/freepbx/</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
@@ -12,149 +11,13 @@
   <Overview>FreePBX is a web-based open-source graphical user interface that manages Asterisk, a voice over IP and telephony server. [br]Admin Setup http://hostname/admin/config.php &amp;lt;- add /admin/config.php at the end [/br]</Overview>
   <Category>Productivity: Network:Voip Network:Messenger</Category>
   <WebUI>http://[IP]:[PORT:80]/admin/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/freepbx.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/freepbx.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1585956889</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>FreePBX is a web-based open-source graphical user interface that manages Asterisk, a voice over IP and telephony server. [br]Admin Setup http://hostname/admin/config.php &amp;lt;- add /admin/config.php at the end [/br]</Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8150</HostPort>
-        <ContainerPort>80</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>4150</HostPort>
-        <ContainerPort>443</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>5060</HostPort>
-        <ContainerPort>5060</ContainerPort>
-        <Protocol>udp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>5160</HostPort>
-        <ContainerPort>5160</ContainerPort>
-        <Protocol>udp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>18000-20000</HostPort>
-        <ContainerPort>18000-20000</ContainerPort>
-        <Protocol>udp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>4445</HostPort>
-        <ContainerPort>4445</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/freepbx/data/</HostDir>
-      <ContainerDir>/data</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/freepbx/logs/</HostDir>
-      <ContainerDir>/var/log</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/freepbx/www/</HostDir>
-      <ContainerDir>/var/www/html</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/freepbx/certs/</HostDir>
-      <ContainerDir>/certs</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment>
-    <Variable>
-      <Value>&lt;DB_HOST&gt;</Value>
-      <Name>DB_HOST</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>3306</Value>
-      <Name>DB_PORT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>&lt;DB_NAME&gt;</Value>
-      <Name>DB_NAME</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>&lt;DB_USER&gt;</Value>
-      <Name>DB_USER</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>&lt;DB_PASS&gt;</Value>
-      <Name>DB_PASS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>FALSE</Value>
-      <Name>DB_EMBEDDED</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>TRUE</Value>
-      <Name>ENABLE_FAIL2BAN</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>TRUE</Value>
-      <Name>ENABLE_FOP</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>FALSE</Value>
-      <Name>ENABLE_SSL</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>FALSE</Value>
-      <Name>ENABLE_XMPP</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value/>
-      <Name>INSTALL_ADDITIONAL_MODULES</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>18000</Value>
-      <Name>RTP_START</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>20000</Value>
-      <Name>RTP_FINISH</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>cert.pem</Value>
-      <Name>TLS_CERT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>key.pem</Value>
-      <Name>TLS_KEY</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
   <Labels/>
   <Config Name="HTTP" Target="80" Default="80" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="false" Mask="false">8150</Config>
   <Config Name="HTTPS" Target="443" Default="443" Mode="tcp" Description="HTTPS" Type="Port" Display="always" Required="false" Mask="false">4150</Config>

@@ -4,7 +4,6 @@
   <Repository>rroemhild/mailpile:latest</Repository>
   <Registry>https://hub.docker.com/r/rroemhild/mailpile/</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
@@ -16,36 +15,11 @@
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/mailpile.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1583614982</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Mailpile is software, an e-mail client. It runs on your desktop or laptop computer and you interact with it by using your web browser. The goal of Mailpile is to allow people to send e-mail in a more secure and private manner than before.</Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>33411</HostPort>
-        <ContainerPort>33411</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/Mailpile/</HostDir>
-      <ContainerDir>/root/.local/share/Mailpile</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/Mailpile/gnupg/</HostDir>
-      <ContainerDir>/root/.gnupg</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment/>
   <Labels/>
-  <Config Name="Port 1" Target="33411" Default="" Mode="tcp" Description="Container Port: 33411" Type="Port" Display="always" Required="true" Mask="false">33411</Config>
+  <Config Name="Port" Target="33411" Default="" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">33411</Config>
   <Config Name="Path 1" Target="/root/.local/share/Mailpile" Default="" Mode="rw" Description="Container Path: /root/.local/share/Mailpile" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Mailpile/</Config>
   <Config Name="Path 2" Target="/root/.gnupg" Default="" Mode="rw" Description="Container Path: /root/.gnupg" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Mailpile/gnupg/</Config>
 </Container>

@@ -4,7 +4,6 @@
   <Repository>vectorim/riot-web:latest</Repository>
   <Registry>https://hub.docker.com/r/vectorim/riot-web/</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
@@ -16,30 +15,10 @@
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/riot-web.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1583614638</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Open, secure and interoperable communication for work and home. before the running the docker run [br]mkdir -p /mnt/user/appdata/riot-web/config [/br]wget -O /mnt/user/appdata/riot-web/config/config.json https://riot.im/develop/config.json </Description>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8075</HostPort>
-        <ContainerPort>80</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/riot-web/config/config.json</HostDir>
-      <ContainerDir>/app/config.json</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment/>
   <Labels/>
-  <Config Name="Host Port 1" Target="80" Default="" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">8075</Config>
-  <Config Name="Host Path 1" Target="/app/config.json" Default="" Mode="rw" Description="Container Path: /app/config.json" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/riot-web/config/config.json</Config>
+  <Config Name="Port" Target="80" Default="" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8075</Config>
+  <Config Name="Appdata" Target="/app/config.json" Default="" Mode="rw" Description="Container Path: /app/config.json" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/riot-web/config/config.json</Config>
 </Container>
