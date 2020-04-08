@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>jitsi-jvb</Name>
+  <Repository>jitsi/jvb:latest</Repository>
+  <Registry>https://hub.docker.com/r/jitsi/jvb/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://jitsi.org/</Project>
+  <Overview>Jitsi Videobridge image for Jitsi Meet</Overview>
+  <Category>Productivity: Network:Voip Network:Messenger</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/jitsi-jvb.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/jitsi.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Jitsi Videobridge image for Jitsi Meet</Description>
+  <Labels/>
+  <Config Name="JVB_PORT" Target="10000" Default="10000" Mode="udp" Description="Media port for the Jitsi Videobridge" Type="Port" Display="always" Required="false" Mask="false">10000</Config>
+  <Config Name="JVB_TCP_PORT" Target="4443" Default="4443" Mode="tcp" Description="TCP Fallback for Jitsi Videobridge for when UDP isn&#x2019;t available" Type="Port" Display="always" Required="false" Mask="false">4443</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/jitsi/jvb/" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jitsi/jvb/</Config>
+  <Config Name="DOCKER_HOST_ADDRESS" Target="DOCKER_HOST_ADDRESS" Default="192.168.1.1" Mode="" Description="IP address of the Docker host, needed for LAN environments" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.1</Config>
+  <Config Name="XMPP_AUTH_DOMAIN" Target="XMPP_AUTH_DOMAIN" Default="auth.meet.jitsi" Mode="" Description="Internal XMPP domain for authenticated services" Type="Variable" Display="always" Required="false" Mask="false">auth.meet.jitsi</Config>
+  <Config Name="XMPP_INTERNAL_MUC_DOMAIN" Target="XMPP_INTERNAL_MUC_DOMAIN" Default="internal-muc.meet.jitsi" Mode="" Description="XMPP domain for the internal MUC" Type="Variable" Display="always" Required="false" Mask="false">internal-muc.meet.jitsi</Config>
+  <Config Name="XMPP_SERVER" Target="XMPP_SERVER" Default="xmpp.meet.jitsi" Mode="" Description="Internal XMPP server name xmpp.meet.jitsi" Type="Variable" Display="always" Required="false" Mask="false">xmpp.meet.jitsi</Config>
+  <Config Name="JVB_AUTH_USER" Target="JVB_AUTH_USER" Default="jvb" Mode="" Description="XMPP user for JVB MUC client connections" Type="Variable" Display="always" Required="false" Mask="false">jvb</Config>
+  <Config Name="JVB_AUTH_PASSWORD" Target="JVB_AUTH_PASSWORD" Default="passw0rd" Mode="" Description="XMPP password for JVB MUC client connections" Type="Variable" Display="always" Required="false" Mask="false">passw0rd</Config>
+  <Config Name="JVB_BREWERY_MUC" Target="JVB_BREWERY_MUC" Default="jvbbrewery" Mode="" Description="MUC name for the JVB pool" Type="Variable" Display="always" Required="false" Mask="false">jvbbrewery</Config>
+  <Config Name="JVB_TCP_HARVESTER_DISABLED" Target="JVB_TCP_HARVESTER_DISABLED" Default="true" Mode="" Description="Disable the additional harvester which allows video over TCP (rather than just UDP)" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="JVB_STUN_SERVERS" Target="JVB_STUN_SERVERS" Default="stun.l.google.com:19302, stun1.l.google.com:19302, stun2.l.google.com:19302" Mode="" Description="STUN servers used to discover the server's public IP" Type="Variable" Display="always" Required="false" Mask="false">stun.l.google.com:19302, stun1.l.google.com:19302, stun2.l.google.com:19302</Config>
+  <Config Name="JVB_ENABLE_APIS" Target="JVB_ENABLE_APIS" Default="none" Mode="" Description="Comma separated list of JVB APIs to enable" Type="Variable" Display="always" Required="false" Mask="false">none</Config>
+</Container>
