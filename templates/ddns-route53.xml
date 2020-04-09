@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ddns-route53</Name>
+  <Repository>crazymax/ddns-route53:latest</Repository>
+  <Registry>https://hub.docker.com/r/crazymax/ddns-route53/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/crazy-max/ddns-route53</Project>
+  <Overview>Dynamic DNS for Amazon Route 53&#x200E; on a time-based schedule [br] Create yml file in /mnt/user/appdata/ddns-route53.yml before hand https://github.com/crazy-max/ddns-route53/blob/master/doc/configuration.md[/br]</Overview>
+  <Category>Network:DNS</Category>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/ddns-route53.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/ddns-route53.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Dynamic DNS for Amazon Route 53&#x200E; on a time-based schedule [br] Create yml file in /mnt/user/appdata/ddns-route53.yml before hand https://github.com/crazy-max/ddns-route53/blob/master/doc/configuration.md[/br]</Description>
+  <Labels/>
+  <Config Name="Config Path" Target="/ddns-route53.yml" Default="/mnt/user/appdata/ddns-route53.yml" Mode="ro" Description="Config Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ddns-route53.yml</Config>
+  <Config Name="SCHEDULE" Target="SCHEDULE" Default="*/30 * * * *" Mode="" Description="CRON expression to schedule ddns-route53 - http://www.cronmaker.com" Type="Variable" Display="always" Required="false" Mask="false">*/30 * * * *</Config>
+  <Config Name="MAX_RETRIES" Target="MAX_RETRIES" Default="3" Mode="" Description="Number of retries in case of WAN IP retrieval failure" Type="Variable" Display="always" Required="false" Mask="false">3</Config>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="info" Mode="" Description="Log level output" Type="Variable" Display="always" Required="false" Mask="false">info</Config>
+  <Config Name="LOG_JSON" Target="LOG_JSON" Default="false" Mode="" Description="Enable JSON logging output" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+</Container>

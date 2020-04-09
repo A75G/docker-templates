@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>pure-ftpd</Name>
+  <Repository>crazymax/pure-ftpd:latest</Repository>
+  <Registry>https://hub.docker.com/r/crazymax/pure-ftpd/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://www.pureftpd.org/project/pure-ftpd/</Project>
+  <Overview>Pure-FTPd is a free (BSD), secure, production-quality and standard-conformant FTP server. It doesn’t provide useless bells and whistles, but focuses on efficiency and ease of use.</Overview>
+  <Category>Tools: Network:FTP Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:2100]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/pure-ftpd.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pure-ftpd.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Pure-FTPd is a free (BSD), secure, production-quality and standard-conformant FTP server. It doesn’t provide useless bells and whistles, but focuses on efficiency and ease of use.</Description>
+  <Labels/>
+  <Config Name="FTP port" Target="2100" Default="2100" Mode="tcp" Description="FTP port" Type="Port" Display="always" Required="false" Mask="false">2100</Config>
+  <Config Name="PASV port range" Target="30000-30009" Default="30000-30009" Mode="tcp" Description="PASV port range" Type="Port" Display="always" Required="false" Mask="false">30000-30009</Config>
+  <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/pure-ftpd/" Mode="rw" Description="Contains config files and PureDB file" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pure-ftpd/</Config>
+  <Config Name="AUTH_METHOD" Target="AUTH_METHOD" Default="puredb" Mode="" Description="Authentication method to use. Can be puredb, mysql, pgsql or ldap " Type="Variable" Display="always" Required="false" Mask="false">puredb</Config>
+  <Config Name="SECURE_MODE" Target="SECURE_MODE" Default="true" Mode="" Description="Enable secure mode - https://github.com/crazy-max/docker-pure-ftpd#secure-mode" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="PASSIVE_PORT_RANGE" Target="PASSIVE_PORT_RANGE" Default="30000:30009" Mode="" Description="Port range for passive connections" Type="Variable" Display="always" Required="false" Mask="false">30000:30009</Config>
+</Container>
