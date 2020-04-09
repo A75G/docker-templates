@@ -21,7 +21,7 @@
   <Labels/>
   <Config Name="HTTP" Target="80" Default="80" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="HTTPS" Target="443" Default="443" Mode="tcp" Description="HTTPS" Type="Port" Display="always" Required="false" Mask="false">4443</Config>
-  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/jitsi/web/" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jitsi/web/</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/jitsi/web/" Mode="rw" Description="IMPORTENT Change to /mnt/user/appdata/jitsi/web/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jitsi/web/</Config>
   <Config Name="LetsEncrypt" Target="/etc/letsencrypt" Default="/mnt/user/appdata/jitsi/web/letsencrypt/" Mode="rw" Description="Container Path: /etc/letsencrypt" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jitsi/web/letsencrypt/</Config>
   <Config Name="Transcripts" Target="/usr/share/jitsi-meet/transcripts" Default="/mnt/user/appdata/jitsi/transcripts/" Mode="rw" Description="Container Path: /usr/share/jitsi-meet/transcripts" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jitsi/transcripts/</Config>
   <Config Name="ENABLE_AUTH" Target="ENABLE_AUTH" Default="1" Mode="" Description="Enable authentication: 0 OR 1" Type="Variable" Display="always" Required="false" Mask="false">1</Config>

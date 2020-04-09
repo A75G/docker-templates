@@ -21,7 +21,7 @@
   <Labels/>
   <Config Name="JVB_PORT" Target="10000" Default="10000" Mode="udp" Description="Media port for the Jitsi Videobridge" Type="Port" Display="always" Required="false" Mask="false">10000</Config>
   <Config Name="JVB_TCP_PORT" Target="4443" Default="4443" Mode="tcp" Description="TCP Fallback for Jitsi Videobridge for when UDP isn&#x2019;t available" Type="Port" Display="always" Required="false" Mask="false">4443</Config>
-  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/jitsi/jvb/" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jitsi/jvb/</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/jitsi/jvb/" Mode="rw" Description="IMPORTENT Change to /mnt/user/appdata/jitsi/jvb/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jitsi/jvb/</Config>
   <Config Name="DOCKER_HOST_ADDRESS" Target="DOCKER_HOST_ADDRESS" Default="192.168.1.1" Mode="" Description="IP address of the Docker host, needed for LAN environments" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.1</Config>
   <Config Name="XMPP_AUTH_DOMAIN" Target="XMPP_AUTH_DOMAIN" Default="auth.meet.jitsi" Mode="" Description="Internal XMPP domain for authenticated services" Type="Variable" Display="always" Required="false" Mask="false">auth.meet.jitsi</Config>
   <Config Name="XMPP_INTERNAL_MUC_DOMAIN" Target="XMPP_INTERNAL_MUC_DOMAIN" Default="internal-muc.meet.jitsi" Mode="" Description="XMPP domain for the internal MUC" Type="Variable" Display="always" Required="false" Mask="false">internal-muc.meet.jitsi</Config>
