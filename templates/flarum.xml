@@ -8,7 +8,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://flarum.org/</Project>
-  <Overview>Flarum is the next-generation forum software that makes online discussion fun. It's simple, fast, and free.</Overview>
+  <Overview>Flarum is the next-generation forum software that makes online discussion fun. It's simple, fast, and free. [br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]flarum[/B][/u][br]Password: [B][u]flarum[/B][/u][/b]</Overview>
   <Category>Network:Web</Category>
   <WebUI>http://[IP]:[PORT:8000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/flarum.xml</TemplateURL>
