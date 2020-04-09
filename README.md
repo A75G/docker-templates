@@ -65,6 +65,8 @@ Password: ```admin```
 **Docker Hub:** https://github.com/crazy-max/ddns-route53
 
 **Github:** https://github.com/crazy-max/ddns-route53
+## Before running the docker
+* Create ddns-route53.yml file in /mnt/user/appdata/ddns-route53/ - https://github.com/crazy-max/ddns-route53/blob/master/doc/configuration.md
 
 ----
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/droppy.png)
@@ -127,6 +129,9 @@ Password: ```superuser```
 **Docker Hub:** https://hub.docker.com/r/crazymax/flarum/
 
 **Github:** https://github.com/crazy-max/docker-flarum
+## Default username and password
+Username: ```flarum```
+Password: ```flarum```
 
 ----
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/golinks.png)
