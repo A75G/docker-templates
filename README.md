@@ -56,6 +56,17 @@ Password: ```admin```
 | `SPLIT_DB` | If using root as username and multiple DBs on system, set to TRUE to create Seperate DB Backups instead of all in one. - Default `FALSE` |
 
 ----
+![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/ddns-route53.png)
+# ddns-route53
+**Application Name:** ddns-route53
+
+**Application Site:** https://droppy.silverwind.io/
+
+**Docker Hub:** https://github.com/crazy-max/ddns-route53
+
+**Github:** https://github.com/crazy-max/ddns-route53
+
+----
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/droppy.png)
 # Droppy
 **Application Name:** Droppy
@@ -93,6 +104,29 @@ Password: ```superuser```
 ## First installation 
 * Take time be patient
 * Wizard setup go to http://freepbx/admin/config.php
+
+----
+![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/firefox-syncserver.png)
+# Firefox-Syncserver
+**Application Name:** Firefox-Syncserver
+
+**Application Site:** https://github.com/crazy-max/docker-firefox-syncserver
+
+**Docker Hub:** https://hub.docker.com/r/crazymax/firefox-syncserver
+
+**Github:** https://github.com/crazy-max/docker-firefox-syncserver
+
+----
+
+![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/flarum.png)
+# Flarum
+**Application Name:** Flarum
+
+**Application Site:** https://flarum.org/
+
+**Docker Hub:** https://hub.docker.com/r/crazymax/flarum/
+
+**Github:** https://github.com/crazy-max/docker-flarum
 
 ----
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/golinks.png)
@@ -166,7 +200,7 @@ https://github.com/jitsi/docker-jitsi-meet
 **Docker Hub:** https://hub.docker.com/r/kiwix/kiwix-serve/
 
 **Github:** https://github.com/kiwix/kiwix-tools
-## Info
+## Notes
 * When using variable "DOWNLOAD" remove the link after the download so you don't re-download the same content again
 ## Content
 For more content https://wiki.kiwix.org/wiki/Content
@@ -206,10 +240,22 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Docker Hub:** https://hub.docker.com/r/miniflux/miniflux/
 
 **Github:** https://github.com/miniflux/miniflux
-## Info
+## Notes
 * Admin username and password is setup at in docker variables then you can change in Miniflux settings. Docker variable will be ignored when you change it inside the docker.
 * PostgreSQL DB Required (Not Included)
 
+----
+![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pure-ftpd.png)
+# Pure-FTPd
+**Application Name:** Pure-FTPd
+
+**Application Site:** https://www.pureftpd.org/project/pure-ftpd/
+
+**Docker Hub:** https://hub.docker.com/r/crazymax/pure-ftpd/
+
+**Github:** https://github.com/crazy-max/docker-pure-ftpd
+## Notes
+* https://github.com/crazy-max/docker-pure-ftpd#notes
 ----
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/riot-web.png)
 # Riot-web
