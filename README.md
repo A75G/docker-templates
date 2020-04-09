@@ -19,7 +19,7 @@
 **Docker Hub:** https://hub.docker.com/r/rmountjoy/dashmachine/
 
 **Github:** https://github.com/rmountjoy92/DashMachine
-## Default username and password:
+## Default username and password
 Username: ```admin```
 Password: ```admin```
 ## ~~Unauthorized~~
@@ -87,7 +87,7 @@ Password: ```admin```
 **Docker Hub:** https://hub.docker.com/r/afian/filerun/
 
 **Github:** https://github.com/filerun/docker
-## Default username and password:
+## Default username and password
 Username: ```superuser```
 Password: ```superuser```
 
@@ -154,7 +154,7 @@ https://github.com/prologic/golinks#usage
 # Before running the docker
 ```mkdir -p /mnt/user/appdata/gotify/config/```
 ```wget -O /mnt/user/appdata/gotify/config/config.yml https://raw.githubusercontent.com/gotify/server/master/config.example.yml```
-## Default username and password:
+## Default username and password
 Username: ```admin```
 Password: ```admin```
 
@@ -280,7 +280,7 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Docker Hub:** https://hub.docker.com/r/wallabag/wallabag
 
 **Github:** https://www.github.com/wallabag/docker
-## Default username and password:
+## Default username and password
 Username: ```wallabag```
 Password: ```wallabag```
 ## PHP errors
