@@ -2,16 +2,22 @@
 
 # CyberChef
 **Application Name:** CyberChef
+
 **Application Site:** https://gchq.github.io/CyberChef/
+
 **Docker Hub:** https://hub.docker.com/r/aude/cyberchef
+
 **Github:** https://github.com/aude/cyberchef-docker
 
 ----
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dashmachine.png)
 # Dashmachine
 **Application Name:** Dashmachine
+
 **Application Site:** https://hub.docker.com/r/rmountjoy/dashmachine/
+
 **Docker Hub:** https://hub.docker.com/r/rmountjoy/dashmachine/
+
 **Github:** https://github.com/rmountjoy92/DashMachine
 ## Default username and password:
 Username: ```admin```
@@ -23,8 +29,11 @@ Password: ```admin```
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/db-backup.png)
 # db-backup
 **Application Name:** db-backup
+
 **Application Site:** https://hub.docker.com/r/tiredofit/db-backup/
+
 **Docker Hub:** https://hub.docker.com/r/tiredofit/db-backup/
+
 **Github:** https://github.com/tiredofit/docker-db-backup 
 ## Environment Variables
 | Parameter | Description |
@@ -50,16 +59,22 @@ Password: ```admin```
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/droppy.png)
 # Droppy
 **Application Name:** Droppy
+
 **Application Site:** https://droppy.silverwind.io/
+
 **Docker Hub:** https://hub.docker.com/r/silverwind/droppy/
+
 **Github:** https://github.com/silverwind/droppy
 
 ----
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/filerun.png)
 # FileRun
 **Application Name:** FileRun
+
 **Application Site:** https://filerun.com/
+
 **Docker Hub:** https://hub.docker.com/r/afian/filerun/
+
 **Github:** https://github.com/filerun/docker
 ## Default username and password:
 Username: ```superuser```
@@ -69,8 +84,11 @@ Password: ```superuser```
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/freepbx.png)
 # FreePBX
 **Application Name:** FreePBX
+
 **Application Site:** https://www.freepbx.org/
+
 **Docker Hub:** https://hub.docker.com/r/tiredofit/freepbx/
+
 **Github:** https://github.com/tiredofit/docker-freepbx/
 ## First installation 
 * Take time be patient
@@ -80,8 +98,11 @@ Password: ```superuser```
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/golinks.png)
 # Golinks
 **Application Name:** Golinks
+
 **Application Site:** https://github.com/prologic/golinks
+
 **Docker Hub:** https://hub.docker.com/r/prologic/golinks/
+
 **Github:** https://github.com/prologic/golinks
 ## Usage
 https://github.com/prologic/golinks#usage
@@ -90,8 +111,11 @@ https://github.com/prologic/golinks#usage
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/gotify.png)
 # Gotify
 **Application Name:** Gotify
+
 **Application Site:** https://gotify.net/
+
 **Docker Hub:** https://hub.docker.com/r/gotify/server/
+
 **Github:** https://github.com/gotify/server/ 
 # Before running the docker
 ```mkdir -p /mnt/user/appdata/gotify/config/```
@@ -104,8 +128,11 @@ Password: ```admin```
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/homer.png)
 # Homer
 **Application Name:** Homer
+
 **Application Site:** https://github.com/bastienwirtz/homer
+
 **Docker Hub:** https://hub.docker.com/r/b4bz/homer
+
 **Github:** https://github.com/bastienwirtz/homer
 ## Before running the docker
 ```mkdir -p /mnt/user/appdata/homer/config/```
@@ -115,8 +142,11 @@ Password: ```admin```
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/jitsi.png)
 # Jitsi
 **Application Name:** Jitsi
+
 **Application Site:** https://github.com/bastienwirtz/homer
+
 **Docker Hub:** https://hub.docker.com/r/b4bz/homer
+
 **Github:** https://github.com/bastienwirtz/homer
 ## Change appdata location
 ```/mnt/user/appdata/jitsi-web``` -> ```/mnt/user/appdata/jitsi/web/```
@@ -130,8 +160,11 @@ https://github.com/jitsi/docker-jitsi-meet
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/kiwix.png)
 # Kiwix-serve
 **Application Name:** Kiwix-serve
+
 **Application Site:** https://www.kiwix.org/
+
 **Docker Hub:** https://hub.docker.com/r/kiwix/kiwix-serve/
+
 **Github:** https://github.com/kiwix/kiwix-tools
 ## Info
 * When using variable "DOWNLOAD" remove the link after the download so you don't re-download the same content again
@@ -142,16 +175,22 @@ For more content https://wiki.kiwix.org/wiki/Content
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/mailpile.png)
 # Mailpile
 **Application Name:** Mailpile
+
 **Application Site:** https://www.mailpile.is/
+
 **Docker Hub:** https://hub.docker.com/r/rroemhild/mailpile/
+
 **Github:** https://github.com/rroemhild/docker-mailpile
  
 ----
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/matrix.png)
 # Matrix
 **Application Name:** Matrix
+
 **Application Site:** https://matrix.org/
+
 **Docker Hub:** https://hub.docker.com/r/avhost/docker-matrix
+
 **Github:** https://github.com/AVENTER-UG/docker-matrix
 ## Guides
 * Unraid User - PSYCHOPATHiO [Guide](https://forums.unraid.net/topic/89502-support-a75g-repo/?do=findComment&comment=839576)
@@ -161,8 +200,11 @@ For more content https://wiki.kiwix.org/wiki/Content
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/miniflux.png)
 # Miniflux
 **Application Name:** Miniflux
+
 **Application Site:** https://miniflux.app/
+
 **Docker Hub:** https://hub.docker.com/r/miniflux/miniflux/
+
 **Github:** https://github.com/miniflux/miniflux
 ## Info
 * Admin username and password is setup at in docker variables then you can change in Miniflux settings. Docker variable will be ignored when you change it inside the docker.
@@ -172,8 +214,11 @@ For more content https://wiki.kiwix.org/wiki/Content
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/riot-web.png)
 # Riot-web
 **Application Name:** Riot-web
+
 **Application Site:** https://miniflux.app/
+
 **Docker Hub:** https://hub.docker.com/r/miniflux/miniflux/
+
 **Github:** https://github.com/miniflux/miniflux
 ## Before running the docker
 ```mkdir -p /mnt/user/appdata/riot-web/config```
@@ -183,8 +228,11 @@ For more content https://wiki.kiwix.org/wiki/Content
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/wallabag.png)
 # Wallabag
 **Application Name:** Wallabag
+
 **Application Site:** https://wallabag.org/
+
 **Docker Hub:** https://hub.docker.com/r/wallabag/wallabag
+
 **Github:** https://www.github.com/wallabag/docker
 ## Default username and password:
 Username: ```wallabag```
