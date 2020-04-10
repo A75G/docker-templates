@@ -21,6 +21,8 @@
   <Labels/>
   <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/flarum/" Mode="rw" Description="Contains assets, extensions and storage" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/flarum/</Config>
+  <Config Name="FLARUM_BASE_URL" Target="FLARUM_BASE_URL" Default="http://&amp;lt;IP&amp;gt;:8000" Mode="" Description="Make Sure the base url is right if it local use only use http://ip:8000 and if you are hosting it on your domain it should be http://example.com or https://example.com." Type="Variable" Display="always" Required="false" Mask="false">http://&lt;IP&gt;:8000</Config>
+  <Config Name="FLARUM_FORUM_TITLE" Target="FLARUM_FORUM_TITLE" Default="Flarum Dockerized" Mode="" Description="Flarum forum title, only used during first installation" Type="Variable" Display="always" Required="false" Mask="false">Flarum Dockerized</Config>
   <Config Name="DB_HOST" Target="DB_HOST" Default="" Mode="" Description="MySQL database hostname / IP address required" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="DB_PORT" Target="DB_PORT" Default="3306" Mode="" Description="MySQL database port" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
   <Config Name="DB_NAME" Target="DB_NAME" Default="flarum" Mode="" Description="MySQL database name" Type="Variable" Display="always" Required="false" Mask="false">flarum</Config>
@@ -29,8 +31,6 @@
   <Config Name="MEMORY_LIMIT" Target="MEMORY_LIMIT" Default="256M" Mode="" Description="PHP memory limit" Type="Variable" Display="always" Required="false" Mask="false">256M</Config>
   <Config Name="UPLOAD_MAX_SIZE" Target="UPLOAD_MAX_SIZE" Default="16M" Mode="" Description="Upload max size" Type="Variable" Display="always" Required="false" Mask="false">16M</Config>
   <Config Name="OPCACHE_MEM_SIZE" Target="OPCACHE_MEM_SIZE" Default="128" Mode="" Description="PHP OpCache memory consumption" Type="Variable" Display="always" Required="false" Mask="false">128</Config>
-  <Config Name="FLARUM_BASE_URL" Target="FLARUM_BASE_URL" Default="" Mode="" Description="The URL to your Flarum installation required" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="FLARUM_FORUM_TITLE" Target="FLARUM_FORUM_TITLE" Default="Flarum Dockerized" Mode="" Description="Flarum forum title, only used during first installation" Type="Variable" Display="always" Required="false" Mask="false">Flarum Dockerized</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="PUID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
 </Container>
