@@ -1,3 +1,49 @@
+- [CyberChef](#cyberchef)
+- [Dashmachine](#dashmachine)
+  * [Default username and password](#default-username-and-password)
+  * [~~Unauthorized~~](#--unauthorized--)
+- [db-backup](#db-backup)
+  * [Environment Variables](#environment-variables)
+- [ddns-route53](#ddns-route53)
+  * [Before running the docker](#before-running-the-docker)
+- [Droppy](#droppy)
+- [FileRun](#filerun)
+  * [Default username and password](#default-username-and-password-1)
+- [FreePBX](#freepbx)
+  * [First installation](#first-installation)
+- [Firefox-Syncserver](#firefox-syncserver)
+- [Flarum](#flarum)
+  * [Default username and password](#default-username-and-password-2)
+  * [Notes](#notes)
+- [Golinks](#golinks)
+  * [Usage](#usage)
+- [Gotify](#gotify)
+  * [Before running the docker](#before-running-the-docker-1)
+  * [Default username and password](#default-username-and-password-3)
+- [Homer](#homer)
+  * [Before running the docker](#before-running-the-docker-2)
+- [Jitsi](#jitsi)
+  * [Change appdata location](#change-appdata-location)
+  * [Variables](#variables)
+- [Kiwix-serve](#kiwix-serve)
+  * [Notes](#notes-1)
+  * [Content](#content)
+- [Mailpile](#mailpile)
+- [Matrix](#matrix)
+  * [Guides](#guides)
+- [Miniflux](#miniflux)
+  * [Notes](#notes-2)
+- [Pure-FTPd](#pure-ftpd)
+  * [Notes](#notes-3)
+- [Riot-web](#riot-web)
+  * [Before running the docker](#before-running-the-docker-3)
+- [Wallabag](#wallabag)
+  * [Default username and password](#default-username-and-password-4)
+  * [PHP errors](#php-errors)
+  * [Missing texture and images](#missing-texture-and-images)
+----
+
+
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cyberchef.png)
 
 # CyberChef
@@ -132,7 +178,8 @@ Password: ```superuser```
 ## Default username and password
 Username: ```flarum```
 Password: ```flarum```
-
+## Notes
+* Make Sure the base url is right if it local use only use http://<ip>:8000 and if you are hosting it on your domain it should be http://example.com or https://example.com.
 ----
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/golinks.png)
 # Golinks
@@ -156,7 +203,7 @@ https://github.com/prologic/golinks#usage
 **Docker Hub:** https://hub.docker.com/r/gotify/server/
 
 **Github:** https://github.com/gotify/server/ 
-# Before running the docker
+## Before running the docker
 ```mkdir -p /mnt/user/appdata/gotify/config/```
 ```wget -O /mnt/user/appdata/gotify/config/config.yml https://raw.githubusercontent.com/gotify/server/master/config.example.yml```
 ## Default username and password
@@ -260,6 +307,7 @@ For more content https://wiki.kiwix.org/wiki/Content
 
 **Github:** https://github.com/crazy-max/docker-pure-ftpd
 ## Notes
+* Creating User use console then ```pure-pw useradd admin -u 99 -g 100 -d /home/admin -m``` then enter password of your choosing.
 * https://github.com/crazy-max/docker-pure-ftpd#notes
 ----
 ![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/riot-web.png)
