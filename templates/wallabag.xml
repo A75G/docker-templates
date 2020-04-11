@@ -23,4 +23,6 @@
   <Config Name="Appdata" Target="/var/www/wallabag/data" Default="/mnt/user/appdata/wallabag/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/wallabag/</Config>
   <Config Name="Images" Target="/var/www/wallabag/web/assets/images" Default="/mnt/user/appdata/wallabag/images/" Mode="rw" Description="Images" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/wallabag/images/</Config>
   <Config Name="Domain" Target="SYMFONY__ENV__DOMAIN_NAME" Default="" Mode="" Description="Domain" Type="Variable" Display="always" Required="true" Mask="false">http://&lt;IP&gt;:6500</Config>
+  <Config Name="Secret" Target="SYMFONY__ENV__SECRET" Default="LongRandomSecretHere" Mode="" Description="Randomly generated secret here" Type="Variable" Display="always" Required="false" Mask="false">LongRandomSecretHere</Config>
+  <Config Name="Public User Registration" Target="SYMFONY__ENV__FOSUSER_REGISTRATION" Default="false" Mode="" Description="Public User Registration" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
 </Container>
