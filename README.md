@@ -1,3 +1,4 @@
+# Unraid A75G Templates
 - [CyberChef](#cyberchef)
 - [Dashmachine](#dashmachine)
   * [Default username and password](#default-username-and-password)
@@ -24,7 +25,7 @@
   * [Before running the docker](#before-running-the-docker-2)
 - [Jitsi](#jitsi)
   * [Change appdata location](#change-appdata-location)
-  * [Variables](#variables)
+  * [Notes](#Notes)
 - [Kiwix-serve](#kiwix-serve)
   * [Notes](#notes-1)
   * [Content](#content)
@@ -60,7 +61,7 @@
 
 **Application Name:** Dashmachine
 
-**Application Site:** https://hub.docker.com/r/rmountjoy/dashmachine/
+**Application Site:** https://github.com/rmountjoy92/DashMachine
 
 **Docker Hub:** https://hub.docker.com/r/rmountjoy/dashmachine/
 
@@ -77,7 +78,7 @@ Password: ```admin```
 
 **Application Name:** db-backup
 
-**Application Site:** https://hub.docker.com/r/tiredofit/db-backup/
+**Application Site:** https://github.com/tiredofit/docker-db-backup 
 
 **Docker Hub:** https://hub.docker.com/r/tiredofit/db-backup/
 
@@ -108,9 +109,9 @@ Password: ```admin```
 
 **Application Name:** ddns-route53
 
-**Application Site:** https://droppy.silverwind.io/
+**Application Site:** https://github.com/crazy-max/ddns-route53
 
-**Docker Hub:** https://github.com/crazy-max/ddns-route53
+**Docker Hub:** https://hub.docker.com/r/crazymax/ddns-route53/
 
 **Github:** https://github.com/crazy-max/ddns-route53
 ## Before running the docker
@@ -199,7 +200,7 @@ Password: ```flarum```
 
 **Github:** https://github.com/prologic/golinks
 ## Usage
-https://github.com/prologic/golinks#usage
+* https://github.com/prologic/golinks#usage
     
 ----
 # Gotify
@@ -240,18 +241,20 @@ Password: ```admin```
 
 **Application Name:** Jitsi
 
-**Application Site:** https://github.com/bastienwirtz/homer
+**Application Site:** https://jitsi.org/
 
-**Docker Hub:** https://hub.docker.com/r/b4bz/homer
+**Docker Hub:** https://hub.docker.com/u/jitsi/
 
-**Github:** https://github.com/bastienwirtz/homer
+**Github:** https://github.com/jitsi/docker-jitsi-meet
 ## Change appdata location
 ```/mnt/user/appdata/jitsi-web``` -> ```/mnt/user/appdata/jitsi/web/```
 ```/mnt/user/appdata/jitsi-prosody``` -> ```/mnt/user/appdata/jitsi/prosody/```
 ```/mnt/user/appdata/jitsi-jvb``` -> ```/mnt/user/appdata/jitsi/jvb/```
 ```/mnt/user/appdata/jitsi-jicofo``` -> ```/mnt/user/appdata/jitsi/jicofo/```
-## Variables
-https://github.com/jitsi/docker-jitsi-meet
+## Notes
+* https://github.com/jitsi/docker-jitsi-meet
+* How it all work
+![](https://335wvf48o1332cksy23mw1pj-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/docker-jitsi-meet.png)
 
 ----
 # Kiwix-serve
