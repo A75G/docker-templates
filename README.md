@@ -2,7 +2,7 @@
 - [CyberChef](#cyberchef)
 - [Dashmachine](#dashmachine)
   * [Default username and password](#default-username-and-password)
-  * [~~Unauthorized~~](#--unauthorized--)
+  * [~~Unauthorized~~](#unauthorized)
 - [db-backup](#db-backup)
   * [Environment Variables](#environment-variables)
 - [ddns-route53](#ddns-route53)
