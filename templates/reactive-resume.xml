@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>reactive-resume</Name>
+  <Repository>amruthpillai/reactive-resume:latest</Repository>
+  <Registry>https://hub.docker.com/r/amruthpillai/reactive-resume/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://rxresu.me/</Project>
+  <Overview>A one-of-a-kind resume builder that keeps your privacy in mind.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/reactive-resume.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/reactive-resume.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>A one-of-a-kind resume builder that keeps your privacy in mind.</Description>
+  <Labels/>
+  <Config Name="Port" Target="80" Default="8000" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+</Container>

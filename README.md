@@ -1,3 +1,4 @@
+# Unraid A75G Templates
 - [CyberChef](#cyberchef)
 - [Dashmachine](#dashmachine)
   * [Default username and password](#default-username-and-password)
@@ -24,27 +25,32 @@
   * [Before running the docker](#before-running-the-docker-2)
 - [Jitsi](#jitsi)
   * [Change appdata location](#change-appdata-location)
-  * [Variables](#variables)
-- [Kiwix-serve](#kiwix-serve)
   * [Notes](#notes-1)
+- [Kiwix-serve](#kiwix-serve)
+  * [Notes](#notes-2)
   * [Content](#content)
 - [Mailpile](#mailpile)
 - [Matrix](#matrix)
   * [Guides](#guides)
 - [Miniflux](#miniflux)
-  * [Notes](#notes-2)
-- [Pure-FTPd](#pure-ftpd)
   * [Notes](#notes-3)
+- [Pure-FTPd](#pure-ftpd)
+  * [Notes](#notes-4)
+- [Reactive-resume](#reactive-resume)
 - [Riot-web](#riot-web)
   * [Before running the docker](#before-running-the-docker-3)
-- [Wallabag](#wallabag)
+- [Searx](#searx)
+- [Shiori](#shiori)
   * [Default username and password](#default-username-and-password-4)
+  * [Notes](#notes-5)
+- [Wallabag](#wallabag)
+  * [Default username and password](#default-username-and-password-5)
   * [PHP errors](#php-errors)
   * [Missing texture and images](#missing-texture-and-images)
-----
 
+----
 # CyberChef
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cyberchef.png)
+![CyberChef](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cyberchef.png)
 
 **Application Name:** CyberChef
 
@@ -56,11 +62,11 @@
 
 ----
 # Dashmachine
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dashmachine.png)
+![Dashmachine](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dashmachine.png)
 
 **Application Name:** Dashmachine
 
-**Application Site:** https://hub.docker.com/r/rmountjoy/dashmachine/
+**Application Site:** https://github.com/rmountjoy92/DashMachine
 
 **Docker Hub:** https://hub.docker.com/r/rmountjoy/dashmachine/
 
@@ -73,11 +79,11 @@ Password: ```admin```
 
 ----
 # db-backup
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/db-backup.png)
+![db-backup](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/db-backup.png)
 
 **Application Name:** db-backup
 
-**Application Site:** https://hub.docker.com/r/tiredofit/db-backup/
+**Application Site:** https://github.com/tiredofit/docker-db-backup 
 
 **Docker Hub:** https://hub.docker.com/r/tiredofit/db-backup/
 
@@ -104,13 +110,13 @@ Password: ```admin```
 
 ----
 # ddns-route53
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/ddns-route53.png)
+![ddns-route53](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/ddns-route53.png)
 
 **Application Name:** ddns-route53
 
-**Application Site:** https://droppy.silverwind.io/
+**Application Site:** https://github.com/crazy-max/ddns-route53
 
-**Docker Hub:** https://github.com/crazy-max/ddns-route53
+**Docker Hub:** https://hub.docker.com/r/crazymax/ddns-route53/
 
 **Github:** https://github.com/crazy-max/ddns-route53
 ## Before running the docker
@@ -118,7 +124,7 @@ Password: ```admin```
 
 ----
 # Droppy
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/droppy.png)
+![Droppy](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/droppy.png)
 
 **Application Name:** Droppy
 
@@ -130,7 +136,7 @@ Password: ```admin```
 
 ----
 # FileRun
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/filerun.png)
+![FileRun](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/filerun.png)
 
 **Application Name:** FileRun
 
@@ -145,7 +151,7 @@ Password: ```superuser```
 
 ----
 # FreePBX
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/freepbx.png)
+![FreePBX](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/freepbx.png)
 
 **Application Name:** FreePBX
 
@@ -160,7 +166,7 @@ Password: ```superuser```
 
 ----
 # Firefox-Syncserver
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/firefox-syncserver.png)
+![Firefox-Syncserver](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/firefox-syncserver.png)
 
 **Application Name:** Firefox-Syncserver
 
@@ -172,7 +178,7 @@ Password: ```superuser```
 
 ----
 # Flarum
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/flarum.png)
+![Flarum](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/flarum.png)
 
 **Application Name:** Flarum
 
@@ -189,7 +195,7 @@ Password: ```flarum```
 
 ----
 # Golinks
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/golinks.png)
+![Golinks](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/golinks.png)
 
 **Application Name:** Golinks
 
@@ -199,11 +205,11 @@ Password: ```flarum```
 
 **Github:** https://github.com/prologic/golinks
 ## Usage
-https://github.com/prologic/golinks#usage
+* https://github.com/prologic/golinks#usage
     
 ----
 # Gotify
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/gotify.png)
+![Gotify](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/gotify.png)
 
 **Application Name:** Gotify
 
@@ -221,7 +227,7 @@ Password: ```admin```
     
 ----
 # Homer
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/homer.png)
+![Homer](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/homer.png)
 
 **Application Name:** Homer
 
@@ -236,26 +242,28 @@ Password: ```admin```
 
 ----
 # Jitsi
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/jitsi.png)
+![Jitsi](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/jitsi.png)
 
 **Application Name:** Jitsi
 
-**Application Site:** https://github.com/bastienwirtz/homer
+**Application Site:** https://jitsi.org/
 
-**Docker Hub:** https://hub.docker.com/r/b4bz/homer
+**Docker Hub:** https://hub.docker.com/u/jitsi/
 
-**Github:** https://github.com/bastienwirtz/homer
+**Github:** https://github.com/jitsi/docker-jitsi-meet
 ## Change appdata location
 ```/mnt/user/appdata/jitsi-web``` -> ```/mnt/user/appdata/jitsi/web/```
 ```/mnt/user/appdata/jitsi-prosody``` -> ```/mnt/user/appdata/jitsi/prosody/```
 ```/mnt/user/appdata/jitsi-jvb``` -> ```/mnt/user/appdata/jitsi/jvb/```
 ```/mnt/user/appdata/jitsi-jicofo``` -> ```/mnt/user/appdata/jitsi/jicofo/```
-## Variables
-https://github.com/jitsi/docker-jitsi-meet
+## Notes
+* https://github.com/jitsi/docker-jitsi-meet
+* How it all work
+![](https://335wvf48o1332cksy23mw1pj-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/docker-jitsi-meet.png)
 
 ----
 # Kiwix-serve
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/kiwix.png)
+![Kiwix-serve](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/kiwix.png)
 
 **Application Name:** Kiwix-serve
 
@@ -271,7 +279,7 @@ For more content https://wiki.kiwix.org/wiki/Content
 
 ----
 # Mailpile
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/mailpile.png)
+![Mailpile](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/mailpile.png)
 
 **Application Name:** Mailpile
 
@@ -283,7 +291,7 @@ For more content https://wiki.kiwix.org/wiki/Content
  
 ----
 # Matrix
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/matrix.png)
+![Matrix](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/matrix.png)
 
 **Application Name:** Matrix
 
@@ -298,7 +306,7 @@ For more content https://wiki.kiwix.org/wiki/Content
 
 ----
 # Miniflux
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/miniflux.png)
+![Miniflux](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/miniflux.png)
 
 **Application Name:** Miniflux
 
@@ -313,7 +321,7 @@ For more content https://wiki.kiwix.org/wiki/Content
 
 ----
 # Pure-FTPd
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pure-ftpd.png)
+![Pure-FTPd](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pure-ftpd.png)
 
 **Application Name:** Pure-FTPd
 
@@ -325,24 +333,65 @@ For more content https://wiki.kiwix.org/wiki/Content
 ## Notes
 * Creating User use console then ```pure-pw useradd admin -u 99 -g 100 -d /home/admin -m``` then enter password of your choosing.
 * https://github.com/crazy-max/docker-pure-ftpd#notes
+
+----
+# Reactive-resume
+![Reactive-resume](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/reactive-resume.png)
+
+**Application Name:** Reactive-resume
+
+**Application Site:** https://rxresu.me/
+
+**Docker Hub:** https://hub.docker.com/r/amruthpillai/reactive-resume/
+
+**Github:** https://www.github.com/AmruthPillai/Reactive-Resume
+
 ----
 # Riot-web
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/riot-web.png)
+![Riot-web](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/riot-web.png)
 
 **Application Name:** Riot-web
 
-**Application Site:** https://miniflux.app/
+**Application Site:** https://riot.im/
 
-**Docker Hub:** https://hub.docker.com/r/miniflux/miniflux/
+**Docker Hub:** https://hub.docker.com/r/vectorim/riot-web/
 
-**Github:** https://github.com/miniflux/miniflux
+**Github:** https://www.github.com/vector-im/riot-web
 ## Before running the docker
 ```mkdir -p /mnt/user/appdata/riot-web/config```
 ```wget -O /mnt/user/appdata/riot-web/config/config.json https://riot.im/develop/config.json```
 
 ----
+# Searx
+![Searx](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/searx.png)
+
+**Application Name:** Searx
+
+**Application Site:** https://github.com/asciimoo/searx
+
+**Docker Hub:** https://hub.docker.com/r/searx/searx/
+
+**Github:** https://github.com/asciimoo/searx
+    
+----
+# Shiori
+![Shiori](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/searx.png)
+
+**Application Name:** Shiori
+
+**Application Site:** https://github.com/go-shiori/shiori
+
+**Docker Hub:** https://hub.docker.com/r/radhifadlillah/shiori/
+
+**Github:** https://github.com/go-shiori/shiori
+## Default username and password
+Username: ```shiori```
+Password: ```gopher```
+## Notes
+* Create new account inside the web gui so the default one will be removed.
+----
 # Wallabag
-![](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/wallabag.png)
+![Wallabag](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/wallabag.png)
 
 **Application Name:** Wallabag
 
