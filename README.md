@@ -1,3 +1,6 @@
+# Unraid Templates
+- [ArchiveBox](#archivebox)
+  * [First installation](#first-installation)
 - [CyberChef](#cyberchef)
 - [Dashmachine](#dashmachine)
   * [Default username and password](#default-username-and-password)
@@ -11,7 +14,7 @@
 - [FileRun](#filerun)
   * [Default username and password](#default-username-and-password-1)
 - [FreePBX](#freepbx)
-  * [First installation](#first-installation)
+  * [First installation](#first-installation-1)
 - [Freescout](#freescout)
   * [Creating User](#creating-user)
 - [Firefox-Syncserver](#firefox-syncserver)
@@ -36,22 +39,37 @@
   * [Guides](#guides)
 - [Miniflux](#miniflux)
   * [Notes](#notes-3)
-- [Pure-FTPd](#pure-ftpd)
+- [PsiTransfer](#psitransfer)
   * [Notes](#notes-4)
+- [Pure-FTPd](#pure-ftpd)
+  * [Notes](#notes-5)
 - [Reactive-resume](#reactive-resume)
 - [Riot-web](#riot-web)
   * [Before running the docker](#before-running-the-docker-3)
 - [Searx](#searx)
 - [Shiori](#shiori)
   * [Default username and password](#default-username-and-password-4)
-  * [Notes](#notes-5)
+  * [Notes](#notes-6)
 - [StackEdit](#stackedit)
 - [Wallabag](#wallabag)
   * [Default username and password](#default-username-and-password-5)
   * [PHP errors](#php-errors)
   * [Missing texture and images](#missing-texture-and-images)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+----
+# ArchiveBox
+![ArchiveBox](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/archivebox.png)
+
+**Application Name:** ArchiveBox
+
+**Application Site:** https://archivebox.io/
+
+**Docker Hub:** https://hub.docker.com/r/nikisweeting/archivebox
+
+**Github:** https://github.com/pirate/ArchiveBox
+## First installation 
+* After first run shut it down then remove Post Arguments and add ```./archive (URL,FEED,BOOKMARK,FILE)``` https://github.com/pirate/ArchiveBox/wiki/Usage#import-a-single-url-or-list-of-urls-via-stdin
+*  [Publishing Your Archive](https://github.com/pirate/ArchiveBox/wiki/Publishing-Your-Archive#publishing-your-archive)
 
 ----
 # CyberChef
@@ -85,6 +103,7 @@ Password: ```admin```
 ----
 # db-backup
 ![db-backup](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/db-backup.png)
+*<div>Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
 
 **Application Name:** db-backup
 
@@ -130,6 +149,7 @@ Password: ```admin```
 ----
 # Docpht
 ![Docpht](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/docpht.png)
+*Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*
 
 **Application Name:** Docpht
 
@@ -228,7 +248,8 @@ Password: ```flarum```
 ----
 # Golinks
 ![Golinks](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/golinks.png)
-
+    
+*<div>Icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
 **Application Name:** Golinks
 
 **Application Site:** https://github.com/prologic/golinks
@@ -352,8 +373,25 @@ For more content https://wiki.kiwix.org/wiki/Content
 * PostgreSQL DB Required (Not Included)
 
 ----
+# PsiTransfer
+![psitransfer](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/psitransfer.png)
+*<div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
+
+**Application Name:** PsiTransfer
+
+**Application Site:** https://github.com/psi-4ward/psitransfer
+
+**Docker Hub:** https://hub.docker.com/r/psitrax/psitransfer/
+
+**Github:** https://github.com/psi-4ward/psitransfer
+## Notes
+* Admin Page just add ```/admin``` to your URL
+
+----
 # Pure-FTPd
 ![Pure-FTPd](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pure-ftpd.png)
+
+*<div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
 
 **Application Name:** Pure-FTPd
 
@@ -407,7 +445,7 @@ For more content https://wiki.kiwix.org/wiki/Content
     
 ----
 # Shiori
-![Shiori](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/searx.png)
+![Shiori](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/shiori.png)
 
 **Application Name:** Shiori
 
