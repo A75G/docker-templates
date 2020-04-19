@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>freescout</Name>
-  <Repository>tiredofit/freescout</Repository>
+  <Repository>tiredofit/freescout:latest</Repository>
   <Registry>https://hub.docker.com/r/tiredofit/freescout/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>docpht</Name>
-  <Repository>docpht/docpht</Repository>
+  <Repository>docpht/docpht:latest</Repository>
   <Registry>https://hub.docker.com/r/docpht/docpht/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
