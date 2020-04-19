@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>stackedit</Name>
+  <Repository>qmcgaw/stackedit</Repository>
+  <Registry>https://hub.docker.com/r/qmcgaw/stackedit/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://stackedit.io/</Project>
+  <Overview>StackEdit&#x2019;s Markdown syntax highlighting is unique. The refined text formatting of the editor helps you visualize the final rendering of your files.</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/stackedit.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/stackedit.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>StackEdit&#x2019;s Markdown syntax highlighting is unique. The refined text formatting of the editor helps you visualize the final rendering of your files.</Description>
+  <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="ROOT_URL" Target="ROOT_URL" Default="/" Mode="" Description="Sets production behavior for stackedit" Type="Variable" Display="always" Required="false" Mask="false">/</Config>
+</Container>

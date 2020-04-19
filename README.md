@@ -1,17 +1,19 @@
-# Unraid A75G Templates
 - [CyberChef](#cyberchef)
 - [Dashmachine](#dashmachine)
   * [Default username and password](#default-username-and-password)
-  * [~~Unauthorized~~](#--unauthorized--)
+  * [~~Unauthorized~~](#unauthorized)
 - [db-backup](#db-backup)
   * [Environment Variables](#environment-variables)
 - [ddns-route53](#ddns-route53)
   * [Before running the docker](#before-running-the-docker)
+- [Docpht](#docpht)
 - [Droppy](#droppy)
 - [FileRun](#filerun)
   * [Default username and password](#default-username-and-password-1)
 - [FreePBX](#freepbx)
   * [First installation](#first-installation)
+- [Freescout](#freescout)
+  * [Creating User](#creating-user)
 - [Firefox-Syncserver](#firefox-syncserver)
 - [Flarum](#flarum)
   * [Default username and password](#default-username-and-password-2)
@@ -43,10 +45,13 @@
 - [Shiori](#shiori)
   * [Default username and password](#default-username-and-password-4)
   * [Notes](#notes-5)
+- [StackEdit](#stackedit)
 - [Wallabag](#wallabag)
   * [Default username and password](#default-username-and-password-5)
   * [PHP errors](#php-errors)
   * [Missing texture and images](#missing-texture-and-images)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ----
 # CyberChef
@@ -123,6 +128,18 @@ Password: ```admin```
 * Create ddns-route53.yml file in /mnt/user/appdata/ddns-route53/ - https://github.com/crazy-max/ddns-route53/blob/master/doc/configuration.md
 
 ----
+# Docpht
+![Docpht](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/docpht.png)
+
+**Application Name:** Docpht
+
+**Application Site:** https://docpht.org/
+
+**Docker Hub:** https://hub.docker.com/r/docpht/docpht/
+
+**Github:** https://github.com/docpht/docpht
+
+----
 # Droppy
 ![Droppy](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/droppy.png)
 
@@ -163,6 +180,21 @@ Password: ```superuser```
 ## First installation 
 * Take time be patient
 * Wizard setup go to http://freepbx/admin/config.php
+
+----
+# Freescout
+![freescout](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/freescout.png)
+
+**Application Name:** Freescout
+
+**Application Site:** https://freescout.net/
+
+**Docker Hub:** https://hub.docker.com/r/tiredofit/freescout/
+
+**Github:** https://www.github.com/tiredofit/docker-freescout
+## Creating User
+* CLI ```cd /www/html``` then ```php artisan freescout:create-user```
+
 
 ----
 # Firefox-Syncserver
@@ -389,6 +421,19 @@ Username: ```shiori```
 Password: ```gopher```
 ## Notes
 * Create new account inside the web gui so the default one will be removed.
+
+----
+# StackEdit
+![Shiori](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/stackedit.png)
+
+**Application Name:** StackEdit
+
+**Application Site:** https://stackedit.io/
+
+**Docker Hub:** https://hub.docker.com/r/qmcgaw/stackedit/
+
+**Github:** https://github.com/qdm12/stackedit-docker
+
 ----
 # Wallabag
 ![Wallabag](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/wallabag.png)

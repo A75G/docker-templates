@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>docpht</Name>
+  <Repository>docpht/docpht</Repository>
+  <Registry>https://hub.docker.com/r/docpht/docpht/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://docpht.org/</Project>
+  <Overview>DocPHT you can take notes and quickly document anything and without the use of any database.</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/docpht.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/docpht.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>DocPHT you can take notes and quickly document anything and without the use of any database.</Description>
+  <Config Name="HTTP" Target="80" Default="8000" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="HTTPS" Target="443" Default="8443" Mode="" Description="HTTPS - NOT REQUIRE IF YOU ARE USING REVERSE PROXY" Type="Variable" Display="always" Required="false" Mask="false">8443</Config>
+  <Config Name="Config" Target="/var/www/app/src/config" Default="/mnt/user/appdata/docpht/config/" Mode="rw" Description="Config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/docpht/config/</Config>
+  <Config Name="Data" Target="/var/www/app/data" Default="/mnt/user/appdata/docpht/data/" Mode="rw" Description="Data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/docpht/data/</Config>
+  <Config Name="Pages" Target="/var/www/app/pages" Default="/mnt/user/appdata/docpht/pages/" Mode="rw" Description="Pages" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/docpht/pages/</Config>
+  <Config Name="SSL" Target="/etc/nginx/ssl" Default="/mnt/user/appdata/docpht/ssl/" Mode="rw" Description="SSL - NOT REQUIRE IF YOU ARE USING REVERSE PROXY" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/docpht/ssl/</Config>
+</Container>
