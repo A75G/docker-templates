@@ -1,10 +1,14 @@
 ---
-name: Docker Request
+name: Docker request
 about: Request Docker Templates
-title: ''
-labels: ''
-assignees: ''
+title: "[Request]"
+labels: request
+assignees: A75G
 
 ---
 
+* Docker Link: 
 
+And/or
+
+* Git Link:
