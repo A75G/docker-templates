@@ -1,3 +1,4 @@
+# Unraid Templates
 - [CyberChef](#cyberchef)
 - [Dashmachine](#dashmachine)
   * [Default username and password](#default-username-and-password)
@@ -50,8 +51,6 @@
   * [Default username and password](#default-username-and-password-5)
   * [PHP errors](#php-errors)
   * [Missing texture and images](#missing-texture-and-images)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ----
 # CyberChef
