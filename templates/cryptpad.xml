@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>cryptpad</Name>
+  <Repository>cryptpad/cryptpad:latest</Repository>
+  <Registry>https://hub.docker.com/r/cryptpad/cryptpad/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://cryptpad.fr/</Project>
+  <Overview>CryptPad is the Zero Knowledge realtime collaborative editor.[br]Run it then edit config.js /mnt/appdata/cryptpad/cfg/config.js "httpAddress: '0.0.0.0'"</Overview>
+  <Category>Productivity: Security:</Category>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/cryptpad.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cryptpad.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>CryptPad is the Zero Knowledge realtime collaborative editor.[br]Run it then edit config. /mnt/appdata/cryptpad/cfg/config.js "httpAddress: '0.0.0.0'"</Description>
+  <Config Name="Port 1" Target="3000" Default="3000" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="Port 2" Target="3001" Default="3001" Mode="tcp" Description="Container Port: 3001" Type="Port" Display="always" Required="false" Mask="false">3001</Config>
+  <Config Name="CFG" Target="/cryptpad/cfg" Default="/mnt/user/appdata/cryptpad/cfg/" Mode="rw" Description="CFG" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/cfg/</Config>
+  <Config Name="Storage" Target="/cryptpad/storage" Default="/mnt/user/appdata/cryptpad/blob/storage/" Mode="rw" Description="Storage" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/blob/storage/</Config>
+  <Config Name="Datastore" Target="/cryptpad/datastore" Default="/mnt/user/appdata/cryptpad/datastore/" Mode="rw" Description="Datastore" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/datastore/</Config>
+  <Config Name="Customize" Target="/cryptpad/customize" Default="/mnt/user/appdata/cryptpad/customize/" Mode="rw" Description="Customize" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/customize/</Config>
+  <Config Name="Blobstage" Target="/cryptpad/blobstage" Default="/mnt/user/appdata/cryptpad/blobstage/" Mode="rw" Description="Blobstage" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/blobstage/</Config>
+  <Config Name="Blob" Target="/cryptpad/blob" Default="/mnt/user/appdata/cryptpad/blob/" Mode="rw" Description="Blob" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/blob/</Config>
+  <Config Name="STORAGE" Target="STORAGE" Default="/cryptpad/storage/" Mode="" Description="STORAGE" Type="Variable" Display="always" Required="false" Mask="false">/cryptpad/storage/</Config>
+  <Config Name="USE_SSL" Target="USE_SSL" Default="false|true" Mode="" Description="USE_SSL" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="VERSION" Target="VERSION" Default="latest" Mode="" Description="VERSION" Type="Variable" Display="always" Required="false" Mask="false">latest</Config>
+</Container>

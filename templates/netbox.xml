@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>netbox</Name>
+  <Repository>pitkley/netbox:latest</Repository>
+  <Registry>https://hub.docker.com/r/pitkley/netbox</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/netbox-community/netbox</Project>
+  <Overview>IP address management (IPAM) and data center infrastructure management (DCIM) tool. [br] To create User cli to the docker then "./manage.py createsuperuser" [br] Postgres required </Overview>
+  <Category>Tools: Network:Management</Category>
+  <WebUI>http://[IP]:[PORT:8000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/netbox.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/netbox.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>IP address management (IPAM) and data center infrastructure management (DCIM) tool. [br] To create User cli to the docker then "./manage.py createsuperuser" [br] Postgres required </Description>
+  <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="DB_HOST" Target="DB_HOST" Default="netbox" Mode="" Description="DB Hostname or IP Postgres" Type="Variable" Display="always" Required="true" Mask="false">postgres</Config>
+  <Config Name="DB_NAME" Target="DB_NAME" Default="netbox" Mode="" Description="DB NAME Postgres" Type="Variable" Display="always" Required="true" Mask="false">netbox</Config>
+  <Config Name="DB_USER" Target="DB_USER" Default="netbox" Mode="" Description="DB USER Postgres" Type="Variable" Display="always" Required="true" Mask="false">netbox</Config>
+  <Config Name="DB_PASS" Target="DB_PASS" Default="netbox" Mode="" Description="DB PASS Postgres" Type="Variable" Display="always" Required="true" Mask="false">netbox</Config>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="ChangeMe" Mode="" Description="SECRET_KEY" Type="Variable" Display="always" Required="true" Mask="false">ChangeMe</Config>
+  <Config Name="ALLOWED_HOSTS" Target="ALLOWED_HOSTS" Default="0.0.0.0" Mode="" Description="ALLOWED_HOSTS" Type="Variable" Display="advanced" Required="true" Mask="false">*</Config>
+</Container>

@@ -1,6 +1,8 @@
 # Unraid Templates
 - [ArchiveBox](#archivebox)
   * [First installation](#first-installation)
+- [CryptPad](#cryptpad)
+  * [First installation](#first-installation-1)
 - [CyberChef](#cyberchef)
 - [Dashmachine](#dashmachine)
   * [Default username and password](#default-username-and-password)
@@ -14,7 +16,7 @@
 - [FileRun](#filerun)
   * [Default username and password](#default-username-and-password-1)
 - [FreePBX](#freepbx)
-  * [First installation](#first-installation-1)
+  * [First installation](#first-installation-2)
 - [Freescout](#freescout)
   * [Creating User](#creating-user)
 - [Firefox-Syncserver](#firefox-syncserver)
@@ -23,6 +25,7 @@
   * [Notes](#notes)
 - [Golinks](#golinks)
   * [Usage](#usage)
+- [Gossa](#gossa)
 - [Gotify](#gotify)
   * [Before running the docker](#before-running-the-docker-1)
   * [Default username and password](#default-username-and-password-3)
@@ -39,17 +42,21 @@
   * [Guides](#guides)
 - [Miniflux](#miniflux)
   * [Notes](#notes-3)
-- [PsiTransfer](#psitransfer)
+- [Netbox](#netbox)
   * [Notes](#notes-4)
-- [Pure-FTPd](#pure-ftpd)
+- [phpBB](#phpbb)
+- [PsiTransfer](#psitransfer)
   * [Notes](#notes-5)
+- [Pure-FTPd](#pure-ftpd)
+  * [Notes](#notes-6)
+- [Pwndrop](#pwndrop)
 - [Reactive-resume](#reactive-resume)
 - [Riot-web](#riot-web)
   * [Before running the docker](#before-running-the-docker-3)
 - [Searx](#searx)
 - [Shiori](#shiori)
   * [Default username and password](#default-username-and-password-4)
-  * [Notes](#notes-6)
+  * [Notes](#notes-7)
 - [StackEdit](#stackedit)
 - [Wallabag](#wallabag)
   * [Default username and password](#default-username-and-password-5)
@@ -70,6 +77,20 @@
 ## First installation 
 * After first run shut it down then remove Post Arguments and add ```./archive (URL,FEED,BOOKMARK,FILE)``` https://github.com/pirate/ArchiveBox/wiki/Usage#import-a-single-url-or-list-of-urls-via-stdin
 *  [Publishing Your Archive](https://github.com/pirate/ArchiveBox/wiki/Publishing-Your-Archive#publishing-your-archive)
+
+----
+# CryptPad
+![CryptPad](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cryptpad.png)
+
+**Application Name:** CryptPad
+
+**Application Site:** https://cryptpad.fr/
+
+**Docker Hub:** https://hub.docker.com/r/cryptpad/cryptpad
+
+**Github:** https://github.com/xwiki-labs/cryptpad
+## First installation 
+* Edit config.js /mnt/appdata/cryptpad/cfg/config.js ```httpAddress: '0.0.0.0'``` and remove ```//``` before it
 
 ----
 # CyberChef
@@ -95,14 +116,15 @@
 
 **Github:** https://github.com/rmountjoy92/DashMachine
 ## Default username and password
-Username: ```admin```
-Password: ```admin```
+* Username: ```admin```
+* Password: ```admin```
 ## ~~Unauthorized~~
 ~~If you get unauthorized page add /login <- ```http://IP:PORT/login```~~
 
 ----
 # db-backup
 ![db-backup](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/db-backup.png)
+
 *<div>Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
 
 **Application Name:** db-backup
@@ -149,6 +171,7 @@ Password: ```admin```
 ----
 # Docpht
 ![Docpht](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/docpht.png)
+
 *Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*
 
 **Application Name:** Docpht
@@ -183,8 +206,8 @@ Password: ```admin```
 
 **Github:** https://github.com/filerun/docker
 ## Default username and password
-Username: ```superuser```
-Password: ```superuser```
+* Username: ```superuser```
+* Password: ```superuser```
 
 ----
 # FreePBX
@@ -214,7 +237,6 @@ Password: ```superuser```
 **Github:** https://www.github.com/tiredofit/docker-freescout
 ## Creating User
 * CLI ```cd /www/html``` then ```php artisan freescout:create-user```
-
 
 ----
 # Firefox-Syncserver
@@ -250,6 +272,7 @@ Password: ```flarum```
 ![Golinks](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/golinks.png)
     
 *<div>Icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
+
 **Application Name:** Golinks
 
 **Application Site:** https://github.com/prologic/golinks
@@ -260,6 +283,20 @@ Password: ```flarum```
 ## Usage
 * https://github.com/prologic/golinks#usage
     
+----
+# Gossa
+![Gossa](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/gossa.png)
+
+*<div>Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
+
+**Application Name:** Gossa
+
+**Application Site:** https://www.github.com/pldubouilh/gossa
+
+**Docker Hub:** https://hub.docker.com/r/pldubouilh/gossa/
+
+**Github:** https://www.github.com/pldubouilh/gossa
+
 ----
 # Gotify
 ![Gotify](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/gotify.png)
@@ -275,8 +312,8 @@ Password: ```flarum```
 ```mkdir -p /mnt/user/appdata/gotify/config/```
 ```wget -O /mnt/user/appdata/gotify/config/config.yml https://raw.githubusercontent.com/gotify/server/master/config.example.yml```
 ## Default username and password
-Username: ```admin```
-Password: ```admin```
+* Username: ```admin```
+* Password: ```admin```
     
 ----
 # Homer
@@ -373,8 +410,36 @@ For more content https://wiki.kiwix.org/wiki/Content
 * PostgreSQL DB Required (Not Included)
 
 ----
+# Netbox
+![Netbox](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/netbox.png)
+
+**Application Name:** Netbox
+
+**Application Site:** https://github.com/netbox-community/netbox
+
+**Docker Hub:** https://hub.docker.com/r/pitkley/netbox
+
+**Github:** https://github.com/pitkley/docker-netbox
+## Notes
+* Create User cli to the docker then ```./manage.py createsuperuser```
+* PostgreSQL DB Required (Not Included)
+
+----
+# phpBB
+![phpBB](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/phpbb.png)
+
+**Application Name:** phpBB
+
+**Application Site:** https://www.phpbb.com/
+
+**Docker Hub:** https://hub.docker.com/r/bitnami/phpbb
+
+**Github:** https://github.com/bitnami/bitnami-docker-phpbb/
+
+----
 # PsiTransfer
 ![psitransfer](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/psitransfer.png)
+
 *<div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
 
 **Application Name:** PsiTransfer
@@ -405,6 +470,18 @@ For more content https://wiki.kiwix.org/wiki/Content
 * https://github.com/crazy-max/docker-pure-ftpd#notes
 
 ----
+# Pwndrop
+![Pwndrop](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pwndrop.png)
+
+**Application Name:** Pwndrop
+
+**Application Site:** https://github.com/kgretzky/pwndrop
+
+**Docker Hub:** https://hub.docker.com/r/harshavardhanj/pwndrop
+
+**Github:** https://github.com/kgretzky/pwndrop
+
+----
 # Reactive-resume
 ![Reactive-resume](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/reactive-resume.png)
 
@@ -428,8 +505,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 
 **Github:** https://www.github.com/vector-im/riot-web
 ## Before running the docker
-```mkdir -p /mnt/user/appdata/riot-web/config```
-```wget -O /mnt/user/appdata/riot-web/config/config.json https://riot.im/develop/config.json```
+1. ```mkdir -p /mnt/user/appdata/riot-web/config```
+2.    ```wget -O /mnt/user/appdata/riot-web/config/config.json https://riot.im/develop/config.json```
 
 ----
 # Searx
@@ -487,6 +564,6 @@ Password: ```gopher```
 Username: ```wallabag```
 Password: ```wallabag```
 ## PHP errors
-https://github.com/wallabag/docker/issues/185
+* https://github.com/wallabag/docker/issues/185
 ## Missing texture and images 
-Make sure the domain variable is right http://ip:6500 and if you are hosting it http://wallabag.example.com or https://wallabag.example.com.
+* Make sure the domain variable is right http://ip:6500 and if you are hosting it http://wallabag.example.com or https://wallabag.example.com.
