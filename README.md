@@ -40,6 +40,7 @@
 - [Mailpile](#mailpile)
 - [Matrix](#matrix)
   * [Guides](#guides)
+- [Mattermost](#mattermost)
 - [Miniflux](#miniflux)
   * [Notes](#notes-3)
 - [Netbox](#netbox)
@@ -393,6 +394,18 @@ For more content https://wiki.kiwix.org/wiki/Content
 ## Guides
 * Unraid User - PSYCHOPATHiO [Guide](https://forums.unraid.net/topic/89502-support-a75g-repo/?do=findComment&comment=839576)
 * More info about matrix configuration [here](https://github.com/matrix-org/synapse/blob/master/README.rst)
+
+----
+# Mattermost
+![Mattermost](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/mattermost.png)
+
+**Application Name:** Mattermost
+
+**Application Site:** https://mattermost.com/
+
+**Docker Hub:** https://hub.docker.com/r/mattermost/mattermost-team-edition/
+
+**Github:** https://github.com/mattermost/mattermost-server
 
 ----
 # Miniflux

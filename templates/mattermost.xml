@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>mattermost</Name>
+  <Repository>mattermost/mattermost-team-edition:master</Repository>
+  <Registry>https://hub.docker.com/r/mattermost/mattermost-team-edition/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://mattermost.com/</Project>
+  <Overview>Mattermost a flexible, open source messaging platform that enables secure team collaboration.&#xD;
+The official Docker image for Mattermost Team Edition.</Overview>
+  <Category>Productivity: Network:Voip Network:Messenger</Category>
+  <WebUI>http://[IP]:[PORT:8065]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/mattermost.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/mattermost.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Mattermost a flexible, open source messaging platform that enables secure team collaboration.&#xD;
+The official Docker image for Mattermost Team Edition.</Description>
+  <Config Name="Listen Address" Target="8065" Default="8065" Mode="tcp" Description="The address and port to which to bind and listen." Type="Port" Display="always" Required="true" Mask="false">8065</Config>
+  <Config Name="Listen Address" Target="8067" Default="8067" Mode="tcp" Description="The address the Mattermost server will listen on to expose performance metrics." Type="Port" Display="always" Required="false" Mask="false">8067</Config>
+  <Config Name="Gossip Port TCP" Target="8074" Default="8074" Mode="tcp" Description="The port used for the gossip protocol." Type="Port" Display="always" Required="false" Mask="false">8074</Config>
+  <Config Name="Streaming Port" Target="8075" Default="8075" Mode="" Description="The port used for streaming data between servers." Type="Variable" Display="always" Required="false" Mask="false">8075</Config>
+  <Config Name="Gossip Port UDP" Target="8074" Default="8074" Mode="udp" Description="The port used for the gossip protocol." Type="Port" Display="always" Required="false" Mask="false">8074</Config>
+  <Config Name="Data" Target="/mattermost/data" Default="/mnt/user/appdata/mattermost/data/" Mode="rw" Description="Data Path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mattermost/data/</Config>
+  <Config Name="Logs" Target="/mattermost/logs" Default="/mnt/user/appdata/mattermost/logs/" Mode="rw" Description="Logs Path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mattermost/logs/</Config>
+  <Config Name="Config" Target="/mattermost/config" Default="/mnt/user/appdata/mattermost/config/" Mode="rw" Description="Config Path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mattermost/config/</Config>
+  <Config Name="Plugins" Target="/mattermost/plugins" Default="/mnt/user/appdata/mattermost/plugins/" Mode="rw" Description="Plugins Path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mattermost/plugins/</Config>
+  <Config Name="Client Plugins" Target="/mattermost/client/plugins" Default="/mnt/user/appdata/mattermost/client/plugins/" Mode="rw" Description="Client Plugins Path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mattermost/client/plugins/</Config>
+  <Config Name="DATASOURCE" Target="MM_SQLSETTINGS_DATASOURCE" Default="MM_USERNAME:MM_PASSWORD@tcp(DB_HOST:DB_PORT_NUMBER)/MM_DBNAME?charset=utf8mb4,utf8&amp;amp;readTimeout=30s&amp;amp;writeTimeout=30s" Mode="" Description="Edit This Change MM_USERNAME, MM_PASSWORD, DB_HOST, DB_PORT_NUMBER To your database configuration " Type="Variable" Display="always" Required="true" Mask="false">MM_USERNAME:MM_PASSWORD@tcp(DB_HOST:DB_PORT_NUMBER)/MM_DBNAME?charset=utf8mb4,utf8&amp;readTimeout=30s&amp;writeTimeout=30s</Config>
+  <Config Name="APP_HOST" Target="APP_HOST" Default="IP OR HOSTNAME" Mode="" Description="Application host address" Type="Variable" Display="always" Required="true" Mask="false">IP OR HOSTNAME</Config>
+  <Config Name="MM_SQLSETTINGS_DRIVERNAME" Target="MM_SQLSETTINGS_DRIVERNAME" Default="mysql" Mode="" Description="Container Variable: MM_SQLSETTINGS_DRIVERNAME" Type="Variable" Display="advanced" Required="true" Mask="false">mysql</Config>
+</Container>
