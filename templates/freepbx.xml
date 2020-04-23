@@ -8,7 +8,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://github.com/tiredofit/docker-freepbx/</Project>
-  <Overview>FreePBX is a web-based open-source graphical user interface that manages Asterisk, a voice over IP and telephony server. [br]Admin Setup http://hostname/admin/config.php &amp;lt;- add /admin/config.php at the end [/br]</Overview>
+  <Overview>FreePBX is a web-based open-source graphical user interface that manages Asterisk, a voice over IP and telephony server.</Overview>
   <Category>Productivity: Network:Voip Network:Messenger</Category>
   <WebUI>http://[IP]:[PORT:80]/admin/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/freepbx.xml</TemplateURL>
@@ -17,10 +17,9 @@
   <PostArgs/>
   <DonateText/>
   <DonateLink/>
-  <Description>FreePBX is a web-based open-source graphical user interface that manages Asterisk, a voice over IP and telephony server. [br]Admin Setup http://hostname/admin/config.php &amp;lt;- add /admin/config.php at the end [/br]</Description>
-  <Labels/>
-  <Config Name="HTTP" Target="80" Default="80" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="false" Mask="false">8150</Config>
-  <Config Name="HTTPS" Target="443" Default="443" Mode="tcp" Description="HTTPS" Type="Port" Display="always" Required="false" Mask="false">4150</Config>
+  <Description>FreePBX is a web-based open-source graphical user interface that manages Asterisk, a voice over IP and telephony server.</Description>
+  <Config Name="HTTP" Target="80" Default="8150" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="false" Mask="false">8150</Config>
+  <Config Name="HTTPs" Target="443" Default="4150" Mode="tcp" Description="HTTPs" Type="Port" Display="always" Required="false" Mask="false">4150</Config>
   <Config Name="PJSIP" Target="5060" Default="5060" Mode="udp" Description="PJSIP" Type="Port" Display="always" Required="false" Mask="false">5060</Config>
   <Config Name="SIP" Target="5160" Default="5160" Mode="udp" Description="SIP" Type="Port" Display="always" Required="false" Mask="false">5160</Config>
   <Config Name="RTP Ports" Target="18000-20000" Default="18000-20000" Mode="udp" Description="RTP Ports" Type="Port" Display="always" Required="false" Mask="false">18000-20000</Config>
@@ -29,16 +28,11 @@
   <Config Name="Log" Target="/var/log" Default="" Mode="rw" Description="Log" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/freepbx/logs/</Config>
   <Config Name="WWW" Target="/var/www/html" Default="" Mode="rw" Description="WWW" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/freepbx/www/</Config>
   <Config Name="Certs" Target="/certs" Default="/mnt/user/appdata/freepbx/certs/" Mode="rw" Description="Certs" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/freepbx/certs/</Config>
-  <Config Name="DB_HOST" Target="DB_HOST" Default="freepbx-db" Mode="" Description="DB_HOST" Type="Variable" Display="always" Required="false" Mask="false">&lt;DB_HOST&gt;</Config>
-  <Config Name="DB_PORT" Target="DB_PORT" Default="3306" Mode="" Description="DB_PORT" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
-  <Config Name="DB_NAME" Target="DB_NAME" Default="asterisk" Mode="" Description="DB_NAME" Type="Variable" Display="always" Required="false" Mask="false">&lt;DB_NAME&gt;</Config>
-  <Config Name="DB_USER" Target="DB_USER" Default="password" Mode="" Description="DB_USER" Type="Variable" Display="always" Required="false" Mask="false">&lt;DB_USER&gt;</Config>
-  <Config Name="DB_PASS" Target="DB_PASS" Default="password" Mode="" Description="DB_PASS" Type="Variable" Display="always" Required="false" Mask="false">&lt;DB_PASS&gt;</Config>
-  <Config Name="DB_EMBEDDED" Target="DB_EMBEDDED" Default="FALSE" Mode="" Description="Allows you to use an internally provided MariaDB Server e.g. TRUE or FALSE" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
-  <Config Name="ENABLE_FAIL2BAN" Target="ENABLE_FAIL2BAN" Default="TRUE" Mode="" Description="ENABLE_FAIL2BAN" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
-  <Config Name="Flash Operator Panel" Target="ENABLE_FOP" Default="TRUE" Mode="" Description="Enable Flash Operator Panel" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
-  <Config Name="ENABLE_SSL" Target="ENABLE_SSL" Default="FALSE" Mode="" Description="Enable HTTPd to serve SSL requests - Default FALSE" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
-  <Config Name="ENABLE_XMPP" Target="ENABLE_XMPP" Default="FALSE" Mode="" Description="Enable XMPP Module with MongoDB - Default FALSE" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
+  <Config Name="DB_EMBEDDED" Target="DB_EMBEDDED" Default="TRUE|FALSE" Mode="" Description="Allows you to use an internally provided MariaDB Server e.g. TRUE or FALSE" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+  <Config Name="ENABLE_FAIL2BAN" Target="ENABLE_FAIL2BAN" Default="TRUE|FALSE" Mode="" Description="ENABLE_FAIL2BAN" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+  <Config Name="Flash Operator Panel" Target="ENABLE_FOP" Default="TRUE|FALSE" Mode="" Description="Enable Flash Operator Panel" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+  <Config Name="ENABLE_SSL" Target="ENABLE_SSL" Default="FALSE|TRUE" Mode="" Description="Enable HTTPs to serve SSL requests - Default FALSE" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
+  <Config Name="ENABLE_XMPP" Target="ENABLE_XMPP" Default="FALSE|TRUE" Mode="" Description="Enable XMPP Module with MongoDB - Default FALSE" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
   <Config Name="INSTALL_ADDITIONAL_MODULES" Target="INSTALL_ADDITIONAL_MODULES" Default="" Mode="" Description="Comma seperated list of modules to additionally install on first container startup" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="RTP_START" Target="RTP_START" Default="18000" Mode="" Description="What port to start RTP Transmissions" Type="Variable" Display="always" Required="false" Mask="false">18000</Config>
   <Config Name="RTP_FINISH" Target="RTP_FINISH" Default="20000" Mode="" Description="What port to end RTP Transmissions" Type="Variable" Display="always" Required="false" Mask="false">20000</Config>
