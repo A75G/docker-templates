@@ -28,8 +28,14 @@
   <Config Name="Log" Target="/var/log" Default="" Mode="rw" Description="Log" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/freepbx/logs/</Config>
   <Config Name="WWW" Target="/var/www/html" Default="" Mode="rw" Description="WWW" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/freepbx/www/</Config>
   <Config Name="Certs" Target="/certs" Default="/mnt/user/appdata/freepbx/certs/" Mode="rw" Description="Certs" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/freepbx/certs/</Config>
-  <Config Name="DB_EMBEDDED" Target="DB_EMBEDDED" Default="TRUE|FALSE" Mode="" Description="Allows you to use an internally provided MariaDB Server e.g. TRUE or FALSE" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
-  <Config Name="ENABLE_FAIL2BAN" Target="ENABLE_FAIL2BAN" Default="TRUE|FALSE" Mode="" Description="ENABLE_FAIL2BAN" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+  <Config Name="DB Path" Target="/var/lib/mysql" Default="" Mode="rw" Description="DB Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/freepbx/db/</Config>
+  <Config Name="DB_HOST" Target="DB_HOST" Default="" Mode="" Description="Host or container name of MySQL Server" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB_PORT" Target="DB_PORT" Default="3306" Mode="" Description="MySQL Port" Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
+  <Config Name="DB_NAME" Target="DB_NAME" Default="asterisk" Mode="" Description="MySQL Database name" Type="Variable" Display="always" Required="true" Mask="false">asterisk</Config>
+  <Config Name="DB_USER" Target="DB_USER" Default="asterisk" Mode="" Description="MySQL Username for above Database" Type="Variable" Display="always" Required="true" Mask="false">asterisk</Config>
+  <Config Name="DB_PASS" Target="DB_PASS" Default="password" Mode="" Description="MySQL Password for above Database" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
+  <Config Name="DB_EMBEDDED" Target="DB_EMBEDDED" Default="FALSE|TRUE" Mode="" Description="Allows you to use an internally provided MariaDB Server e.g. FALSE or TRUE" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
+  <Config Name="ENABLE_FAIL2BAN" Target="ENABLE_FAIL2BAN" Default="TRUE|FALSE" Mode="" Description="ENABLE_FAIL2BAN" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
   <Config Name="Flash Operator Panel" Target="ENABLE_FOP" Default="TRUE|FALSE" Mode="" Description="Enable Flash Operator Panel" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
   <Config Name="ENABLE_SSL" Target="ENABLE_SSL" Default="FALSE|TRUE" Mode="" Description="Enable HTTPs to serve SSL requests - Default FALSE" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
   <Config Name="ENABLE_XMPP" Target="ENABLE_XMPP" Default="FALSE|TRUE" Mode="" Description="Enable XMPP Module with MongoDB - Default FALSE" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
