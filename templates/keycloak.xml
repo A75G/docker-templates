@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>keycloak</Name>
+  <Repository>quay.io/keycloak/keycloak:latest</Repository>
+  <Registry>https://quay.io/repository/keycloak/keycloak</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://www.keycloak.org/</Project>
+  <Overview>Open Source Identity and Access Management.</Overview>
+  <Category>Security: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/keycloak.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/keycloak.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Open Source Identity and Access Management.</Description>
+  <Labels/>
+  <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="KEYCLOAK_USER" Target="KEYCLOAK_USER" Default="Admin" Mode="" Description="User" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="KEYCLOAK_PASSWORD" Target="KEYCLOAK_PASSWORD" Default="admin" Mode="" Description="Password" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+</Container>

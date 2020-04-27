@@ -34,6 +34,7 @@
 - [Jitsi](#jitsi)
   * [Change appdata location](#change-appdata-location)
   * [Notes](#notes-1)
+- [Keycloak](#keycloak)
 - [Kiwix-serve](#kiwix-serve)
   * [Notes](#notes-2)
   * [Content](#content)
@@ -55,6 +56,7 @@
 - [Riot-web](#riot-web)
   * [Before running the docker](#before-running-the-docker-3)
 - [Searx](#searx)
+- [Selfoss](#selfoss)
 - [Shiori](#shiori)
   * [Default username and password](#default-username-and-password-4)
   * [Notes](#notes-7)
@@ -353,6 +355,18 @@ Password: ```flarum```
 ![](https://335wvf48o1332cksy23mw1pj-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/docker-jitsi-meet.png)
 
 ----
+# Keycloak
+![Keycloak](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/keycloak.png)
+
+**Application Name:** Keycloak
+
+**Application Site:** https://www.keycloak.org/
+
+**Registry:** https://quay.io/repository/keycloak/keycloak
+
+**Github:** https://github.com/keycloak/keycloak
+
+----
 # Kiwix-serve
 ![Kiwix-serve](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/kiwix.png)
 
@@ -532,6 +546,18 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Docker Hub:** https://hub.docker.com/r/searx/searx/
 
 **Github:** https://github.com/asciimoo/searx
+    
+----
+# Selfoss
+![Selfoss](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/selfoss.png)
+
+**Application Name:** Selfoss
+
+**Application Site:** https://selfoss.aditu.de/
+
+**Docker Hub:** https://hub.docker.com/r/hardware/selfoss/
+
+**Github:** https://github.com/SSilence/selfoss/
     
 ----
 # Shiori
