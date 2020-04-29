@@ -6,8 +6,8 @@
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/leantime/leantime/</Support>
-  <Project>https://forums.unraid.net/topic/89502-support-a75g-repo/</Project>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://leantime.io/</Project>
   <Overview>Leantime is an open source project management system for small teams and startups.</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
