@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>leantime</Name>
+  <Repository>leantime/leantime:latest</Repository>
+  <Registry>https://hub.docker.com/r/leantime/leantime/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/leantime/leantime/</Support>
+  <Project>https://forums.unraid.net/topic/89502-support-a75g-repo/</Project>
+  <Overview>Leantime is an open source project management system for small teams and startups.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/leantime.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/leantime.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Leantime is an open source project management system for small teams and startups.</Description>
+  <Config Name="Port" Target="80" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="DB_HOST" Target="DB_HOST" Default="Hostname or IP" Mode="" Description="Database Hostname or IP" Type="Variable" Display="always" Required="true" Mask="false">Hostname or IP</Config>
+  <Config Name="MYSQL_USER" Target="MYSQL_USER" Default="root" Mode="" Description="MYSQL_USER" Type="Variable" Display="always" Required="true" Mask="false">root</Config>
+  <Config Name="MYSQL_PASSWORD" Target="MYSQL_PASSWORD" Default="password" Mode="" Description="MYSQL_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
+  <Config Name="MYSQL_DATABASE" Target="MYSQL_DATABASE" Default="leantime" Mode="" Description="MYSQL_DATABASE" Type="Variable" Display="always" Required="true" Mask="false">leantime</Config>
+</Container>
