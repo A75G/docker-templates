@@ -11,6 +11,7 @@
   * [Environment Variables](#environment-variables)
 - [ddns-route53](#ddns-route53)
   * [Before running the docker](#before-running-the-docker)
+- [Dispatch](#dispatch)
 - [Docpht](#docpht)
 - [Droppy](#droppy)
 - [FileRun](#filerun)
@@ -38,6 +39,7 @@
 - [Kiwix-serve](#kiwix-serve)
   * [Notes](#notes-2)
   * [Content](#content)
+- [Leantime](#leantime)
 - [Mailpile](#mailpile)
 - [Matrix](#matrix)
   * [Guides](#guides)
@@ -170,6 +172,18 @@
 **Github:** https://github.com/crazy-max/ddns-route53
 ## Before running the docker
 * Create ddns-route53.yml file in /mnt/user/appdata/ddns-route53/ - https://github.com/crazy-max/ddns-route53/blob/master/doc/configuration.md
+
+----
+# Dispatch
+![Dispatch](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dispatch.png)
+
+**Application Name:** Dispatch
+
+**Application Site:** https://github.com/khlieng/dispatch
+
+**Docker Hub:** https://hub.docker.com/r/khlieng/dispatch/
+
+**Github:** https://github.com/khlieng/dispatch
 
 ----
 # Docpht
@@ -381,6 +395,18 @@ Password: ```flarum```
 * When using variable "DOWNLOAD" remove the link after the download so you don't re-download the same content again
 ## Content
 For more content https://wiki.kiwix.org/wiki/Content
+
+----
+# Leantime
+![Leantime](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/leantime.png)
+
+**Application Name:** Leantime
+
+**Application Site:** https://leantime.io/
+
+**Docker Hub:** https://hub.docker.com/r/leantime/leantime/
+
+**Github:** https://github.com/Leantime/docker-leantime
 
 ----
 # Mailpile

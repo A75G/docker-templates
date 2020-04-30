@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>dispatch</Name>
+  <Repository>khlieng/dispatch</Repository>
+  <Registry>https://hub.docker.com/r/khlieng/dispatch/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/khlieng/dispatch</Project>
+  <Overview>Web-based IRC client in Go. </Overview>
+  <Category>Network:Messenger</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/dispatch.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dispatch.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Web-based IRC client in Go. </Description>
+  <Config Name="HTTP" Target="80" Default="8000" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="HTTPs" Target="443" Default="8443" Mode="tcp" Description="HTTPs (Not Required if you use reverse proxy)" Type="Port" Display="always" Required="false" Mask="false">4596</Config>
+  <Config Name="Data" Target="/data" Default="/mnt/user/appdata/dispatch/" Mode="rw" Description="Data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/dispatch/</Config>
+</Container>
