@@ -5,7 +5,7 @@
   <Registry>https://hub.docker.com/r/ecodms/allinone-18.09/</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/ecodms/allinone-18.09/</Support>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://www.ecodms.de/index.php/en/</Project>
   <Overview>ecoDMS 18.09 (apu) Full Installation - Document Management System (DMS) - Audit-compliant archive for scanning, archiving, managing and retrieving all data and documents.&#xD;
 &#xD;
@@ -20,7 +20,7 @@ https://forums.unraid.net/topic/77838-anyone-ecodms-got-running/?tab=comments#co
 @laest - Thank you</Overview>
   <Category>Cloud: Productivity:</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
-  <Icon>https://www.ecodms.de/images/mainpages/products/ecodms-archiv.png</Icon>
+  <Icon>https://secure.gravatar.com/avatar/b52fd0ed66fae9aa9a4d71a1f5dae83c.jpg</Icon>
   <Description>ecoDMS 18.09 (apu) Full Installation - Document Management System (DMS) - Audit-compliant archive for scanning, archiving, managing and retrieving all data and documents.&#xD;
 &#xD;
 To use ecoDMS you need to do the following steps after installing the container:  &#xD;
