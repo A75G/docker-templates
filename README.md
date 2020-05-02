@@ -40,6 +40,7 @@
   * [Notes](#notes-2)
   * [Content](#content)
 - [Leantime](#leantime)
+  * [First installation](#first-installation-3)
 - [Mailpile](#mailpile)
 - [Matrix](#matrix)
   * [Guides](#guides)
@@ -407,6 +408,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Docker Hub:** https://hub.docker.com/r/leantime/leantime/
 
 **Github:** https://github.com/Leantime/docker-leantime
+## First installation 
+* First setup go to http://leantime/install
 
 ----
 # Mailpile
