@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>quakejs</Name>
+  <Repository>treyyoder/quakejs:latest</Repository>
+  <Registry>https://hub.docker.com/r/treyyoder/quakejs/</Registry>
+  <Network>br0</Network>
+  <MyIP>192.168.0.266</MyIP>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/treyyoder/quakejs-docker</Project>
+  <Overview>QuakeJS is a port of ioquake3 to JavaScript with the help of Emscripten.[br]IMPORTANT Use Custom:br0 https://youtu.be/2VnQxxn00jU?t=121 put Fixed IP address, then copy the ip and access it using you broswer [BR][span style='color: #ff9900;'][B]DON'T USE BRIDGE I'M NOT RESPONSABLE FOR UNRAID CONFLICTING WITH PORT 80 FOR THIS DOCKER[/B]</Overview>
+  <Category>Other:</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/matomo.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/quakejs.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>QuakeJS is a port of ioquake3 to JavaScript with the help of Emscripten.[br]IMPORTANT Use Custom:br0 https://youtu.be/2VnQxxn00jU?t=121 put Fixed IP address, then copy the ip and access it using you broswer [BR][span style='color: #ff9900;'][B]DON'T USE BRIDGE I'M NOT RESPONSABLE FOR UNRAID CONFLICTING WITH PORT 80 FOR THIS DOCKER[/B]</Description>
+  <Config Name="HTTP" Target="80" Default="80" Mode="" Description="HTTP" Type="Variable" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="Game Port" Target="27960" Default="27960" Mode="tcp" Description="Game Port" Type="Port" Display="always" Required="true" Mask="false">27960</Config>
+  <Config Name="SERVER" Target="SERVER" Default="192.168.0.266" Mode="" Description="Put your Fixed IP address Here" Type="Variable" Display="always" Required="true" Mask="false">192.168.0.266</Config>
+  <Config Name="HTTP_PORT" Target="HTTP_PORT" Default="80" Mode="" Description="HTTP_PORT" Type="Variable" Display="always" Required="true" Mask="false">80</Config>
+</Container>

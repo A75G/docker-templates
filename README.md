@@ -42,6 +42,7 @@
 - [Leantime](#leantime)
   * [First installation](#first-installation-3)
 - [Mailpile](#mailpile)
+- [Matomo](#matomo)
 - [Matrix](#matrix)
   * [Guides](#guides)
 - [Mattermost](#mattermost)
@@ -55,6 +56,8 @@
 - [Pure-FTPd](#pure-ftpd)
   * [Notes](#notes-6)
 - [Pwndrop](#pwndrop)
+- [Quakejs](#quakejs)
+- [Notes](#notes-7)
 - [Reactive-resume](#reactive-resume)
 - [Riot-web](#riot-web)
   * [Before running the docker](#before-running-the-docker-3)
@@ -62,7 +65,7 @@
 - [Selfoss](#selfoss)
 - [Shiori](#shiori)
   * [Default username and password](#default-username-and-password-4)
-  * [Notes](#notes-7)
+  * [Notes](#notes-8)
 - [StackEdit](#stackedit)
 - [Wallabag](#wallabag)
   * [Default username and password](#default-username-and-password-5)
@@ -424,6 +427,18 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Github:** https://github.com/rroemhild/docker-mailpile
  
 ----
+# Matomo
+![Mailpile](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/matomo.png)
+
+**Application Name:** Matomo
+
+**Application Site:** https://matomo.org/
+
+**Docker Hub:** https://hub.docker.com/r/bitnami/matomo/
+
+**Github:** https://github.com/bitnami/bitnami-docker-matomo
+ 
+----
 # Matrix
 ![Matrix](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/matrix.png)
 
@@ -526,17 +541,32 @@ For more content https://wiki.kiwix.org/wiki/Content
 * https://github.com/crazy-max/docker-pure-ftpd#notes
 
 ----
+
 # Pwndrop
 ![Pwndrop](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pwndrop.png)
 
 **Application Name:** Pwndrop
 
-**Application Site:** https://github.com/kgretzky/pwndrop
+**Application Site:** ttps://github.com/treyyoder/quakejs-docker
 
 **Docker Hub:** https://hub.docker.com/r/harshavardhanj/pwndrop
 
-**Github:** https://github.com/kgretzky/pwndrop
+**Github:** ttps://github.com/treyyoder/quakejs-docker
 
+----
+# Quakejs
+![Quakejs](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/quakejs.png)
+
+**Application Name:** Quakejs
+
+**Application Site:** https://github.com/treyyoder/quakejs-docker
+
+**Docker Hub:** https://hub.docker.com/r/treyyoder/quakejs/
+
+**Github:** https://github.com/treyyoder/quakejs-docker
+# Notes
+* Use Custom:br0 https://youtu.be/2VnQxxn00jU?t=121 put Fixed IP address
+* Copy the ip and access it using you broswer
 ----
 # Reactive-resume
 ![Reactive-resume](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/reactive-resume.png)
