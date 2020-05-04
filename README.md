@@ -16,6 +16,7 @@
 - [Droppy](#droppy)
 - [FileRun](#filerun)
   * [Default username and password](#default-username-and-password-1)
+- [Filestash](#filestash)
 - [FreePBX](#freepbx)
   * [First installation](#first-installation-2)
 - [Freescout](#freescout)
@@ -48,16 +49,18 @@
 - [Mattermost](#mattermost)
 - [Miniflux](#miniflux)
   * [Notes](#notes-3)
-- [Netbox](#netbox)
+- [Mumble](#mumble)
   * [Notes](#notes-4)
+- [Netbox](#netbox)
+  * [Notes](#notes-5)
 - [phpBB](#phpbb)
 - [PsiTransfer](#psitransfer)
-  * [Notes](#notes-5)
-- [Pure-FTPd](#pure-ftpd)
   * [Notes](#notes-6)
+- [Pure-FTPd](#pure-ftpd)
+  * [Notes](#notes-7)
 - [Pwndrop](#pwndrop)
 - [Quakejs](#quakejs)
-- [Notes](#notes-7)
+- [Notes](#notes-8)
 - [Reactive-resume](#reactive-resume)
 - [Riot-web](#riot-web)
   * [Before running the docker](#before-running-the-docker-3)
@@ -65,12 +68,15 @@
 - [Selfoss](#selfoss)
 - [Shiori](#shiori)
   * [Default username and password](#default-username-and-password-4)
-  * [Notes](#notes-8)
+  * [Notes](#notes-9)
+- [Solr](#solr)
 - [StackEdit](#stackedit)
 - [Wallabag](#wallabag)
   * [Default username and password](#default-username-and-password-5)
   * [PHP errors](#php-errors)
   * [Missing texture and images](#missing-texture-and-images)
+- [YaCy](#yacy)
+  * [Default username and password](#default-username-and-password-6)
 
 ----
 # ArchiveBox
@@ -229,6 +235,18 @@
 ## Default username and password
 * Username: ```superuser```
 * Password: ```superuser```
+
+----
+# Filestash
+![Filestash](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/filestash.png)
+
+**Application Name:** Filestash
+
+**Application Site:** https://www.filestash.app/
+
+**Docker Hub:** https://hub.docker.com/r/machines/filestash/
+
+**Github:** https://github.com/mickael-kerjean/filestash
 
 ----
 # FreePBX
@@ -481,6 +499,21 @@ For more content https://wiki.kiwix.org/wiki/Content
 * PostgreSQL DB Required (Not Included)
 
 ----
+# Mumble
+![Mumble](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/mumble.png)
+
+**Application Name:** Mumble
+
+**Application Site:** https://www.mumble.com/
+
+**Docker Hub:** https://hub.docker.com/r/phlak/mumble
+
+**Github:** https://github.com/PHLAK/docker-mumble
+## Notes
+* Download config.ini an customize it ```wget -O /mnt/user/appdata/mumble/config.ini https://raw.githubusercontent.com/PHLAK/docker-mumble/master/files/config.ini```
+* See https://wiki.mumble.info/wiki/Murmur.ini for more options
+
+----
 # Netbox
 ![Netbox](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/netbox.png)
 
@@ -636,6 +669,18 @@ Password: ```gopher```
 * Create new account inside the web gui so the default one will be removed.
 
 ----
+# Solr
+![Solr](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/solr.png)
+
+**Application Name:** Solr
+
+**Application Site:** https://lucene.apache.org/solr/
+
+**Docker Hub:** https://hub.docker.com/r/bitnami/solr
+
+**Github:** https://github.com/bitnami/bitnami-docker-solr
+
+----
 # StackEdit
 ![Shiori](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/stackedit.png)
 
@@ -665,3 +710,17 @@ Password: ```wallabag```
 * https://github.com/wallabag/docker/issues/185
 ## Missing texture and images 
 * Make sure the domain variable is right http://ip:6500 and if you are hosting it http://wallabag.example.com or https://wallabag.example.com.
+----
+# YaCy
+![YaCy](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/yacy.png)
+
+**Application Name:** YaCy
+
+**Application Site:** https://yacy.net/
+
+**Docker Hub:** https://hub.docker.com/r/yacy/yacy_search_server/
+
+**Github:** https://www.github.com/yacy/yacy_search_server
+## Default username and password
+Username: ```admin```
+Password: ```docker```

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>mumble</Name>
+  <Repository>phlak/mumble:latest</Repository>
+  <Registry>https://hub.docker.com/r/phlak/mumble/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://www.mumble.com/</Project>
+  <Overview>Mumble is an open source voice communication application[br]Download config.ini[/br]wget -O /mnt/user/appdata/mumble/config.ini https://raw.githubusercontent.com/PHLAK/docker-mumble/master/files/config.ini</Overview>
+  <Category>Productivity: Network:Voip Network:Messenger</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/mumble.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1588610732</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Mumble is an open source voice communication application[br]Download config.ini[/br]wget -O /mnt/user/appdata/mumble/config.ini https://raw.githubusercontent.com/PHLAK/docker-mumble/master/files/config.ini</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>64738</HostPort>
+        <ContainerPort>64738</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>64738</HostPort>
+        <ContainerPort>64738</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/mumble/</HostDir>
+      <ContainerDir>/etc/mumble</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>Password</Value>
+      <Name>SUPERUSER_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Port TCP" Target="64738" Default="64738" Mode="tcp" Description="64738 TCP" Type="Port" Display="always" Required="true" Mask="false">64738</Config>
+  <Config Name="Port UDP" Target="64738" Default="64738" Mode="udp" Description="64738 UDP" Type="Port" Display="always" Required="true" Mask="false">64738</Config>
+  <Config Name="Appdata" Target="/etc/mumble" Default="/mnt/user/appdata/mumble/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mumble/</Config>
+  <Config Name="SUPERUSER_PASSWORD" Target="SUPERUSER_PASSWORD" Default="Password" Mode="" Description="SUPERUSER_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">Password</Config>
+</Container>

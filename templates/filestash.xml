@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>filestash</Name>
+  <Repository>machines/filestash:latest</Repository>
+  <Registry>https://hub.docker.com/r/machines/filestash/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://www.filestash.app/</Project>
+  <Overview>A modern web client for SFTP, S3, FTP, WebDAV, Git, Minio, LDAP, CalDAV, CardDAV, Mysql, Backblaze, ...</Overview>
+  <Category>Cloud: Productivity: Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:8334]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/filestash.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/filestash.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>A modern web client for SFTP, S3, FTP, WebDAV, Git, Minio, LDAP, CalDAV, CardDAV, Mysql, Backblaze, ...</Description>
+  <Config Name="Port" Target="8334" Default="8334" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8334</Config>
+  <Config Name="Appdata" Target="/app/data/state/" Default="/mnt/user/appdata/filestash/" Mode="rw" Description="Container Path: /app/data/state/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/filestash/</Config>
+</Container>
