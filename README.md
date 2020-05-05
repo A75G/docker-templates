@@ -42,6 +42,7 @@
   * [Content](#content)
 - [Leantime](#leantime)
   * [First installation](#first-installation-3)
+- [Linkding](#linkding)
 - [Mailpile](#mailpile)
 - [Matomo](#matomo)
 - [Matrix](#matrix)
@@ -262,6 +263,7 @@
 ## First installation 
 * Take time be patient
 * Wizard setup go to http://freepbx/admin/config.php
+* Use Database
 
 ----
 # Freescout
@@ -431,6 +433,18 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Github:** https://github.com/Leantime/docker-leantime
 ## First installation 
 * First setup go to http://leantime/install
+
+----
+# Linkding
+![Linkding](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/linkding.png)
+
+**Application Name:** Linkding
+
+**Application Site:** https://github.com/sissbruecker/linkding
+
+**Docker Hub:** https://hub.docker.com/r/sissbruecker/linkding/
+
+**Github:** https://github.com/sissbruecker/linkding
 
 ----
 # Mailpile

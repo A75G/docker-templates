@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>linkding</Name>
+  <Repository>sissbruecker/linkding</Repository>
+  <Registry>https://hub.docker.com/r/sissbruecker/linkding/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/sissbruecker/linkding</Project>
+  <Overview>linkding is a simple bookmark service that you can host yourself. [br]Creating user by using console "python manage.py createsuperuser --username=joe --email=joe@example.com"[/br]</Overview>
+  <Category>Productivity: Network:Web </Category>
+  <WebUI>http://[IP]:[PORT:9090]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/linkding.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/linkding.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>linkding is a simple bookmark service that you can host yourself. [br]Creating user by using console "python manage.py createsuperuser --username=joe --email=joe@example.com"[/br]</Description>
+  <Config Name="Port" Target="9090" Default="9090" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">9090</Config>
+  <Config Name="Appdata" Target="/etc/linkding/data" Default="/mnt/user/appdata/linkding/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/linkding/</Config>
+</Container>
