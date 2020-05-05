@@ -22,6 +22,7 @@
   <Config Name="HTTPs" Target="443" Default="4150" Mode="tcp" Description="HTTPs" Type="Port" Display="always" Required="false" Mask="false">4150</Config>
   <Config Name="PJSIP" Target="5060" Default="5060" Mode="udp" Description="PJSIP" Type="Port" Display="always" Required="false" Mask="false">5060</Config>
   <Config Name="SIP" Target="5160" Default="5160" Mode="udp" Description="SIP" Type="Port" Display="always" Required="false" Mask="false">5160</Config>
+  <Config Name="TLS SIP" Target="5161" Default="5161" Mode="tcp" Description="TLS SIP" Type="Port" Display="always" Required="false" Mask="false">5161</Config>
   <Config Name="RTP Ports" Target="18000-20000" Default="18000-20000" Mode="udp" Description="RTP Ports" Type="Port" Display="always" Required="false" Mask="false">18000-20000</Config>
   <Config Name="FOP" Target="4445" Default="4445" Mode="tcp" Description="FOP" Type="Port" Display="always" Required="false" Mask="false">4445</Config>
   <Config Name="Data" Target="/data" Default="/mnt/user/appdata/freepbx/data/" Mode="rw" Description="Data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/freepbx/data/</Config>
