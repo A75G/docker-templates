@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>pterodactyl-panel</Name>
+  <Repository>ccarney16/pterodactyl-panel:latest</Repository>
+  <Registry>https://hub.docker.com/r/ccarney16/pterodactyl-panel/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://pterodactyl.io/</Project>
+  <Overview>Pterodactyl, a free an open source agnostic game panel... In a Container!&#xD;
+Creating account CLI "php artisan p:user:make"</Overview>
+  <Category>GameServers: Network:Management</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/pterodactyl-panel.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pterodactyl-panel.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Pterodactyl, a free an open source agnostic game panel... In a Container!&#xD;
+Creating account CLI "php artisan p:user:make"</Description>
+  <Config Name="Port" Target="80" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/pterodactyl/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pterodactyl/</Config>
+  <Config Name="Timezone" Target="APP_TIMEZONE" Default="UTC" Mode="" Description="Timezone" Type="Variable" Display="always" Required="true" Mask="false">UTC</Config>
+  <Config Name="Database Hostname or IP" Target="DB_HOST" Default="mariadb" Mode="" Description="Database Hostname or IP." Type="Variable" Display="always" Required="true" Mask="false">mariadb</Config>
+  <Config Name="Database Port" Target="DB_PORT" Default="3306" Mode="" Description="Database Port" Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
+  <Config Name="Database Name" Target="DB_DATABASE" Default="pterodactyl" Mode="" Description="Database Name" Type="Variable" Display="always" Required="true" Mask="false">pterodactyl</Config>
+  <Config Name="Database Username" Target="DB_USERNAME" Default="pterodactyl" Mode="" Description="Database Username" Type="Variable" Display="always" Required="true" Mask="false">pterodactyl</Config>
+  <Config Name="Database Password" Target="DB_PASSWORD" Default="password" Mode="" Description="Database Password" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
+  <Config Name="DEBUG" Target="APP_DEBUG" Default="false|true" Mode="" Description="APP_DEBUG" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+</Container>

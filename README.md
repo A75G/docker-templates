@@ -1,6 +1,7 @@
 # Unraid Templates
 - [ArchiveBox](#archivebox)
   * [First installation](#first-installation)
+- [Backuppc](#backuppc)
 - [CryptPad](#cryptpad)
   * [First installation](#first-installation-1)
 - [CyberChef](#cyberchef)
@@ -48,6 +49,8 @@
 - [Matrix](#matrix)
   * [Guides](#guides)
 - [Mattermost](#mattermost)
+- [Mediagoblin](#mediagoblin)
+  * [Default username and password](#default-username-and-password-4)
 - [Miniflux](#miniflux)
   * [Notes](#notes-3)
 - [Mumble](#mumble)
@@ -57,6 +60,8 @@
 - [phpBB](#phpbb)
 - [PsiTransfer](#psitransfer)
   * [Notes](#notes-6)
+- [Pterodactyl-panel](#pterodactyl-panel)
+  * [Creating User](#creating-user-1)
 - [Pure-FTPd](#pure-ftpd)
   * [Notes](#notes-7)
 - [Pwndrop](#pwndrop)
@@ -68,16 +73,16 @@
 - [Searx](#searx)
 - [Selfoss](#selfoss)
 - [Shiori](#shiori)
-  * [Default username and password](#default-username-and-password-4)
+  * [Default username and password](#default-username-and-password-5)
   * [Notes](#notes-9)
 - [Solr](#solr)
 - [StackEdit](#stackedit)
 - [Wallabag](#wallabag)
-  * [Default username and password](#default-username-and-password-5)
+  * [Default username and password](#default-username-and-password-6)
   * [PHP errors](#php-errors)
   * [Missing texture and images](#missing-texture-and-images)
 - [YaCy](#yacy)
-  * [Default username and password](#default-username-and-password-6)
+  * [Default username and password](#default-username-and-password-7)
 
 ----
 # ArchiveBox
@@ -93,6 +98,18 @@
 ## First installation 
 * After first run shut it down then remove Post Arguments and add ```./archive (URL,FEED,BOOKMARK,FILE)``` https://github.com/pirate/ArchiveBox/wiki/Usage#import-a-single-url-or-list-of-urls-via-stdin
 *  [Publishing Your Archive](https://github.com/pirate/ArchiveBox/wiki/Publishing-Your-Archive#publishing-your-archive)
+
+----
+# Backuppc
+![Backuppc](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/backuppc.png)
+
+**Application Name:** Backuppc
+
+**Application Site:** https://backuppc.github.io/backuppc/
+
+**Docker Hub:** https://hub.docker.com/r/tiredofit/backuppc/
+
+**Github:** https://www.github.com/tiredofit/docker-backuppc
 
 ----
 # CryptPad
@@ -498,6 +515,21 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Github:** https://github.com/mattermost/mattermost-server
 
 ----
+# Mediagoblin
+![Mediagoblin](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/mediagoblin.png)
+
+**Application Name:** Mediagoblin
+
+**Application Site:** https://mediagoblin.org/
+
+**Docker Hub:** https://hub.docker.com/r/mtlynch/mediagoblin/
+
+**Github:** https://www.github.com/mtlynch/mediagoblin-docker
+## Default username and password
+* Username: ```admin```
+* Password: ```admin```
+
+----
 # Miniflux
 ![Miniflux](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/miniflux.png)
 
@@ -569,6 +601,20 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Github:** https://github.com/psi-4ward/psitransfer
 ## Notes
 * Admin Page just add ```/admin``` to your URL
+
+----
+# Pterodactyl-panel
+![pterodactyl-panel](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pterodactyl-panel.png)
+
+**Application Name:** Pterodactyl-panel
+
+**Application Site:** https://pterodactyl.io/
+
+**Docker Hub:** https://hub.docker.com/r/ccarney16/pterodactyl-panel
+
+**Github:** https://github.com/ccarney16/pterodactyl-docker
+## Creating User
+* CLI ```cd /www/html``` then ```php artisan p:user:make```
 
 ----
 # Pure-FTPd
