@@ -19,7 +19,7 @@
   <DonateLink/>
   <Description>Leantime is an open source project management system for small teams and startups. [br]First run go to http://leantime:port/install</Description>
   <Config Name="Port" Target="80" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
-  <Config Name="LEAN_DB_HOST" Target="LEAN_DB_HOST" Default="Hostname or IP" Mode="" Description="LEAN_DB_HOST" Type="Variable" Display="always" Required="true" Mask="false">Hostname or IP</Config>
+  <Config Name="LEAN_DB_HOST" Target="LEAN_DB_HOST" Default="Hostname or IP" Mode="" Description="Database Hostname or IP:Port" Type="Variable" Display="always" Required="true" Mask="false">Hostname or IP:Port</Config>
   <Config Name="LEAN_DB_USER" Target="LEAN_DB_USER" Default="root" Mode="" Description="LEAN_DB_USER" Type="Variable" Display="always" Required="true" Mask="false">root</Config>
   <Config Name="LEAN_DB_PASSWORD" Target="LEAN_DB_PASSWORD" Default="password" Mode="" Description="LEAN_DB_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
   <Config Name="LEAN_DB_DATABASE" Target="LEAN_DB_DATABASE" Default="leantime" Mode="" Description="LEAN_DB_DATABASE" Type="Variable" Display="always" Required="true" Mask="false">leantime</Config>
