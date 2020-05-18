@@ -19,6 +19,7 @@
   <DonateLink/>
   <Description>phpBB is a bulletin board solution that allows you to create forums and subforums.</Description>
   <Config Name="Port" Target="80" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="Appdata" Target="/bitnami" Default="/mnt/user/appdata/phpbb/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/phpbb/</Config>
   <Config Name="ALLOW_EMPTY_PASSWORD" Target="ALLOW_EMPTY_PASSWORD" Default="no|yes" Mode="" Description="ALLOW_EMPTY_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">no</Config>
   <Config Name="MARIADB_HOST" Target="MARIADB_HOST" Default="mariadb" Mode="" Description="Hostname or IP for MariaDB server." Type="Variable" Display="always" Required="false" Mask="false">mariadb</Config>
   <Config Name="MARIADB_PORT_NUMBER" Target="MARIADB_PORT_NUMBER" Default="3306" Mode="" Description="Port used by MariaDB server." Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
