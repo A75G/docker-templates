@@ -52,6 +52,7 @@
 - [Mediagoblin](#mediagoblin)
   * [Default username and password](#default-username-and-password-4)
 - [Miniflux](#miniflux)
+- [Moodle](#moodle)
   * [Notes](#notes-3)
 - [Mumble](#mumble)
   * [Notes](#notes-4)
@@ -68,6 +69,7 @@
 - [Quakejs](#quakejs)
 - [Notes](#notes-8)
 - [Reactive-resume](#reactive-resume)
+- [Redis](#redis)
 - [Riot-web](#riot-web)
   * [Before running the docker](#before-running-the-docker-3)
 - [Searx](#searx)
@@ -537,6 +539,18 @@ For more content https://wiki.kiwix.org/wiki/Content
 
 **Application Site:** https://miniflux.app/
 
+**Docker Hub:** https://hub.docker.com/r/bitnami/moodle/
+
+**Github:** https://github.com/bitnami/bitnami-docker-moodle
+
+----
+# Moodle
+![Moodle](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/moodle.png)
+
+**Application Name:** Moodle
+
+**Application Site:** https://moodle.org/
+
 **Docker Hub:** https://hub.docker.com/r/miniflux/miniflux/
 
 **Github:** https://github.com/miniflux/miniflux
@@ -671,6 +685,18 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Docker Hub:** https://hub.docker.com/r/amruthpillai/reactive-resume/
 
 **Github:** https://www.github.com/AmruthPillai/Reactive-Resume
+
+----
+# Redis
+![Redis](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/redis.png)
+
+**Application Name:** Redis
+
+**Application Site:** https://redis.io/
+
+**Docker Hub:** https://hub.docker.com/r/bitnami/redis/
+
+**Github:** https://github.com/bitnami/bitnami-docker-redis
 
 ----
 # Riot-web

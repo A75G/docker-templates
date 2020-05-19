@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>redis</Name>
+  <Repository>bitnami/redis:latest</Repository>
+  <Registry>https://hub.docker.com/r/bitnami/redis/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://redis.io/</Project>
+  <Overview>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker.</Overview>
+  <Category>Tools: Status:Stable</Category>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/redis.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/redis.png</Icon>
+  <Description>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker.</Description>
+  <Config Name="Redis Port" Target="6378" Default="6378" Mode="tcp" Description="Redis Port" Type="Port" Display="always" Required="true" Mask="false">6378</Config>
+  <Config Name="ALLOW_EMPTY_PASSWORD" Target="ALLOW_EMPTY_PASSWORD" Default="yes|no" Mode="" Description="ALLOW_EMPTY_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">yes</Config>
+  <Config Name="Password" Target="REDIS_PASSWORD" Default="" Mode="" Description="If you want password put ALLOW_EMPTY_PASSWORD to yes, then put the password here." Type="Variable" Display="always" Required="true" Mask="false"/>
+</Container>
