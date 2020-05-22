@@ -13,7 +13,7 @@
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/redis.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/redis.png</Icon>
   <Description>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker.</Description>
-  <Config Name="Redis Port" Target="6378" Default="6378" Mode="tcp" Description="Redis Port" Type="Port" Display="always" Required="true" Mask="false">6378</Config>
+  <Config Name="Redis Port" Target="6379" Default="6379" Mode="tcp" Description="Redis Port" Type="Port" Display="always" Required="true" Mask="false">6379</Config>
   <Config Name="ALLOW_EMPTY_PASSWORD" Target="ALLOW_EMPTY_PASSWORD" Default="yes|no" Mode="" Description="ALLOW_EMPTY_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">yes</Config>
-  <Config Name="Password" Target="REDIS_PASSWORD" Default="" Mode="" Description="If you want password put ALLOW_EMPTY_PASSWORD to no, then put the password here." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Password" Target="REDIS_PASSWORD" Default="" Mode="" Description="If you want password put ALLOW_EMPTY_PASSWORD to no, then put the password here." Type="Variable" Display="always" Required="false" Mask="false">941378</Config>
 </Container>
