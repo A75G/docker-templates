@@ -9,17 +9,17 @@
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://www.keycloak.org/</Project>
   <Overview>Open Source Identity and Access Management.</Overview>
-  <Category>Security: Tools:</Category>
+  <Category>Security: Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/keycloak.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/keycloak.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Open Source Identity and Access Management.</Description>
-  <Labels/>
   <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
-  <Config Name="KEYCLOAK_USER" Target="KEYCLOAK_USER" Default="Admin" Mode="" Description="User" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
-  <Config Name="KEYCLOAK_PASSWORD" Target="KEYCLOAK_PASSWORD" Default="admin" Mode="" Description="Password" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="Keycloak User" Target="KEYCLOAK_USER" Default="Admin" Mode="" Description="Keycloak User" Type="Variable" Display="always" Required="true" Mask="false">admin</Config>
+  <Config Name="Keycloak Password" Target="KEYCLOAK_PASSWORD" Default="admin" Mode="" Description="Keycloak Password" Type="Variable" Display="always" Required="true" Mask="false">admin</Config>
+  <Config Name="Database Hostname or IP" Target="DB_ADDR" Default="192.168.0.100" Mode="" Description="Database Hostname or IP" Type="Variable" Display="always" Required="true" Mask="false">192.168.0.100</Config>
+  <Config Name="Database User" Target="DB_USER" Default="keyclock" Mode="" Description="Database User" Type="Variable" Display="always" Required="true" Mask="false">keyclock</Config>
+  <Config Name="Database Password" Target="DB_PASSWORD" Default="password" Mode="" Description="Database Password" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
+  <Config Name="Database Name" Target="DB_DATABASE" Default="keyclock" Mode="" Description="Database Name" Type="Variable" Display="always" Required="true" Mask="false">keyclock</Config>
+  <Config Name="DB_VENDOR" Target="DB_VENDOR" Default="mssql" Mode="" Description="DB_VENDOR" Type="Variable" Display="advanced" Required="true" Mask="false">MYSQL</Config>
 </Container>
