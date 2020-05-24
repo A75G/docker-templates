@@ -8,7 +8,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://cryptpad.fr/</Project>
-  <Overview>CryptPad is the Zero Knowledge realtime collaborative editor.[br]Run it then edit config.js /mnt/appdata/cryptpad/cfg/config.js "httpAddress: '0.0.0.0'"</Overview>
+  <Overview>CryptPad is the Zero Knowledge realtime collaborative editor.[br]Run it then edit config.js /mnt/user/appdata/cryptpad/cfg/config.js "httpAddress: '0.0.0.0'" and remove "//"</Overview>
   <Category>Productivity: Security:</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/cryptpad.xml</TemplateURL>
@@ -17,7 +17,7 @@
   <PostArgs/>
   <DonateText/>
   <DonateLink/>
-  <Description>CryptPad is the Zero Knowledge realtime collaborative editor.[br]Run it then edit config. /mnt/appdata/cryptpad/cfg/config.js "httpAddress: '0.0.0.0'"</Description>
+  <Description>CryptPad is the Zero Knowledge realtime collaborative editor.[br]Run it then edit config.js /mnt/user/appdata/cryptpad/cfg/config.js "httpAddress: '0.0.0.0'" and remove "//"</Description>
   <Config Name="Port 1" Target="3000" Default="3000" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
   <Config Name="Port 2" Target="3001" Default="3001" Mode="tcp" Description="Container Port: 3001" Type="Port" Display="always" Required="false" Mask="false">3001</Config>
   <Config Name="CFG" Target="/cryptpad/cfg" Default="/mnt/user/appdata/cryptpad/cfg/" Mode="rw" Description="CFG" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/cfg/</Config>
