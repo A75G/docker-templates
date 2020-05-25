@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>commento</Name>
+  <Repository>registry.gitlab.com/commento/commento</Repository>
+  <Registry>https://gitlab.com/commento/commento</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://commento.io</Project>
+  <Overview>An open source, privacy focused discussion platform. </Overview>
+  <Category>Productivity: Network:Web Network:Management</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/commento.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/commento.png</Icon>
+  <Description>An open source, privacy focused discussion platform. </Description>
+  <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="COMMENTO_ORIGIN" Target="COMMENTO_ORIGIN" Default="https://commento.example.com" Mode="" Description="Can be https://commento.example.com or http://ip:port" Type="Variable" Display="always" Required="true" Mask="false">https://commento.example.com</Config>
+  <Config Name="COMMENTO_POSTGRES" Target="COMMENTO_POSTGRES" Default="postgres://postgres:mysupersecurepassword@db:5432/commento?sslmode=disable" Mode="" Description="PostgreSQL Change it using your info" Type="Variable" Display="always" Required="true" Mask="false">postgres://postgres:mysupersecurepassword@dbhostnameorip:5432/commento?sslmode=disable</Config>
+  <Config Name="SMTP HOST" Target="COMMENTO_SMTP_HOST" Default="example.com" Mode="" Description="SMTP HOST" Type="Variable" Display="always" Required="false" Mask="false">example.com</Config>
+  <Config Name="SMTP PORT" Target="COMMENTO_SMTP_PORT" Default="587" Mode="" Description="SMTP PORT" Type="Variable" Display="always" Required="false" Mask="false">587</Config>
+  <Config Name="SMTP USERNAME" Target="COMMENTO_SMTP_USERNAME" Default="user@example.com" Mode="" Description="SMTP USERNAME" Type="Variable" Display="always" Required="false" Mask="false">user@example.com</Config>
+  <Config Name="SMTP PASSWORD" Target="COMMENTO_SMTP_PASSWORD" Default="smtppassword" Mode="" Description="SMTP PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">smtppassword</Config>
+  <Config Name="SMTP FROM ADDRESS" Target="COMMENTO_SMTP_FROM_ADDRESS" Default="fromaddress@example.com" Mode="" Description="SMTP FROM ADDRESS" Type="Variable" Display="always" Required="false" Mask="false">fromaddress@example.com</Config>
+  <Config Name="COMMENTO_PORT" Target="COMMENTO_PORT" Default="8080" Mode="" Description="COMMENTO_PORT" Type="Variable" Display="advanced" Required="true" Mask="false">8080</Config>
+</Container>

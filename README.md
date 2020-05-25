@@ -2,6 +2,8 @@
 - [ArchiveBox](#archivebox)
   * [First installation](#first-installation)
 - [Backuppc](#backuppc)
+- [Commento](#commento)
+  * [Notes](#notes)
 - [CryptPad](#cryptpad)
   * [First installation](#first-installation-1)
 - [CyberChef](#cyberchef)
@@ -25,21 +27,22 @@
 - [Firefox-Syncserver](#firefox-syncserver)
 - [Flarum](#flarum)
   * [Default username and password](#default-username-and-password-2)
-  * [Notes](#notes)
+  * [Notes](#notes-1)
 - [Golinks](#golinks)
   * [Usage](#usage)
 - [Gossa](#gossa)
 - [Gotify](#gotify)
   * [Before running the docker](#before-running-the-docker-1)
   * [Default username and password](#default-username-and-password-3)
+- [Healthchecks](#healthchecks)
 - [Homer](#homer)
   * [Before running the docker](#before-running-the-docker-2)
 - [Jitsi](#jitsi)
   * [Change appdata location](#change-appdata-location)
-  * [Notes](#notes-1)
+  * [Notes](#notes-2)
 - [Keycloak](#keycloak)
 - [Kiwix-serve](#kiwix-serve)
-  * [Notes](#notes-2)
+  * [Notes](#notes-3)
   * [Content](#content)
 - [Leantime](#leantime)
   * [First installation](#first-installation-3)
@@ -49,34 +52,37 @@
 - [Matrix](#matrix)
   * [Guides](#guides)
 - [Mattermost](#mattermost)
+- [Mattermost-push-proxy](#mattermost-push-proxy)
+  * [Notes](#notes-4)
+  * [Before running the docker](#before-running-the-docker-3)
 - [Mediagoblin](#mediagoblin)
   * [Default username and password](#default-username-and-password-4)
 - [Miniflux](#miniflux)
 - [Moodle](#moodle)
-  * [Notes](#notes-3)
-- [Mumble](#mumble)
-  * [Notes](#notes-4)
-- [Netbox](#netbox)
   * [Notes](#notes-5)
+- [Mumble](#mumble)
+  * [Notes](#notes-6)
+- [Netbox](#netbox)
+  * [Notes](#notes-7)
 - [phpBB](#phpbb)
 - [PsiTransfer](#psitransfer)
-  * [Notes](#notes-6)
+  * [Notes](#notes-8)
 - [Pterodactyl-panel](#pterodactyl-panel)
   * [Creating User](#creating-user-1)
 - [Pure-FTPd](#pure-ftpd)
-  * [Notes](#notes-7)
+  * [Notes](#notes-9)
 - [Pwndrop](#pwndrop)
 - [Quakejs](#quakejs)
-- [Notes](#notes-8)
+- [Notes](#notes-10)
 - [Reactive-resume](#reactive-resume)
 - [Redis](#redis)
 - [Riot-web](#riot-web)
-  * [Before running the docker](#before-running-the-docker-3)
+  * [Before running the docker](#before-running-the-docker-4)
 - [Searx](#searx)
 - [Selfoss](#selfoss)
 - [Shiori](#shiori)
   * [Default username and password](#default-username-and-password-5)
-  * [Notes](#notes-9)
+  * [Notes](#notes-11)
 - [Solr](#solr)
 - [StackEdit](#stackedit)
 - [Wallabag](#wallabag)
@@ -112,6 +118,20 @@
 **Docker Hub:** https://hub.docker.com/r/tiredofit/backuppc/
 
 **Github:** https://www.github.com/tiredofit/docker-backuppc
+
+----
+# Commento
+![Commento](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/commento.png)
+
+**Application Name:** Commento
+
+**Application Site:** https://commento.io
+
+**Docker Hub:** https://gitlab.com/commento/commento
+
+**Github:** https://gitlab.com/commento/commento
+## Notes
+* PostgreSQL DB Required (Not Included)
 
 ----
 # CryptPad
@@ -376,6 +396,18 @@ Password: ```flarum```
 * Password: ```admin```
     
 ----
+# Healthchecks
+![Healthchecks](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/healthchecks.png)
+
+**Application Name:** Healthchecks
+
+**Application Site:** https://healthchecks.io/
+
+**Docker Hub:** https://hub.docker.com/r/galexrt/healthchecks/
+
+**Github:** https://github.com/galexrt/docker-healthchecks
+    
+----
 # Homer
 ![Homer](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/homer.png)
 
@@ -387,8 +419,8 @@ Password: ```flarum```
 
 **Github:** https://github.com/bastienwirtz/homer
 ## Before running the docker
-```mkdir -p /mnt/user/appdata/homer/config/```
-```wget -O /mnt/user/appdata/homer/config/config.yml https://raw.githubusercontent.com/bastienwirtz/homer/master/config.yml```
+* ```mkdir -p /mnt/user/appdata/homer/config/```
+* ```wget -O /mnt/user/appdata/homer/config/config.yml https://raw.githubusercontent.com/bastienwirtz/homer/master/config.yml```
 
 ----
 # Jitsi
@@ -515,6 +547,24 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Docker Hub:** https://hub.docker.com/r/mattermost/mattermost-team-edition/
 
 **Github:** https://github.com/mattermost/mattermost-server
+
+----
+# Mattermost-push-proxy
+![Mattermost-push-proxy](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/mattermost-push-proxy.png)
+
+**Application Name:** Mattermost-push-proxy
+
+**Application Site:** https://mattermost.com/
+
+**Docker Hub:** https://hub.docker.com/r/mattermost/mattermost-push-proxy/
+
+**Github:** https://github.com/mattermost/mattermost-push-proxy
+## Notes
+* https://developers.mattermost.com/contribute/mobile/push-notifications/service/
+## Before running the docker
+* ```mkdir /mnt/user/appdata/mattermost-push-proxy/config```
+* ```cd /mnt/user/appdata/mattermost-push-proxy/config```
+* ```wget https://raw.githubusercontent.com/mattermost/mattermost-push-proxy/master/config/mattermost-push-proxy.json```
 
 ----
 # Mediagoblin

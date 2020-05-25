@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>healthchecks</Name>
+  <Repository>galexrt/healthchecks:latest</Repository>
+  <Registry>https://hub.docker.com/r/galexrt/healthchecks/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/galexrt/healthchecks/</Support>
+  <Project>https://healthchecks.io/</Project>
+  <Overview>Simple and Effective Cron Job Monitoring</Overview>
+  <Category>Tools: Network:Web Network:Management</Category>
+  <WebUI>http://[IP]:[PORT:8000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/healthchecks.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/healthchecks.png</Icon>
+  <Description>Simple and Effective Cron Job Monitoring</Description>
+  <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/healthchecks/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/healthchecks/</Config>
+  <Config Name="DB_NAME" Target="DB_NAME" Default="/data/hc.sqlite" Mode="" Description="DB_NAME" Type="Variable" Display="always" Required="true" Mask="false">/data/hc.sqlite</Config>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="ChangeMe" Mode="" Description="SECRET_KEY" Type="Variable" Display="always" Required="true" Mask="false">ChangeMe</Config>
+  <Config Name="PING_EMAIL_DOMAIN" Target="PING_EMAIL_DOMAIN" Default="example.com" Mode="" Description="PING_EMAIL_DOMAIN" Type="Variable" Display="always" Required="true" Mask="false">example.com</Config>
+  <Config Name="SITE_ROOT" Target="SITE_ROOT" Default="http://example.com" Mode="" Description="SITE_ROOT" Type="Variable" Display="always" Required="true" Mask="false">http://example.com</Config>
+  <Config Name="EMAIL_HOST" Target="EMAIL_HOST" Default="smtp.example.com" Mode="" Description="EMAIL_HOST" Type="Variable" Display="always" Required="true" Mask="false">smtp.example.com</Config>
+  <Config Name="EMAIL_PORT" Target="EMAIL_PORT" Default="25" Mode="" Description="EMAIL_PORT" Type="Variable" Display="always" Required="true" Mask="false">25</Config>
+  <Config Name="EMAIL_USE_TLS" Target="EMAIL_USE_TLS" Default="True|False" Mode="" Description="EMAIL_USE_TLS" Type="Variable" Display="always" Required="true" Mask="false">True</Config>
+  <Config Name="EMAIL_HOST_USER" Target="EMAIL_HOST_USER" Default="user@example.com" Mode="" Description="EMAIL_HOST_USER" Type="Variable" Display="always" Required="true" Mask="false">user@example.com</Config>
+  <Config Name="EMAIL_HOST_PASSWORD" Target="EMAIL_HOST_PASSWORD" Default="YOUR_PASSWORD" Mode="" Description="EMAIL_HOST_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">YOUR_PASSWORD</Config>
+  <Config Name="ALLOWED_HOSTS" Target="ALLOWED_HOSTS" Default="*" Mode="" Description="ALLOWED_HOSTS" Type="Variable" Display="always" Required="true" Mask="false">*</Config>
+</Container>
