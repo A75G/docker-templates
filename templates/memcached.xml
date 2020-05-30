@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>memcached</Name>
+  <Repository>bitnami/memcached:latest</Repository>
+  <Registry>https://hub.docker.com/r/bitnami/memcached/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://memcached.org/</Project>
+  <Overview>Memcached is an in-memory key-value store for small chunks of arbitrary data (strings, objects) from results of database calls, API calls, or page rendering.</Overview>
+  <Category>Tools:</Category>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/memcached.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/memcached.png</Icon>
+  <Description>Memcached is an in-memory key-value store for small chunks of arbitrary data (strings, objects) from results of database calls, API calls, or page rendering.</Description>
+  <Config Name="Port" Target="11211" Default="11211" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">11211</Config>
+  <Config Name="Memcached Username" Target="MEMCACHED_USERNAME" Default="" Mode="" Description="Memcached Username if you want authentication " Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Memcache Password" Target="MEMCACHED_PASSWORD" Default="" Mode="" Description="Memcache Password if you want authentication " Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
