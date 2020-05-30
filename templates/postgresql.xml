@@ -10,10 +10,6 @@
   <Project>https://www.postgresql.org/</Project>
   <Overview>PostgreSQL is an object-relational database management system (ORDBMS) with an emphasis on extensibility and on standards-compliance</Overview>
   <Branch>
-    <Tag>latest</Tag>
-    <TagDescription>latest</TagDescription>
-  </Branch>
-  <Branch>
     <Tag>12</Tag>
     <TagDescription>Postgresql 12</TagDescription>
   </Branch>
