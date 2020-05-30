@@ -10,19 +10,21 @@
   <Project>https://hub.docker.com/r/miniflux/miniflux/</Project>
   <Overview>Miniflux is a minimalist and opinionated feed reader.</Overview>
   <Category>Other:</Category>
-  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/miniflux.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/miniflux.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Miniflux is a minimalist and opinionated feed reader.</Description>
-  <Labels/>
-  <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">5600</Config>
-  <Config Name="PostgresDB" Target="DATABASE_URL" Default="" Mode="" Description="PostgresDB" Type="Variable" Display="always" Required="false" Mask="false">postgres://miniflux:secret@&lt;Hostname&gt;/miniflux?sslmode=disable</Config>
-  <Config Name="Admin Username" Target="ADMIN_USERNAME" Default="" Mode="" Description="Admin Username" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
-  <Config Name="Admin Password" Target="ADMIN_PASSWORD" Default="" Mode="" Description="Admin Password" Type="Variable" Display="always" Required="false" Mask="false">test123</Config>
-  <Config Name="Create Admin" Target="CREATE_ADMIN" Default="" Mode="" Description="CREATE_ADMIN" Type="Variable" Display="advanced" Required="false" Mask="false">1</Config>
-  <Config Name="Migrate" Target="RUN_MIGRATIONS" Default="" Mode="" Description="Migrate" Type="Variable" Display="advanced" Required="false" Mask="false">1</Config>
+  <Config Name="Port" Target="8080" Default="5600" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">5600</Config>
+  <Config Name="PostgresDB" Target="DATABASE_URL" Default="postgres://miniflux:secret@Hostname/miniflux2?sslmode=disable" Mode="" Description="PostgresDB Change this with correct database configuration you have." Type="Variable" Display="always" Required="true" Mask="false">postgres://miniflux:secret@Hostname/miniflux2?sslmode=disable</Config>
+  <Config Name="Admin Username" Target="ADMIN_USERNAME" Default="admin" Mode="" Description="Admin Username" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="Admin Password" Target="ADMIN_PASSWORD" Default="password" Mode="" Description="Admin Password" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="Base URL" Target="BASE_URL" Default="http://192.168.1.100:5600" Mode="" Description="Base URL to generate HTML links and base path for cookies for example http://192.168.1.100:5600 or https://rss.example.com" Type="Variable" Display="always" Required="true" Mask="false">http://192.168.1.100:5600</Config>
+  <Config Name="Feed Refresh Interval " Target="POLLING_FREQUENCY" Default="60" Mode="" Description="Refresh interval in minutes for feeds by minutes" Type="Variable" Display="always" Required="false" Mask="false">60</Config>
+  <Config Name="Cleanup Job Frequency" Target="CLEANUP_FREQUENCY_HOURS" Default="24" Mode="" Description="Cleanup job frequency, remove old sessions and archive read entries by hours" Type="Variable" Display="always" Required="false" Mask="false">24</Config>
+  <Config Name="Cleanup Read Items" Target="CLEANUP_ARCHIVE_READ_DAYS" Default="60" Mode="" Description="Number of days after which marking read items as removed" Type="Variable" Display="always" Required="false" Mask="false">60</Config>
+  <Config Name="Cleanup Old Sessions " Target="CLEANUP_REMOVE_SESSIONS_DAYS" Default="30" Mode="" Description="Number of days after removing old sessions from the database" Type="Variable" Display="always" Required="false" Mask="false">30</Config>
+  <Config Name="Create Admin" Target="CREATE_ADMIN" Default="" Mode="" Description="CREATE_ADMIN" Type="Variable" Display="advanced" Required="true" Mask="false">1</Config>
+  <Config Name="Migrate" Target="RUN_MIGRATIONS" Default="" Mode="" Description="Migrate" Type="Variable" Display="advanced" Required="true" Mask="false">1</Config>
+  <Config Name="Log Time" Target="LOG_DATE_TIME" Default="0|1" Mode="" Description="Set the value to 1 to show date/time in log messages" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="DEBUG" Target="DEBUG" Default="0|1" Mode="" Description="DEBUG" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
 </Container>
