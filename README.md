@@ -9,7 +9,6 @@
 - [CyberChef](#cyberchef)
 - [Dashmachine](#dashmachine)
   * [Default username and password](#default-username-and-password)
-  * [~~Unauthorized~~](#unauthorized)
 - [db-backup](#db-backup)
   * [Environment Variables](#environment-variables)
 - [ddns-route53](#ddns-route53)
@@ -57,6 +56,7 @@
   * [Before running the docker](#before-running-the-docker-3)
 - [Mediagoblin](#mediagoblin)
   * [Default username and password](#default-username-and-password-4)
+- [Memcached](#memcached)
 - [Miniflux](#miniflux)
 - [Moodle](#moodle)
   * [Notes](#notes-5)
@@ -65,6 +65,7 @@
 - [Netbox](#netbox)
   * [Notes](#notes-7)
 - [phpBB](#phpbb)
+- [Postgresql](#postgresql)
 - [PsiTransfer](#psitransfer)
   * [Notes](#notes-8)
 - [Pterodactyl-panel](#pterodactyl-panel)
@@ -107,6 +108,8 @@
 * After first run shut it down then remove Post Arguments and add ```./archive (URL,FEED,BOOKMARK,FILE)``` https://github.com/pirate/ArchiveBox/wiki/Usage#import-a-single-url-or-list-of-urls-via-stdin
 *  [Publishing Your Archive](https://github.com/pirate/ArchiveBox/wiki/Publishing-Your-Archive#publishing-your-archive)
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Backuppc
 ![Backuppc](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/backuppc.png)
@@ -118,6 +121,8 @@
 **Docker Hub:** https://hub.docker.com/r/tiredofit/backuppc/
 
 **Github:** https://www.github.com/tiredofit/docker-backuppc
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Commento
@@ -133,6 +138,8 @@
 ## Notes
 * PostgreSQL DB Required (Not Included)
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # CryptPad
 ![CryptPad](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cryptpad.png)
@@ -147,6 +154,8 @@
 ## First installation 
 * Edit config.js /mnt/appdata/cryptpad/cfg/config.js ```httpAddress: '0.0.0.0'``` and remove ```//``` before it
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # CyberChef
 ![CyberChef](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cyberchef.png)
@@ -158,6 +167,8 @@
 **Docker Hub:** https://hub.docker.com/r/aude/cyberchef
 
 **Github:** https://github.com/aude/cyberchef-docker
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Dashmachine
@@ -173,8 +184,8 @@
 ## Default username and password
 * Username: ```admin```
 * Password: ```admin```
-## ~~Unauthorized~~
-~~If you get unauthorized page add /login <- ```http://IP:PORT/login```~~
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # db-backup
@@ -209,6 +220,8 @@
 | `PARALLEL_COMPRESSION` | Use multiple cores when compressing backups `TRUE` or `FALSE` - Default `TRUE` |
 | `SPLIT_DB` | If using root as username and multiple DBs on system, set to TRUE to create Seperate DB Backups instead of all in one. - Default `FALSE` |
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # ddns-route53
 ![ddns-route53](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/ddns-route53.png)
@@ -223,6 +236,8 @@
 ## Before running the docker
 * Create ddns-route53.yml file in /mnt/user/appdata/ddns-route53/ - https://github.com/crazy-max/ddns-route53/blob/master/doc/configuration.md
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Dispatch
 ![Dispatch](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dispatch.png)
@@ -234,6 +249,8 @@
 **Docker Hub:** https://hub.docker.com/r/khlieng/dispatch/
 
 **Github:** https://github.com/khlieng/dispatch
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Docpht
@@ -249,6 +266,8 @@
 
 **Github:** https://github.com/docpht/docpht
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Droppy
 ![Droppy](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/droppy.png)
@@ -260,6 +279,8 @@
 **Docker Hub:** https://hub.docker.com/r/silverwind/droppy/
 
 **Github:** https://github.com/silverwind/droppy
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # FileRun
@@ -276,6 +297,8 @@
 * Username: ```superuser```
 * Password: ```superuser```
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Filestash
 ![Filestash](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/filestash.png)
@@ -287,6 +310,8 @@
 **Docker Hub:** https://hub.docker.com/r/machines/filestash/
 
 **Github:** https://github.com/mickael-kerjean/filestash
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # FreePBX
@@ -304,6 +329,8 @@
 * Wizard setup go to http://freepbx/admin/config.php
 * Use Database
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Freescout
 ![freescout](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/freescout.png)
@@ -318,6 +345,8 @@
 ## Creating User
 * CLI ```cd /www/html``` then ```php artisan freescout:create-user```
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Firefox-Syncserver
 ![Firefox-Syncserver](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/firefox-syncserver.png)
@@ -329,6 +358,8 @@
 **Docker Hub:** https://hub.docker.com/r/crazymax/firefox-syncserver
 
 **Github:** https://github.com/crazy-max/docker-firefox-syncserver
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Flarum
@@ -347,6 +378,8 @@ Password: ```flarum```
 ## Notes
 * Make Sure the base url is right if it local use only use http://<ip>:8000 and if you are hosting it on your domain it should be http://example.com or https://example.com.
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Golinks
 ![Golinks](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/golinks.png)
@@ -363,6 +396,8 @@ Password: ```flarum```
 ## Usage
 * https://github.com/prologic/golinks#usage
     
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Gossa
 ![Gossa](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/gossa.png)
@@ -376,6 +411,8 @@ Password: ```flarum```
 **Docker Hub:** https://hub.docker.com/r/pldubouilh/gossa/
 
 **Github:** https://www.github.com/pldubouilh/gossa
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Gotify
@@ -395,6 +432,8 @@ Password: ```flarum```
 * Username: ```admin```
 * Password: ```admin```
     
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Healthchecks
 ![Healthchecks](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/healthchecks.png)
@@ -407,6 +446,8 @@ Password: ```flarum```
 
 **Github:** https://github.com/galexrt/docker-healthchecks
     
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Homer
 ![Homer](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/homer.png)
@@ -421,6 +462,8 @@ Password: ```flarum```
 ## Before running the docker
 * ```mkdir -p /mnt/user/appdata/homer/config/```
 * ```wget -O /mnt/user/appdata/homer/config/config.yml https://raw.githubusercontent.com/bastienwirtz/homer/master/config.yml```
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Jitsi
@@ -443,6 +486,8 @@ Password: ```flarum```
 * How it all work
 ![](https://335wvf48o1332cksy23mw1pj-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/docker-jitsi-meet.png)
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Keycloak
 ![Keycloak](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/keycloak.png)
@@ -454,6 +499,8 @@ Password: ```flarum```
 **Registry:** https://quay.io/repository/keycloak/keycloak
 
 **Github:** https://github.com/keycloak/keycloak
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Kiwix-serve
@@ -471,6 +518,8 @@ Password: ```flarum```
 ## Content
 For more content https://wiki.kiwix.org/wiki/Content
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Leantime
 ![Leantime](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/leantime.png)
@@ -485,6 +534,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 ## First installation 
 * First setup go to http://leantime/install
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Linkding
 ![Linkding](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/linkding.png)
@@ -496,6 +547,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Docker Hub:** https://hub.docker.com/r/sissbruecker/linkding/
 
 **Github:** https://github.com/sissbruecker/linkding
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Mailpile
@@ -509,6 +562,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 
 **Github:** https://github.com/rroemhild/docker-mailpile
  
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Matomo
 ![Mailpile](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/matomo.png)
@@ -521,6 +576,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 
 **Github:** https://github.com/bitnami/bitnami-docker-matomo
  
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Matrix
 ![Matrix](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/matrix.png)
@@ -536,6 +593,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 * Unraid User - PSYCHOPATHiO [Guide](https://forums.unraid.net/topic/89502-support-a75g-repo/?do=findComment&comment=839576)
 * More info about matrix configuration [here](https://github.com/matrix-org/synapse/blob/master/README.rst)
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Mattermost
 ![Mattermost](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/mattermost.png)
@@ -547,6 +606,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Docker Hub:** https://hub.docker.com/r/mattermost/mattermost-team-edition/
 
 **Github:** https://github.com/mattermost/mattermost-server
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Mattermost-push-proxy
@@ -566,6 +627,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 * ```cd /mnt/user/appdata/mattermost-push-proxy/config```
 * ```wget https://raw.githubusercontent.com/mattermost/mattermost-push-proxy/master/config/mattermost-push-proxy.json```
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Mediagoblin
 ![Mediagoblin](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/mediagoblin.png)
@@ -581,6 +644,22 @@ For more content https://wiki.kiwix.org/wiki/Content
 * Username: ```admin```
 * Password: ```admin```
 
+**[`^back to top^`](#unraid-templates)**
+
+----
+# Memcached
+![Memcached](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/memcached.png)
+
+**Application Name:** Memcached
+
+**Application Site:** https://memcached.org/
+
+**Docker Hub:** https://hub.docker.com/r/bitnami/memcached
+    
+**Github:** https://github.com/bitnami/bitnami-docker-memcached
+
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Miniflux
 ![Miniflux](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/miniflux.png)
@@ -592,6 +671,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Docker Hub:** https://hub.docker.com/r/bitnami/moodle/
 
 **Github:** https://github.com/bitnami/bitnami-docker-moodle
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Moodle
@@ -608,6 +689,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 * Admin username and password is setup at in docker variables then you can change in Miniflux settings. Docker variable will be ignored when you change it inside the docker.
 * PostgreSQL DB Required (Not Included)
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Mumble
 ![Mumble](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/mumble.png)
@@ -622,6 +705,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 ## Notes
 * Download config.ini an customize it ```wget -O /mnt/user/appdata/mumble/config.ini https://raw.githubusercontent.com/PHLAK/docker-mumble/master/files/config.ini```
 * See https://wiki.mumble.info/wiki/Murmur.ini for more options
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Netbox
@@ -638,6 +723,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 * Create User cli to the docker then ```./manage.py createsuperuser```
 * PostgreSQL DB Required (Not Included)
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # phpBB
 ![phpBB](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/phpbb.png)
@@ -649,6 +736,22 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Docker Hub:** https://hub.docker.com/r/bitnami/phpbb
 
 **Github:** https://github.com/bitnami/bitnami-docker-phpbb/
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# Postgresql
+![Postgresql](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/postgresql.png)
+
+**Application Name:** Postgresql
+
+**Application Site:** https://www.postgresql.org/
+
+**Docker Hub:** https://hub.docker.com/r/bitnami/postgresql/
+
+**Github:** https://github.com/bitnami/bitnami-docker-postgresql
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # PsiTransfer
@@ -666,6 +769,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 ## Notes
 * Admin Page just add ```/admin``` to your URL
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Pterodactyl-panel
 ![pterodactyl-panel](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pterodactyl-panel.png)
@@ -679,6 +784,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Github:** https://github.com/ccarney16/pterodactyl-docker
 ## Creating User
 * CLI ```cd /www/html``` then ```php artisan p:user:make```
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Pure-FTPd
@@ -697,8 +804,9 @@ For more content https://wiki.kiwix.org/wiki/Content
 * Creating User use console then ```pure-pw useradd admin -u 99 -g 100 -d /home/admin -m``` then enter password of your choosing.
 * https://github.com/crazy-max/docker-pure-ftpd#notes
 
-----
+**[`^back to top^`](#unraid-templates)**
 
+----
 # Pwndrop
 ![Pwndrop](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pwndrop.png)
 
@@ -709,6 +817,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Docker Hub:** https://hub.docker.com/r/harshavardhanj/pwndrop
 
 **Github:** ttps://github.com/treyyoder/quakejs-docker
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Quakejs
@@ -724,6 +834,9 @@ For more content https://wiki.kiwix.org/wiki/Content
 # Notes
 * Use Custom:br0 https://youtu.be/2VnQxxn00jU?t=121 put Fixed IP address
 * Copy the ip and access it using you broswer
+
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Reactive-resume
 ![Reactive-resume](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/reactive-resume.png)
@@ -736,6 +849,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 
 **Github:** https://www.github.com/AmruthPillai/Reactive-Resume
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Redis
 ![Redis](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/redis.png)
@@ -747,6 +862,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Docker Hub:** https://hub.docker.com/r/bitnami/redis/
 
 **Github:** https://github.com/bitnami/bitnami-docker-redis
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Riot-web
@@ -763,6 +880,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 1. ```mkdir -p /mnt/user/appdata/riot-web/config```
 2.    ```wget -O /mnt/user/appdata/riot-web/config/config.json https://riot.im/develop/config.json```
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Searx
 ![Searx](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/searx.png)
@@ -775,6 +894,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 
 **Github:** https://github.com/asciimoo/searx
     
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Selfoss
 ![Selfoss](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/selfoss.png)
@@ -787,6 +908,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 
 **Github:** https://github.com/SSilence/selfoss/
     
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Shiori
 ![Shiori](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/shiori.png)
@@ -804,6 +927,8 @@ Password: ```gopher```
 ## Notes
 * Create new account inside the web gui so the default one will be removed.
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Solr
 ![Solr](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/solr.png)
@@ -816,6 +941,8 @@ Password: ```gopher```
 
 **Github:** https://github.com/bitnami/bitnami-docker-solr
 
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # StackEdit
 ![Shiori](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/stackedit.png)
@@ -827,6 +954,8 @@ Password: ```gopher```
 **Docker Hub:** https://hub.docker.com/r/qmcgaw/stackedit/
 
 **Github:** https://github.com/qdm12/stackedit-docker
+
+**[`^back to top^`](#unraid-templates)**
 
 ----
 # Wallabag
@@ -846,6 +975,9 @@ Password: ```wallabag```
 * https://github.com/wallabag/docker/issues/185
 ## Missing texture and images 
 * Make sure the domain variable is right http://ip:6500 and if you are hosting it http://wallabag.example.com or https://wallabag.example.com.
+
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # YaCy
 ![YaCy](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/yacy.png)
@@ -860,3 +992,7 @@ Password: ```wallabag```
 ## Default username and password
 Username: ```admin```
 Password: ```docker```
+
+**[`^back to top^`](#unraid-templates)**
+
+----
