@@ -1,9 +1,12 @@
 # Unraid Templates
+- [Apprise](#apprise)
 - [ArchiveBox](#archivebox)
   * [First installation](#first-installation)
 - [Backuppc](#backuppc)
-- [Commento](#commento)
+- [Cloudbeaver](#cloudbeaver)
   * [Notes](#notes)
+- [Commento](#commento)
+  * [Notes](#notes-1)
 - [CryptPad](#cryptpad)
   * [First installation](#first-installation-1)
 - [CyberChef](#cyberchef)
@@ -26,7 +29,7 @@
 - [Firefox-Syncserver](#firefox-syncserver)
 - [Flarum](#flarum)
   * [Default username and password](#default-username-and-password-2)
-  * [Notes](#notes-1)
+  * [Notes](#notes-2)
 - [Golinks](#golinks)
   * [Usage](#usage)
 - [Gossa](#gossa)
@@ -38,10 +41,10 @@
   * [Before running the docker](#before-running-the-docker-2)
 - [Jitsi](#jitsi)
   * [Change appdata location](#change-appdata-location)
-  * [Notes](#notes-2)
+  * [Notes](#notes-3)
 - [Keycloak](#keycloak)
 - [Kiwix-serve](#kiwix-serve)
-  * [Notes](#notes-3)
+  * [Notes](#notes-4)
   * [Content](#content)
 - [Leantime](#leantime)
   * [First installation](#first-installation-3)
@@ -52,29 +55,30 @@
   * [Guides](#guides)
 - [Mattermost](#mattermost)
 - [Mattermost-push-proxy](#mattermost-push-proxy)
-  * [Notes](#notes-4)
+  * [Notes](#notes-5)
   * [Before running the docker](#before-running-the-docker-3)
 - [Mediagoblin](#mediagoblin)
   * [Default username and password](#default-username-and-password-4)
 - [Memcached](#memcached)
 - [Miniflux](#miniflux)
 - [Moodle](#moodle)
-  * [Notes](#notes-5)
-- [Mumble](#mumble)
   * [Notes](#notes-6)
-- [Netbox](#netbox)
+- [Mumble](#mumble)
   * [Notes](#notes-7)
+- [Netbox](#netbox)
+  * [Notes](#notes-8)
 - [phpBB](#phpbb)
 - [Postgresql](#postgresql)
 - [PsiTransfer](#psitransfer)
-  * [Notes](#notes-8)
+  * [Notes](#notes-9)
 - [Pterodactyl-panel](#pterodactyl-panel)
   * [Creating User](#creating-user-1)
+- [Pterodactyl-daemon](#pterodactyl-daemon)
 - [Pure-FTPd](#pure-ftpd)
-  * [Notes](#notes-9)
+  * [Notes](#notes-10)
 - [Pwndrop](#pwndrop)
 - [Quakejs](#quakejs)
-- [Notes](#notes-10)
+- [Notes](#notes-11)
 - [Reactive-resume](#reactive-resume)
 - [Redis](#redis)
 - [Riot-web](#riot-web)
@@ -83,16 +87,32 @@
 - [Selfoss](#selfoss)
 - [Shiori](#shiori)
   * [Default username and password](#default-username-and-password-5)
-  * [Notes](#notes-11)
+  * [Notes](#notes-12)
 - [Solr](#solr)
 - [StackEdit](#stackedit)
 - [Wallabag](#wallabag)
   * [Default username and password](#default-username-and-password-6)
   * [PHP errors](#php-errors)
   * [Missing texture and images](#missing-texture-and-images)
+- [Wifi-card](#wifi-card)
 - [YaCy](#yacy)
   * [Default username and password](#default-username-and-password-7)
 
+----
+# Apprise
+![Apprise](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/apprise.png)
+
+**Application Name:** Apprise
+
+**Application Site:** https://github.com/caronc/apprise
+
+**Docker Hub:** https://hub.docker.com/r/caronc/apprise/
+
+**Github:** https://github.com/caronc/apprise
+
+**[`^back to top^`](#unraid-templates)**
+
+----
 ----
 # ArchiveBox
 ![ArchiveBox](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/archivebox.png)
@@ -121,6 +141,22 @@
 **Docker Hub:** https://hub.docker.com/r/tiredofit/backuppc/
 
 **Github:** https://www.github.com/tiredofit/docker-backuppc
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# Cloudbeaver
+![Cloudbeaver](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cloudbeaver.png)
+
+**Application Name:** Cloudbeaver
+
+**Application Site:** https://github.com/dbeaver/cloudbeaver
+
+**Docker Hub:** https://hub.docker.com/r/dalongrong/cloudbeaver
+
+**Github:** https://github.com/dbeaver/cloudbeaver
+## Notes
+* There is no appdata https://hub.docker.com/r/dalongrong/cloudbeaver
 
 **[`^back to top^`](#unraid-templates)**
 
@@ -788,6 +824,20 @@ For more content https://wiki.kiwix.org/wiki/Content
 **[`^back to top^`](#unraid-templates)**
 
 ----
+# Pterodactyl-daemon
+![pterodactyl-daemon](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pterodactyl-daemon.png)
+
+**Application Name:** Pterodactyl-daemon
+
+**Application Site:** https://pterodactyl.io/
+
+**Docker Hub:** https://hub.docker.com/r/ccarney16/pterodactyl-daemon/
+
+**Github:** https://github.com/ccarney16/pterodactyl-docker
+
+**[`^back to top^`](#unraid-templates)**
+
+----
 # Pure-FTPd
 ![Pure-FTPd](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pure-ftpd.png)
 
@@ -975,6 +1025,22 @@ Password: ```wallabag```
 * https://github.com/wallabag/docker/issues/185
 ## Missing texture and images 
 * Make sure the domain variable is right http://ip:6500 and if you are hosting it http://wallabag.example.com or https://wallabag.example.com.
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+
+# Wifi-card
+![Wifi-card](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/wifi-card.png)
+
+*<div>Icons made by <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
+**Application Name:** Wifi-card
+
+**Application Site:** https://github.com/bndw/wifi-card
+
+**Docker Hub:** https://hub.docker.com/r/bndw/wifi-card/
+
+**Github:** https://github.com/bndw/wifi-card
 
 **[`^back to top^`](#unraid-templates)**
 

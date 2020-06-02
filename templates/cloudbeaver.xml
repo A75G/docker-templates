@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>cloudbeaver</Name>
+  <Repository>dalongrong/cloudbeaver:latest</Repository>
+  <Registry>https://hub.docker.com/r/dalongrong/cloudbeaver/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/dbeaver/cloudbeaver</Project>
+  <Overview>CloudBeaver is a free and open source web-based database management tool.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8978]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/cloudbeaver.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cloudbeaver.png</Icon>
+  <Description>CloudBeaver is a free and open source web-based database management tool.</Description>
+  <Config Name="Port" Target="8978" Default="8978" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8978</Config>
+</Container>
