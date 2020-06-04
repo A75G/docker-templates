@@ -90,6 +90,7 @@
   * [Notes](#notes-12)
 - [Solr](#solr)
 - [StackEdit](#stackedit)
+- [Synapse-admin](#synapse-admin)
 - [Wallabag](#wallabag)
   * [Default username and password](#default-username-and-password-6)
   * [PHP errors](#php-errors)
@@ -1004,6 +1005,21 @@ Password: ```gopher```
 **Docker Hub:** https://hub.docker.com/r/qmcgaw/stackedit/
 
 **Github:** https://github.com/qdm12/stackedit-docker
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# Synapse-admin
+![Synapse-admin](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/synapse-admin.png)
+
+*Icons made by <a href="https://www.flaticon.com/free-icon/matrix_1774127" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*
+**Application Name:** Synapse-admin
+
+**Application Site:** https://github.com/Awesome-Technologies/synapse-admin
+
+**Docker Hub:** https://hub.docker.com/r/awesometechnologies/synapse-admin/
+
+**Github:** https://github.com/Awesome-Technologies/synapse-admin
 
 **[`^back to top^`](#unraid-templates)**
 

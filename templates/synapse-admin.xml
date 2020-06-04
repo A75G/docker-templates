@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>synapse-admin</Name>
+  <Repository>awesometechnologies/synapse-admin:latest</Repository>
+  <Registry>https://hub.docker.com/r/awesometechnologies/synapse-admin/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/Awesome-Technologies/synapse-admin</Project>
+  <Overview>Admin UI for Matrix Synapse homeserver. &#xD;
+&#xD;
+User must be admin user - how to make admin user "register_new_matrix_user -c /data/homeserver.yaml http://0.0.0.0:8008" </Overview>
+  <Category>Tools: Network:Messenger</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/synapse-admin.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/synapse-admin.png</Icon>
+  <Description>Admin UI for Matrix Synapse homeserver. &#xD;
+&#xD;
+User must be admin user - how to make admin user "register_new_matrix_user -c /data/homeserver.yaml http://0.0.0.0:8008" </Description>
+  <Config Name="Port" Target="80" Default="8010" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8010</Config>
+</Container>
