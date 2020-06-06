@@ -1,4 +1,5 @@
 # Unraid Templates
+- [Airsonic-advanced](#airsonic-advanced)
 - [Apprise](#apprise)
 - [ArchiveBox](#archivebox)
   * [First installation](#first-installation)
@@ -99,6 +100,21 @@
 - [YaCy](#yacy)
   * [Default username and password](#default-username-and-password-7)
 
+
+----
+# Airsonic-advanced
+![Airsonic-advanced](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/airsonic-advanced.png)
+
+**Application Name:** Airsonic-advanced
+
+**Application Site:** https://github.com/airsonic-advanced/airsonic-advanced
+
+**Docker Hub:** https://hub.docker.com/r/airsonicadvanced/airsonic-advanced/
+
+**Github:** https://github.com/airsonic-advanced/airsonic-advanced
+
+**[`^back to top^`](#unraid-templates)**
+
 ----
 # Apprise
 ![Apprise](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/apprise.png)
@@ -113,7 +129,6 @@
 
 **[`^back to top^`](#unraid-templates)**
 
-----
 ----
 # ArchiveBox
 ![ArchiveBox](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/archivebox.png)

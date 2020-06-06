@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>airsonic-advanced</Name>
+  <Repository>airsonicadvanced/airsonic-advanced:latest</Repository>
+  <Registry>https://hub.docker.com/r/airsonicadvanced/airsonic-advanced/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/airsonic-advanced/airsonic-advanced</Project>
+  <Overview>Airsonic-Advanced is a more modern implementation of the Airsonic fork with several key performance and feature enhancements. It adds and supersedes several features in Airsonic.</Overview>
+  <Category>MediaApp:Music MediaServer:Music</Category>
+  <WebUI>https://[IP]:[PORT:4040]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/airsonic-advanced.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/airsonic-advanced.png</Icon>
+  <Description>Airsonic-Advanced is a more modern implementation of the Airsonic fork with several key performance and feature enhancements. It adds and supersedes several features in Airsonic.</Description>
+  <Config Name="HTTP" Target="4040" Default="4040" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="true" Mask="false">4040</Config>
+  <Config Name="UPNP_PORT" Target="4041" Default="4041" Mode="tcp" Description="UPNP_PORT" Type="Port" Display="always" Required="false" Mask="false">4041</Config>
+  <Config Name="Default DLNA/UPnP ports" Target="1900" Default="1900" Mode="udp" Description="Default DLNA/UPnP ports" Type="Port" Display="always" Required="false" Mask="false">1900</Config>
+  <Config Name="Appdata" Target="/var/airsonic" Default="/mnt/user/appdata/airsonic-advanced/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/airsonic-advanced/</Config>
+  <Config Name="Music Path" Target="/var/music" Default="" Mode="rw" Description="Music Path" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Podcast Path" Target="/var/podcast" Default="" Mode="rw" Description="Podcast Path" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Playlist Path" Target="/var/playlists" Default="" Mode="rw" Description="Playlist Path" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="CONTEXT_PATH" Target="CONTEXT_PATH" Default="/" Mode="" Description="CONTEXT_PATH" Type="Variable" Display="always" Required="true" Mask="false">/</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="PUID" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+</Container>
