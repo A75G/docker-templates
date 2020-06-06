@@ -22,6 +22,7 @@
   <Config Name="Podcast Path" Target="/var/podcast" Default="" Mode="rw" Description="Podcast Path" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Playlist Path" Target="/var/playlists" Default="" Mode="rw" Description="Playlist Path" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="CONTEXT_PATH" Target="CONTEXT_PATH" Default="/" Mode="" Description="CONTEXT_PATH" Type="Variable" Display="always" Required="true" Mask="false">/</Config>
+  <Config Name="JAVA_OPTS" Target="JAVA_OPTS" Default="-Xms256m -Xmx512m" Mode="" Description="JAVA_OPTS" Type="Variable" Display="always" Required="true" Mask="false">-Xms256m -Xmx512m</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="PUID" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
 </Container>
