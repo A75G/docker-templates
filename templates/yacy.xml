@@ -8,7 +8,10 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://yacy.net/</Project>
-  <Overview>YaCy decentralized search engine (https://yacy.net)[br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]admin[/B][/u][br]Password: [B][u]docker[/B][/u][/b]</Overview>
+  <Overview>YaCy decentralized search engine (https://yacy.net)[br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]admin[/B][/u][br]Password: [B][u]docker[/B][/u][/b]&#xD;
+&#xD;
+Set an admin account immediately after the first start-up. Open:&#xD;
+http://ServerIP:8090/ConfigAccounts_p.html </Overview>
   <Category>Tools: Network:Web</Category>
   <WebUI>http://[IP]:[PORT:8090]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/yacy.xml</TemplateURL>
@@ -17,7 +20,10 @@
   <PostArgs/>
   <DonateText/>
   <DonateLink/>
-  <Description>YaCy decentralized search engine (https://yacy.net)[br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]admin[/B][/u][br]Password: [B][u]docker[/B][/u][/b]</Description>
+  <Description>YaCy decentralized search engine (https://yacy.net)[br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]admin[/B][/u][br]Password: [B][u]docker[/B][/u][/b]&#xD;
+&#xD;
+Set an admin account immediately after the first start-up. Open:&#xD;
+http://ServerIP:8090/ConfigAccounts_p.html </Description>
   <Config Name="HTTP" Target="8090" Default="8090" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="true" Mask="false">8090</Config>
   <Config Name="HTTPs" Target="8443" Default="8443" Mode="tcp" Description="HTTPs (Not Required if you using reverse proxy)" Type="Port" Display="always" Required="false" Mask="false">8443</Config>
   <Config Name="Appdata" Target="/opt/yacy_search_server/DATA" Default="/mnt/user/appdata/yacy/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/yacy/</Config>
