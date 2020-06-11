@@ -99,6 +99,7 @@
 - [Wifi-card](#wifi-card)
 - [YaCy](#yacy)
   * [Default username and password](#default-username-and-password-7)
+  * [Notes](#notes-13)
 
 
 ----
@@ -1090,6 +1091,9 @@ Password: ```wallabag```
 Username: ```admin```
 Password: ```docker```
 
+## Notes
+Set an admin account immediately after the first start-up. Open:
+http://<ServerIP>:8090/ConfigAccounts_p.html 
 **[`^back to top^`](#unraid-templates)**
 
 ----
