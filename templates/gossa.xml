@@ -20,6 +20,7 @@
   <Description>&#x1F3B6; a fast and simple multimedia fileserver</Description>
   <Config Name="Port" Target="8001" Default="8001" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8001</Config>
   <Config Name="Data" Target="/shared" Default="/mnt/user/appdata/gossa/" Mode="rw" Description="Data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/gossa/</Config>
+  <Config Name="READONLY" Target="READONLY" Default="false|true" Mode="" Description="READONLY" Type="Variable" Display="always" Required="true" Mask="false">false</Config>
   <Config Name="FOLLOW_SYMLINKS" Target="FOLLOW_SYMLINKS" Default="false|true" Mode="" Description="FOLLOW_SYMLINKS" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
   <Config Name="PREFIX" Target="PREFIX" Default="/" Mode="" Description="PREFIX" Type="Variable" Display="advanced" Required="false" Mask="false">/</Config>
   <Config Name="UID" Target="UID" Default="99" Mode="" Description="UID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
