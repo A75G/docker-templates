@@ -92,6 +92,8 @@
 - [Solr](#solr)
 - [StackEdit](#stackedit)
 - [Synapse-admin](#synapse-admin)
+- [Tar1090](#tar1090)
+- [Torprivoxy](#torprivoxy)
 - [Wallabag](#wallabag)
   * [Default username and password](#default-username-and-password-6)
   * [PHP errors](#php-errors)
@@ -100,7 +102,6 @@
 - [YaCy](#yacy)
   * [Default username and password](#default-username-and-password-7)
   * [Notes](#notes-13)
-
 
 ----
 # Airsonic-advanced
@@ -1036,6 +1037,36 @@ Password: ```gopher```
 **Docker Hub:** https://hub.docker.com/r/awesometechnologies/synapse-admin/
 
 **Github:** https://github.com/Awesome-Technologies/synapse-admin
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# Tar1090
+![Tar1090](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/tar1090.png)
+
+*Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*
+**Application Name:** Synapse-admin
+
+**Application Site:** https://www.github.com/mikenye/docker-tar1090
+
+**Docker Hub:** https://hub.docker.com/r/mikenye/tar1090
+
+**Github:** https://www.github.com/mikenye/docker-tar1090
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# Torprivoxy
+![Torprivoxy](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/torprivoxy.png)
+
+*Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*
+**Application Name:** Synapse-admin
+
+**Application Site:** https://github.com/avpnusr/torprivoxy
+
+**Docker Hub:** https://hub.docker.com/r/avpnusr/torprivoxy/
+
+**Github:** https://github.com/avpnusr/torprivoxy
 
 **[`^back to top^`](#unraid-templates)**
 

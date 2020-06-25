@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>torprivoxy</Name>
+  <Repository>avpnusr/torprivoxy:latest</Repository>
+  <Registry>https://hub.docker.com/r/avpnusr/torprivoxy/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/avpnusr/torprivoxy</Project>
+  <Overview>Small TOR and Privoxy container with just 8 MB</Overview>
+  <Category>Network:Proxy</Category>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/torprivoxy.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/torprivoxy.png</Icon>
+  <Description>Small TOR and Privoxy container with just 8 MB</Description>
+  <Config Name="HTTP Proxy" Target="8118" Default="8118" Mode="tcp" Description="HTTP Proxy" Type="Port" Display="always" Required="false" Mask="false">8118</Config>
+  <Config Name="SOCKS5 proxy" Target="9050" Default="9050" Mode="tcp" Description="SOCKS5 proxy" Type="Port" Display="always" Required="false" Mask="false">9050</Config>
+</Container>
