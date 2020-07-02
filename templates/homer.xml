@@ -21,5 +21,4 @@
   <Labels/>
   <Config Name="Port" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
   <Config Name="Assets Path" Target="/www/assets" Default="" Mode="rw" Description="Container Path: /www/assets" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/homer/assets/</Config>
-  <Config Name="Config Path" Target="/www/config.yml" Default="" Mode="rw" Description="Container Path: /www/config.yml" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/homer/config/config.yml</Config>
 </Container>
