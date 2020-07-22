@@ -9,13 +9,13 @@
   <Project>https://moodle.org</Project>
   <Overview>Moodle is a very popular open source learning management solution (LMS) for the delivery of elearning courses and programs.</Overview>
   <Category>Productivity: Network:Web Status:Stable</Category>
-  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/moodle.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/moodle.png</Icon>
   <Description>Moodle is a very popular open source learning management solution (LMS) for the delivery of elearning courses and programs.</Description>
-  <Config Name="HTTP" Target="80" Default="8000" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
-  <Config Name="HTTPs" Target="443" Default="8443" Mode="tcp" Description="HTTPs (Not needed if you use reverse proxy)" Type="Port" Display="always" Required="false" Mask="false">8443</Config>
-  <Config Name="Appdata" Target="/bitnami" Default="/mnt/user/appdata/moodle/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/moodle/</Config>
+  <Config Name="HTTP" Target="8080" Default="8080" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="HTTPs" Target="8443" Default="8443" Mode="tcp" Description="HTTPs (Not needed if you use reverse proxy)" Type="Port" Display="always" Required="false" Mask="false">8443</Config>
+  <Config Name="Appdata" Target="/bitnami/moodle" Default="/mnt/user/appdata/moodle/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/moodle/</Config>
   <Config Name="ALLOW_EMPTY_PASSWORD" Target="ALLOW_EMPTY_PASSWORD" Default="no|yes" Mode="" Description="It can be used to allow blank passwords." Type="Variable" Display="advanced" Required="true" Mask="false">no</Config>
   <Config Name="MariaDB Hostname or IP" Target="MARIADB_HOST" Default="mariadb" Mode="" Description="MariaDB Hostname or IP" Type="Variable" Display="always" Required="true" Mask="false">mariadb</Config>
   <Config Name="MariaDB Database Port" Target="MARIADB_PORT_NUMBER" Default="3306" Mode="" Description="MariaDB Database Port" Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
