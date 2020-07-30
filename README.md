@@ -142,14 +142,17 @@
 
 **Github:** https://github.com/pirate/ArchiveBox
 ## First installation 
-1. **Run** the Archivebox Docker and **Console** to it.
+1. **Run** the Archivebox Docker and **Console** to it and enter.
 ```su - archivebox```
 ```cd /data```
 ```archivebox init```
 ```archivebox manage createsuperuser```
 2. **Edit** Archivebox Docker Click at **Advanced View** put ```server 0.0.0.0:8000``` in **Post Arguments**.
 ## Configuration
-To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://github.com/pirate/ArchiveBox/wiki/Configuration)
+To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://github.com/pirate/ArchiveBox/wiki/Configuration) after the update Console Archivebox and enter
+```su - archivebox```
+```cd /data```
+```archivebox init```
 
 **[`^back to top^`](#unraid-templates)**
 
