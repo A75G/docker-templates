@@ -1,8 +1,8 @@
-# Unraid Templates
 - [Airsonic-advanced](#airsonic-advanced)
 - [Apprise](#apprise)
 - [ArchiveBox](#archivebox)
   * [First installation](#first-installation)
+  * [Configuration](#configuration)
 - [Backuppc](#backuppc)
 - [Cloudbeaver](#cloudbeaver)
   * [Notes](#notes)
@@ -69,7 +69,6 @@
 - [Netbox](#netbox)
   * [Notes](#notes-8)
 - [phpBB](#phpbb)
-- [Postgresql](#postgresql)
 - [PsiTransfer](#psitransfer)
   * [Notes](#notes-9)
 - [Pterodactyl-panel](#pterodactyl-panel)
@@ -143,8 +142,14 @@
 
 **Github:** https://github.com/pirate/ArchiveBox
 ## First installation 
-* After first run shut it down then remove Post Arguments and add ```./archive (URL,FEED,BOOKMARK,FILE)``` https://github.com/pirate/ArchiveBox/wiki/Usage#import-a-single-url-or-list-of-urls-via-stdin
-*  [Publishing Your Archive](https://github.com/pirate/ArchiveBox/wiki/Publishing-Your-Archive#publishing-your-archive)
+1. **Run** the Archivebox Docker and **Console** to it.
+```su - archivebox```
+```cd /data```
+```archivebox init```
+```archivebox manage createsuperuser```
+2. **Edit** Archivebox Docker Click at **Advanced View** put ```server 0.0.0.0:8000``` in **Post Arguments**.
+## Configuration
+To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://github.com/pirate/ArchiveBox/wiki/Configuration)
 
 **[`^back to top^`](#unraid-templates)**
 
@@ -790,20 +795,6 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Docker Hub:** https://hub.docker.com/r/bitnami/phpbb
 
 **Github:** https://github.com/bitnami/bitnami-docker-phpbb/
-
-**[`^back to top^`](#unraid-templates)**
-
-----
-# Postgresql
-![Postgresql](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/postgresql.png)
-
-**Application Name:** Postgresql
-
-**Application Site:** https://www.postgresql.org/
-
-**Docker Hub:** https://hub.docker.com/r/bitnami/postgresql/
-
-**Github:** https://github.com/bitnami/bitnami-docker-postgresql
 
 **[`^back to top^`](#unraid-templates)**
 

@@ -8,31 +8,17 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://archivebox.io/</Project>
-  <Overview>The self-hosted internet archiver. [br] After first run shut it down then remove Post Arguments and add ./archive (URL,FEED,BOOKMARK,FILE)[/br]Then point reverse proxy to Application folder and host it</Overview>
-  <Category>Tools: Status:Beta</Category>
+  <Overview>The self-hosted internet archiver. &#xD;
+Guide - https://github.com/A75G/docker-templates/blob/master/README.md#first-installation (Important)</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/archivebox.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/archivebox.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>-it</ExtraParams>
   <PostArgs>bash -c 'echo "https://github.com/pirate/ArchiveBox" | /bin/archive; tail -f /dev/null'</PostArgs>
-  <DonateText/>
-  <DonateLink/>
-  <Description>The self-hosted internet archiver.</Description>
+  <DateInstalled>1596121988</DateInstalled>
+  <Description>The self-hosted internet archiver. &#xD;
+Guide - https://github.com/A75G/docker-templates/blob/master/README.md#first-installation (Important)</Description>
+  <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
   <Config Name="Data" Target="/data" Default="/mnt/user/appdata/archivebox/" Mode="rw" Description="Data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/archivebox/</Config>
-  <Config Name="OUTPUT_PERMISSIONS" Target="OUTPUT_PERMISSIONS" Default="755" Mode="" Description="Permissions to set the output directory and file contents to." Type="Variable" Display="always" Required="false" Mask="false">755</Config>
-  <Config Name="ONLY_NEW" Target="ONLY_NEW" Default="False|True" Mode="" Description="Download files for only newly added links when running the ./archive command." Type="Variable" Display="always" Required="false" Mask="false">False</Config>
-  <Config Name="TIMEOUT" Target="TIMEOUT" Default="60" Mode="" Description="Maximum allowed download time per archive method for each link in seconds." Type="Variable" Display="always" Required="false" Mask="false">60</Config>
-  <Config Name="MEDIA_TIMEOUT" Target="MEDIA_TIMEOUT" Default="3600" Mode="" Description="Maximum allowed download time for fetching media when FETCH_MEDIA=True in seconds." Type="Variable" Display="always" Required="false" Mask="false">3600</Config>
-  <Config Name="FOOTER_INFO" Target="FOOTER_INFO" Default="Content is hosted for personal archiving purposes only. Contact server owner for any takedown requests." Mode="" Description="Some text to display in the footer of the archive index. Useful for providing server admin contact info to respond to takedown requests." Type="Variable" Display="always" Required="false" Mask="false">Content is hosted for personal archiving purposes only. Contact server owner for any takedown requests.</Config>
-  <Config Name="URL_BLACKLIST" Target="URL_BLACKLIST" Default="" Mode="" Description="A regex expression used to exclude certain URLs from the archive." Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="FETCH_TITLE" Target="FETCH_TITLE" Default="True|False" Mode="" Description="https://github.com/pirate/ArchiveBox/wiki/Configuration#archive-method-toggles" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
-  <Config Name="FETCH_FAVICON" Target="FETCH_FAVICON" Default="True|False" Mode="" Description="https://github.com/pirate/ArchiveBox/wiki/Configuration#archive-method-toggles" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
-  <Config Name="FETCH_WGET" Target="FETCH_WGET" Default="True|False" Mode="" Description="https://github.com/pirate/ArchiveBox/wiki/Configuration#archive-method-toggles" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
-  <Config Name="FETCH_WARC" Target="FETCH_WARC" Default="True|False" Mode="" Description="https://github.com/pirate/ArchiveBox/wiki/Configuration#archive-method-toggles" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
-  <Config Name="FETCH_PDF" Target="FETCH_PDF" Default="True|False" Mode="" Description="https://github.com/pirate/ArchiveBox/wiki/Configuration#archive-method-toggles" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
-  <Config Name="FETCH_SCREENSHOT" Target="FETCH_SCREENSHOT" Default="True|False" Mode="" Description="https://github.com/pirate/ArchiveBox/wiki/Configuration#archive-method-toggles" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
-  <Config Name="FETCH_DOM" Target="FETCH_DOM" Default="True|False" Mode="" Description="https://github.com/pirate/ArchiveBox/wiki/Configuration#archive-method-toggles" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
-  <Config Name="FETCH_GIT" Target="FETCH_GIT" Default="True|False" Mode="" Description="https://github.com/pirate/ArchiveBox/wiki/Configuration#archive-method-toggles" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
-  <Config Name="FETCH_MEDIA" Target="FETCH_MEDIA" Default="True|False" Mode="" Description="https://github.com/pirate/ArchiveBox/wiki/Configuration#archive-method-toggles" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
-  <Config Name="SUBMIT_ARCHIVE_DOT_ORG" Target="SUBMIT_ARCHIVE_DOT_ORG" Default="True|False" Mode="" Description="https://github.com/pirate/ArchiveBox/wiki/Configuration#archive-method-toggles" Type="Variable" Display="always" Required="false" Mask="false">True</Config>
-  <Config Name="RESOLUTION" Target="RESOLUTION" Default="1440,900" Mode="" Description="Screenshot resolution in pixels width,height." Type="Variable" Display="always" Required="false" Mask="false">1440,900</Config>
 </Container>
