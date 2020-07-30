@@ -14,7 +14,7 @@ Guide - https://github.com/A75G/docker-templates/blob/master/README.md#first-ins
   <WebUI>http://[IP]:[PORT:8000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/archivebox.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/archivebox.png</Icon>
-  <ExtraParams>-it</ExtraParams>
+  <ExtraParams>-p 8000</ExtraParams>
   <PostArgs>server 0.0.0.0:8000</PostArgs>
   <DateInstalled>1596121988</DateInstalled>
   <Description>The self-hosted internet archiver. &#xD;
