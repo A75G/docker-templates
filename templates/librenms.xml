@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>librenms</Name>
+  <Repository>librenms/librenms:latest</Repository>
+  <Registry>https://hub.docker.com/r/librenms/librenms/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://www.librenms.org/</Project>
+  <Overview>a fully featured network monitoring system that provides a wealth of features and device support.&#xD;
+&#xD;
+Database must be CHARACTER SET utf8 COLLATE utf8_unicode_ci</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:8000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/librenms.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/librenms.png</Icon>
+  <Description>a fully featured network monitoring system that provides a wealth of features and device support.&#xD;
+&#xD;
+Database must be CHARACTER SET utf8 COLLATE utf8_unicode_ci</Description>
+  <Config Name="HTTP Port" Target="8000" Default="8000" Mode="tcp" Description="HTTP Port" Type="Port" Display="always" Required="false" Mask="false">6980</Config>
+  <Config Name="Syslog Port" Target="514" Default="514" Mode="udp" Description="Syslog Port" Type="Port" Display="always" Required="false" Mask="false">514</Config>
+  <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/librenms/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/librenms/</Config>
+  <Config Name="MEMORY_LIMIT" Target="MEMORY_LIMIT" Default="256M" Mode="" Description="PHP memory limit" Type="Variable" Display="always" Required="false" Mask="false">256M</Config>
+  <Config Name="UPLOAD_MAX_SIZE" Target="UPLOAD_MAX_SIZE" Default="16M" Mode="" Description=" Upload max size " Type="Variable" Display="always" Required="false" Mask="false">16M</Config>
+  <Config Name="OPCACHE_MEM_SIZE" Target="OPCACHE_MEM_SIZE" Default="128" Mode="" Description="PHP OpCache memory consumption" Type="Variable" Display="always" Required="false" Mask="false">128</Config>
+  <Config Name="LISTEN_IPV6" Target="LISTEN_IPV6" Default="true" Mode="" Description="Enable IPv6 for Nginx" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="REAL_IP_FROM" Target="REAL_IP_FROM" Default="0.0.0.0/32" Mode="" Description="Trusted addresses that are known to send correct replacement addresses" Type="Variable" Display="always" Required="false" Mask="false">0.0.0.0/32</Config>
+  <Config Name="REAL_IP_HEADER" Target="REAL_IP_HEADER" Default="X-Forwarded-For" Mode="" Description="Request header field whose value will be used to replace the client address" Type="Variable" Display="always" Required="false" Mask="false">X-Forwarded-For</Config>
+  <Config Name="LOG_IP_VAR" Target="LOG_IP_VAR" Default="remote_addr" Mode="" Description="Use another variable to retrieve the remote IP address for access log_format on Nginx. " Type="Variable" Display="always" Required="false" Mask="false">remote_addr</Config>
+  <Config Name="DB_HOST" Target="DB_HOST" Default="" Mode="" Description="MySQL database hostname / IP address" Type="Variable" Display="always" Required="false" Mask="false">192.168.0.100</Config>
+  <Config Name="DB_PORT" Target="DB_PORT" Default="3306" Mode="" Description="MySQL database port " Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
+  <Config Name="DB_NAME" Target="DB_NAME" Default="test" Mode="" Description="MySQL database name" Type="Variable" Display="always" Required="false" Mask="false">librenms</Config>
+  <Config Name="DB_USER" Target="DB_USER" Default="" Mode="" Description="MySQL user " Type="Variable" Display="always" Required="false" Mask="false">librenms</Config>
+  <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="" Mode="" Description="MySQL password" Type="Variable" Display="always" Required="false" Mask="false">librenms</Config>
+  <Config Name="DB_TIMEOUT" Target="DB_TIMEOUT" Default="60" Mode="" Description="Time in seconds after which we stop trying to reach the MySQL server" Type="Variable" Display="always" Required="false" Mask="false">60</Config>
+  <Config Name="LIBRENMS_BASE_URL" Target="LIBRENMS_BASE_URL" Default="/" Mode="" Description=" URL of your LibreNMS instance" Type="Variable" Display="always" Required="false" Mask="false">/</Config>
+  <Config Name="LIBRENMS_SNMP_COMMUNITY" Target="LIBRENMS_SNMP_COMMUNITY" Default="public" Mode="" Description="This container's SNMP v2c community string " Type="Variable" Display="always" Required="false" Mask="false">public</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+</Container>
