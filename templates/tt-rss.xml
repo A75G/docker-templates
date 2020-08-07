@@ -18,12 +18,6 @@ The default username and password after initial configuration is admin/password<
 The default username and password after initial configuration is admin/password</Description>
   <Config Name="Port" Target="80" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="AppData" Target="/config" Default="/mnt/user/appdata/tt-rss/" Mode="rw" Description="AppData" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tt-rss/</Config>
-  <Config Name="Database type" Target="DB_TYPE" Default="mysql" Mode="" Description="Database type" Type="Variable" Display="always" Required="false" Mask="false">mysql</Config>
-  <Config Name="Database Host" Target="DB_HOST" Default="192.168.0.100" Mode="" Description="DB_HOST" Type="Variable" Display="always" Required="false" Mask="false">192.168.0.100</Config>
-  <Config Name="Database User" Target="DB_USER" Default="root" Mode="" Description="Database User" Type="Variable" Display="always" Required="false" Mask="false">root</Config>
-  <Config Name="Database Name" Target="DB_NAME" Default="ttss" Mode="" Description="Database Name" Type="Variable" Display="always" Required="false" Mask="false">ttss</Config>
-  <Config Name="Database Password" Target="DB_PASS" Default="password" Mode="" Description="Database Password" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
-  <Config Name="Database Port" Target="DB_PORT" Default="3306" Mode="" Description="Database Port" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
   <Config Name="URL Path" Target="SELF_URL_PATH" Default="http://192.168.0.100:8000/" Mode="" Description="URL Path" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.0.100:8000/</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
