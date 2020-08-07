@@ -18,7 +18,6 @@ The default username and password after initial configuration is admin/password<
 The default username and password after initial configuration is admin/password</Description>
   <Config Name="Port" Target="80" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="AppData" Target="/config" Default="/mnt/user/appdata/tt-rss/" Mode="rw" Description="AppData" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tt-rss/</Config>
-  <Config Name="URL Path" Target="SELF_URL_PATH" Default="http://192.168.0.100:8000/" Mode="" Description="URL Path" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.0.100:8000/</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
 </Container>
