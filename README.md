@@ -1,3 +1,4 @@
+# Unraid Templates
 - [Airsonic-advanced](#airsonic-advanced)
 - [Apprise](#apprise)
 - [ArchiveBox](#archivebox)
@@ -49,6 +50,8 @@
   * [Content](#content)
 - [Leantime](#leantime)
   * [First installation](#first-installation-3)
+- [Librenms](#librenms)
+  * [Notes](#notes-5)
 - [Linkding](#linkding)
 - [Mailpile](#mailpile)
 - [Matomo](#matomo)
@@ -56,29 +59,29 @@
   * [Guides](#guides)
 - [Mattermost](#mattermost)
 - [Mattermost-push-proxy](#mattermost-push-proxy)
-  * [Notes](#notes-5)
+  * [Notes](#notes-6)
   * [Before running the docker](#before-running-the-docker-3)
 - [Mediagoblin](#mediagoblin)
   * [Default username and password](#default-username-and-password-4)
 - [Memcached](#memcached)
 - [Miniflux](#miniflux)
 - [Moodle](#moodle)
-  * [Notes](#notes-6)
-- [Mumble](#mumble)
   * [Notes](#notes-7)
-- [Netbox](#netbox)
+- [Mumble](#mumble)
   * [Notes](#notes-8)
+- [Netbox](#netbox)
+  * [Notes](#notes-9)
 - [phpBB](#phpbb)
 - [PsiTransfer](#psitransfer)
-  * [Notes](#notes-9)
+  * [Notes](#notes-10)
 - [Pterodactyl-panel](#pterodactyl-panel)
   * [Creating User](#creating-user-1)
 - [Pterodactyl-daemon](#pterodactyl-daemon)
 - [Pure-FTPd](#pure-ftpd)
-  * [Notes](#notes-10)
+  * [Notes](#notes-11)
 - [Pwndrop](#pwndrop)
 - [Quakejs](#quakejs)
-- [Notes](#notes-11)
+- [Notes](#notes-12)
 - [Reactive-resume](#reactive-resume)
 - [Redis](#redis)
 - [Riot-web](#riot-web)
@@ -87,12 +90,16 @@
 - [Selfoss](#selfoss)
 - [Shiori](#shiori)
   * [Default username and password](#default-username-and-password-5)
-  * [Notes](#notes-12)
+  * [Notes](#notes-13)
+- [Shlink](#shlink)
+- [Shlink-web-client](#shlink-web-client)
+  * [Before Installing](#before-installing)
 - [Solr](#solr)
 - [StackEdit](#stackedit)
 - [Synapse-admin](#synapse-admin)
 - [Tar1090](#tar1090)
 - [Torprivoxy](#torprivoxy)
+- [tt-rss](#tt-rss)
 - [Wallabag](#wallabag)
   * [Default username and password](#default-username-and-password-6)
   * [PHP errors](#php-errors)
@@ -100,7 +107,7 @@
 - [Wifi-card](#wifi-card)
 - [YaCy](#yacy)
   * [Default username and password](#default-username-and-password-7)
-  * [Notes](#notes-13)
+  * [Notes](#notes-14)
 
 ----
 # Airsonic-advanced
@@ -142,17 +149,14 @@
 
 **Github:** https://github.com/pirate/ArchiveBox
 ## First installation 
-1. **Run** the Archivebox Docker and **Console** to it and enter.
+1. **Run** the Archivebox Docker and **Console** to it.
 ```su - archivebox```
 ```cd /data```
 ```archivebox init```
 ```archivebox manage createsuperuser```
 2. **Edit** Archivebox Docker Click at **Advanced View** put ```server 0.0.0.0:8000``` in **Post Arguments**.
 ## Configuration
-To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://github.com/pirate/ArchiveBox/wiki/Configuration) after the update Console Archivebox and enter
-```su - archivebox```
-```cd /data```
-```archivebox init```
+To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://github.com/pirate/ArchiveBox/wiki/Configuration)
 
 **[`^back to top^`](#unraid-templates)**
 
@@ -599,6 +603,22 @@ For more content https://wiki.kiwix.org/wiki/Content
 **[`^back to top^`](#unraid-templates)**
 
 ----
+# Librenms
+![Librenms](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/librenms.png)
+
+**Application Name:** Librenms
+
+**Application Site:** https://www.librenms.org/
+
+**Docker Hub:** https://hub.docker.com/r/librenms/librenms/
+
+**Github:** https://github.com/librenms/docker
+## Notes
+* Database must be CHARACTER SET utf8 COLLATE utf8_unicode_ci
+
+**[`^back to top^`](#unraid-templates)**
+
+----
 # Linkding
 ![Linkding](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/linkding.png)
 
@@ -992,6 +1012,40 @@ Password: ```gopher```
 **[`^back to top^`](#unraid-templates)**
 
 ----
+# Shlink
+![Shlink](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/shlink.png)
+
+**Application Name:** Shlink
+
+**Application Site:** https://shlink.io/
+
+**Docker Hub:** https://hub.docker.com/r/shlinkio/shlink/
+
+**Github:** https://github.com/shlinkio/shlink
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# Shlink-web-client
+![Shlink-web-client](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/Shlink-web-client.png)
+
+**Application Name:** Shlink-web-client
+
+**Application Site:** https://shlink.io/
+
+**Docker Hub:** https://hub.docker.com/r/shlinkio/shlink-web-client/
+
+**Github:** https://www.github.com/shlinkio/shlink-web-client
+## Before Installing
+1. Install shlink
+2. CLI to it and enter "shlink api-key:generate"
+3. Copy the api and add and edit to servers.json
+
+* https://hub.docker.com/r/shlinkio/shlink-web-client/ servers.json
+
+**[`^back to top^`](#unraid-templates)**
+
+----
 # Solr
 ![Solr](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/solr.png)
 
@@ -1061,6 +1115,18 @@ Password: ```gopher```
 **Docker Hub:** https://hub.docker.com/r/avpnusr/torprivoxy/
 
 **Github:** https://github.com/avpnusr/torprivoxy
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# tt-rss
+![tt-rss](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/tt-rss.png)
+
+**Application Site:** https://tt-rss.org/
+
+**Docker Hub:** https://hub.docker.com/r/lunik1/tt-rss/
+
+**Github:** https://github.com/lunik1/docker-tt-rss
 
 **[`^back to top^`](#unraid-templates)**
 
