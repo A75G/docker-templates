@@ -8,7 +8,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
-  <Project>https://www.mumble.com/</Project>
+  <Project>https://www.mumble.info/</Project>
   <Overview>Mumble is an open source voice communication application[br]Download config.ini[/br]wget -O /mnt/user/appdata/mumble/config.ini https://raw.githubusercontent.com/PHLAK/docker-mumble/master/files/config.ini</Overview>
   <Category>Productivity: Network:Voip Network:Messenger</Category>
   <WebUI/>
