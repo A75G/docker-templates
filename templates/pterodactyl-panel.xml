@@ -19,7 +19,7 @@ Creating account CLI "php artisan p:user:make"</Overview>
   <DonateText/>
   <DonateLink/>
   <Description>Pterodactyl, a free an open source agnostic game panel... In a Container!&#xD;
-Creating account CLI "php artisan p:user:make"</Description>
+Creating account CLI "php artisan p:user:make" &#xD; [h2]This Template is not maintained by ccarney16, any issue you get Please put it on https://github.com/A75G/docker-templates/issues. [/h2]</Description>
   <Config Name="Port" Target="80" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
   <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/pterodactyl/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pterodactyl/</Config>
   <Config Name="Timezone" Target="APP_TIMEZONE" Default="UTC" Mode="" Description="Timezone" Type="Variable" Display="always" Required="true" Mask="false">UTC</Config>

@@ -5,21 +5,23 @@
   <Registry>https://hub.docker.com/r/ccarney16/pterodactyl-daemon/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://pterodactyl.io/</Project>
-  <Overview>The server control and management daemon built specifically for Pterodactyl Panel.</Overview>
+  <Overview>The server control and management daemon built specifically for Pterodactyl Panel.&#xD;
+Guide: https://pterodactyl.io/wings/1.0/migrating.html&#xD;
+[h2]This Template is not maintained by ccarney16, any issue you get Please put it on https://github.com/A75G/docker-templates/issues. [/h2]</Overview>
   <Category>GameServers: Network:Management</Category>
-  <WebUI/>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/pterodactyl-daemon.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pterodactyl-daemon.png</Icon>
-  <Description>The server control and management daemon built specifically for Pterodactyl Panel.</Description>
-  <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
-  <Config Name="Config Path" Target="/srv/daemon/config" Default="/mnt/user/appdata/pterodactyl/daemon/config/" Mode="rw" Description="Config Path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pterodactyl/daemon/config/</Config>
-  <Config Name="Packs Path" Target="/srv/daemon/packs" Default="/mnt/user/appdata/pterodactyl/daemon/packs/" Mode="" Description="Packs Path" Type="Variable" Display="always" Required="true" Mask="false">/mnt/user/appdata/pterodactyl/daemon/packs/</Config>
-  <Config Name="Data Path" Target="/srv/daemon-data" Default="/mnt/user/appdata/pterodactyl/daemon/data/" Mode="" Description="Data Path" Type="Variable" Display="always" Required="true" Mask="false">/mnt/user/appdata/pterodactyl/daemon/data/</Config>
-  <Config Name="Temp Path" Target="/tmp/pterodactyl" Default="/mnt/user/appdata/pterodactyl/daemon/tmp/" Mode="rw" Description="Temp Path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pterodactyl/daemon/tmp/</Config>
-  <Config Name="Time" Target="/etc/localtime" Default="/etc/localtime" Mode="rw" Description="Time" Type="Path" Display="always" Required="true" Mask="false">/etc/localtime</Config>
+  <Description>The server control and management daemon built specifically for Pterodactyl Panel.&#xD;
+[h2]This Template is not maintained by ccarney16, any issue you get Please put it on https://github.com/A75G/docker-templates/issues. [/h2]</Description>
+  <Config Name="Port 1" Target="2022" Default="2022" Mode="tcp" Description="Port 1" Type="Port" Display="always" Required="true" Mask="false">2022</Config>
+  <Config Name="Port 2" Target="8080" Default="8080" Mode="tcp" Description="Port 2" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Data Path" Target="/var/lib/pterodactyl" Default="/mnt/user/appdata/pterodactyl/daemon/" Mode="" Description="Data Path" Type="Variable" Display="always" Required="true" Mask="false">/mnt/user/appdata/pterodactyl/daemon/</Config>
+  <Config Name="Temp Path" Target="/tmp/pterodactyl/" Default="/mnt/user/appdata/pterodactyl/daemon/tmp/" Mode="rw" Description="Temp Path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pterodactyl/daemon/tmp/</Config>
+  <Config Name="Time" Target="/etc/timezone" Default="/etc/timezone" Mode="ro" Description="Time" Type="Path" Display="always" Required="true" Mask="false">/etc/timezone/</Config>
   <Config Name="Docker Root" Target="/var/lib/docker" Default="/var/lib/docker" Mode="rw" Description="Docker Root" Type="Path" Display="always" Required="true" Mask="false">/var/lib/docker</Config>
   <Config Name="Docker Sock" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Docker Sock" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
 </Container>
