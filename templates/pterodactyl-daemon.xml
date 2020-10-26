@@ -20,7 +20,6 @@ Guide: https://pterodactyl.io/wings/1.0/migrating.html&#xD;
   <Config Name="Port 2" Target="8080" Default="8080" Mode="tcp" Description="Port 2" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
   <Config Name="Data Path" Target="/var/lib/pterodactyl" Default="/mnt/user/appdata/pterodactyl/daemon/" Mode="" Description="Data Path" Type="Variable" Display="always" Required="true" Mask="false">/mnt/user/appdata/pterodactyl/daemon/</Config>
   <Config Name="Temp Path" Target="/tmp/pterodactyl/" Default="/mnt/user/appdata/pterodactyl/daemon/tmp/" Mode="rw" Description="Temp Path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pterodactyl/daemon/tmp/</Config>
-  <Config Name="Time" Target="/etc/timezone" Default="/etc/timezone" Mode="ro" Description="Time" Type="Path" Display="always" Required="true" Mask="false">/etc/timezone/</Config>
   <Config Name="Docker Root" Target="/var/lib/docker" Default="/var/lib/docker" Mode="rw" Description="Docker Root" Type="Path" Display="always" Required="true" Mask="false">/var/lib/docker</Config>
   <Config Name="Docker Sock" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="Docker Sock" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
 </Container>
