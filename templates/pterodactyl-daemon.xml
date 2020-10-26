@@ -12,7 +12,6 @@
 Guide: https://pterodactyl.io/wings/1.0/migrating.html&#xD;
 [h2]This Template is not maintained by ccarney16, any issue you get Please put it on https://github.com/A75G/docker-templates/issues. [/h2]</Overview>
   <Category>GameServers: Network:Management</Category>
-  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/pterodactyl-daemon.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pterodactyl-daemon.png</Icon>
   <Description>The server control and management daemon built specifically for Pterodactyl Panel.&#xD;
