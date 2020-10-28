@@ -113,6 +113,8 @@
 # Airsonic-advanced
 ![Airsonic-advanced](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/airsonic-advanced.png)
 
+Airsonic-Advanced is a free, web-based media streamer, providing ubiquitous access to your music. 
+
 **Application Name:** Airsonic-advanced
 
 **Application Site:** https://github.com/airsonic-advanced/airsonic-advanced
@@ -127,6 +129,8 @@
 # Apprise
 ![Apprise](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/apprise.png)
 
+Push Notifications that work with just about every platform! 
+
 **Application Name:** Apprise
 
 **Application Site:** https://github.com/caronc/apprise
@@ -140,6 +144,8 @@
 ----
 # ArchiveBox
 ![ArchiveBox](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/archivebox.png)
+
+ArchiveBox is a powerful self-hosted internet archiving solution written in Python 3. You feed it URLs of pages you want to archive, and it saves them to disk in a varitety of formats depending on the configuration and the content it detects. 
 
 **Application Name:** ArchiveBox
 
@@ -178,6 +184,8 @@ To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://g
 # Cloudbeaver
 ![Cloudbeaver](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cloudbeaver.png)
 
+CloudBeaver is a web server which provides rich web interface. Server itself is a Java application, web part is written on TypeScript and React.
+
 **Application Name:** Cloudbeaver
 
 **Application Site:** https://github.com/dbeaver/cloudbeaver
@@ -193,6 +201,8 @@ To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://g
 ----
 # Commento
 ![Commento](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/commento.png)
+
+Commento is a platform that you can embed in your website to allow your readers to add comments. 
 
 **Application Name:** Commento
 
@@ -210,6 +220,8 @@ To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://g
 # CryptPad
 ![CryptPad](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cryptpad.png)
 
+CryptPad is a private-by-design alternative to popular office tools and cloud services. 
+
 **Application Name:** CryptPad
 
 **Application Site:** https://cryptpad.fr/
@@ -218,13 +230,16 @@ To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://g
 
 **Github:** https://github.com/xwiki-labs/cryptpad
 ## First installation 
-* Edit config.js /mnt/appdata/cryptpad/cfg/config.js ```httpAddress: '0.0.0.0'``` and remove ```//``` before it
+* Edit /cryptpad/config/config.example.js and rename to /cryptpad/config/config.js
+* Map a host port to container port 3000 for web UI
 
 **[`^back to top^`](#unraid-templates)**
 
 ----
 # CyberChef
 ![CyberChef](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cyberchef.png)
+
+CyberChef is a simple, intuitive web app for carrying out all manner of "cyber" operations within a web browser. These operations include simple encoding like XOR or Base64, more complex encryption like AES, DES and Blowfish, creating binary and hexdumps, compression and decompression of data, calculating hashes and checksums, IPv6 and X.509 parsing, changing character encodings, and much more.
 
 **Application Name:** CyberChef
 
@@ -239,6 +254,8 @@ To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://g
 ----
 # Dashmachine
 ![Dashmachine](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dashmachine.png)
+
+Another web application bookmark dashboard, with fun features.
 
 **Application Name:** Dashmachine
 
@@ -256,6 +273,8 @@ To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://g
 ----
 # db-backup
 ![db-backup](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/db-backup.png)
+
+For backing up multiple type of DB Servers, currently supports CouchDB, InfluxDB, MySQL, MongoDB, Postgres, Redis servers.
 
 *<div>Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
 
@@ -292,6 +311,8 @@ To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://g
 # ddns-route53
 ![ddns-route53](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/ddns-route53.png)
 
+Simple dynamic DNS updater script using Amazon Route53.
+
 **Application Name:** ddns-route53
 
 **Application Site:** https://github.com/crazy-max/ddns-route53
@@ -308,6 +329,8 @@ To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://g
 # Dispatch
 ![Dispatch](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dispatch.png)
 
+Web-based IRC client in Go.
+
 **Application Name:** Dispatch
 
 **Application Site:** https://github.com/khlieng/dispatch
@@ -321,6 +344,8 @@ To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://g
 ----
 # Docpht
 ![Docpht](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/docpht.png)
+
+With DocPHT you can take notes and quickly document anything and without the use of any database.  
 
 *Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*
 
@@ -337,6 +362,8 @@ To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://g
 ----
 # Droppy
 ![Droppy](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/droppy.png)
+
+Self-hosted file storage server 
 
 **Application Name:** Droppy
 
