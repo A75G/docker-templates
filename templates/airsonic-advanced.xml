@@ -10,7 +10,7 @@
   <Project>https://github.com/airsonic-advanced/airsonic-advanced</Project>
   <Overview>Airsonic-Advanced is a more modern implementation of the Airsonic fork with several key performance and feature enhancements. It adds and supersedes several features in Airsonic.</Overview>
   <Category>MediaApp:Music MediaServer:Music</Category>
-  <WebUI>https://[IP]:[PORT:4040]/</WebUI>
+  <WebUI>http://[IP]:[PORT:4040]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/airsonic-advanced.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/airsonic-advanced.png</Icon>
   <Description>Airsonic-Advanced is a more modern implementation of the Airsonic fork with several key performance and feature enhancements. It adds and supersedes several features in Airsonic.</Description>
