@@ -379,6 +379,8 @@ Self-hosted file storage server
 # FileRun
 ![FileRun](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/filerun.png)
 
+FileRun is a self-hosted Google Drive/Photos/Music alternative. It is a full featured web based file manager with an easy to use user interface.
+
 **Application Name:** FileRun
 
 **Application Site:** https://filerun.com/
@@ -410,6 +412,13 @@ Self-hosted file storage server
 # FreePBX
 ![FreePBX](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/freepbx.png)
 
+Asterisk-based open source phone system.
+
+A Dropbox-like file manager that let you manage your data anywhere it is located:
+FTP • FTPS • SFTP • WebDAV • Git • S3 • LDAP • Mysql
+CardDAV • CalDAV • Backblaze B2 • Minio
+Dropbox • Google Drive 
+
 **Application Name:** FreePBX
 
 **Application Site:** https://www.freepbx.org/
@@ -428,6 +437,8 @@ Self-hosted file storage server
 # Freescout
 ![freescout](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/freescout.png)
 
+An open source Helpscout / Zendesk alternative.
+
 **Application Name:** Freescout
 
 **Application Site:** https://freescout.net/
@@ -444,6 +455,8 @@ Self-hosted file storage server
 # Firefox-Syncserver
 ![Firefox-Syncserver](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/firefox-syncserver.png)
 
+Self hosted firefox sync server.
+
 **Application Name:** Firefox-Syncserver
 
 **Application Site:** https://github.com/crazy-max/docker-firefox-syncserver
@@ -457,6 +470,8 @@ Self-hosted file storage server
 ----
 # Flarum
 ![Flarum](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/flarum.png)
+
+Forums made simple. Modern, fast, and free!
 
 **Application Name:** Flarum
 
@@ -476,7 +491,9 @@ Password: ```flarum```
 ----
 # Golinks
 ![Golinks](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/golinks.png)
-    
+
+golinks is a web app that allows you to create smart bookmarks, commands and aliases by pointing your web browser's default search engine at a running instance. Similar to bunny1 or yubnub.
+
 *<div>Icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
 
 **Application Name:** Golinks
@@ -495,6 +512,8 @@ Password: ```flarum```
 # Gossa
 ![Gossa](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/gossa.png)
 
+A fast and simple webserver for your files, that's dependency-free and with under 250 lines of code, easy to review.
+
 *<div>Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
 
 **Application Name:** Gossa
@@ -510,6 +529,8 @@ Password: ```flarum```
 ----
 # Gotify
 ![Gotify](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/gotify.png)
+
+A simple server for sending and receiving messages (in real time per WebSocket).
 
 **Application Name:** Gotify
 
@@ -531,6 +552,8 @@ Password: ```flarum```
 # Healthchecks
 ![Healthchecks](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/healthchecks.png)
 
+healthchecks is a watchdog for your cron jobs. It's a web server that listens for pings from your cron jobs, plus a web interface.
+
 **Application Name:** Healthchecks
 
 **Application Site:** https://healthchecks.io/
@@ -544,6 +567,8 @@ Password: ```flarum```
 ----
 # Homer
 ![Homer](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/homer.png)
+
+A dead simple static HOMepage for your servER to keep your services on hand, from a simple `yaml` configuration file. 
 
 **Application Name:** Homer
 
