@@ -396,7 +396,7 @@ FileRun is a self-hosted Google Drive/Photos/Music alternative. It is a full fea
 **[`^back to top^`](#unraid-templates)**
 
 ----
-# Filestash
+# Element-web
 ![Element-web](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/element-web.png)
 
 **Application Name:** Element-web
