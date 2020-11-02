@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>element-web</Name>
+  <Repository>vectorim/element-web:latest</Repository>
+  <Registry>https://hub.docker.com/r/vectorim/element-web/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project> https://element.io/</Project>
+  <Overview>Open, secure and interoperable communication for work and home. Used to call Riot-web. before the running the docker run [br]mkdir -p /mnt/user/appdata/element-web/config [/br]wget -O /mnt/user/appdata/element-web/config/config.json https://raw.githubusercontent.com/vector-im/element-web/develop/element.io/app/config.json </Overview>
+  <Category>Cloud: Productivity: Network:Messenger Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/element-web.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/element-web.png</Icon>
+  <Description>Open, secure and interoperable communication for work and home. Used to call Riot-web. before the running the docker run [br]mkdir -p /mnt/user/appdata/element-web/config [/br]wget -O /mnt/user/appdata/element-web/config/config.json https://raw.githubusercontent.com/vector-im/element-web/develop/element.io/app/config.json </Description>
+  <Config Name="Port" Target="80" Default="" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8075</Config>
+  <Config Name="Appdata" Target="/app/config.json" Default="" Mode="rw" Description="Container Path: /app/config.json" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/element-web/config/config.json</Config>
+</Container>

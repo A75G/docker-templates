@@ -23,6 +23,7 @@
 - [Droppy](#droppy)
 - [FileRun](#filerun)
   * [Default username and password](#default-username-and-password-1)
+- [Element-web](#element-web)
 - [Filestash](#filestash)
 - [FreePBX](#freepbx)
   * [First installation](#first-installation-2)
@@ -391,6 +392,20 @@ FileRun is a self-hosted Google Drive/Photos/Music alternative. It is a full fea
 ## Default username and password
 * Username: ```superuser```
 * Password: ```superuser```
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# Filestash
+![Element-web](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/element-web.png)
+
+**Application Name:** Element-web
+
+**Application Site:** https://element.io/
+
+**Docker Hub:** https://hub.docker.com/r/vectorim/element-web/
+
+**Github:** https://www.github.com/vector-im/element-web
 
 **[`^back to top^`](#unraid-templates)**
 
