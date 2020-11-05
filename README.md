@@ -817,9 +817,9 @@ For more content https://wiki.kiwix.org/wiki/Content
 
 **Application Site:** https://miniflux.app/
 
-**Docker Hub:** https://hub.docker.com/r/bitnami/moodle/
+**Docker Hub:** https://hub.docker.com/r/miniflux/miniflux/
 
-**Github:** https://github.com/bitnami/bitnami-docker-moodle
+**Github:** https://github.com/miniflux/miniflux
 
 **[`^back to top^`](#unraid-templates)**
 
@@ -831,9 +831,10 @@ For more content https://wiki.kiwix.org/wiki/Content
 
 **Application Site:** https://moodle.org/
 
-**Docker Hub:** https://hub.docker.com/r/miniflux/miniflux/
+**Docker Hub:** https://hub.docker.com/r/bitnami/moodle/
 
-**Github:** https://github.com/miniflux/miniflux
+**Github:** https://github.com/bitnami/bitnami-docker-moodle
+
 ## Notes
 * Admin username and password is setup at in docker variables then you can change in Miniflux settings. Docker variable will be ignored when you change it inside the docker.
 * PostgreSQL DB Required (Not Included)
