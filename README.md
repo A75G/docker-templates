@@ -230,9 +230,6 @@ CryptPad is a private-by-design alternative to popular office tools and cloud se
 **Docker Hub:** https://hub.docker.com/r/cryptpad/cryptpad
 
 **Github:** https://github.com/xwiki-labs/cryptpad
-## First installation 
-* Edit /cryptpad/config/config.example.js and rename to /cryptpad/config/config.js
-* Map a host port to container port 3000 for web UI
 
 **[`^back to top^`](#unraid-templates)**
 
