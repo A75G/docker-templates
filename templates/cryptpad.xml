@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>cryptpad</Name>
-  <Repository>cryptpad/cryptpad:latest</Repository>
-  <Registry>https://hub.docker.com/r/cryptpad/cryptpad/</Registry>
+  <Repository>promasu/cryptpad:latest</Repository>
+  <Registry>https://hub.docker.com/r/promasu/cryptpad/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://cryptpad.fr/</Project>
-  <Overview>CryptPad is the Zero Knowledge realtime collaborative editor.</Overview>
+  <Overview>CryptPad is the Zero Knowledge realtime collaborative editor.[br]mkdir -p /mnt/user/appdata/cryptpad/config [/br]wget -O /mnt/user/appdata/cryptpad/config/config.js https://raw.githubusercontent.com/xwiki-labs/cryptpad/main/config/config.example.js </Overview>
   <Category>Productivity: Security:</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/cryptpad.xml</TemplateURL>
@@ -17,7 +17,7 @@
   <PostArgs/>
   <DonateText/>
   <DonateLink/>
-  <Description>CryptPad is the Zero Knowledge realtime collaborative editor.</Description>
+  <Description>CryptPad is the Zero Knowledge realtime collaborative editor.[br]mkdir -p /mnt/user/appdata/cryptpad/config [/br]wget -O /mnt/user/appdata/cryptpad/config/config.js https://raw.githubusercontent.com/xwiki-labs/cryptpad/main/config/config.example.js </Description>
   <Config Name="Port 1" Target="3000" Default="3000" Mode="tcp" Description="Port 1" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Port 2" Target="3001" Default="3001" Mode="tcp" Description="Port 2" Type="Port" Display="always" Required="false" Mask="false">3001</Config>
   <Config Name="Blob Path" Target="/cryptpad/blob" Default="/mnt/user/appdata/cryptpad/blob" Mode="rw" Description="Blob Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/blob</Config>
@@ -25,4 +25,5 @@
   <Config Name="Customize Path" Target="/cryptpad/customize" Default="/mnt/user/appdata/cryptpad/customize" Mode="rw" Description="Customize Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/customize</Config>
   <Config Name="Data Path" Target="/cryptpad/data" Default="/mnt/user/appdata/cryptpad/data" Mode="rw" Description="Data Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/data</Config>
   <Config Name="Datastore Path" Target="/cryptpad/datastore" Default="/mnt/user/appdata/cryptpad/datastore" Mode="rw" Description="Datastore Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/datastore</Config>
+  <Config Name="Config Path" Target="/cryptpad/config/config.js" Default="/mnt/user/appdata/cryptpad/config/config.js" Mode="rw" Description="Config Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/config/config.js</Config>
 </Container>
