@@ -227,12 +227,16 @@ CryptPad is a private-by-design alternative to popular office tools and cloud se
 
 **Application Site:** https://cryptpad.fr/
 
-**Docker Hub:** https://hub.docker.com/r/cryptpad/cryptpad
+**Docker Hub:** https://hub.docker.com/r/promasu/cryptpad
 
 **Github:** https://github.com/xwiki-labs/cryptpad
 
 **[`^back to top^`](#unraid-templates)**
-
+## First installation
+* mkdir -p /mnt/user/appdata/element-web/config
+* wget -O /mnt/user/appdata/element-web/config/config.json https://raw.githubusercontent.com/vector-im/element-web/develop/element.io/app/config.json 
+* Edit config.json "httpUnsafeOrigin" change localhost to your ip 
+* remove "//" in "httpAddress"
 ----
 # CyberChef
 ![CyberChef](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cyberchef.png)
