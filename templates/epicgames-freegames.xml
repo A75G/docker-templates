@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>epicgames-freegames</Name>
+  <Repository>charlocharlie/epicgames-freegames:latest</Repository>
+  <Registry>https://hub.docker.com/r/charlocharlie/epicgames-freegames/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/charlocharlie/epicgames-freegames/</Support>
+  <Project>https://github.com/Ricardo-Osorio/epicgames-weekly-freegames</Project>
+  <Overview>Automatically login, bypass Captchas, and redeem free games.&#xD;
+&#xD;
+Follow JSON Configuration and Cookie Import &#xD;
+&#xD;
+https://hub.docker.com/r/charlocharlie/epicgames-freegames/</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/epicgames-freegames.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/epicgames-freegames.png</Icon>
+  <Description>Automatically login, bypass Captchas, and redeem free games.&#xD;
+&#xD;
+Follow JSON Configuration and Cookie Import &#xD;
+&#xD;
+https://hub.docker.com/r/charlocharlie/epicgames-freegames/</Description>
+  <Config Name="Port" Target="3000" Default="3055" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">3055</Config>
+  <Config Name="Config Path" Target="/usr/app/config" Default="/mnt/user/appdata/epicgames-freegames/" Mode="rw" Description="Config Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/epicgames-freegames/</Config>
+</Container>
