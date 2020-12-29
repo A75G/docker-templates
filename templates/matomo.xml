@@ -10,7 +10,7 @@
   <Project>https://matomo.org/</Project>
   <Overview>Matomo is a free and open source web analytics application written by a team of international developers that runs on a PHP/MySQL webserver.</Overview>
   <Category>Productivity: Tools: Network:Management</Category>
-  <WebUI>https://[IP]:[PORT:443]/</WebUI>
+  <WebUI>https://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/matomo.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/matomo.png</Icon>
   <ExtraParams/>
@@ -18,11 +18,10 @@
   <DonateText/>
   <DonateLink/>
   <Description>Matomo is a free and open source web analytics application written by a team of international developers that runs on a PHP/MySQL webserver.</Description>
-  <Config Name="HTTP" Target="80" Default="8000" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
-  <Config Name="HTTPs" Target="443" Default="8443" Mode="tcp" Description="HTTPs" Type="Port" Display="always" Required="true" Mask="false">8443</Config>
+  <Config Name="HTTP" Target="8080" Default="8080" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="Appdata" Target="/bitnami" Default="/mnt/user/appdata/matomo/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/matomo/</Config>
-  <Config Name="MARIADB_HOST" Target="MARIADB_HOST" Default="mariadb" Mode="" Description="Hostname or IP for MariaDB server." Type="Variable" Display="always" Required="true" Mask="false">mariadb</Config>
-  <Config Name="MARIADB_PORT_NUMBER" Target="MARIADB_PORT_NUMBER" Default="3306" Mode="" Description="Port used by MariaDB server. " Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
+  <Config Name="MATOMO_DATABASE_HOST" Target="MATOMO_DATABASE_HOST" Default="mariadb" Mode="" Description="Hostname or IP for MariaDB server." Type="Variable" Display="always" Required="true" Mask="false">mariadb</Config>
+  <Config Name="MATOMO_DATABASE_PORT_NUMBER" Target="MATOMO_DATABASE_PORT_NUMBER" Default="3306" Mode="" Description="Port used by MariaDB server. " Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
   <Config Name="MATOMO_DATABASE_NAME" Target="MATOMO_DATABASE_NAME" Default="bitnami_matomo" Mode="" Description="Database name that Matomo will use to connect with the database." Type="Variable" Display="always" Required="true" Mask="false">bitnami_matomo</Config>
   <Config Name="MATOMO_DATABASE_USER" Target="MATOMO_DATABASE_USER" Default="bn_matomo" Mode="" Description="Database user that Matomo will use to connect with the database. " Type="Variable" Display="always" Required="true" Mask="false">bn_matomo</Config>
   <Config Name="MATOMO_DATABASE_PASSWORD" Target="MATOMO_DATABASE_PASSWORD" Default="password" Mode="" Description="Database password that Matomo will use to connect with the database. " Type="Variable" Display="always" Required="true" Mask="false">password</Config>

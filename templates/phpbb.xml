@@ -10,19 +10,15 @@
   <Project>https://www.phpbb.com/</Project>
   <Overview>phpBB is a bulletin board solution that allows you to create forums and subforums.</Overview>
   <Category>Productivity:</Category>
-  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/phpbb.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/phpbb.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>phpBB is a bulletin board solution that allows you to create forums and subforums.</Description>
-  <Config Name="Port" Target="80" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
-  <Config Name="Appdata" Target="/bitnami" Default="/mnt/user/appdata/phpbb/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/phpbb/</Config>
+  <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Appdata" Target="/bitnami/phpbb" Default="/mnt/user/appdata/phpbb/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/phpbb/</Config>
   <Config Name="ALLOW_EMPTY_PASSWORD" Target="ALLOW_EMPTY_PASSWORD" Default="no|yes" Mode="" Description="ALLOW_EMPTY_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">no</Config>
-  <Config Name="MARIADB_HOST" Target="MARIADB_HOST" Default="mariadb" Mode="" Description="Hostname or IP for MariaDB server." Type="Variable" Display="always" Required="false" Mask="false">mariadb</Config>
-  <Config Name="MARIADB_PORT_NUMBER" Target="MARIADB_PORT_NUMBER" Default="3306" Mode="" Description="Port used by MariaDB server." Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
+  <Config Name="PHPBB_DATABASE_HOST" Target="PHPBB_DATABASE_HOST" Default="mariadb" Mode="" Description="Hostname or IP for MariaDB server." Type="Variable" Display="always" Required="false" Mask="false">mariadb</Config>
+  <Config Name="PHPBB_DATABASE_PORT_NUMBER" Target="PHPBB_DATABASE_PORT_NUMBER" Default="3306" Mode="" Description="Port used by MariaDB server." Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
   <Config Name="PHPBB_DATABASE_USER" Target="PHPBB_DATABASE_USER" Default="bn_phpbb" Mode="" Description="Database user that phpBB will use to connect with the database." Type="Variable" Display="always" Required="true" Mask="false">bn_phpbb</Config>
   <Config Name="PHPBB_DATABASE_PASSWORD" Target="PHPBB_DATABASE_PASSWORD" Default="password" Mode="" Description="Database password that Phpbb will use to connect with the database" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
   <Config Name="PHPBB_DATABASE_NAME" Target="PHPBB_DATABASE_NAME" Default="bitnami_phpbb" Mode="" Description="Database name that phpBB will use to connect with the database" Type="Variable" Display="always" Required="true" Mask="false">bitnami_phpbb</Config>
