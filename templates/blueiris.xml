@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
-  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Support>https://forums.unraid.net/topic/100915-support-a75g-blueiris/</Support>
   <Project>https://hub.docker.com/r/jshridha/blueiris/</Project>
   <Overview>Blue Iris video security software runs on a PC and can provide recording and playback for up to 64 IP network cameras or webcams. Blue Iris is affordable and powerful enough to safeguard your family, property and valuables at home or work.</Overview>
   <Category>Security:</Category>
