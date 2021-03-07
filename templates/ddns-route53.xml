@@ -8,19 +8,19 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://github.com/crazy-max/ddns-route53</Project>
-  <Overview>Dynamic DNS for Amazon Route 53&#x200E; on a time-based schedule [br] Create ddns-route53.yml file in /mnt/user/appdata/ddns-route53/ before hand https://github.com/crazy-max/ddns-route53/blob/master/doc/configuration.md[/br]</Overview>
+  <Overview>Dynamic DNS for Amazon Route 53&#x200E; on a time-based schedule</Overview>
   <Category>Network:DNS</Category>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/ddns-route53.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/ddns-route53.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
-  <Description>Dynamic DNS for Amazon Route 53&#x200E; on a time-based schedule [br] Create ddns-route53.yml file in /mnt/user/appdata/ddns-route53/ before hand https://github.com/crazy-max/ddns-route53/blob/master/doc/configuration.md[/br]</Description>
-  <Labels/>
-  <Config Name="Config Path" Target="/ddns-route53.yml" Default="/mnt/user/appdata/ddns-route53/ddns-route53.yml" Mode="ro" Description="Config Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ddns-route53/ddns-route53.yml</Config>
+  <Description>Dynamic DNS for Amazon Route 53&#x200E; on a time-based schedule</Description>
   <Config Name="SCHEDULE" Target="SCHEDULE" Default="*/30 * * * *" Mode="" Description="CRON expression to schedule ddns-route53 - http://www.cronmaker.com" Type="Variable" Display="always" Required="false" Mask="false">*/30 * * * *</Config>
   <Config Name="MAX_RETRIES" Target="MAX_RETRIES" Default="3" Mode="" Description="Number of retries in case of WAN IP retrieval failure" Type="Variable" Display="always" Required="false" Mask="false">3</Config>
   <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="info" Mode="" Description="Log level output" Type="Variable" Display="always" Required="false" Mask="false">info</Config>
   <Config Name="LOG_JSON" Target="LOG_JSON" Default="false" Mode="" Description="Enable JSON logging output" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="DDNSR53_CREDENTIALS_ACCESSKEYID" Target="DDNSR53_CREDENTIALS_ACCESSKEYID" Default="ABCDEFGHIJKLMNO123456" Mode="" Description="Access Key ID" Type="Variable" Display="always" Required="false" Mask="false">ABCDEFGHIJKLMNO123456</Config>
+  <Config Name="DDNSR53_CREDENTIALS_SECRETACCESSKEY" Target="DDNSR53_CREDENTIALS_SECRETACCESSKEY" Default="abcdefgh123456IJKLMN+OPQRS7890+ABCDEFGH" Mode="" Description="Secret Access Key" Type="Variable" Display="always" Required="false" Mask="false">abcdefgh123456IJKLMN+OPQRS7890+ABCDEFGH</Config>
+  <Config Name="DDNSR53_ROUTE53_HOSTEDZONEID" Target="DDNSR53_ROUTE53_HOSTEDZONEID" Default="ABCEEFG123456789" Mode="" Description="Host Zone ID" Type="Variable" Display="always" Required="false" Mask="false">ABCEEFG123456789</Config>
+  <Config Name="DDNSR53_ROUTE53_RECORDSSET_0_NAME" Target="DDNSR53_ROUTE53_RECORDSSET_0_NAME" Default="ddns.example.com." Mode="" Description="Record Set 0 " Type="Variable" Display="always" Required="false" Mask="false">ddns.example.com.</Config>
+  <Config Name="DDNSR53_ROUTE53_RECORDSSET_0_TYPE" Target="DDNSR53_ROUTE53_RECORDSSET_0_TYPE" Default="A" Mode="" Description="Record Set 0 Type" Type="Variable" Display="always" Required="false" Mask="false">A</Config>
+  <Config Name="DDNSR53_ROUTE53_RECORDSSET_0_TTL" Target="DDNSR53_ROUTE53_RECORDSSET_0_TTL" Default="300" Mode="" Description="Record Set 0 TTL" Type="Variable" Display="always" Required="false" Mask="false">300</Config>
 </Container>
