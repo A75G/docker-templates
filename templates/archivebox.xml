@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>archivebox</Name>
-  <Repository>nikisweeting/archivebox:latest</Repository>
-  <Registry>https://hub.docker.com/r/nikisweeting/archivebox/</Registry>
+  <Repository>archivebox/archivebox:latest</Repository>
+  <Registry>https://hub.docker.com/r/archivebox/archivebox/</Registry>
   <Network>bridge</Network>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
@@ -15,7 +15,7 @@ Guide - https://github.com/A75G/docker-templates/blob/master/README.md#first-ins
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/archivebox.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/archivebox.png</Icon>
   <ExtraParams>-it</ExtraParams>
-  <PostArgs>bash -c 'echo "https://github.com/pirate/ArchiveBox" | /bin/archive; tail -f /dev/null'</PostArgs>
+  <PostArgs>server 0.0.0.0:8000</PostArgs>
   <DateInstalled>1596121988</DateInstalled>
   <Description>The self-hosted internet archiver. &#xD;
 Guide - https://github.com/A75G/docker-templates/blob/master/README.md#first-installation (Important)</Description>
