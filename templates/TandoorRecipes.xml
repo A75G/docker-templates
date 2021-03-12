@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>TandoorRecipes</Name>
+  <Repository>vabene1111/recipes:latest</Repository>
+  <Registry>https://www.github.com/vabene1111/recipes</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://docs.tandoor.dev/</Project>
+  <Overview>The recipe manager that allows you to manage your ever growing collection of digital recipes.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/TandoorRecipes.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/TandoorRecipes.png</Icon>
+  <Description>The recipe manager that allows you to manage your ever growing collection of digital recipes.</Description>
+  <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="YOUR_SECRET_KEY" Mode="" Description="SECRET_KEY" Type="Variable" Display="always" Required="false" Mask="false">YOUR_SECRET_KEY</Config>
+  <Config Name="POSTGRES_HOST" Target="POSTGRES_HOST" Default="192.168.1.100" Mode="" Description="POSTGRES_HOST" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.100</Config>
+  <Config Name="POSTGRES_PORT" Target="POSTGRES_PORT" Default="5432" Mode="" Description="POSTGRES_PORT" Type="Variable" Display="always" Required="false" Mask="false">5432</Config>
+  <Config Name="POSTGRES_USER" Target="POSTGRES_USER" Default="postgres" Mode="" Description="POSTGRES_USER" Type="Variable" Display="always" Required="false" Mask="false">postgres</Config>
+  <Config Name="POSTGRES_PASSWORD" Target="POSTGRES_PASSWORD" Default="YOUR_POSTGRES_SECRET_KEY" Mode="" Description="POSTGRES_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">YOUR_POSTGRES_SECRET_KEY</Config>
+  <Config Name="POSTGRES_DB" Target="POSTGRES_DB" Default="" Mode="" Description="POSTGRES_DB" Type="Variable" Display="always" Required="false" Mask="false">djangodb</Config>
+  <Config Name="Media Files" Target="/opt/recipes/mediafiles" Default="/mnt/user/appdata/trecipes/mediafiles/" Mode="rw" Description="Media Files" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/trecipes/mediafiles/</Config>
+  <Config Name="Static Files" Target="/opt/recipes/staticfiles" Default="/mnt/user/appdata/trecipes/staticfiles/" Mode="rw" Description="Static Files" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/trecipes/staticfiles/</Config>
+  <Config Name="DB_ENGINE" Target="DB_ENGINE" Default="django.db.backends.postgresql" Mode="" Description="DB_ENGINE" Type="Variable" Display="advanced" Required="false" Mask="false">django.db.backends.postgresql</Config>
+</Container>
