@@ -5,6 +5,7 @@
   * [First installation](#first-installation)
   * [Configuration](#configuration)
 - [Backuppc](#backuppc)
+- [Blueiris](#blueiris)
 - [Cloudbeaver](#cloudbeaver)
   * [Notes](#notes)
 - [Commento](#commento)
@@ -21,6 +22,7 @@
 - [Dispatch](#dispatch)
 - [Docpht](#docpht)
 - [Droppy](#droppy)
+- [ecoDMS](#ecoDMS)
 - [FileRun](#filerun)
   * [Default username and password](#default-username-and-password-1)
 - [Element-web](#element-web)
@@ -77,7 +79,6 @@
   * [Notes](#notes-10)
 - [Pterodactyl-panel](#pterodactyl-panel)
   * [Creating User](#creating-user-1)
-- [Pterodactyl-daemon](#pterodactyl-daemon)
 - [Pure-FTPd](#pure-ftpd)
   * [Notes](#notes-11)
 - [Pwndrop](#pwndrop)
@@ -101,6 +102,7 @@
 - [Tar1090](#tar1090)
 - [Torprivoxy](#torprivoxy)
 - [tt-rss](#tt-rss)
+- [Weechat](#weechat)
 - [Wallabag](#wallabag)
   * [Default username and password](#default-username-and-password-6)
   * [PHP errors](#php-errors)
@@ -171,6 +173,8 @@ To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://g
 # Backuppc
 ![Backuppc](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/backuppc.png)
 
+BackupPC is a free disk-to-disk backup software suite with a web-based frontend.
+
 **Application Name:** Backuppc
 
 **Application Site:** https://backuppc.github.io/backuppc/
@@ -178,6 +182,22 @@ To edit configuration open Archivebox folder and Edit ArchiveBox.conf (https://g
 **Docker Hub:** https://hub.docker.com/r/tiredofit/backuppc/
 
 **Github:** https://www.github.com/tiredofit/docker-backuppc
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# Blueiris
+![Blueiris](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/blueiris.png)
+
+Blue Iris is a video surveillance software solution.
+
+**Application Name:** Blueiris
+
+**Application Site:** https://hub.docker.com/r/jshridha/blueiris/
+
+**Docker Hub:** https://hub.docker.com/r/jshridha/blueiris/
+
+**Github:** https://hub.docker.com/r/jshridha/blueiris/
 
 **[`^back to top^`](#unraid-templates)**
 
@@ -247,9 +267,9 @@ CyberChef is a simple, intuitive web app for carrying out all manner of "cyber" 
 
 **Application Site:** https://gchq.github.io/CyberChef/
 
-**Docker Hub:** https://hub.docker.com/r/aude/cyberchef
+**Docker Hub:** https://hub.docker.com/r/mpepping/cyberchef/
 
-**Github:** https://github.com/aude/cyberchef-docker
+**Github:** https://github.com/mpepping/docker-cyberchef/
 
 **[`^back to top^`](#unraid-templates)**
 
@@ -374,6 +394,22 @@ Self-hosted file storage server
 **Docker Hub:** https://hub.docker.com/r/silverwind/droppy/
 
 **Github:** https://github.com/silverwind/droppy
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# ecoDMS
+![ecoDMS](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/ecoDMS.png)
+
+easily archive, manage, and find all documents on your PC or from your smart phone and tablet.
+
+**Application Name:** ecoDMS
+
+**Application Site:** https://www.ecodms.de/index.php/en/
+
+**Docker Hub:** https://hub.docker.com/r/ecodms/allinone-18.09/
+
+**Github:** https://hub.docker.com/r/ecodms/allinone-18.09/
 
 **[`^back to top^`](#unraid-templates)**
 
@@ -925,20 +961,6 @@ For more content https://wiki.kiwix.org/wiki/Content
 **[`^back to top^`](#unraid-templates)**
 
 ----
-# Pterodactyl-daemon
-![pterodactyl-daemon](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pterodactyl-daemon.png)
-
-**Application Name:** Pterodactyl-daemon
-
-**Application Site:** https://pterodactyl.io/
-
-**Docker Hub:** https://hub.docker.com/r/ccarney16/pterodactyl-daemon/
-
-**Github:** https://github.com/ccarney16/pterodactyl-docker
-
-**[`^back to top^`](#unraid-templates)**
-
-----
 # Pure-FTPd
 ![Pure-FTPd](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pure-ftpd.png)
 
@@ -1020,6 +1042,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 # Riot-web
 ![Riot-web](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/riot-web.png)
 
+Riot is a glossy web client with an emphasis on performance and usability.
+
 **Application Name:** Riot-web
 
 **Application Site:** https://riot.im/
@@ -1037,6 +1061,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 # Searx
 ![Searx](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/searx.png)
 
+Searx is a free internet metasearch engine which aggregates results from more than 70 search services. Users are neither tracked nor profiled. Additionally, searx can be used over Tor for online anonymity.
+
 **Application Name:** Searx
 
 **Application Site:** https://github.com/asciimoo/searx
@@ -1051,6 +1077,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 # Selfoss
 ![Selfoss](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/selfoss.png)
 
+selfoss is a multipurpose RSS reader and feed aggregation web application.
+
 **Application Name:** Selfoss
 
 **Application Site:** https://selfoss.aditu.de/
@@ -1064,6 +1092,8 @@ For more content https://wiki.kiwix.org/wiki/Content
 ----
 # Shiori
 ![Shiori](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/shiori.png)
+
+Shiori is a simple bookmarks manager written in the Go language. Intended as a simple clone of Pocket. 
 
 **Application Name:** Shiori
 
@@ -1082,6 +1112,9 @@ Password: ```gopher```
 
 ----
 # Shlink
+
+Shlink is a self-hosted URL shortener which provides both a REST and a CLI interface to interact with it.
+
 ![Shlink](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/shlink.png)
 
 **Application Name:** Shlink
@@ -1096,7 +1129,10 @@ Password: ```gopher```
 
 ----
 # Shlink-web-client
-![Shlink-web-client](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/Shlink-web-client.png)
+
+Shlink is a self-hosted URL shortener which provides both a REST and a CLI interface to interact with it.
+
+![Shlink-web-client](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/shlink-web-client.png)
 
 **Application Name:** Shlink-web-client
 
@@ -1118,6 +1154,8 @@ Password: ```gopher```
 # Solr
 ![Solr](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/solr.png)
 
+Solr is an open-source enterprise-search platform, written in Java.
+
 **Application Name:** Solr
 
 **Application Site:** https://lucene.apache.org/solr/
@@ -1131,6 +1169,8 @@ Password: ```gopher```
 ----
 # StackEdit
 ![Shiori](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/stackedit.png)
+
+StackEdit is a free, open-source Markdown editor based on PageDown, the Markdown library used by Stack Overflow and the other Stack Exchange sites.
 
 **Application Name:** StackEdit
 
@@ -1147,6 +1187,9 @@ Password: ```gopher```
 ![Synapse-admin](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/synapse-admin.png)
 
 *Icons made by <a href="https://www.flaticon.com/free-icon/matrix_1774127" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*
+
+Synapse admin ui
+
 **Application Name:** Synapse-admin
 
 **Application Site:** https://github.com/Awesome-Technologies/synapse-admin
@@ -1162,6 +1205,9 @@ Password: ```gopher```
 ![Tar1090](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/tar1090.png)
 
 *Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*
+
+Provides an improved webinterface for use with ADS-B decoders readsb / dump1090-fa 
+
 **Application Name:** Synapse-admin
 
 **Application Site:** https://www.github.com/mikenye/docker-tar1090
@@ -1177,6 +1223,9 @@ Password: ```gopher```
 ![Torprivoxy](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/torprivoxy.png)
 
 *Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>*
+
+Docker Tor proxy (http and shell) built on Alpine Linux 
+
 **Application Name:** Synapse-admin
 
 **Application Site:** https://github.com/avpnusr/torprivoxy
@@ -1191,6 +1240,8 @@ Password: ```gopher```
 # tt-rss
 ![tt-rss](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/tt-rss.png)
 
+Tiny Tiny RSS is a free RSS feed reader. It is a web application which must be installed on a web server.
+
 **Application Site:** https://tt-rss.org/
 
 **Docker Hub:** https://hub.docker.com/r/lunik1/tt-rss/
@@ -1200,8 +1251,24 @@ Password: ```gopher```
 **[`^back to top^`](#unraid-templates)**
 
 ----
+# Weechat
+![Weechat](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/weechat.png)
+
+WeeChat is a free and open-source Internet Relay Chat client, which is designed to be light and fast.
+
+**Application Site:** https://weechat.org/
+
+**Docker Hub:** https://hub.docker.com/r/jkaberg/weechat/
+
+**Github:** https://www.github.com/jkaberg/dockerfiles
+
+**[`^back to top^`](#unraid-templates)**
+
+----
 # Wallabag
 ![Wallabag](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/wallabag.png)
+
+Wallabag is a self hostable application for saving web pages: Save and classify articles. Read them later. Freely. 
 
 **Application Name:** Wallabag
 
@@ -1226,6 +1293,9 @@ Password: ```wallabag```
 ![Wifi-card](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/wifi-card.png)
 
 *<div>Icons made by <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
+
+Print a QR code for connecting to your WiFi 
+
 **Application Name:** Wifi-card
 
 **Application Site:** https://github.com/bndw/wifi-card
@@ -1239,6 +1309,8 @@ Password: ```wallabag```
 ----
 # YaCy
 ![YaCy](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/yacy.png)
+
+YaCy is a distributed Web Search Engine, based on a peer-to-peer network.
 
 **Application Name:** YaCy
 
