@@ -2,12 +2,12 @@
 <Container version="2">
   <Name>cyberchef</Name>
   <Repository>mpepping/cyberchef:latest</Repository>
-  <Registry>https://hub.docker.com/r/aude/cyberchef/</Registry>
+  <Registry>https://hub.docker.com/r/mpepping/cyberchef/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
-  <Project>https://github.com/aude/cyberchef-docker</Project>
+  <Project>https://github.com/mpepping/docker-cyberchef/</Project>
   <Overview>The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.</Overview>
   <Category>Productivity: Tools: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
