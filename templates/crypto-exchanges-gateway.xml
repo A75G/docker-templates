@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>crypto-exchanges-gateway</Name>
+  <Repository>apendergast/crypto-exchanges-gateway</Repository>
+  <Registry>https://hub.docker.com/r/apendergast/crypto-exchanges-gateway/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/aloysius-pgast/crypto-exchanges-gateway</Project>
+  <Overview>&amp;lt;p&amp;gt;Your gateway to the world of crypto !&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;&amp;lt;span style="color: rgb(184, 49, 47);"&amp;gt;&amp;lt;strong&amp;gt;This project cannot be considered in any way as trading advice.&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;Download config.yml&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;wget -O /mnt/user/appdata/crypto-exchanges-gateway/config.json &amp;lt;a href="https://raw.githubusercontent.com/aloysius-pgast/crypto-exchanges-gateway/master/config/config.sample.json"&amp;gt;https://raw.githubusercontent.com/aloysius-pgast/crypto-exchanges-gateway/master/config/config.sample.json&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;edit config.json and &amp;lt;strong&amp;gt;change 127.0.0.1 to 0.0.0.0.&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;Add API keys for the supported platform.&amp;lt;/p&amp;gt;</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:8000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/crypto-exchanges-gateway.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/crypto-exchanges-gateway.png</Icon>
+  <Description>&amp;lt;p&amp;gt;Your gateway to the world of crypto !&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;&amp;lt;span style="color: rgb(184, 49, 47);"&amp;gt;&amp;lt;strong&amp;gt;This project cannot be considered in any way as trading advice.&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;Download config.yml&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;wget -O /mnt/user/appdata/crypto-exchanges-gateway/config.json &amp;lt;a href="https://raw.githubusercontent.com/aloysius-pgast/crypto-exchanges-gateway/master/config/config.sample.json"&amp;gt;https://raw.githubusercontent.com/aloysius-pgast/crypto-exchanges-gateway/master/config/config.sample.json&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;edit config.json and &amp;lt;strong&amp;gt;change 127.0.0.1 to 0.0.0.0.&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;Add API keys for the supported platform.&amp;lt;/p&amp;gt;</Description>
+  <Config Name="HTTP Port" Target="8000" Default="8000" Mode="tcp" Description="HTTP Port" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="WS Port" Target="8001" Default="8001" Mode="tcp" Description="WS Port" Type="Port" Display="always" Required="false" Mask="false">8001</Config>
+  <Config Name="Config Path" Target="/root/crypto-exchanges-gateway/custom_config" Default="/mnt/user/appdata/crypto-exchanges-gateway/" Mode="rw" Description="https://raw.githubusercontent.com/aloysius-pgast/crypto-exchanges-gateway/master/config/config.sample.json" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/crypto-exchanges-gateway/</Config>
+</Container>
