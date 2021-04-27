@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>send</Name>
+  <Repository>registry.gitlab.com/timvisee/send:latest</Repository>
+  <Registry>https://gitlab.com/timvisee/send</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://gitlab.com/timvisee/send</Project>
+  <Overview>A fork of Mozilla's Firefox Send.Mozilla discontinued Send, this fork is a community effort to keep the project up-to-date and alive.</Overview>
+  <Category>Cloud: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:1443]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/firefox-syncserver.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/send.png</Icon>
+  <Description>A fork of Mozilla's Firefox Send.Mozilla discontinued Send, this fork is a community effort to keep the project up-to-date and alive.</Description>
+  <Config Name="Port" Target="1443" Default="1443" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">1443</Config>
+  <Config Name="Base URL" Target="BASE_URL" Default="http://192.168.0.100:1443" Mode="" Description="Base URL" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.0.100:1443</Config>
+  <Config Name="Upload Path" Target="/uploads" Default="/mnt/user/appdata/send/" Mode="rw" Description="Upload Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/send/</Config>
+  <Config Name="Max File Size" Target="MAX_FILE_SIZE" Default="2147483648" Mode="" Description="Max File Size (Bytes)" Type="Variable" Display="always" Required="false" Mask="false">2147483648</Config>
+  <Config Name="Max Expire Seconds" Target="MAX_EXPIRE_SECONDS" Default="604800" Mode="" Description="Max Expire Seconds" Type="Variable" Display="always" Required="false" Mask="false">604800</Config>
+  <Config Name="Max Downloads" Target="MAX_DOWNLOADS" Default="100" Mode="" Description="Max Downloads" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Redis Host" Target="REDIS_HOST" Default="192.168.0.100" Mode="" Description="Redis Host" Type="Variable" Display="always" Required="false" Mask="false">192.168.0.100</Config>
+  <Config Name="Redis Password" Target="REDIS_PASSWORD" Default="password" Mode="" Description="Redis Password (If there is)" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="Redis Port" Target="REDIS_PORT" Default="6379" Mode="" Description="Redis Port" Type="Variable" Display="always" Required="false" Mask="false">6379</Config>
+  <Config Name="File DIR" Target="FILE_DIR" Default="/uploads" Mode="" Description="FILE_DIR" Type="Variable" Display="advanced" Required="false" Mask="false">/uploads</Config>
+  <Config Name="NODE_ENV" Target="NODE_ENV" Default="production" Mode="" Description="NODE_ENV" Type="Variable" Display="advanced" Required="false" Mask="false">production</Config>
+</Container>
