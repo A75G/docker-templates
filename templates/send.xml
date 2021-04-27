@@ -11,7 +11,7 @@
   <Overview>A fork of Mozilla's Firefox Send.Mozilla discontinued Send, this fork is a community effort to keep the project up-to-date and alive.</Overview>
   <Category>Cloud: Tools:</Category>
   <WebUI>http://[IP]:[PORT:1443]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/firefox-syncserver.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/send.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/send.png</Icon>
   <Description>A fork of Mozilla's Firefox Send.Mozilla discontinued Send, this fork is a community effort to keep the project up-to-date and alive.</Description>
   <Config Name="Port" Target="1443" Default="1443" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">1443</Config>
