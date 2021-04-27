@@ -20,8 +20,8 @@
   <Config Name="Max File Size" Target="MAX_FILE_SIZE" Default="2147483648" Mode="" Description="Max File Size (Bytes)" Type="Variable" Display="always" Required="false" Mask="false">2147483648</Config>
   <Config Name="Max Expire Seconds" Target="MAX_EXPIRE_SECONDS" Default="604800" Mode="" Description="Max Expire Seconds" Type="Variable" Display="always" Required="false" Mask="false">604800</Config>
   <Config Name="Max Downloads" Target="MAX_DOWNLOADS" Default="100" Mode="" Description="Max Downloads" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
-  <Config Name="Redis Host" Target="REDIS_HOST" Default="192.168.0.100" Mode="" Description="Redis Host" Type="Variable" Display="always" Required="false" Mask="false">192.168.0.100</Config>
-  <Config Name="Redis Password" Target="REDIS_PASSWORD" Default="password" Mode="" Description="Redis Password (If there is)" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="Redis Host" Target="REDIS_HOST" Default="" Mode="" Description="Redis Host" Type="Variable" Display="always" Required="false" Mask="false">192.168.0.100</Config>
+  <Config Name="Redis Password" Target="REDIS_PASSWORD" Default="" Mode="" Description="Redis Password (If there is)" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
   <Config Name="Redis Port" Target="REDIS_PORT" Default="6379" Mode="" Description="Redis Port" Type="Variable" Display="always" Required="false" Mask="false">6379</Config>
   <Config Name="File DIR" Target="FILE_DIR" Default="/uploads" Mode="" Description="FILE_DIR" Type="Variable" Display="advanced" Required="false" Mask="false">/uploads</Config>
   <Config Name="NODE_ENV" Target="NODE_ENV" Default="production" Mode="" Description="NODE_ENV" Type="Variable" Display="advanced" Required="false" Mask="false">production</Config>
