@@ -8,12 +8,24 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://gitlab.com/timvisee/send</Project>
-  <Overview>A fork of Mozilla's Firefox Send.Mozilla discontinued Send, this fork is a community effort to keep the project up-to-date and alive.</Overview>
+  <Overview>A fork of Mozilla's Firefox Send.Mozilla discontinued Send, this fork is a community effort to keep the project up-to-date and alive.&#xD;
+&#xD;
+Redis need some persistence database to do that please look up &#xD;
+&#xD;
+https://github.com/bitnami/bitnami-docker-redis#persisting-your-database&#xD;
+&#xD;
+https://forums.unraid.net/topic/89502-support-a75g-repo/?do=findComment&amp;amp;comment=986457</Overview>
   <Category>Cloud: Tools:</Category>
   <WebUI>http://[IP]:[PORT:1443]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/send.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/send.png</Icon>
-  <Description>A fork of Mozilla's Firefox Send.Mozilla discontinued Send, this fork is a community effort to keep the project up-to-date and alive.</Description>
+  <Description>A fork of Mozilla's Firefox Send.Mozilla discontinued Send, this fork is a community effort to keep the project up-to-date and alive.&#xD;
+&#xD;
+Redis need some persistence database to do that please look up &#xD;
+&#xD;
+https://github.com/bitnami/bitnami-docker-redis#persisting-your-database&#xD;
+&#xD;
+https://forums.unraid.net/topic/89502-support-a75g-repo/?do=findComment&amp;amp;comment=986457</Description>
   <Config Name="Port" Target="1443" Default="1443" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">1443</Config>
   <Config Name="Base URL" Target="BASE_URL" Default="http://192.168.0.100:1443" Mode="" Description="Base URL" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.0.100:1443</Config>
   <Config Name="Upload Path" Target="/uploads" Default="/mnt/user/appdata/send/" Mode="rw" Description="Upload Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/send/</Config>
