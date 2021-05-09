@@ -13,6 +13,7 @@
   <WebUI>http://[IP]:[PORT:5000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/changedetection.io.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/changedetection.io.png</Icon>
+  <Description>Self-hosted website change detection monitoring.</Description>
   <Config Name="Port" Target="5000" Default="5000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
   <Config Name="Appdata" Target="/datastore" Default="/mnt/user/appdata/changedetection/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/changedetection/</Config>
 </Container>
