@@ -15,7 +15,7 @@
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/nut.png</Icon>
   <Description>nut server docker image for serving switch nsp and xci to tinfoil on local network.</Description>
   <Config Name="Port" Target="9000" Default="9000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">9000</Config>
-  <Config Name="Games Path" Target="/games" Default="" Mode="rw" Description="Games Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/games/Nintendo Switch/NSZ/NSZ/</Config>
+  <Config Name="Games Path" Target="/games" Default="" Mode="rw" Description="Games Path" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Username" Target="ID" Default="" Mode="" Description="Username" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Password" Target="PASSWORD" Default="" Mode="" Description="Password" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
