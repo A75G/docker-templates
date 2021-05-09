@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>nut</Name>
+  <Repository>ramdockerapp/nut-server:latest</Repository>
+  <Registry>https://hub.docker.com/r/ramdockerapp/nut-server/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://hub.docker.com/r/ramdockerapp/nut-server/</Project>
+  <Overview>nut server docker image for serving switch nsp and xci to tinfoil on local network.</Overview>
+  <Category>Other:</Category>
+  <WebUI>http://[IP]:[PORT:9000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/nut.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/nut.png</Icon>
+  <Config Name="Port" Target="9000" Default="9000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">9000</Config>
+  <Config Name="Games Path" Target="/games" Default="" Mode="rw" Description="Games Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/games/Nintendo Switch/NSZ/NSZ/</Config>
+  <Config Name="Username" Target="ID" Default="" Mode="" Description="Container Variable: ID" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Password" Target="PASSWORD" Default="" Mode="" Description="Password" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
