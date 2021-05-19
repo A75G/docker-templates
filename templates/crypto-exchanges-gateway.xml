@@ -15,7 +15,7 @@
 &amp;lt;p&amp;gt;wget -O /mnt/user/appdata/crypto-exchanges-gateway/config.json &amp;lt;a href="https://raw.githubusercontent.com/aloysius-pgast/crypto-exchanges-gateway/master/config/config.sample.json"&amp;gt;https://raw.githubusercontent.com/aloysius-pgast/crypto-exchanges-gateway/master/config/config.sample.json&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&#xD;
 &amp;lt;p&amp;gt;edit config.json and &amp;lt;strong&amp;gt;change 127.0.0.1 to 0.0.0.0.&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&#xD;
 &amp;lt;p&amp;gt;Add API keys for the supported platform.&amp;lt;/p&amp;gt;</Overview>
-  <Category>Productivity:</Category>
+  <Category>Productivity: Crypto:</Category>
   <WebUI>http://[IP]:[PORT:8000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/crypto-exchanges-gateway.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/crypto-exchanges-gateway.png</Icon>
