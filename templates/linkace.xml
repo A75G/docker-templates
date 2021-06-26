@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>linkace</Name>
+  <Repository>linkace/linkace:simple</Repository>
+  <Registry>https://hub.docker.com/r/linkace/linkace/</Registry>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://www.linkace.org/</Project>
+  <Overview>&amp;lt;p&amp;gt;LinkAce is a self-hosted archive to collect links of your favorite websites. &amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;-&amp;lt;span style="color: rgb(184, 49, 47);"&amp;gt;Before you start CLI unraid&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;em&amp;gt;mkdir /mnt/user/appdata/linkace/&amp;lt;/em&amp;gt;&amp;lt;br&amp;gt;&amp;lt;em&amp;gt;wget -O /mnt/user/appdata/linkace/.env https://raw.githubusercontent.com/Kovah/LinkAce/main/.env.docker.production&amp;lt;/em&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;-Edit .env with your configuration&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;-start the linkace then CLI linkace&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;em&amp;gt;php artisan key:generate&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/linkace.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/linkace.png</Icon>
+  <Description>&amp;lt;p&amp;gt;LinkAce is a self-hosted archive to collect links of your favorite websites. &amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;-&amp;lt;span style="color: rgb(184, 49, 47);"&amp;gt;Before you start CLI unraid&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;em&amp;gt;mkdir /mnt/user/appdata/linkace/&amp;lt;/em&amp;gt;&amp;lt;br&amp;gt;&amp;lt;em&amp;gt;wget -O /mnt/user/appdata/linkace/.env https://raw.githubusercontent.com/Kovah/LinkAce/main/.env.docker.production&amp;lt;/em&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;-Edit .env with your configuration&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;-start the linkace then CLI linkace&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;em&amp;gt;php artisan key:generate&amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;</Description>
+  <Config Name="Port" Target="80" Default="4256" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">4256</Config>
+  <Config Name="Logs Path" Target="/app/storage/logs" Default="/mnt/user/appdata/linkace/logs/" Mode="rw" Description="Logs Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/linkace/logs/</Config>
+  <Config Name=".env File" Target="/app/.env" Default="/mnt/user/appdata/linkace/.env" Mode="rw" Description=".env File" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/linkace/.env</Config>
+</Container>
