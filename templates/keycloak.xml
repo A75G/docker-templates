@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>keycloak</Name>
-  <Repository>quay.io/keycloak/keycloak:latest</Repository>
-  <Registry>https://quay.io/repository/keycloak/keycloak</Registry>
+  <Repository>bitnami/keycloak:latest</Repository>
+  <Registry>https://hub.docker.com/r/bitnami/keycloak/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -13,13 +13,14 @@
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/keycloak.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/keycloak.png</Icon>
+  <ExtraParams>--user 1001</ExtraParams>
   <Description>Open Source Identity and Access Management.</Description>
   <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
-  <Config Name="Keycloak User" Target="KEYCLOAK_USER" Default="Admin" Mode="" Description="Keycloak User" Type="Variable" Display="always" Required="true" Mask="false">admin</Config>
-  <Config Name="Keycloak Password" Target="KEYCLOAK_PASSWORD" Default="admin" Mode="" Description="Keycloak Password" Type="Variable" Display="always" Required="true" Mask="false">admin</Config>
-  <Config Name="Database Hostname or IP" Target="DB_ADDR" Default="192.168.0.100" Mode="" Description="Database Hostname or IP" Type="Variable" Display="always" Required="true" Mask="false">192.168.0.100</Config>
-  <Config Name="Database User" Target="DB_USER" Default="keyclock" Mode="" Description="Database User" Type="Variable" Display="always" Required="true" Mask="false">keyclock</Config>
-  <Config Name="Database Password" Target="DB_PASSWORD" Default="password" Mode="" Description="Database Password" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
-  <Config Name="Database Name" Target="DB_DATABASE" Default="keyclock" Mode="" Description="Database Name" Type="Variable" Display="always" Required="true" Mask="false">keyclock</Config>
-  <Config Name="DB_VENDOR" Target="DB_VENDOR" Default="mssql" Mode="" Description="DB_VENDOR" Type="Variable" Display="advanced" Required="true" Mask="false">MYSQL</Config>
+  <Config Name="Keycloak Admin User" Target="KEYCLOAK_ADMIN_USER" Default="admin" Mode="" Description="Keycloak Admin User" Type="Variable" Display="always" Required="true" Mask="false">admin</Config>
+  <Config Name="Keycloak Admin Password" Target="KEYCLOAK_ADMIN_PASSWORD" Default="password" Mode="" Description="Keycloak Admin Password" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
+  <Config Name="Postgres Database Hostname or IP" Target="KEYCLOAK_DATABASE_HOST" Default="192.168.0.100" Mode="" Description="Postgres Database Hostname or IP" Type="Variable" Display="always" Required="true" Mask="false">192.168.1.100</Config>
+  <Config Name="Postgres Database Port" Target="KEYCLOAK_DATABASE_PORT" Default="5432" Mode="" Description="Postgres Database Port" Type="Variable" Display="always" Required="true" Mask="false">5432</Config>
+  <Config Name="Postgres Database User" Target="KEYCLOAK_DATABASE_USER" Default="keyclock" Mode="" Description="Postgres Database User" Type="Variable" Display="always" Required="true" Mask="false">keyclock</Config>
+  <Config Name="Postgres Database Password" Target="KEYCLOAK_DATABASE_PASSWORD" Default="password" Mode="" Description="Postgres Database Password" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
+  <Config Name="Postgres Database Name" Target="KEYCLOAK_DATABASE_NAME" Default="keyclock" Mode="" Description="Postgres Database Name" Type="Variable" Display="always" Required="true" Mask="false">keyclock</Config>
 </Container>
