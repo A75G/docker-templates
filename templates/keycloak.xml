@@ -13,7 +13,6 @@
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/keycloak.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/keycloak.png</Icon>
-  <ExtraParams>--user 1001</ExtraParams>
   <Description>Open Source Identity and Access Management.</Description>
   <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="Keycloak Admin User" Target="KEYCLOAK_ADMIN_USER" Default="admin" Mode="" Description="Keycloak Admin User" Type="Variable" Display="always" Required="true" Mask="false">admin</Config>
