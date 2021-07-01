@@ -6,10 +6,12 @@
   * [Configuration](#configuration)
 - [Backuppc](#backuppc)
 - [Blueiris](#blueiris)
+- [Changedetection.io](#changedetectionio)
 - [Cloudbeaver](#cloudbeaver)
   * [Notes](#notes)
 - [Commento](#commento)
   * [Notes](#notes-1)
+- [Crypto-exchanges-gateway](#crypto-exchanges-gateway)
 - [CryptPad](#cryptpad)
   * [First installation](#first-installation-1)
 - [CyberChef](#cyberchef)
@@ -22,19 +24,20 @@
 - [Dispatch](#dispatch)
 - [Docpht](#docpht)
 - [Droppy](#droppy)
-- [ecoDMS](#ecoDMS)
+- [ecoDMS](#ecodms)
 - [FileRun](#filerun)
   * [Default username and password](#default-username-and-password-1)
 - [Element-web](#element-web)
+- [Epicgames-freegames](#epicgames-freegames)
 - [Filestash](#filestash)
-- [FreePBX](#freepbx)
-  * [First installation](#first-installation-2)
-- [Freescout](#freescout)
-  * [Creating User](#creating-user)
 - [Firefox-Syncserver](#firefox-syncserver)
 - [Flarum](#flarum)
   * [Default username and password](#default-username-and-password-2)
   * [Notes](#notes-2)
+- [FreePBX](#freepbx)
+  * [First installation](#first-installation-2)
+- [Freescout](#freescout)
+  * [Creating User](#creating-user)
 - [Golinks](#golinks)
   * [Usage](#usage)
 - [Gossa](#gossa)
@@ -43,7 +46,6 @@
   * [Default username and password](#default-username-and-password-3)
 - [Healthchecks](#healthchecks)
 - [Homer](#homer)
-  * [Before running the docker](#before-running-the-docker-2)
 - [Jitsi](#jitsi)
   * [Change appdata location](#change-appdata-location)
   * [Notes](#notes-3)
@@ -55,6 +57,7 @@
   * [First installation](#first-installation-3)
 - [Librenms](#librenms)
   * [Notes](#notes-5)
+- [Linkace](#linkace)
 - [Linkding](#linkding)
 - [Mailpile](#mailpile)
 - [Matomo](#matomo)
@@ -63,7 +66,7 @@
 - [Mattermost](#mattermost)
 - [Mattermost-push-proxy](#mattermost-push-proxy)
   * [Notes](#notes-6)
-  * [Before running the docker](#before-running-the-docker-3)
+  * [Before running the docker](#before-running-the-docker-2)
 - [Mediagoblin](#mediagoblin)
   * [Default username and password](#default-username-and-password-4)
 - [Memcached](#memcached)
@@ -74,6 +77,7 @@
   * [Notes](#notes-8)
 - [Netbox](#netbox)
   * [Notes](#notes-9)
+- [Nut](#nut)
 - [phpBB](#phpbb)
 - [PsiTransfer](#psitransfer)
   * [Notes](#notes-10)
@@ -87,9 +91,11 @@
 - [Reactive-resume](#reactive-resume)
 - [Redis](#redis)
 - [Riot-web](#riot-web)
-  * [Before running the docker](#before-running-the-docker-4)
+  * [Before running the docker](#before-running-the-docker-3)
 - [Searx](#searx)
 - [Selfoss](#selfoss)
+- [Send](#send)
+- [Shaarli](#shaarli)
 - [Shiori](#shiori)
   * [Default username and password](#default-username-and-password-5)
   * [Notes](#notes-13)
@@ -102,11 +108,11 @@
 - [Tar1090](#tar1090)
 - [Torprivoxy](#torprivoxy)
 - [tt-rss](#tt-rss)
-- [Weechat](#weechat)
 - [Wallabag](#wallabag)
   * [Default username and password](#default-username-and-password-6)
   * [PHP errors](#php-errors)
   * [Missing texture and images](#missing-texture-and-images)
+- [Weechat](#weechat)
 - [Wifi-card](#wifi-card)
 - [YaCy](#yacy)
   * [Default username and password](#default-username-and-password-7)
@@ -202,6 +208,24 @@ Blue Iris is a video surveillance software solution.
 **[`^back to top^`](#unraid-templates)**
 
 ----
+# Changedetection.io
+![Changedetection.io](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/changedetection.io.png)
+
+*<div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
+
+Self-hosted website change detection monitoring.
+
+**Application Name:** Changedetection.io
+
+**Application Site:** https://github.com/dgtlmoon/changedetection.io
+
+**Docker Hub:** https://hub.docker.com/r/dgtlmoon/changedetection.io
+
+**Github:** https://github.com/dgtlmoon/changedetection.io
+
+**[`^back to top^`](#unraid-templates)**
+
+----
 # Cloudbeaver
 ![Cloudbeaver](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cloudbeaver.png)
 
@@ -234,6 +258,22 @@ Commento is a platform that you can embed in your website to allow your readers 
 **Github:** https://gitlab.com/commento/commento
 ## Notes
 * PostgreSQL DB Required (Not Included)
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# Crypto-exchanges-gateway
+![Crypto-exchanges-gateway](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/crypto-exchanges-gateway.png)
+
+*<div>Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
+
+**Application Name:** Crypto-exchanges-gateway
+
+**Application Site:** https://github.com/aloysius-pgast/crypto-exchanges-gateway
+
+**Docker Hub:** https://hub.docker.com/r/apendergast/crypto-exchanges-gateway/
+
+**Github:** https://github.com/aloysius-pgast/crypto-exchanges-gateway
 
 **[`^back to top^`](#unraid-templates)**
 
@@ -447,6 +487,22 @@ FileRun is a self-hosted Google Drive/Photos/Music alternative. It is a full fea
 **[`^back to top^`](#unraid-templates)**
 
 ----
+# Epicgames-freegames
+![Epicgames-freegames](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/epicgames-freegames.png)
+
+*<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
+
+**Application Name:** Epicgames-freegames
+
+**Application Site:** https://github.com/claabs/epicgames-freegames-node
+
+**Docker Hub:** https://hub.docker.com/r/charlocharlie/epicgames-freegames/
+
+**Github:** https://github.com/claabs/epicgames-freegames-node
+
+**[`^back to top^`](#unraid-templates)**
+
+----
 # Filestash
 ![Filestash](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/filestash.png)
 
@@ -457,6 +513,43 @@ FileRun is a self-hosted Google Drive/Photos/Music alternative. It is a full fea
 **Docker Hub:** https://hub.docker.com/r/machines/filestash/
 
 **Github:** https://github.com/mickael-kerjean/filestash
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# Firefox-Syncserver
+![Firefox-Syncserver](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/firefox-syncserver.png)
+
+Self hosted firefox sync server.
+
+**Application Name:** Firefox-Syncserver
+
+**Application Site:** https://github.com/crazy-max/docker-firefox-syncserver
+
+**Docker Hub:** https://hub.docker.com/r/crazymax/firefox-syncserver
+
+**Github:** https://github.com/crazy-max/docker-firefox-syncserver
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# Flarum
+![Flarum](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/flarum.png)
+
+Forums made simple. Modern, fast, and free!
+
+**Application Name:** Flarum
+
+**Application Site:** https://flarum.org/
+
+**Docker Hub:** https://hub.docker.com/r/crazymax/flarum/
+
+**Github:** https://github.com/crazy-max/docker-flarum
+## Default username and password
+Username: ```flarum```
+Password: ```flarum```
+## Notes
+* Make Sure the base url is right if it local use only use http://<ip>:8000 and if you are hosting it on your domain it should be http://example.com or https://example.com.
 
 **[`^back to top^`](#unraid-templates)**
 
@@ -500,43 +593,6 @@ An open source Helpscout / Zendesk alternative.
 **Github:** https://www.github.com/tiredofit/docker-freescout
 ## Creating User
 * CLI ```cd /www/html``` then ```php artisan freescout:create-user```
-
-**[`^back to top^`](#unraid-templates)**
-
-----
-# Firefox-Syncserver
-![Firefox-Syncserver](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/firefox-syncserver.png)
-
-Self hosted firefox sync server.
-
-**Application Name:** Firefox-Syncserver
-
-**Application Site:** https://github.com/crazy-max/docker-firefox-syncserver
-
-**Docker Hub:** https://hub.docker.com/r/crazymax/firefox-syncserver
-
-**Github:** https://github.com/crazy-max/docker-firefox-syncserver
-
-**[`^back to top^`](#unraid-templates)**
-
-----
-# Flarum
-![Flarum](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/flarum.png)
-
-Forums made simple. Modern, fast, and free!
-
-**Application Name:** Flarum
-
-**Application Site:** https://flarum.org/
-
-**Docker Hub:** https://hub.docker.com/r/crazymax/flarum/
-
-**Github:** https://github.com/crazy-max/docker-flarum
-## Default username and password
-Username: ```flarum```
-Password: ```flarum```
-## Notes
-* Make Sure the base url is right if it local use only use http://<ip>:8000 and if you are hosting it on your domain it should be http://example.com or https://example.com.
 
 **[`^back to top^`](#unraid-templates)**
 
@@ -629,9 +685,6 @@ A dead simple static HOMepage for your servER to keep your services on hand, fro
 **Docker Hub:** https://hub.docker.com/r/b4bz/homer
 
 **Github:** https://github.com/bastienwirtz/homer
-## Before running the docker
-* ```mkdir -p /mnt/user/appdata/homer/config/```
-* ```wget -O /mnt/user/appdata/homer/config/config.yml https://raw.githubusercontent.com/bastienwirtz/homer/master/config.yml```
 
 **[`^back to top^`](#unraid-templates)**
 
@@ -719,6 +772,20 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Github:** https://github.com/librenms/docker
 ## Notes
 * Database must be CHARACTER SET utf8 COLLATE utf8_unicode_ci
+
+**[`^back to top^`](#unraid-templates)**
+
+----
+# Linkace
+![Linkace](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/linkace.png)
+
+**Application Name:** Linkace
+
+**Application Site:** https://www.linkace.org/
+
+**Docker Hub:** https://hub.docker.com/r/linkace/linkace/
+
+**Github:** https://github.com/Kovah/LinkAce/
 
 **[`^back to top^`](#unraid-templates)**
 
@@ -913,6 +980,22 @@ For more content https://wiki.kiwix.org/wiki/Content
 **[`^back to top^`](#unraid-templates)**
 
 ----
+# Nut
+![Nut](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/nut.png)
+
+*<div>Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
+
+**Application Name:** Nut
+
+**Application Site:** https://www.github.com/ramdock/nut-server
+
+**Docker Hub:** https://hub.docker.com/r/ramdockerapp/nut-server/
+
+**Github:** https://www.github.com/ramdock/nut-server
+
+**[`^back to top^`](#unraid-templates)**
+
+----
 # phpBB
 ![phpBB](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/phpbb.png)
 
@@ -1090,6 +1173,34 @@ selfoss is a multipurpose RSS reader and feed aggregation web application.
 **[`^back to top^`](#unraid-templates)**
 
 ----
+# Send
+![Send](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/send.png)
+
+**Application Name:** Send
+
+**Application Site:** https://gitlab.com/timvisee/send
+
+**Docker Hub:** registry.gitlab.com/timvisee/send:latest
+
+**Github:** https://gitlab.com/timvisee/send
+    
+**[`^back to top^`](#unraid-templates)**
+
+----
+# Shaarli
+![Shaarli](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/shaarli.png)
+
+**Application Name:** Shaarli
+
+**Application Site:** https://github.com/shaarli/Shaarli
+
+**Docker Hub:** https://hub.docker.com/r/shaarli/shaarli/
+
+**Github:** https://github.com/shaarli/Shaarli
+    
+**[`^back to top^`](#unraid-templates)**
+
+----
 # Shiori
 ![Shiori](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/shiori.png)
 
@@ -1251,20 +1362,6 @@ Tiny Tiny RSS is a free RSS feed reader. It is a web application which must be i
 **[`^back to top^`](#unraid-templates)**
 
 ----
-# Weechat
-![Weechat](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/weechat.png)
-
-WeeChat is a free and open-source Internet Relay Chat client, which is designed to be light and fast.
-
-**Application Site:** https://weechat.org/
-
-**Docker Hub:** https://hub.docker.com/r/jkaberg/weechat/
-
-**Github:** https://www.github.com/jkaberg/dockerfiles
-
-**[`^back to top^`](#unraid-templates)**
-
-----
 # Wallabag
 ![Wallabag](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/wallabag.png)
 
@@ -1288,7 +1385,20 @@ Password: ```wallabag```
 **[`^back to top^`](#unraid-templates)**
 
 ----
+# Weechat
+![Weechat](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/weechat.png)
 
+WeeChat is a free and open-source Internet Relay Chat client, which is designed to be light and fast.
+
+**Application Site:** https://weechat.org/
+
+**Docker Hub:** https://hub.docker.com/r/jkaberg/weechat/
+
+**Github:** https://www.github.com/jkaberg/dockerfiles
+
+**[`^back to top^`](#unraid-templates)**
+
+----
 # Wifi-card
 ![Wifi-card](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/wifi-card.png)
 
