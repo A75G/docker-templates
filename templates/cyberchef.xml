@@ -10,7 +10,7 @@
   <Project>https://github.com/mpepping/docker-cyberchef/</Project>
   <Overview>The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.</Overview>
   <Category>Productivity: Tools: Status:Stable</Category>
-  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/cyberchef.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cyberchef.png</Icon>
   <ExtraParams/>
@@ -19,5 +19,5 @@
   <DonateLink/>
   <Description>The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.</Description>
   <Labels/>
-  <Config Name="Port" Target="80" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
 </Container>
