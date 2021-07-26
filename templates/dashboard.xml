@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>dashboard</Name>
+  <Repository>phntxx/dashboard:latest</Repository>
+  <Registry>https://hub.docker.com/r/phntxx/dashboard/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/phntxx/dashboard</Project>
+  <Overview>&amp;lt;p&amp;gt;Dashboard is just that - a dashboard. It's inspired by SUI and has all the same features as SUI, such as simple customization through JSON-files and a handy search bar to search the internet more efficiently.&#xD;
+&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;-&amp;lt;span style="color: rgb(184, 49, 47);"&amp;gt;Before you start CLI unraid&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;em&amp;gt;mkdir /mnt/user/appdata/dashboard/&amp;lt;/em&amp;gt;&amp;lt;br&amp;gt;&amp;lt;em&amp;gt;wget -P /mnt/user/appdata/dashboard/ https://raw.githubusercontent.com/phntxx/dashboard/master/data/apps.json https://raw.githubusercontent.com/phntxx/dashboard/master/data/bookmarks.json https://raw.githubusercontent.com/phntxx/dashboard/master/data/greeter.json https://raw.githubusercontent.com/phntxx/dashboard/master/data/imprint.json https://raw.githubusercontent.com/phntxx/dashboard/master/data/search.json https://raw.githubusercontent.com/phntxx/dashboard/master/data/themes.json&#xD;
+&amp;lt;/em&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;-Edit &amp;lt;em&amp;gt;.json&amp;lt;/em&amp;gt; &amp;lt;/p&amp;gt;</Overview>
+  <Category>Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/dashboard.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dashboard.png</Icon>
+  <Description>&amp;lt;p&amp;gt;Dashboard is just that - a dashboard. It's inspired by SUI and has all the same features as SUI, such as simple customization through JSON-files and a handy search bar to search the internet more efficiently.&#xD;
+&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;-&amp;lt;span style="color: rgb(184, 49, 47);"&amp;gt;Before you start CLI unraid&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;em&amp;gt;mkdir /mnt/user/appdata/dashboard/&amp;lt;/em&amp;gt;&amp;lt;br&amp;gt;&amp;lt;em&amp;gt;wget -P /mnt/user/appdata/dashboard/ https://raw.githubusercontent.com/phntxx/dashboard/master/data/apps.json https://raw.githubusercontent.com/phntxx/dashboard/master/data/bookmarks.json https://raw.githubusercontent.com/phntxx/dashboard/master/data/greeter.json https://raw.githubusercontent.com/phntxx/dashboard/master/data/imprint.json https://raw.githubusercontent.com/phntxx/dashboard/master/data/search.json https://raw.githubusercontent.com/phntxx/dashboard/master/data/themes.json&#xD;
+&amp;lt;/em&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;-Edit &amp;lt;em&amp;gt;.json&amp;lt;/em&amp;gt; &amp;lt;/p&amp;gt;</Description>
+  <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">3460</Config>
+  <Config Name="AppData" Target="/app/data" Default="/mnt/user/appdata/dashboard/" Mode="rw" Description="AppData" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/dashboard/</Config>
+  <Config Name="Cloudflare Zone ID (Optional)" Target="CLOUDFLARE_ZONE_ID" Default="" Mode="" Description="functionality to purge the Cloudflare cache every time the container restarts (though this functionality is entirely optional)." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Cloudflare Purge Token (Optional)" Target="CLOUDFLARE_PURGE_TOKEN" Default="" Mode="" Description="functionality to purge the Cloudflare cache every time the container restarts (though this functionality is entirely optional)." Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
