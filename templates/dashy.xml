@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>dashy</Name>
+  <Repository>lissy93/dashy:latest</Repository>
+  <Registry>https://hub.docker.com/r/lissy93/dashy/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/lissy93/dashy</Project>
+  <Overview>&amp;lt;p&amp;gt;Dashy helps you organize your self-hosted services, by making them all accessible from a single place.&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;-&amp;lt;span style="color: rgb(184, 49, 47);"&amp;gt;Before you start CLI unraid&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;em&amp;gt;mkdir /mnt/user/appdata/dashy/&amp;lt;/em&amp;gt;&amp;lt;br&amp;gt;&amp;lt;em&amp;gt;wget -O /mnt/user/appdata/&amp;lt;em&amp;gt;dashy&amp;lt;/em&amp;gt;/conf.yml &amp;lt;a href="https://raw.githubusercontent.com/Lissy93/dashy/master/public/conf.yml"&amp;gt;https://raw.githubusercontent.com/Lissy93/dashy/master/public/conf.yml&amp;lt;/a&amp;gt;&amp;lt;/em&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;-Edit &amp;lt;em&amp;gt;conf.yml&amp;lt;/em&amp;gt; &amp;lt;/p&amp;gt;</Overview>
+  <Category>Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/dashy.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dashy.png</Icon>
+  <Description>&amp;lt;p&amp;gt;Dashy helps you organize your self-hosted services, by making them all accessible from a single place.&amp;lt;/p&amp;gt;&#xD;
+&amp;lt;p&amp;gt;-&amp;lt;span style="color: rgb(184, 49, 47);"&amp;gt;Before you start CLI unraid&amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&amp;lt;em&amp;gt;mkdir /mnt/user/appdata/dashy/&amp;lt;/em&amp;gt;&amp;lt;br&amp;gt;&amp;lt;em&amp;gt;wget -O /mnt/user/appdata/&amp;lt;em&amp;gt;dashy&amp;lt;/em&amp;gt;/conf.yml &amp;lt;a href="https://raw.githubusercontent.com/Lissy93/dashy/master/public/conf.yml"&amp;gt;https://raw.githubusercontent.com/Lissy93/dashy/master/public/conf.yml&amp;lt;/a&amp;gt;&amp;lt;/em&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;-Edit &amp;lt;em&amp;gt;conf.yml&amp;lt;/em&amp;gt; &amp;lt;/p&amp;gt;</Description>
+  <Config Name="Port" Target="80" Default="4000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">4000</Config>
+  <Config Name="Config File" Target="/app/public/conf.yml" Default="" Mode="rw" Description="Config File&#13;&#10;https://github.com/Lissy93/dashy/blob/master/public/conf.yml" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/dashy/conf.yml</Config>
+  <Config Name="Icons Path" Target="/app/public/item-icons/" Default="/mnt/user/appdata/dashy/icons/" Mode="rw" Description="Icons Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/dashy/icons/</Config>
+  <Config Name="UID" Target="UID" Default="99" Mode="" Description="UID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="GID" Target="GID" Default="100" Mode="" Description="GID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+</Container>
