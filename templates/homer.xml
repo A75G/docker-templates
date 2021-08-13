@@ -8,7 +8,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://github.com/bastienwirtz/homer</Project>
-  <Overview>A dead simple static HOMe for your servER to keep your services on hand from a simple yaml config.[br][br]Download config.yml[/br][/br]wget -O /mnt/user/appdata/homer/assets/config.yml https://raw.githubusercontent.com/bastienwirtz/homer/master/config.yml</Overview>
+  <Overview>A dead simple static HOMe for your servER to keep your services on hand from a simple yaml config.</Overview>
   <Category>Network:Web</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/homer.xml</TemplateURL>
@@ -17,7 +17,7 @@
   <PostArgs/>
   <DonateText/>
   <DonateLink/>
-  <Description>A dead simple static HOMe for your servER to keep your services on hand from a simple yaml config.[br][br]Download config.yml[/br][/br]wget -O /mnt/user/appdata/homer/config.yml https://raw.githubusercontent.com/bastienwirtz/homer/master/config.yml</Description>
+  <Description>A dead simple static HOMe for your servER to keep your services on hand from a simple yaml config.</Description>
   <Labels/>
   <Config Name="Port" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
   <Config Name="Assets Path" Target="/www/assets" Default="" Mode="rw" Description="Container Path: /www/assets" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/homer/assets/</Config>
