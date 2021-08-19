@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>vikunja-api</Name>
+  <Repository>vikunja/api:latest</Repository>
+  <Registry>https://hub.docker.com/r/vikunja/api/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://vikunja.io/</Project>
+  <Overview>The to-do app to organize your life.</Overview>
+  <Category>Productivity:</Category>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/vikunja-api.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/vikunja.png</Icon>
+  <Description>The to-do app to organize your life.</Description>
+  <Config Name="AppData" Target="/app/vikunja/files" Default="" Mode="rw" Description="AppData" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/vikunja</Config>
+  <Config Name="Port 1" Target="3456" Default="" Mode="tcp" Description="Port 1" Type="Port" Display="always" Required="false" Mask="false">3456</Config>
+  <Config Name="Database Host" Target="VIKUNJA_DATABASE_HOST" Default="" Mode="" Description="Database Host" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.100</Config>
+  <Config Name="Database Password" Target="VIKUNJA_DATABASE_PASSWORD" Default="" Mode="" Description="Database Password" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="Database Type" Target="VIKUNJA_DATABASE_TYPE" Default="" Mode="" Description="Database Type" Type="Variable" Display="always" Required="false" Mask="false">mysql</Config>
+  <Config Name="Database User" Target="VIKUNJA_DATABASE_USER" Default="" Mode="" Description="Database User" Type="Variable" Display="always" Required="false" Mask="false">root</Config>
+  <Config Name="Database Name" Target="VIKUNJA_DATABASE_DATABASE" Default="" Mode="" Description="Database Name" Type="Variable" Display="always" Required="false" Mask="false">vikunja</Config>
+</Container>
