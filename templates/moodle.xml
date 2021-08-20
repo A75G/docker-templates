@@ -17,9 +17,8 @@
   <Config Name="HTTPs" Target="8443" Default="8443" Mode="tcp" Description="HTTPs (Not needed if you use reverse proxy)" Type="Port" Display="always" Required="false" Mask="false">8443</Config>
   <Config Name="MoodlePath" Target="/bitnami/moodle" Default="/mnt/user/appdata/moodle/" Mode="rw" Description="MoodlePath" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/moodle/</Config>
   <Config Name="Moodledata" Target="/bitnami/moodledata" Default="/mnt/user/appdata/moodle/data/" Mode="rw" Description="Moodledata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/moodle/data/</Config>
-  <Config Name="ALLOW_EMPTY_PASSWORD" Target="ALLOW_EMPTY_PASSWORD" Default="no|yes" Mode="" Description="It can be used to allow blank passwords." Type="Variable" Display="advanced" Required="true" Mask="false">no</Config>
-  <Config Name="MariaDB Hostname or IP" Target="MARIADB_HOST" Default="mariadb" Mode="" Description="MariaDB Hostname or IP" Type="Variable" Display="always" Required="true" Mask="false">mariadb</Config>
-  <Config Name="MariaDB Database Port" Target="MARIADB_PORT_NUMBER" Default="3306" Mode="" Description="MariaDB Database Port" Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
+  <Config Name="MariaDB Hostname or IP" Target="MOODLE_DATABASE_HOST" Default="mariadb" Mode="" Description="MariaDB Hostname or IP" Type="Variable" Display="always" Required="true" Mask="false">mariadb</Config>
+  <Config Name="MariaDB Database Port" Target="MOODLE_DATABASE_PORT_NUMBER" Default="3306" Mode="" Description="MariaDB Database Port" Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
   <Config Name="Database Name" Target="MOODLE_DATABASE_NAME" Default="bitnami_moodle" Mode="" Description="Database Name" Type="Variable" Display="always" Required="true" Mask="false">bitnami_moodle</Config>
   <Config Name="Database User" Target="MOODLE_DATABASE_USER" Default="bn_moodle" Mode="" Description="Database User" Type="Variable" Display="always" Required="true" Mask="false">bn_moodle</Config>
   <Config Name="Database Password" Target="MOODLE_DATABASE_PASSWORD" Default="" Mode="" Description="Database Password" Type="Variable" Display="always" Required="true" Mask="false"/>
@@ -31,4 +30,5 @@
   <Config Name="SMTP_USER" Target="SMTP_USER" Default="" Mode="" Description="SMTP account user" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="SMTP_PASSWORD" Target="SMTP_PASSWORD" Default="" Mode="" Description="SMTP account password" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="SMTP_PROTOCOL" Target="SMTP_PROTOCOL" Default="" Mode="" Description="SMTP protocol" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="ALLOW_EMPTY_PASSWORD" Target="ALLOW_EMPTY_PASSWORD" Default="no|yes" Mode="" Description="It can be used to allow blank passwords." Type="Variable" Display="advanced" Required="true" Mask="false">no</Config>
 </Container>
