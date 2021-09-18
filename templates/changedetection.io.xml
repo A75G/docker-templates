@@ -16,4 +16,5 @@
   <Description>Self-hosted website change detection monitoring.</Description>
   <Config Name="Port" Target="5000" Default="5000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
   <Config Name="Appdata" Target="/datastore" Default="/mnt/user/appdata/changedetection/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/changedetection/</Config>
+  <Config Name="Base URL" Target="BASE_URL" Default="" Mode="" Description="The URL this application will be accessed from your clients without trailing slash. Needed for notifications if you want to be linked to the diff page for example." Type="Variable" Display="always" Required="false" Mask="false"></Config>
 </Container>
