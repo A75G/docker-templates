@@ -463,7 +463,7 @@ FileRun is a self-hosted Google Drive/Photos/Music alternative. It is a full fea
 
 **Application Site:** https://filerun.com/
 
-**Docker Hub:** https://hub.docker.com/r/afian/filerun/
+**Docker Hub:** https://hub.docker.com/r/filerun/filerun/
 
 **Github:** https://github.com/filerun/docker
 ## Default username and password
