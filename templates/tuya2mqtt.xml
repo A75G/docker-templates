@@ -3,7 +3,7 @@
    <Name Default="tuya2mqtt">tuya2mqtt</Name>
    <Overview>
      This is a template for https://github.com/tonyfav/tuya2mqtt 's container,
-     which makes devices with serial protcols that are not supported in Tasmota
+     which makes devices with serial protocols that are not supported in Tasmota
      available to Home Assistant.
    </Overview>
    <Registry>https://hub.docker.com/r/thetonyfav/tuya2mqtt</Registry>
