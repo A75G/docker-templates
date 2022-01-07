@@ -7,7 +7,7 @@
      available to Home Assistant.
    </Overview>
    <Registry>https://hub.docker.com/r/thetonyfav/tuya2mqtt</Registry>
-   <Repository>tonyfav/tuya2mqtt</Repository>
+   <Repository>tonyfav/tuya2mqtt:20210918</Repository>
    <Privileged>false</Privileged>
    <Network>bridge</Network>
    <Category>HomeAutomation: Status:Stable</Category>
