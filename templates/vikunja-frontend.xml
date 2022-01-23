@@ -15,4 +15,5 @@
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/vikunja.png</Icon>
   <Description>The to-do app to organize your life.</Description>
   <Config Name="Port 1" Target="80" Default="" Mode="tcp" Description="Port 1" Type="Port" Display="always" Required="false" Mask="false">8079</Config>
+  <Config Name="Host Key 1" Target="VIKUNJA_API_URL" Default="" Mode="" Description="Container Variable: VIKUNJA_API_URL" Type="Variable" Display="always" Required="false" Mask="false">https://domain.com/api/v1</Config>
 </Container>
