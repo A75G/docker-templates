@@ -25,12 +25,15 @@
   <Config Name="DB_HOST" Target="DB_HOST" Default="" Mode="" Description="Host or container name of MariaDB Server e.g" Type="Variable" Display="always" Required="false" Mask="false">DB HOST</Config>
   <Config Name="DB_PORT" Target="DB_PORT" Default="3306" Mode="" Description="MariaDB Port" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
   <Config Name="DB_NAME" Target="DB_NAME" Default="freescout" Mode="" Description="MariaDB Database name e.g." Type="Variable" Display="always" Required="false" Mask="false">freescout</Config>
+  <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="freescout" Mode="" Description="DB to use for CLI environment" Type="Variable" Display="always" Required="false" Mask="false">freescout</Config>
   <Config Name="DB_USER" Target="DB_USER" Default="root" Mode="" Description="MariaDB Username for above Database e.g." Type="Variable" Display="always" Required="false" Mask="false">root</Config>
+  <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="root" Mode="" Description="DB username for CLI environment" Type="Variable" Display="always" Required="false" Mask="false">root</Config>
   <Config Name="DB_PASS" Target="DB_PASS" Default="password" Mode="" Description="MariaDB Password for above Database e.g." Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="password" Mode="" Description="DB Pass for CLI environment" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
   <Config Name="SITE_URL" Target="SITE_URL" Default="http://&amp;lt;IP&amp;gt;:8000" Mode="" Description="The url your site listens " Type="Variable" Display="always" Required="false" Mask="false">http://&lt;IP&gt;:8000</Config>
   <Config Name="DISPLAY_ERRORS" Target="DISPLAY_ERRORS" Default="FALSE" Mode="" Description="Display Errors on Website" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
-  <Config Name="ADMIN_EMAIL" Target="ADMIN_EMAIL" Default="admin@example.com" Mode="" Description="This wont work dont know why. see overview." Type="Variable" Display="always-hide" Required="false" Mask="false">admin@admin.com</Config>
-  <Config Name="ADMIN_FIRST_NAME" Target="ADMIN_FIRST_NAME" Default="Admin" Mode="" Description="This wont work dont know why. see overview." Type="Variable" Display="always-hide" Required="false" Mask="false">Admin</Config>
-  <Config Name="ADMIN_LAST_NAME" Target="ADMIN_LAST_NAME" Default="User" Mode="" Description="This wont work dont know why. see overview." Type="Variable" Display="always-hide" Required="false" Mask="false">User</Config>
-  <Config Name="ADMIN_PASS" Target="ADMIN_PASS" Default="Passw0rd" Mode="" Description="This wont work dont know why. see overview." Type="Variable" Display="always-hide" Required="false" Mask="false">Passw0rd</Config>
+  <Config Name="ADMIN_EMAIL" Target="ADMIN_EMAIL" Default="admin@example.com" Mode="" Description="Admin Email address" Type="Variable" Display="always-hide" Required="false" Mask="false">admin@admin.com</Config>
+  <Config Name="ADMIN_FIRST_NAME" Target="ADMIN_FIRST_NAME" Default="Admin" Mode="" Description="Admin first name" Type="Variable" Display="always-hide" Required="false" Mask="false">Admin</Config>
+  <Config Name="ADMIN_LAST_NAME" Target="ADMIN_LAST_NAME" Default="User" Mode="" Description="Admin Last Name" Type="Variable" Display="always-hide" Required="false" Mask="false">User</Config>
+  <Config Name="ADMIN_PASS" Target="ADMIN_PASS" Default="Passw0rd" Mode="" Description="Admin password" Type="Variable" Display="always-hide" Required="false" Mask="false">Passw0rd</Config>
 </Container>
