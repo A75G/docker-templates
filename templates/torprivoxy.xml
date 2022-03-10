@@ -9,7 +9,7 @@
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://github.com/avpnusr/torprivoxy</Project>
   <Overview>Small TOR and Privoxy container with just 8 MB</Overview>
-  <Category>Network:Proxy</Category>
+  <Category>Network:Proxy Network:Privacy</Category>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/torprivoxy.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/torprivoxy.png</Icon>
   <Description>Small TOR and Privoxy container with just 8 MB</Description>
