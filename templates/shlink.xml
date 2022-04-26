@@ -17,8 +17,8 @@ More Variables: https://shlink.io/documentation/install-docker-image/#supported-
   <Description>A self-hosted and PHP-based URL shortener application with CLI and REST interfaces.&#xD;
 More Variables: https://shlink.io/documentation/install-docker-image/#supported-env-vars</Description>
   <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
-  <Config Name="Short Domain Host" Target="SHORT_DOMAIN_HOST" Default="doma.in" Mode="" Description="The custom short domain used for this shlink instance. For example doma.in." Type="Variable" Display="always" Required="false" Mask="false">doma.in</Config>
-  <Config Name="Short Domain Schema" Target="SHORT_DOMAIN_SCHEMA" Default="https|http" Mode="" Description="Either http or https." Type="Variable" Display="always" Required="false" Mask="false">https</Config>
+  <Config Name="Short Domain Host" Target="DEFAULT_DOMAIN" Default="doma.in" Mode="" Description="The custom short domain used for this shlink instance. For example doma.in." Type="Variable" Display="always" Required="false" Mask="false">doma.in</Config>
+  <Config Name="HTTPS Enabled?" Target="IS_HTTPS_ENABLED" Default="true|false" Mode="" Description="Either true or false." Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="Geolite License Key" Target="GEOLITE_LICENSE_KEY" Default="" Mode="" Description="https://dev.maxmind.com/geoip/geoip2/geolite2/" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Database Driver" Target="DB_DRIVER" Default="maria|mysql|postgres|mssql" Mode="" Description="Database Driver" Type="Variable" Display="always" Required="false" Mask="false">maria</Config>
   <Config Name="Database Name" Target="DB_NAME" Default="shlink" Mode="" Description="The database name to be used. Defaults to shlink." Type="Variable" Display="always" Required="false" Mask="false">shlink</Config>
