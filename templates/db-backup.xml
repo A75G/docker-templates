@@ -20,7 +20,7 @@
   <Labels/>
   <Config Name="Backup Location" Target="/backup" Default="" Mode="rw" Description="Database Dump Location" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/backups/db/</Config>
   <Config Name="Key 1" Target="COMPRESSION" Default="" Mode="" Description="Gzip " Type="Variable" Display="always" Required="false" Mask="false">GZ</Config>
-  <Config Name="Key 2" Target="DB_NAME" Default="" Mode="" Description="Databases Names you want to backup" Type="Variable" Display="always" Required="false" Mask="false">nextcloud,authelia,freshrss,mysql</Config>
+  <Config Name="Key 2" Target="DB_NAME" Default="" Mode="" Description="Databases Names you want to backup" Type="Variable" Display="always" Required="false" Mask="false">ALL</Config>
   <Config Name="Key 3" Target="DB_TYPE" Default="" Mode="" Description="couch influx mysql pgsql mongo redis rethink" Type="Variable" Display="always" Required="false" Mask="false">&lt;Database_Type&gt;</Config>
   <Config Name="Key 4" Target="DB_HOST" Default="" Mode="" Description="Database Hostname" Type="Variable" Display="always" Required="false" Mask="false">&lt;DATABASE_IP&gt;</Config>
   <Config Name="Key 5" Target="DB_USER" Default="" Mode="" Description="Database User - use root to backup all MySQL of them." Type="Variable" Display="always" Required="false" Mask="false">root</Config>
