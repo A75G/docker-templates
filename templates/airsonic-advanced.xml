@@ -19,7 +19,7 @@
   <Config Name="Default DLNA/UPnP ports" Target="1900" Default="1900" Mode="udp" Description="Default DLNA/UPnP ports" Type="Port" Display="always" Required="false" Mask="false">1900</Config>
   <Config Name="Appdata" Target="/var/airsonic" Default="/mnt/user/appdata/airsonic-advanced/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/airsonic-advanced/</Config>
   <Config Name="Music Path" Target="/var/music" Default="" Mode="rw" Description="Music Path" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Podcast Path" Target="/var/podcast" Default="" Mode="rw" Description="Podcast Path" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Podcast Path" Target="/var/podcasts" Default="" Mode="rw" Description="Podcast Path" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Playlist Path" Target="/var/playlists" Default="" Mode="rw" Description="Playlist Path" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="CONTEXT_PATH" Target="CONTEXT_PATH" Default="/" Mode="" Description="CONTEXT_PATH" Type="Variable" Display="always" Required="true" Mask="false">/</Config>
   <Config Name="JAVA_OPTS" Target="JAVA_OPTS" Default="-Xms256m -Xmx512m" Mode="" Description="JAVA_OPTS" Type="Variable" Display="always" Required="true" Mask="false">-Xms256m -Xmx512m</Config>
