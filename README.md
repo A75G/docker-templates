@@ -1068,11 +1068,11 @@ For more content https://wiki.kiwix.org/wiki/Content
 
 **Application Name:** Pwndrop
 
-**Application Site:** ttps://github.com/treyyoder/quakejs-docker
+**Application Site:** https://github.com/treyyoder/quakejs-docker
 
 **Docker Hub:** https://hub.docker.com/r/harshavardhanj/pwndrop
 
-**Github:** ttps://github.com/treyyoder/quakejs-docker
+**Github:** https://github.com/treyyoder/quakejs-docker
 
 **[`^back to top^`](#unraid-templates)**
 
