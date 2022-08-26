@@ -8,7 +8,9 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://www.filestash.app/</Project>
-  <Overview>A modern web client for SFTP, S3, FTP, WebDAV, Git, Minio, LDAP, CalDAV, CardDAV, Mysql, Backblaze, ...</Overview>
+  <Overview>A modern web client for SFTP, S3, FTP, WebDAV, Git, Minio, LDAP, CalDAV, CardDAV, Mysql, Backblaze, ...&#xD;
+&#xD;
+https://www.filestash.app/docs/install-and-upgrade/#optional-using-a-bind-mount-for-persistent-configuration</Overview>
   <Category>Cloud: Productivity: Network:Web</Category>
   <WebUI>http://[IP]:[PORT:8334]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/filestash.xml</TemplateURL>
@@ -19,5 +21,4 @@
   <DonateLink/>
   <Description>A modern web client for SFTP, S3, FTP, WebDAV, Git, Minio, LDAP, CalDAV, CardDAV, Mysql, Backblaze, ...</Description>
   <Config Name="Port" Target="8334" Default="8334" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8334</Config>
-  <Config Name="Appdata" Target="/app/data/state/" Default="/mnt/user/appdata/filestash/" Mode="rw" Description="Container Path: /app/data/state/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/filestash/</Config>
 </Container>
