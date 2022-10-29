@@ -983,15 +983,15 @@ For more content https://wiki.kiwix.org/wiki/Content
 # Nut
 ![Nut](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/nut.png)
 
-*<div>Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
+*<a href="https://www.flaticon.com/free-icons/squirrel" title="squirrel icons">Squirrel icons created by Freepik - Flaticon</a>*
 
 **Application Name:** Nut
 
-**Application Site:** https://www.github.com/ramdock/nut-server
+**Application Site:** https://github.com/shawly/docker-nut
 
-**Docker Hub:** https://hub.docker.com/r/ramdockerapp/nut-server/
+**Docker Hub:** https://hub.docker.com/r/shawly/nut
 
-**Github:** https://www.github.com/ramdock/nut-server
+**Github:** https://github.com/shawly/docker-nut
 
 **[`^back to top^`](#unraid-templates)**
 
