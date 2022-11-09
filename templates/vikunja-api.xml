@@ -12,11 +12,12 @@
   <Category>Productivity:</Category>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/vikunja-api.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/vikunja.png</Icon>
-  <Description>The to-do app to organize your life.<br/>NOTE: Requires a config file to run: see https://vikunja.io/docs/config-options/ or use the example defaul config https://kolaente.dev/vikunja/api/src/branch/main/config.yml.sample (remove the '.sample' and fill in needed data)</Description>
+  <Description>The to-do app to organize your life.</Description>
+  <Requires>Requires a config file to run: see https://vikunja.io/docs/config-options/ or use the example defaul config https://kolaente.dev/vikunja/api/src/branch/main/config.yml.sample (remove the '.sample' and fill in needed data)</Requires> 
   <Config Name="Port 1" Target="3456" Default="" Mode="tcp" Description="Port 1" Type="Port" Display="always" Required="false" Mask="false">3456</Config>
   <Config Name="AppData" Target="/app/vikunja/files" Default="" Mode="rw" Description="AppData" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/vikunja</Config>
   <Config Name="Config Folder" Target="/etc/vikunja" Default="" Mode="rw" Description="Folder where you place your 'config.yml' file" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/vikunja/config</Config>
-  <Config Name="Sqlite Path" Target="VIKUNJA_DATABASE_PATH" Default="" Mode="" Description="When using sqlite, this is the path where to store the data" Type="Variable" Display="always" Required="false" Mask="false">/etc/vikunja/vikunja.db</Config> 
+  <Config Name="Sqlite Path" Target="VIKUNJA_DATABASE_PATH" Default="" Mode="" Description="When using sqlite, this is the path where to store the data inisde the container" Type="Variable" Display="always" Required="false" Mask="false">/etc/vikunja/vikunja.db</Config> 
   <Config Name="Database Host" Target="VIKUNJA_DATABASE_HOST" Default="" Mode="" Description="Database host - Only if Database Type is set to mysql or postgres" Type="Variable" Display="always" Required="false" Mask="false">db</Config>
   <Config Name="Database Password" Target="VIKUNJA_DATABASE_PASSWORD" Default="" Mode="" Description="Database Password - Only if Database Type is set to mysql or postgres" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
   <Config Name="Database Type" Target="VIKUNJA_DATABASE_TYPE" Default="" Mode="" Description="Database type to use. Supported types are mysql, postgres and sqlite." Type="Variable" Display="always" Required="false" Mask="false">sqlite</Config>
