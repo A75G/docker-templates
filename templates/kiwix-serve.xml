@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>kiwix-serve</Name>
-  <Repository>kiwix/kiwix-serve:latest</Repository>
-  <Registry>https://hub.docker.com/r/kiwix/kiwix-serve/</Registry>
+  <Repository>ghcr.io/kiwix/kiwix-serve</Repository>
+  <Registry>https://github.com/kiwix/kiwix-tools/tree/main/docker/server</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -10,7 +10,7 @@
   <Project>https://www.kiwix.org/</Project>
   <Overview>Kiwix enables you to have the whole Wikipedia at hand wherever you go! [br]Remove download link after download complete.[/br]</Overview>
   <Category>Productivity:</Category>
-  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/kiwix-serve.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/kiwix.png</Icon>
   <ExtraParams/>
@@ -19,7 +19,7 @@
   <DonateLink/>
   <Description>Kiwix enables you to have the whole Wikipedia at hand wherever you go! [br]Remove download link after download complete.[/br]</Description>
   <Labels/>
-  <Config Name="Port" Target="80" Default="" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8040</Config>
+  <Config Name="Port" Target="8080" Default="" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8040</Config>
   <Config Name="Appdata" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/kiwix-serve/</Config>
   <Config Name="Download" Target="DOWNLOAD" Default="" Mode="" Description="Add download link here to download contents https://wiki.kiwix.org/wiki/Content" Type="Variable" Display="always" Required="false" Mask="false">http://download.kiwix.org/zim/wikipedia_en_chemistry_nopic.zim</Config>
 </Container>
