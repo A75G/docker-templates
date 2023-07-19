@@ -13,6 +13,8 @@
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/redis.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/redis.png</Icon>
   <Description>Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker.</Description>
+  <Requires>&amp;lt;code&amp;gt; chown -R 1001:1001 /mnt/user/appdata/redis/ &amp;lt;/code&amp;gt;&#xD;
+https://forums.unraid.net/topic/89502-support-a75g-repo/page/20/#comment-1167188</Requires>
   <Config Name="Redis Port" Target="6379" Default="6379" Mode="tcp" Description="Redis Port" Type="Port" Display="always" Required="true" Mask="false">6379</Config>
   <Config Name="Appdata" Target="/bitnami/redis" Default="" Mode="rw" Description="Appdata folder for database persistence. Remove if unneeded" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/redis</Config>
   <Config Name="ALLOW_EMPTY_PASSWORD" Target="ALLOW_EMPTY_PASSWORD" Default="yes|no" Mode="" Description="ALLOW_EMPTY_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">yes</Config>
