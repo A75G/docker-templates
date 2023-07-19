@@ -13,6 +13,9 @@
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/moodle.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/moodle.png</Icon>
   <Description>Moodle is a very popular open source learning management solution (LMS) for the delivery of elearning courses and programs.</Description>
+  <Requires>MariaDB / MySQL installed&#xD;
+&#xD;
+https://forums.unraid.net/topic/89502-support-a75g-repo/?do=findComment&amp;amp;comment=1208875</Requires>
   <Config Name="HTTP" Target="8080" Default="8080" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="HTTPs" Target="8443" Default="8443" Mode="tcp" Description="HTTPs (Not needed if you use reverse proxy)" Type="Port" Display="always" Required="false" Mask="false">8443</Config>
   <Config Name="MoodlePath" Target="/bitnami/moodle" Default="/mnt/user/appdata/moodle/" Mode="rw" Description="MoodlePath" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/moodle/</Config>
