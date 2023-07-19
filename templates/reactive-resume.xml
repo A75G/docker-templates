@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>reactive-resume</Name>
+  <Name>reactive-resume-v1</Name>
   <Repository>amruthpillai/reactive-resume:v1</Repository>
   <Registry>https://hub.docker.com/r/amruthpillai/reactive-resume/</Registry>
   <Network>bridge</Network>
