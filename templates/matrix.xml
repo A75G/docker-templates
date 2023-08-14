@@ -13,6 +13,8 @@
   <WebUI>http://[IP]:[PORT:8008]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/matrix.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/matrix.png</Icon>
+  <Requires>chown 991:991 /mnt/user/appdata/matrix/&#xD;
+After first start up</Requires>
   <ExtraParams/>
   <PostArgs/>
   <DonateText/>
