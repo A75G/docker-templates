@@ -16,7 +16,7 @@ Authentication used in the docker template is OpenID https://medium.com/@Lola_Da
   <Requires>Postgres&#xD;
 Redis&#xD;
 Authentication - https://docs.getoutline.com/s/hosting/doc/authentication-7ViKRmRY5o https://github.com/outline/outline/blob/main/.env.sample https://medium.com/@Lola_Dam/guide-for-installing-outline-with-authelia-as-an-openid-provider-129a141f6090</Requires>
-  <Config Name="Data Path" Target="/var/lib/outline/data" Default="" Mode="rw" Description="Data Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/outline</Config>
+  <Config Name="Data Path" Target="/var/lib/outline/data" Default="" Mode="rw" Description="Data Path&#13;&#10;For it to work &amp;lt;p&amp;gt;chown 1001 /mnt/user/appdata/outline/&amp;lt;/p&amp;gt;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/outline</Config>
   <Config Name="Port HTTP" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="Generate a hex-encoded 32-byte random key. You could use `openssl rand -hex 32`" Type="Variable" Display="always" Required="true" Mask="false">generate_a_new_key</Config>
   <Config Name="UTILS_SECRET" Target="UTILS_SECRET" Default="" Mode="" Description="Generate a hex-encoded 32-byte random key. You could use `openssl rand -hex 32`" Type="Variable" Display="always" Required="true" Mask="false">generate_a_new_key</Config>
