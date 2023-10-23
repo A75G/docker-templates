@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>outline</Name>
+  <Repository>outlinewiki/outline:latest</Repository>
+  <Registry>https://hub.docker.com/r/outlinewiki/outline/</Registry>
+  <Network>bridge</Network>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://www.getoutline.com/</Project>
+  <Overview>The fastest wiki and knowledge base for growing teams.&#xD;
+More information https://docs.getoutline.com/s/hosting/doc/docker-7pfeLP5a8t &#xD;
+Authentication used in the docker template is OpenID https://medium.com/@Lola_Dam/guide-for-installing-outline-with-authelia-as-an-openid-provider-129a141f6090&#xD;
+</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/outline.png</Icon>
+  <Requires>Postgres&#xD;
+Redis&#xD;
+Authentication - https://docs.getoutline.com/s/hosting/doc/authentication-7ViKRmRY5o https://github.com/outline/outline/blob/main/.env.sample https://medium.com/@Lola_Dam/guide-for-installing-outline-with-authelia-as-an-openid-provider-129a141f6090</Requires>
+  <Config Name="Data Path" Target="/var/lib/outline/data" Default="" Mode="rw" Description="Data Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/outline</Config>
+  <Config Name="Port HTTP" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="Generate a hex-encoded 32-byte random key. You could use `openssl rand -hex 32`" Type="Variable" Display="always" Required="true" Mask="false">generate_a_new_key</Config>
+  <Config Name="UTILS_SECRET" Target="UTILS_SECRET" Default="" Mode="" Description="Generate a hex-encoded 32-byte random key. You could use `openssl rand -hex 32`" Type="Variable" Display="always" Required="true" Mask="false">generate_a_new_key</Config>
+  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">postgres://user:pass@localhost:5432/outline</Config>
+  <Config Name="REDIS_URL" Target="REDIS_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">redis://:password@localhost:6379</Config>
+  <Config Name="URL" Target="URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">https://docs.example.com</Config>
+  <Config Name="FILE_STORAGE" Target="FILE_STORAGE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">local</Config>
+  <Config Name="DEFAULT_LANGUAGE" Target="DEFAULT_LANGUAGE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">en_US</Config>
+  <Config Name="PGSSLMODE" Target="PGSSLMODE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">disable</Config>
+  <Config Name="OIDC_CLIENT_ID" Target="OIDC_CLIENT_ID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">outline</Config>
+  <Config Name="OIDC_CLIENT_SECRET" Target="OIDC_CLIENT_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="OIDC_AUTH_URI" Target="OIDC_AUTH_URI" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">https://auth.example.com/api/oidc/authorization</Config>
+  <Config Name="OIDC_TOKEN_URI" Target="OIDC_TOKEN_URI" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">https://auth.example.com/api/oidc/token</Config>
+  <Config Name="OIDC_USERINFO_URI" Target="OIDC_USERINFO_URI" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">https://auth.example.com/api/oidc/userinfo</Config>
+  <Config Name="OIDC_DISPLAY_NAME" Target="OIDC_DISPLAY_NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">Auth</Config>
+  <Config Name="NODE_ENV" Target="NODE_ENV" Default="production" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">production</Config>
+  <Config Name="DATABASE_CONNECTION_POOL_MIN" Target="DATABASE_CONNECTION_POOL_MIN" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="DATABASE_CONNECTION_POOL_MAX" Target="DATABASE_CONNECTION_POOL_MAX" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="FILE_STORAGE_LOCAL_ROOT_DIR" Target="FILE_STORAGE_LOCAL_ROOT_DIR" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">/var/lib/outline/data</Config>
+  <Config Name="FILE_STORAGE_UPLOAD_MAX_SIZE" Target="FILE_STORAGE_UPLOAD_MAX_SIZE" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">26214400</Config>
+  <Config Name="FORCE_HTTPS" Target="FORCE_HTTPS" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="ENABLE_UPDATES" Target="ENABLE_UPDATES" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="WEB_CONCURRENCY" Target="WEB_CONCURRENCY" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">1</Config>
+  <Config Name="MAXIMUM_IMPORT_SIZE" Target="MAXIMUM_IMPORT_SIZE" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">5120000</Config>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">info</Config>
+  <Config Name="RATE_LIMITER_ENABLED" Target="RATE_LIMITER_ENABLED" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="RATE_LIMITER_REQUESTS" Target="RATE_LIMITER_REQUESTS" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
+  <Config Name="RATE_LIMITER_DURATION_WINDOW" Target="RATE_LIMITER_DURATION_WINDOW" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">60</Config>
+</Container>
