@@ -10,7 +10,10 @@
   <Project>https://www.librenms.org/</Project>
   <Overview>a fully featured network monitoring system that provides a wealth of features and device support.&#xD;
 &#xD;
-Database must be CHARACTER SET utf8 COLLATE utf8_unicode_ci</Overview>
+Database must be CHARACTER SET utf8 COLLATE utf8_unicode_ci&#xD;
+&#xD;
+For Poller to work please follow&#xD;
+https://forums.unraid.net/topic/89502-support-a75g-repo/?do=findComment&amp;amp;comment=1318785</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:8000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/librenms.xml</TemplateURL>
