@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>commafeed</Name>
+  <Repository>athou/commafeed:latest</Repository>
+  <Registry>https://hub.docker.com/r/athou/commafeed/</Registry>
+  <Network>bridge</Network>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://www.commafeed.com/#/welcome</Project>
+  <Overview>Google Reader inspired self-hosted RSS reader.&#xD;
+login as admin/admin </Overview>
+  <Category>Other:</Category>
+  <WebUI>http://[IP]:[PORT:8082]</WebUI>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/commafeed.png</Icon>
+  <Requires>Database: Postgres, MariaDB or MySQL&#xD;
+The template is for Postgres if you require MariaDB or MySQL please change DATABASE_DRIVERCLASS and CF_DATABASE_URL</Requires>
+  <Config Name="Appdata Path" Target="/commafeed/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/commafeed/</Config>
+  <Config Name="Port 1" Target="8082" Default="8082" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8082</Config>
+  <Config Name="DATABASE_URL" Target="CF_DATABASE_URL" Default="" Mode="" Description="Postgres: jdbc:postgresql://localhost:5432/commafeed&#13;&#10;MariaDB: jdbc:mariadb://localhost/commafeed?autoReconnect=true&amp;amp;failOverReadOnly=false&amp;amp;maxReconnects=20&amp;amp;rewriteBatchedStatements=true&#13;&#10;MySQL: jdbc:mysql://localhost/commafeed?autoReconnect=true&amp;amp;failOverReadOnly=false&amp;amp;maxReconnects=20&amp;amp;rewriteBatchedStatements=true" Type="Variable" Display="always" Required="true" Mask="false">jdbc:postgresql://localhost:5432/commafeed</Config>
+  <Config Name="DATABASE_USER" Target="CF_DATABASE_USER" Default="" Mode="" Description="DATABASE_USER" Type="Variable" Display="always" Required="false" Mask="false">sa</Config>
+  <Config Name="DATABASE_PASSWORD" Target="CF_DATABASE_PASSWORD" Default="" Mode="" Description="DATABASE_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">sa</Config>
+  <Config Name="DATABASE_DRIVERCLASS" Target="CF_DATABASE_DRIVERCLASS" Default="org.postgresql.Driver|org.mariadb.jdbc.Driver|com.mysql.cj.jdbc.Driver" Mode="" Description="Choose between Database driver postgresql or mariadb or mysql" Type="Variable" Display="always" Required="false" Mask="false">org.postgresql.Driver</Config>
+</Container>
