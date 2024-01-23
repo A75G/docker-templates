@@ -3,6 +3,7 @@
   <Name>linkace</Name>
   <Repository>linkace/linkace:simple</Repository>
   <Registry>https://hub.docker.com/r/linkace/linkace/</Registry>
+  <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://www.linkace.org/</Project>
