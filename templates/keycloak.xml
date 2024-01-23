@@ -22,4 +22,5 @@
   <Config Name="Postgres Database User" Target="KEYCLOAK_DATABASE_USER" Default="keyclock" Mode="" Description="Postgres Database User" Type="Variable" Display="always" Required="true" Mask="false">keyclock</Config>
   <Config Name="Postgres Database Password" Target="KEYCLOAK_DATABASE_PASSWORD" Default="password" Mode="" Description="Postgres Database Password" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
   <Config Name="Postgres Database Name" Target="KEYCLOAK_DATABASE_NAME" Default="keyclock" Mode="" Description="Postgres Database Name" Type="Variable" Display="always" Required="true" Mask="false">keyclock</Config>
+  <Config Name="Extra Argument" Target="KEYCLOAK_EXTRA_ARGS" Default="" Mode="" Description="https://forums.unraid.net/topic/89502-support-a75g-repo/?do=findComment&amp;amp;comment=1350537" Type="Variable" Display="always" Required="false" Mask="false">--proxy=edge</Config>
 </Container>
