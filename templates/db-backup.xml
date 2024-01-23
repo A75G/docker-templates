@@ -32,5 +32,6 @@
   <Config Name="Key 11" Target="PARALLEL_COMPRESSION" Default="TRUE" Mode="" Description="Multiple cores for compressing" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
   <Config Name="Key 12" Target="MD5" Default="TRUE" Mode="" Description="Generate MD5 Sum in Directory." Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
   <Config Name="Key 13" Target="SPLIT_DB" Default="FALSE" Mode="" Description="Seperate DB Backups" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
-  <Config Name="Key 14" Target="DEBUG_MODE" Default="false" Mode="" Description="DEBUG_MODE" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="Key 14" Target="DEFAULT_FILESYSTEM_PATH_PERMISSION" Default="0755" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0755</Config>
+  <Config Name="Key 15" Target="DEBUG_MODE" Default="false" Mode="" Description="DEBUG_MODE" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
 </Container>
