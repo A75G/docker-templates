@@ -16,4 +16,5 @@
   <Description>Apprise API - Push Notifications that work with just about every platform!</Description>
   <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
   <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/apprise/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/apprise/</Config>
+  <Config Name="APPRISE_WORKER_COUNT" Target="APPRISE_WORKER_COUNT" Default="8" Mode="" Description="Limit the number of workers (by default: 1 + 2 * number of CPUs) to reduce the amount of memory used by the tool" Type="Variable" Display="always" Required="false" Mask="false">8</Config>
 </Container>
