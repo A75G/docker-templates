@@ -26,4 +26,5 @@
   <Config Name="Data Path" Target="/cryptpad/data" Default="/mnt/user/appdata/cryptpad/data" Mode="rw" Description="Data Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/data</Config>
   <Config Name="Datastore Path" Target="/cryptpad/datastore" Default="/mnt/user/appdata/cryptpad/datastore" Mode="rw" Description="Datastore Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/datastore</Config>
   <Config Name="Config Path" Target="/cryptpad/config/config.js" Default="/mnt/user/appdata/cryptpad/config/config.js" Mode="rw" Description="Config Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/config/config.js</Config>
+  <Config Name="CPAD_CONF" Target="CPAD_CONF" Default="/cryptpad/config/config.js" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">/cryptpad/config/config.js</Config>
 </Container>
