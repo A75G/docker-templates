@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>openobserve</Name>
+  <Repository>public.ecr.aws/zinclabs/openobserve:latest</Repository>
+  <Registry>https://hub.docker.com/r/openobserve/openobserve/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://openobserve.ai/</Project>
+  <Overview>a simple yet sophisticated log search, infrastructure monitoring, and APM solution. It is a full-fledged observability platform that can reduce your storage costs by ~140x compared to other solutions and requires much lower resource utilization resulting in much lower cost.</Overview>
+  <Category>Tools: Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:5080]</WebUI>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/openobserve.png</Icon>
+  <DonateText/>
+  <DonateLink/>
+  <Config Name="Port 1" Target="5080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5080</Config>
+  <Config Name="Username" Target="ZO_ROOT_USER_EMAIL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">root@example.com</Config>
+  <Config Name="Password" Target="ZO_ROOT_USER_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Complexpass#123</Config>
+  <Config Name="Path 1" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/openobserve</Config>
+</Container>
