@@ -13,13 +13,13 @@
 2. CLI to it and enter "shlink api-key:generate"&#xD;
 3. Copy the api and add and edit to servers.json</Overview>
   <Category>Tools: Status:Stable</Category>
-  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/shlink-web-client.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/shlink-web-client.png</Icon>
   <Description>A ReactJS-based progressive web application for shlink.&#xD;
 1. Install shlink&#xD;
 2. CLI to it and enter "shlink api-key:generate"&#xD;
 3. Copy the api and add and edit to servers.json</Description>
-  <Config Name="Port" Target="80" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
   <Config Name="Server Config File" Target="/usr/share/nginx/html/servers.json" Default="/mnt/user/appdata/shlink-web/servers.json" Mode="rw" Description="Server Config File (Must be created first before applying the docker template) https://hub.docker.com/r/shlinkio/shlink-web-client/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/shlink-web/servers.json</Config>
 </Container>
