@@ -8,30 +8,33 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://hub.docker.com/r/tiredofit/db-backup/</Project>
-  <Overview>Backup Multiple DB Servers (Influx, Maria/Mysql/Mongo/Postgres/Redis/Rethink) based on Alpine.Manual Backups can be performed by entering the container and typing backup-now</Overview>
-  <Category>Backup: Status:Stable</Category>
+  <Overview>Backup multiple database types on a scheduled basis with many customizable options. Manual Backups can be performed by entering the container and typing backup-now&#xD;
+For diffrent port please add variable DB1_PORT and include the port &#xD;
+For more DB backups you can include DB2_NAME etc https://github.com/tiredofit/docker-db-backup#job-backup-options&#xD;
+Check advanced for more settings</Overview>
+  <Category>Backup:</Category>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/db-backup.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/db-backup.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
-  <Description>Backup Multiple DB Servers (Influx, Maria/Mysql/Mongo/Postgres/Redis/Rethink) based on Alpine.Manual Backups can be performed by entering the container and typing backup-now</Description>
-  <Labels/>
   <Config Name="Backup Location" Target="/backup" Default="" Mode="rw" Description="Database Dump Location" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/backups/db/</Config>
-  <Config Name="Key 1" Target="COMPRESSION" Default="" Mode="" Description="Gzip " Type="Variable" Display="always" Required="false" Mask="false">GZ</Config>
-  <Config Name="Key 2" Target="DB_NAME" Default="" Mode="" Description="Databases Names you want to backup" Type="Variable" Display="always" Required="false" Mask="false">ALL</Config>
-  <Config Name="Key 3" Target="DB_TYPE" Default="" Mode="" Description="couch influx mysql pgsql mongo redis rethink" Type="Variable" Display="always" Required="false" Mask="false">&lt;Database_Type&gt;</Config>
-  <Config Name="Key 4" Target="DB_HOST" Default="" Mode="" Description="Database Hostname" Type="Variable" Display="always" Required="false" Mask="false">&lt;DATABASE_IP&gt;</Config>
-  <Config Name="Key 5" Target="DB_USER" Default="" Mode="" Description="Database User - use root to backup all MySQL of them." Type="Variable" Display="always" Required="false" Mask="false">root</Config>
-  <Config Name="Key 6" Target="DB_PASS" Default="" Mode="" Description="Database Password" Type="Variable" Display="always" Required="false" Mask="false">&lt;DATABASE_PASSWORD&gt;</Config>
-  <Config Name="Key 7" Target="DB_PORT" Default="" Mode="" Description="Database Port" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
-  <Config Name="Key 8" Target="DB_DUMP_FREQ" Default="" Mode="" Description="How often to dump DB Minutes Defaults 1440 = Day" Type="Variable" Display="always" Required="false" Mask="false">1440</Config>
-  <Config Name="Key 9" Target="DB_DUMP_BEGIN" Default="" Mode="" Description="What Time to Dump HHMM" Type="Variable" Display="always" Required="false" Mask="false">0300</Config>
-  <Config Name="Key 10" Target="DB_CLEANUP_TIME" Default="" Mode="" Description="Value in minutes to delete old backups. 10080 = One Week. If you want all backup delete this key." Type="Variable" Display="always" Required="false" Mask="false">10080</Config>
-  <Config Name="Key 11" Target="PARALLEL_COMPRESSION" Default="TRUE" Mode="" Description="Multiple cores for compressing" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
-  <Config Name="Key 12" Target="MD5" Default="TRUE" Mode="" Description="Generate MD5 Sum in Directory." Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
-  <Config Name="Key 13" Target="SPLIT_DB" Default="FALSE" Mode="" Description="Seperate DB Backups" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
-  <Config Name="Key 14" Target="DEFAULT_FILESYSTEM_PATH_PERMISSION" Default="0755" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0755</Config>
-  <Config Name="Key 15" Target="DEBUG_MODE" Default="false" Mode="" Description="DEBUG_MODE" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="DB01_NAME" Target="DB01_NAME" Default="" Mode="" Description="Schema Name e.g. database or ALL to backup all databases the user has access to." Type="Variable" Display="always" Required="false" Mask="false">ALL</Config>
+  <Config Name="DB01_TYPE" Target="DB01_TYPE" Default="mysql|pgsql|mongo|redis|influx|couch|mssql|sqlite3" Mode="" Description="Type of DB Server to backup couch influx mysql mssql pgsql mongo redis sqlite3" Type="Variable" Display="always" Required="false" Mask="false">mysql</Config>
+  <Config Name="DB01_HOST" Target="DB01_HOST" Default="" Mode="" Description="Server Hostname e.g. mariadb. For sqlite3, full path to DB file e.g. /backup/db.sqlite3" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.1</Config>
+  <Config Name="DB01_USER" Target="DB01_USER" Default="" Mode="" Description="username for the database(s) - Can use root for MySQL" Type="Variable" Display="always" Required="false" Mask="false">root</Config>
+  <Config Name="DB01_PASS" Target="DB01_PASS" Default="" Mode="" Description="(optional if DB doesn't require it) password for the database" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="DEFAULT_SPLIT_DB" Target="DEFAULT_SPLIT_DB" Default="TRUE|FALSE" Mode="" Description="If using ALL - use this to split each database into its own file as opposed to one singular file" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+  <Config Name="DEFAULT_BACKUP_INTERVAL" Target="DEFAULT_BACKUP_INTERVAL" Default="" Mode="" Description="How often to dump DB Minutes Defaults 1440 = Day" Type="Variable" Display="always" Required="false" Mask="false">1440</Config>
+  <Config Name="DEFAULT_BACKUP_BEGIN" Target="DEFAULT_BACKUP_BEGIN" Default="" Mode="" Description="https://github.com/tiredofit/docker-db-backup#scheduling-options" Type="Variable" Display="always" Required="false" Mask="false">0300</Config>
+  <Config Name="DEFAULT_CLEANUP_TIME" Target="DEFAULT_CLEANUP_TIME" Default="" Mode="" Description="Value in minutes to delete old backups. 10080 = One Week. If you want all backup delete this key." Type="Variable" Display="always" Required="false" Mask="false">10080</Config>
+  <Config Name="DEFAULT_COMPRESSION" Target="DEFAULT_COMPRESSION" Default="ZSTD|BZ|XZ|GZ|NONE" Mode="" Description="Use either Gzip GZ, Bzip2 BZ, XZip XZ, ZSTD ZSTD or none NONE" Type="Variable" Display="always" Required="false" Mask="false">ZSTD</Config>
+  <Config Name="DEFAULT_COMPRESSION_LEVEL" Target="DEFAULT_COMPRESSION_LEVEL" Default="3|1|2|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19" Mode="" Description="Numerical value of what level of compression to use, most allow 1 to 9, except for ZSTD which allows for 1 to 19" Type="Variable" Display="always" Required="false" Mask="false">3</Config>
+  <Config Name="DEFAULT_GZ_RSYNCABLE" Target="DEFAULT_GZ_RSYNCABLE" Default="FALSE|TRUE" Mode="" Description="Use --rsyncable (gzip only) for faster rsync transfers and incremental backup deduplication." Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
+  <Config Name="DEBUG_MODE" Target="DEBUG_MODE" Default="FALSE|TRUE" Mode="" Description="DEBUG_MODE" Type="Variable" Display="advanced" Required="false" Mask="false">FALSE</Config>
+  <Config Name="CONTAINER_ENABLE_MONITORING" Target="CONTAINER_ENABLE_MONITORING" Default="FALSE|TRUE" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">FALSE</Config>
+  <Config Name="DEFAULT_CHECKSUM" Target="DEFAULT_CHECKSUM" Default="NONE|SHA1|MD5" Mode="" Description="Either MD5 or SHA1 or NONE" Type="Variable" Display="advanced" Required="false" Mask="false">NONE</Config>
+  <Config Name="DEFAULT_CREATE_LATEST_SYMLINK" Target="DEFAULT_CREATE_LATEST_SYMLINK" Default="FALSE|TRUE" Mode="" Description="Create a symbolic link pointing to last backup in this format: latest-(DB_TYPE)_(DB_NAME)_(DB_HOST)" Type="Variable" Display="advanced" Required="false" Mask="false">FALSE</Config>
+  <Config Name="DEFAULT_ENABLE_PARALLEL_COMPRESSION" Target="DEFAULT_ENABLE_PARALLEL_COMPRESSION" Default="autodetected" Mode="" Description="Maximum amount of threads to use when compressing - Integer value e.g. 8" Type="Variable" Display="advanced" Required="false" Mask="false">autodetected</Config>
+  <Config Name="USER_DBBACKUP" Target="USER_DBBACKUP" Default="" Mode="" Description="The uid that the image should read and write files as " Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="GROUP_DBBACKUP" Target="GROUP_DBBACKUP" Default="" Mode="" Description="The gid that the image should read and write files as " Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="DEFAULT_FILESYSTEM_PATH_PERMISSION" Target="DEFAULT_FILESYSTEM_PATH_PERMISSION" Default="" Mode="" Description="Permissions to apply to backup directory" Type="Variable" Display="advanced" Required="false" Mask="false">755</Config>
+  <Config Name="DEFAULT_FILESYSTEM_PERMISSION" Target="DEFAULT_FILESYSTEM_PERMISSION" Default="777" Mode="" Description="Permissions to apply to files." Type="Variable" Display="advanced" Required="false" Mask="false">777</Config>
 </Container>
