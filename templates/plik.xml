@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>plik</Name>
+  <Repository>rootgg/plik:latest</Repository>
+  <Registry>https://hub.docker.com/r/rootgg/plik/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/root-gg/plik</Project>
+  <Overview>Plik is a scalable file uploading system with multiple backends.&#xD;
+&#xD;
+</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/plik.png</Icon>
+  <Requires>Run&#xD;
+&amp;lt;code&amp;gt;mkdir -p /mnt/user/appdata/plik/ &amp;amp;&amp;amp; mkdir /mnt/user/appdata/plik/data/ &amp;amp;&amp;amp; wget -O /mnt/user/appdata/plik/plikd.cfg https://raw.githubusercontent.com/root-gg/plik/master/server/plikd.cfg &amp;amp;&amp;amp; chown 1000:1000 /mnt/user/appdata/plik/ &amp;amp;&amp;amp; chown 1000:1000 /mnt/user/appdata/plik/data/ &amp;amp;&amp;amp; chown 1000:1000 /mnt/user/appdata/plik/plikd.cfg&amp;lt;/code&amp;gt;&#xD;
+&#xD;
+Lastly edit plikd.cfg&#xD;
+https://github.com/root-gg/plik/blob/master/documentation/docker.md&#xD;
+only add /data/ before files" and plik.db" in DataBackend = "file"&#xD;
+</Requires>
+  <Config Name="Port 1" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Data Path" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/plik/data/</Config>
+  <Config Name="plikd.cfg Path" Target="/home/plik/server/plikd.cfg" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/plik/plikd.cfg</Config>
+</Container>

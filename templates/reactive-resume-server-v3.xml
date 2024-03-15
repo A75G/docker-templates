@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>reactive-resume-server-v3</Name>
+  <Repository>amruthpillai/reactive-resume:server-3.8.4</Repository>
+  <Registry>https://hub.docker.com/r/amruthpillai/reactive-resume/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://rxresu.me/</Project>
+  <Overview>A one-of-a-kind resume builder that keeps your privacy in mind.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:3100]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/reactive-resume.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/reactive-resume.png</Icon>
+  <Requires>postgresdb</Requires>
+  <Config Name="Port" Target="3100" Default="3100" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3100</Config>
+  <Config Name="PUBLIC_URL" Target="PUBLIC_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://Unraid_IP:3110</Config>
+  <Config Name="PUBLIC_SERVER_URL" Target="PUBLIC_SERVER_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://Unraid_IP:3100</Config>
+  <Config Name="POSTGRES_DB" Target="POSTGRES_DB" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">DATABASE_NAME</Config>
+  <Config Name="POSTGRES_USER" Target="POSTGRES_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">DATABASE_USERNAME</Config>
+  <Config Name="POSTGRES_PASSWORD" Target="POSTGRES_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">DATABASE_PASSWORD</Config>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">change-me-to-something-secure</Config>
+  <Config Name="POSTGRES_HOST" Target="POSTGRES_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">DATABASE_IP/HOSTNAME</Config>
+  <Config Name="POSTGRES_PORT" Target="POSTGRES_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">5432</Config>
+  <Config Name="JWT_SECRET" Target="JWT_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">change-me-to-something-secure</Config>
+  <Config Name="JWT_EXPIRY_TIME" Target="JWT_EXPIRY_TIME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">604800</Config>
+</Container>

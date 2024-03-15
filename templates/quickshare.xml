@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>quickshare</Name>
+  <Repository>hexxa/quickshare:latest</Repository>
+  <Registry>https://hub.docker.com/r/hexxa/quickshare/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://ihexxa.github.io/quickshare.site/</Project>
+  <Overview>Quick and simple file sharing between different devices, built with Go, React and Typescript. </Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8686]</WebUI>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/quickshare.png</Icon>
+  <Config Name="Port 1" Target="8686" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8686</Config>
+  <Config Name="Data Path" Target="/quickshare/root" Default="" Mode="rw" Description="Data Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/quickshare/</Config>
+  <Config Name="Admin Username" Target="DEFAULTADMIN" Default="" Mode="" Description="Admin Username" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="Admin Password" Target="DEFAULTADMINPWD" Default="" Mode="" Description="Admin Password" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+</Container>

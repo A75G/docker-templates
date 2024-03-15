@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>chibisafe</Name>
+  <Repository>chibisafe/chibisafe:latest</Repository>
+  <Registry>https://hub.docker.com/r/chibisafe/chibisafe/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://chibisafe.moe/</Project>
+  <Overview>chibisafe is a modern and self-hosted take on file uploading services that can handle anything you throw at it thanks to it's robust and fast API, chunked uploads support and more.&#xD;
+&#xD;
+It's easily customizable and deploying your own instance is a breeze. &#xD;
+&#xD;
+Default login admin admin</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/chibisafe.png</Icon>
+  <Config Name="Port 1" Target="8000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">24424</Config>
+  <Config Name="Database Path" Target="/home/node/chibisafe/database" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/chibisafe/database/</Config>
+  <Config Name="Uploads Path" Target="/home/node/chibisafe/uploads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/chibisafe/uploads/</Config>
+  <Config Name="Logs Path" Target="/home/node/chibisafe/logs" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/chibisafe/logs/</Config>
+</Container>
