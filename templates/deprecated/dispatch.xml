@@ -13,10 +13,6 @@
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/dispatch.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dispatch.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Web-based IRC client in Go. </Description>
   <Config Name="HTTP" Target="80" Default="8000" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
   <Config Name="HTTPs" Target="443" Default="8443" Mode="tcp" Description="HTTPs (Not Required if you use reverse proxy)" Type="Port" Display="always" Required="false" Mask="false">4596</Config>

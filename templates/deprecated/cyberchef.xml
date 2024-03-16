@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>cyberchef</Name>
+  <Repository>mpepping/cyberchef:latest</Repository>
+  <Registry>https://hub.docker.com/r/mpepping/cyberchef/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/mpepping/docker-cyberchef/</Project>
+  <Overview>The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.</Overview>
+  <Category>Productivity: Tools: Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/cyberchef.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cyberchef.png</Icon>
+  <Description>The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.</Description>
+  <Labels/>
+  <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+</Container>

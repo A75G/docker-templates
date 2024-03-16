@@ -13,12 +13,7 @@
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/dashmachine.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dashmachine.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Another web application bookmark dashboard, with fun features.[br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]admin[/B][/u][br]Password: [B][u]admin[/B][/u][/b]</Description>
-  <Labels/>
   <Config Name="Port" Target="5000" Default="" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
   <Config Name="AppData" Target="/dashmachine/dashmachine/user_data" Default="" Mode="rw" Description="Container Path: /dashmachine/dashmachine/user_data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/dashmachine/</Config>
 </Container>

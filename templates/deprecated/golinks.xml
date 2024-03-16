@@ -13,11 +13,6 @@
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/golinks.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/golinks.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Self-hosted smart bookmark search engine.</Description>
-  <Labels/>
   <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
 </Container>
