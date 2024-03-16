@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>convos</Name>
-  <Repository>convos/convos:stable</Repository>
-  <Registry>https://hub.docker.com/r/convos/convos/</Registry>
+  <Repository>ghcr.io/convos-chat/convos:stable</Repository>
+  <Registry>https://github.com/convos-chat/convos/pkgs/container/convos</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>

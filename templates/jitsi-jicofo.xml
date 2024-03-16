@@ -10,15 +10,9 @@
   <Project>https://jitsi.org/</Project>
   <Overview>Jicofo image for Jitsi Meet</Overview>
   <Category>Productivity: Network:Voip Network:Messenger</Category>
-  <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/jitsi-jicofo.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/jitsi.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Jicofo image for Jitsi Meet</Description>
-  <Labels/>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/jitsi/jicofo/" Mode="rw" Description="IMPORTENT Change to /mnt/user/appdata/jitsi/jicofo/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jitsi/jicofo/</Config>
   <Config Name="ENABLE_AUTH" Target="ENABLE_AUTH" Default="1" Mode="" Description="Enable authentication" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
   <Config Name="XMPP_DOMAIN" Target="XMPP_DOMAIN" Default="meet.jitsi" Mode="" Description="Internal XMPP domain" Type="Variable" Display="always" Required="false" Mask="false">meet.jitsi</Config>

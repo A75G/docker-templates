@@ -13,12 +13,7 @@
   <WebUI>http://[IP]:[PORT:8000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/flarum.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/flarum.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Flarum is the next-generation forum software that makes online discussion fun. It's simple, fast, and free.</Description>
-  <Labels/>
   <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/flarum/" Mode="rw" Description="Contains assets, extensions and storage" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/flarum/</Config>
   <Config Name="FLARUM_BASE_URL" Target="FLARUM_BASE_URL" Default="http://&amp;lt;IP&amp;gt;:8000" Mode="" Description="Make Sure the base url is right if it local use only use http://ip:8000 and if you are hosting it on your domain it should be http://example.com or https://example.com." Type="Variable" Display="always" Required="false" Mask="false">http://&lt;IP&gt;:8000</Config>

@@ -13,10 +13,6 @@
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/psitransfer.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/psitransfer.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Simple open source self-hosted file sharing solution.</Description>
   <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Admin Password" Target="PSITRANSFER_ADMIN_PASS" Default="secret" Mode="" Description="Admin Password" Type="Variable" Display="always" Required="false" Mask="false">secret</Config>

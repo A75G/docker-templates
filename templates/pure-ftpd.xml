@@ -13,12 +13,7 @@
   <WebUI>http://[IP]:[PORT:2100]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/pure-ftpd.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pure-ftpd.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Pure-FTPd is a free (BSD), secure, production-quality and standard-conformant FTP server. [br]Creating user by using console "pure-pw useradd admin -u 99 -g 100 -d /home/admin -m"[/br]</Description>
-  <Labels/>
   <Config Name="FTP port" Target="2100" Default="2100" Mode="tcp" Description="FTP port" Type="Port" Display="always" Required="false" Mask="false">2100</Config>
   <Config Name="PASV port range" Target="30000-30009" Default="30000-30009" Mode="tcp" Description="PASV port range" Type="Port" Display="always" Required="false" Mask="false">30000-30009</Config>
   <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/pure-ftpd/" Mode="rw" Description="Contains config files and PureDB file" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pure-ftpd/</Config>

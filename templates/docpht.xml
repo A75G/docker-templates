@@ -13,10 +13,6 @@
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/docpht.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/docpht.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>DocPHT you can take notes and quickly document anything and without the use of any database.</Description>
   <Config Name="HTTP" Target="80" Default="8000" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="HTTPS" Target="443" Default="8443" Mode="" Description="HTTPS - NOT REQUIRE IF YOU ARE USING REVERSE PROXY" Type="Variable" Display="always" Required="false" Mask="false">8443</Config>

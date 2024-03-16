@@ -14,10 +14,6 @@
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/matomo.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/quakejs.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>QuakeJS is a port of ioquake3 to JavaScript with the help of Emscripten.[br]IMPORTANT Use Custom:br0 https://youtu.be/2VnQxxn00jU?t=121 put Fixed IP address, then copy the ip and access it using you broswer [BR][span style='color: #ff9900;'][B]DON'T USE BRIDGE I'M NOT RESPONSABLE FOR UNRAID CONFLICTING WITH PORT 80 FOR THIS DOCKER[/B]</Description>
   <Config Name="HTTP" Target="80" Default="80" Mode="" Description="HTTP" Type="Variable" Display="always" Required="true" Mask="false">80</Config>
   <Config Name="Game Port" Target="27960" Default="27960" Mode="tcp" Description="Game Port" Type="Port" Display="always" Required="true" Mask="false">27960</Config>

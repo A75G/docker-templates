@@ -13,10 +13,6 @@
   <WebUI>http://[IP]:[PORT:8983]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/solr.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/solr.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Solr is the popular, blazing-fast, open source enterprise search platform built on Apache Lucene.</Description>
   <Config Name="Port" Target="8983" Default="8983" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8983</Config>
   <Config Name="Appdata" Target="/bitnami" Default="/mnt/user/appdata/solr/" Mode="rw" Description="Appdata" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/solr/</Config>

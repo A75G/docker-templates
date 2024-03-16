@@ -11,7 +11,7 @@
   <Overview>A one-of-a-kind resume builder that keeps your privacy in mind.</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:3100]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/reactive-resume.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/reactive-resume-server-v3.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/reactive-resume.png</Icon>
   <Requires>postgresdb</Requires>
   <Config Name="Port" Target="3100" Default="3100" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3100</Config>

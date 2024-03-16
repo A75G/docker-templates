@@ -11,9 +11,8 @@
   <Overview>a simple yet sophisticated log search, infrastructure monitoring, and APM solution. It is a full-fledged observability platform that can reduce your storage costs by ~140x compared to other solutions and requires much lower resource utilization resulting in much lower cost.</Overview>
   <Category>Tools: Network:Other</Category>
   <WebUI>http://[IP]:[PORT:5080]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/openobserve.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/openobserve.png</Icon>
-  <DonateText/>
-  <DonateLink/>
   <Config Name="Port 1" Target="5080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5080</Config>
   <Config Name="Username" Target="ZO_ROOT_USER_EMAIL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">root@example.com</Config>
   <Config Name="Password" Target="ZO_ROOT_USER_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Complexpass#123</Config>

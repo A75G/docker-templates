@@ -13,10 +13,7 @@
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/kiwix-serve.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/kiwix.png</Icon>
-  <ExtraParams/>
   <PostArgs>*.zim</PostArgs>
-  <DonateText/>
-  <DonateLink/>
   <Description>Kiwix enables you to have the whole Wikipedia at hand wherever you go! [br]Remove download link after download complete.[/br]</Description>
   <Labels/>
   <Config Name="Port" Target="8080" Default="" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8040</Config>

@@ -11,6 +11,7 @@
   <Overview>Quick and simple file sharing between different devices, built with Go, React and Typescript. </Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8686]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/quickshare.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/quickshare.png</Icon>
   <Config Name="Port 1" Target="8686" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8686</Config>
   <Config Name="Data Path" Target="/quickshare/root" Default="" Mode="rw" Description="Data Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/quickshare/</Config>

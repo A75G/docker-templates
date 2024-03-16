@@ -10,15 +10,9 @@
   <Project>https://jitsi.org/</Project>
   <Overview>Jitsi Videobridge image for Jitsi Meet</Overview>
   <Category>Productivity: Network:Voip Network:Messenger</Category>
-  <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/jitsi-jvb.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/jitsi.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Jitsi Videobridge image for Jitsi Meet</Description>
-  <Labels/>
   <Config Name="JVB_PORT" Target="10000" Default="10000" Mode="udp" Description="Media port for the Jitsi Videobridge" Type="Port" Display="always" Required="false" Mask="false">10000</Config>
   <Config Name="JVB_TCP_PORT" Target="4443" Default="4443" Mode="tcp" Description="TCP Fallback for Jitsi Videobridge for when UDP isn&#x2019;t available" Type="Port" Display="always" Required="false" Mask="false">4443</Config>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/jitsi/jvb/" Mode="rw" Description="IMPORTENT Change to /mnt/user/appdata/jitsi/jvb/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jitsi/jvb/</Config>

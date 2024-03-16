@@ -13,12 +13,7 @@
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/freescout.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/freescout.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Open Source Helpscout/Zendesk Alternative based on Alpine linux.[br]Creating account CLI "cd /www/html" then "php artisan freescout:create-user"</Description>
-  <Labels/>
   <Config Name="Port" Target="80" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="Data" Target="/data" Default="/mnt/user/appdata/freescout/" Mode="rw" Description="Data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/freescout/</Config>
   <Config Name="APPLICATION_NAME" Target="APPLICATION_NAME" Default="Freescout" Mode="" Description="Change default application name" Type="Variable" Display="always" Required="false" Mask="false">Freescout</Config>

@@ -13,10 +13,6 @@
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/shaarli.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/shaarli.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>The personal, minimalist, super-fast, database free, bookmarking service.</Description>
   <Config Name="Port" Target="80" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="Cache" Target="/var/www/shaarli/cache" Default="/mnt/user/appdata/shaarli/cache/" Mode="rw" Description="Cache" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/shaarli/cache/</Config>

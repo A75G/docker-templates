@@ -13,12 +13,7 @@
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/jitsi-web.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/jitsi.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Jitsi Meet's web interface image </Description>
-  <Labels/>
   <Config Name="HTTP" Target="80" Default="80" Mode="tcp" Description="HTTP" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
   <Config Name="HTTPS" Target="443" Default="443" Mode="tcp" Description="HTTPS" Type="Port" Display="always" Required="false" Mask="false">4443</Config>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/jitsi/web/" Mode="rw" Description="IMPORTENT Change to /mnt/user/appdata/jitsi/web/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jitsi/web/</Config>

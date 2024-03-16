@@ -12,6 +12,7 @@ Authentication used in the docker template is OpenID https://medium.com/@Lola_Da
 </Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/outline.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/outline.png</Icon>
   <Requires>Postgres&#xD;
 Redis&#xD;

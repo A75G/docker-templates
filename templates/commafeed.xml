@@ -10,6 +10,7 @@
 login as admin/admin </Overview>
   <Category>Other:</Category>
   <WebUI>http://[IP]:[PORT:8082]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/commafeed.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/commafeed.png</Icon>
   <Requires>Database: Postgres, MariaDB or MySQL&#xD;
 The template is for Postgres if you require MariaDB or MySQL please change DATABASE_DRIVERCLASS and CF_DATABASE_URL</Requires>

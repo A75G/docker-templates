@@ -14,6 +14,7 @@ Environment Variables&amp;lt;link&amp;gt;https://docs.linkwarden.app/self-hostin
 SSO/OAuth Integrations &amp;lt;link&amp;gt;https://docs.linkwarden.app/self-hosting/sso-oauth&amp;lt;/link&amp;gt;</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/linkwarden.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/linkwarden.png</Icon>
   <DonateText/>
   <DonateLink/>

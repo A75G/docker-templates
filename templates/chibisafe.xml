@@ -15,6 +15,7 @@ It's easily customizable and deploying your own instance is a breeze. &#xD;
 Default login admin admin</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/chibisafe.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/chibisafe.png</Icon>
   <Config Name="Port 1" Target="8000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">24424</Config>
   <Config Name="Database Path" Target="/home/node/chibisafe/database" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/chibisafe/database/</Config>

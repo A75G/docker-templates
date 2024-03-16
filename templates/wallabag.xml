@@ -13,12 +13,7 @@
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/wallabag.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/wallabag.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Wallabag is a self hostable application for saving web pages. Unlike other services, wallabag is free (as in freedom) and open source. [br][br][b][u][span style='color: #ff9900;']Default user/password[/span][/u][/b][br]User: [B][u]wallabag[/B][/u][br]Password: [B][u]wallabag[/B][/u][/b]</Description>
-  <Labels/>
   <Requires> &amp;lt;code&amp;gt;mkdir /mnt/user/appdata/wallabag/db &amp;lt;/code&amp;gt;&#xD;
 chown nobody:users /mnt/user/appdata/wallabag/db --recursive &amp;lt;/code&amp;gt;&#xD;
 &#xD;

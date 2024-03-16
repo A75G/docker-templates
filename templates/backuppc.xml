@@ -13,10 +13,6 @@
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/backuppc.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/backuppc.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>BackupPC is a high-performance, enterprise-grade system for backing up Linux, Windows and macOS PCs and laptops to a server's disk.</Description>
   <Config Name="Port " Target="80" Default="8000" Mode="tcp" Description="Port " Type="Port" Display="always" Required="true" Mask="false">8000</Config>
   <Config Name="Backup Location" Target="/var/lib/backuppc" Default="/mnt/user/backuppc/" Mode="rw" Description="Backup Location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/backuppc/</Config>

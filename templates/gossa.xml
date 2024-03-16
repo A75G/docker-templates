@@ -13,10 +13,6 @@
   <WebUI>http://[IP]:[PORT:8001]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/gossa.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/gossa.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>&#x1F3B6; a fast and simple multimedia fileserver</Description>
   <Config Name="Port" Target="8001" Default="8001" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8001</Config>
   <Config Name="Data" Target="/shared" Default="/mnt/user/appdata/gossa/" Mode="rw" Description="Data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/gossa/</Config>

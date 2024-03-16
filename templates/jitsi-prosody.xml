@@ -10,15 +10,9 @@
   <Project>https://jitsi.org/</Project>
   <Overview>Prosody image for Jitsi Meet </Overview>
   <Category>Productivity: Network:Voip Network:Messenger</Category>
-  <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/jitsi-prosody.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/jitsi.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateText/>
-  <DonateLink/>
   <Description>Prosody image for Jitsi Meet </Description>
-  <Labels/>
   <Config Name="Port 1" Target="5222" Default="5222" Mode="tcp" Description="Container Port: 5222" Type="Port" Display="always" Required="false" Mask="false">5222</Config>
   <Config Name="Port 2" Target="5347" Default="5347" Mode="tcp" Description="Container Port: 5347" Type="Port" Display="always" Required="false" Mask="false">5347</Config>
   <Config Name="Port 3" Target="5280" Default="5280" Mode="tcp" Description="Container Port: 5280" Type="Port" Display="always" Required="false" Mask="false">5280</Config>

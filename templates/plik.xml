@@ -13,6 +13,7 @@
 </Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/plik.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/plik.png</Icon>
   <Requires>Run&#xD;
 &amp;lt;code&amp;gt;mkdir -p /mnt/user/appdata/plik/ &amp;amp;&amp;amp; mkdir /mnt/user/appdata/plik/data/ &amp;amp;&amp;amp; wget -O /mnt/user/appdata/plik/plikd.cfg https://raw.githubusercontent.com/root-gg/plik/master/server/plikd.cfg &amp;amp;&amp;amp; chown 1000:1000 /mnt/user/appdata/plik/ &amp;amp;&amp;amp; chown 1000:1000 /mnt/user/appdata/plik/data/ &amp;amp;&amp;amp; chown 1000:1000 /mnt/user/appdata/plik/plikd.cfg&amp;lt;/code&amp;gt;&#xD;
