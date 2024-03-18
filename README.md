@@ -5,32 +5,22 @@
   * [First installation](#first-installation)
   * [Configuration](#configuration)
 - [Backuppc](#backuppc)
-- [Blueiris](#blueiris)
 - [Changedetection.io](#changedetectionio)
-- [Cloudbeaver](#cloudbeaver)
-  * [Notes](#notes)
 - [Commento](#commento)
   * [Notes](#notes-1)
 - [Crypto-exchanges-gateway](#crypto-exchanges-gateway)
 - [CryptPad](#cryptpad)
   * [First installation](#first-installation-1)
 - [CyberChef](#cyberchef)
-- [Dashmachine](#dashmachine)
-  * [Default username and password](#default-username-and-password)
 - [db-backup](#db-backup)
   * [Environment Variables](#environment-variables)
 - [ddns-route53](#ddns-route53)
   * [Before running the docker](#before-running-the-docker)
-- [Dispatch](#dispatch)
 - [Docpht](#docpht)
-- [Droppy](#droppy)
 - [ecoDMS](#ecodms)
-- [FileRun](#filerun)
-  * [Default username and password](#default-username-and-password-1)
 - [Element-web](#element-web)
 - [Epicgames-freegames](#epicgames-freegames)
 - [Filestash](#filestash)
-- [Firefox-Syncserver](#firefox-syncserver)
 - [Flarum](#flarum)
   * [Default username and password](#default-username-and-password-2)
   * [Notes](#notes-2)
@@ -38,17 +28,11 @@
   * [First installation](#first-installation-2)
 - [Freescout](#freescout)
   * [Creating User](#creating-user)
-- [Golinks](#golinks)
-  * [Usage](#usage)
 - [Gossa](#gossa)
 - [Gotify](#gotify)
   * [Before running the docker](#before-running-the-docker-1)
   * [Default username and password](#default-username-and-password-3)
-- [Healthchecks](#healthchecks)
 - [Homer](#homer)
-- [Jitsi](#jitsi)
-  * [Change appdata location](#change-appdata-location)
-  * [Notes](#notes-3)
 - [Keycloak](#keycloak)
 - [Kiwix-serve](#kiwix-serve)
   * [Notes](#notes-4)
@@ -59,7 +43,6 @@
   * [Notes](#notes-5)
 - [Linkace](#linkace)
 - [Linkding](#linkding)
-- [Mailpile](#mailpile)
 - [Matomo](#matomo)
 - [Matrix](#matrix)
   * [Guides](#guides)
@@ -73,8 +56,6 @@
 - [Miniflux](#miniflux)
 - [Moodle](#moodle)
   * [Notes](#notes-7)
-- [Mumble](#mumble)
-  * [Notes](#notes-8)
 - [Netbox](#netbox)
   * [Notes](#notes-9)
 - [Nut](#nut)
@@ -85,20 +66,14 @@
   * [Creating User](#creating-user-1)
 - [Pure-FTPd](#pure-ftpd)
   * [Notes](#notes-11)
-- [Pwndrop](#pwndrop)
 - [Quakejs](#quakejs)
 - [Notes](#notes-12)
 - [Reactive-resume](#reactive-resume)
 - [Redis](#redis)
 - [Riot-web](#riot-web)
   * [Before running the docker](#before-running-the-docker-3)
-- [Searx](#searx)
-- [Selfoss](#selfoss)
 - [Send](#send)
 - [Shaarli](#shaarli)
-- [Shiori](#shiori)
-  * [Default username and password](#default-username-and-password-5)
-  * [Notes](#notes-13)
 - [Shlink](#shlink)
 - [Shlink-web-client](#shlink-web-client)
   * [Before Installing](#before-installing)
@@ -192,22 +167,6 @@ BackupPC is a free disk-to-disk backup software suite with a web-based frontend.
 **[`^back to top^`](#unraid-templates)**
 
 ----
-# Blueiris
-![Blueiris](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/blueiris.png)
-
-Blue Iris is a video surveillance software solution.
-
-**Application Name:** Blueiris
-
-**Application Site:** https://hub.docker.com/r/jshridha/blueiris/
-
-**Docker Hub:** https://hub.docker.com/r/jshridha/blueiris/
-
-**Github:** https://hub.docker.com/r/jshridha/blueiris/
-
-**[`^back to top^`](#unraid-templates)**
-
-----
 # Changedetection.io
 ![Changedetection.io](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/changedetection.io.png)
 
@@ -222,24 +181,6 @@ Self-hosted website change detection monitoring.
 **Docker Hub:** https://hub.docker.com/r/dgtlmoon/changedetection.io
 
 **Github:** https://github.com/dgtlmoon/changedetection.io
-
-**[`^back to top^`](#unraid-templates)**
-
-----
-# Cloudbeaver
-![Cloudbeaver](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cloudbeaver.png)
-
-CloudBeaver is a web server which provides rich web interface. Server itself is a Java application, web part is written on TypeScript and React.
-
-**Application Name:** Cloudbeaver
-
-**Application Site:** https://github.com/dbeaver/cloudbeaver
-
-**Docker Hub:** https://hub.docker.com/r/dalongrong/cloudbeaver
-
-**Github:** https://github.com/dbeaver/cloudbeaver
-## Notes
-* There is no appdata https://hub.docker.com/r/dalongrong/cloudbeaver
 
 **[`^back to top^`](#unraid-templates)**
 
@@ -314,25 +255,6 @@ CyberChef is a simple, intuitive web app for carrying out all manner of "cyber" 
 **[`^back to top^`](#unraid-templates)**
 
 ----
-# Dashmachine
-![Dashmachine](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dashmachine.png)
-
-Another web application bookmark dashboard, with fun features.
-
-**Application Name:** Dashmachine
-
-**Application Site:** https://github.com/rmountjoy92/DashMachine
-
-**Docker Hub:** https://hub.docker.com/r/rmountjoy/dashmachine/
-
-**Github:** https://github.com/rmountjoy92/DashMachine
-## Default username and password
-* Username: ```admin```
-* Password: ```admin```
-
-**[`^back to top^`](#unraid-templates)**
-
-----
 # db-backup
 ![db-backup](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/db-backup.png)
 
@@ -388,22 +310,6 @@ Simple dynamic DNS updater script using Amazon Route53.
 **[`^back to top^`](#unraid-templates)**
 
 ----
-# Dispatch
-![Dispatch](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dispatch.png)
-
-Web-based IRC client in Go.
-
-**Application Name:** Dispatch
-
-**Application Site:** https://github.com/khlieng/dispatch
-
-**Docker Hub:** https://hub.docker.com/r/khlieng/dispatch/
-
-**Github:** https://github.com/khlieng/dispatch
-
-**[`^back to top^`](#unraid-templates)**
-
-----
 # Docpht
 ![Docpht](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/docpht.png)
 
@@ -422,22 +328,6 @@ With DocPHT you can take notes and quickly document anything and without the use
 **[`^back to top^`](#unraid-templates)**
 
 ----
-# Droppy
-![Droppy](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/droppy.png)
-
-Self-hosted file storage server 
-
-**Application Name:** Droppy
-
-**Application Site:** https://droppy.silverwind.io/
-
-**Docker Hub:** https://hub.docker.com/r/silverwind/droppy/
-
-**Github:** https://github.com/silverwind/droppy
-
-**[`^back to top^`](#unraid-templates)**
-
-----
 # ecoDMS
 ![ecoDMS](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/ecoDMS.png)
 
@@ -450,25 +340,6 @@ easily archive, manage, and find all documents on your PC or from your smart pho
 **Docker Hub:** https://hub.docker.com/r/ecodms/allinone-18.09/
 
 **Github:** https://hub.docker.com/r/ecodms/allinone-18.09/
-
-**[`^back to top^`](#unraid-templates)**
-
-----
-# FileRun
-![FileRun](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/filerun.png)
-
-FileRun is a self-hosted Google Drive/Photos/Music alternative. It is a full featured web based file manager with an easy to use user interface.
-
-**Application Name:** FileRun
-
-**Application Site:** https://filerun.com/
-
-**Docker Hub:** https://hub.docker.com/r/filerun/filerun/
-
-**Github:** https://github.com/filerun/docker
-## Default username and password
-* Username: ```superuser```
-* Password: ```superuser```
 
 **[`^back to top^`](#unraid-templates)**
 
@@ -513,22 +384,6 @@ FileRun is a self-hosted Google Drive/Photos/Music alternative. It is a full fea
 **Docker Hub:** https://hub.docker.com/r/machines/filestash/
 
 **Github:** https://github.com/mickael-kerjean/filestash
-
-**[`^back to top^`](#unraid-templates)**
-
-----
-# Firefox-Syncserver
-![Firefox-Syncserver](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/firefox-syncserver.png)
-
-Self hosted firefox sync server.
-
-**Application Name:** Firefox-Syncserver
-
-**Application Site:** https://github.com/crazy-max/docker-firefox-syncserver
-
-**Docker Hub:** https://hub.docker.com/r/crazymax/firefox-syncserver
-
-**Github:** https://github.com/crazy-max/docker-firefox-syncserver
 
 **[`^back to top^`](#unraid-templates)**
 
@@ -597,26 +452,6 @@ An open source Helpscout / Zendesk alternative.
 **[`^back to top^`](#unraid-templates)**
 
 ----
-# Golinks
-![Golinks](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/golinks.png)
-
-golinks is a web app that allows you to create smart bookmarks, commands and aliases by pointing your web browser's default search engine at a running instance. Similar to bunny1 or yubnub.
-
-*<div>Icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>*
-
-**Application Name:** Golinks
-
-**Application Site:** https://github.com/prologic/golinks
-
-**Docker Hub:** https://hub.docker.com/r/prologic/golinks/
-
-**Github:** https://github.com/prologic/golinks
-## Usage
-* https://github.com/prologic/golinks#usage
-    
-**[`^back to top^`](#unraid-templates)**
-
-----
 # Gossa
 ![Gossa](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/gossa.png)
 
@@ -657,22 +492,6 @@ A simple server for sending and receiving messages (in real time per WebSocket).
 **[`^back to top^`](#unraid-templates)**
 
 ----
-# Healthchecks
-![Healthchecks](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/healthchecks.png)
-
-healthchecks is a watchdog for your cron jobs. It's a web server that listens for pings from your cron jobs, plus a web interface.
-
-**Application Name:** Healthchecks
-
-**Application Site:** https://healthchecks.io/
-
-**Docker Hub:** https://hub.docker.com/r/galexrt/healthchecks/
-
-**Github:** https://github.com/galexrt/docker-healthchecks
-    
-**[`^back to top^`](#unraid-templates)**
-
-----
 # Homer
 ![Homer](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/homer.png)
 
@@ -685,29 +504,6 @@ A dead simple static HOMepage for your servER to keep your services on hand, fro
 **Docker Hub:** https://hub.docker.com/r/b4bz/homer
 
 **Github:** https://github.com/bastienwirtz/homer
-
-**[`^back to top^`](#unraid-templates)**
-
-----
-# Jitsi
-![Jitsi](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/jitsi.png)
-
-**Application Name:** Jitsi
-
-**Application Site:** https://jitsi.org/
-
-**Docker Hub:** https://hub.docker.com/u/jitsi/
-
-**Github:** https://github.com/jitsi/docker-jitsi-meet
-## Change appdata location
-```/mnt/user/appdata/jitsi-web``` -> ```/mnt/user/appdata/jitsi/web/```
-```/mnt/user/appdata/jitsi-prosody``` -> ```/mnt/user/appdata/jitsi/prosody/```
-```/mnt/user/appdata/jitsi-jvb``` -> ```/mnt/user/appdata/jitsi/jvb/```
-```/mnt/user/appdata/jitsi-jicofo``` -> ```/mnt/user/appdata/jitsi/jicofo/```
-## Notes
-* https://github.com/jitsi/docker-jitsi-meet
-* How it all work
-![](https://335wvf48o1332cksy23mw1pj-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/docker-jitsi-meet.png)
 
 **[`^back to top^`](#unraid-templates)**
 
@@ -801,20 +597,6 @@ For more content https://wiki.kiwix.org/wiki/Content
 
 **Github:** https://github.com/sissbruecker/linkding
 
-**[`^back to top^`](#unraid-templates)**
-
-----
-# Mailpile
-![Mailpile](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/mailpile.png)
-
-**Application Name:** Mailpile
-
-**Application Site:** https://www.mailpile.is/
-
-**Docker Hub:** https://hub.docker.com/r/rroemhild/mailpile/
-
-**Github:** https://github.com/rroemhild/docker-mailpile
- 
 **[`^back to top^`](#unraid-templates)**
 
 ----
@@ -946,23 +728,6 @@ For more content https://wiki.kiwix.org/wiki/Content
 **[`^back to top^`](#unraid-templates)**
 
 ----
-# Mumble
-![Mumble](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/mumble.png)
-
-**Application Name:** Mumble
-
-**Application Site:** https://www.mumble.com/
-
-**Docker Hub:** https://hub.docker.com/r/phlak/mumble
-
-**Github:** https://github.com/PHLAK/docker-mumble
-## Notes
-* Download config.ini an customize it ```wget -O /mnt/user/appdata/mumble/config.ini https://raw.githubusercontent.com/PHLAK/docker-mumble/master/files/config.ini```
-* See https://wiki.mumble.info/wiki/Murmur.ini for more options
-
-**[`^back to top^`](#unraid-templates)**
-
-----
 # Netbox
 ![Netbox](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/netbox.png)
 
@@ -1063,20 +828,6 @@ For more content https://wiki.kiwix.org/wiki/Content
 **[`^back to top^`](#unraid-templates)**
 
 ----
-# Pwndrop
-![Pwndrop](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/pwndrop.png)
-
-**Application Name:** Pwndrop
-
-**Application Site:** https://github.com/treyyoder/quakejs-docker
-
-**Docker Hub:** https://hub.docker.com/r/harshavardhanj/pwndrop
-
-**Github:** https://github.com/treyyoder/quakejs-docker
-
-**[`^back to top^`](#unraid-templates)**
-
-----
 # Quakejs
 ![Quakejs](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/quakejs.png)
 
@@ -1157,22 +908,6 @@ Searx is a free internet metasearch engine which aggregates results from more th
 **[`^back to top^`](#unraid-templates)**
 
 ----
-# Selfoss
-![Selfoss](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/selfoss.png)
-
-selfoss is a multipurpose RSS reader and feed aggregation web application.
-
-**Application Name:** Selfoss
-
-**Application Site:** https://selfoss.aditu.de/
-
-**Docker Hub:** https://hub.docker.com/r/hardware/selfoss/
-
-**Github:** https://github.com/SSilence/selfoss/
-    
-**[`^back to top^`](#unraid-templates)**
-
-----
 # Send
 ![Send](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/send.png)
 
@@ -1198,27 +933,6 @@ selfoss is a multipurpose RSS reader and feed aggregation web application.
 
 **Github:** https://github.com/shaarli/Shaarli
     
-**[`^back to top^`](#unraid-templates)**
-
-----
-# Shiori
-![Shiori](https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/shiori.png)
-
-Shiori is a simple bookmarks manager written in the Go language. Intended as a simple clone of Pocket. 
-
-**Application Name:** Shiori
-
-**Application Site:** https://github.com/go-shiori/shiori
-
-**Docker Hub:** https://hub.docker.com/r/radhifadlillah/shiori/
-
-**Github:** https://github.com/go-shiori/shiori
-## Default username and password
-Username: ```shiori```
-Password: ```gopher```
-## Notes
-* Create new account inside the web gui so the default one will be removed.
-
 **[`^back to top^`](#unraid-templates)**
 
 ----
