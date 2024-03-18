@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>lodestone</Name>
+  <Repository>ghcr.io/lodestone-team/lodestone_core:latest</Repository>
+  <Registry>https://github.com/lodestone-team/lodestone_core/pkgs/container/lodestone_core</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://www.lodestone.cc/</Project>
+  <Overview>A free, open source server hosting tool for Minecraft and other multiplayer games &#xD;
+After first boot Unraid CLI&#xD;
+chmod -R /mnt/user/appdata/lodestone/&#xD;
+Then download the client from https://github.com/Lodestone-Team/lodestone/releases&#xD;
+Copy the Secert key from the docker log and login&#xD;
+Please note that for any Game server port add new port for it</Overview>
+  <Category>GameServers:</Category>
+  <WebUI>http://[IP]:[PORT:16662]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/lodestone.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/lodestone.png</Icon>
+  <Config Name="Lodestone Port" Target="16662" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">16662</Config>
+  <Config Name="Data Path" Target="/home/user/.lodestone" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/lodestone/</Config>
+</Container>

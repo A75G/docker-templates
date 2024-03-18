@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>neonlink</Name>
+  <Repository>alexscifier/neonlink:latest</Repository>
+  <Registry>https://hub.docker.com/r/alexscifier/neonlink/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/AlexSciFier/neonlink</Project>
+  <Overview>Simple self-hosted bookmark service.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:3333]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/neonlink.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/neonlink.png</Icon>
+  <ExtraParams>--user=0:0</ExtraParams>
+  <Config Name="Port 1" Target="3333" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3333</Config>
+  <Config Name="Data Path" Target="/app/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/neonlink/data/</Config>
+  <Config Name="Background Path" Target="/app/public/static/media/background" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/neonlink/background/</Config>
+  <Config Name="FASTIFY_PLUGIN_TIMEOUT" Target="FASTIFY_PLUGIN_TIMEOUT" Default="" Mode="" Description="optional: change to 0 if AVV_ERR_READY TIMEOUT error is occured" Type="Variable" Display="always" Required="false" Mask="false">120000</Config>
+</Container>

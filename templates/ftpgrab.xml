@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ftpgrab</Name>
+  <Repository>crazymax/ftpgrab:latest</Repository>
+  <Registry>https://hub.docker.com/r/crazymax/ftpgrab/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://crazymax.dev/ftpgrab/</Project>
+  <Overview>Grab your files periodically from a remote FTP or SFTP server easily</Overview>
+  <Category>Downloaders: Tools: Network:FTP</Category>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/ftpgrab.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/ftpgrab.png</Icon>
+  <Config Name="Database Path" Target="/db" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ftpgrab/db/</Config>
+  <Config Name="Download Path" Target="/download" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="FTPGRAB_SERVER_FTP_HOST" Target="FTPGRAB_SERVER_FTP_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">test.rebex.net</Config>
+  <Config Name="FTPGRAB_SERVER_FTP_PORT" Target="FTPGRAB_SERVER_FTP_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">21</Config>
+  <Config Name="FTPGRAB_SERVER_FTP_USERNAME" Target="FTPGRAB_SERVER_FTP_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">anonymous</Config>
+  <Config Name="FTPGRAB_SERVER_FTP_PASSWORD" Target="FTPGRAB_SERVER_FTP_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="FTPGRAB_SERVER_FTP_SOURCES" Target="FTPGRAB_SERVER_FTP_SOURCES" Default="" Mode="" Description="can be /sub1,/sub2" Type="Variable" Display="always" Required="false" Mask="false">/</Config>
+  <Config Name="SCHEDULE" Target="SCHEDULE" Default="" Mode="" Description="Cron https://crontab.guru/" Type="Variable" Display="always" Required="false" Mask="false">*/30 * * * *</Config>
+  <Config Name="FTPGRAB_DOWNLOAD_INCLUDE" Target="FTPGRAB_DOWNLOAD_INCLUDE" Default="" Mode="" Description="For example ^Mr\.Robot\.S04.+(VOSTFR|SUBFRENCH).+(720p).+(HDTV|WEB-DL|WEBRip).+" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="FTPGRAB_DOWNLOAD_EXCLUDE" Target="FTPGRAB_DOWNLOAD_EXCLUDE" Default="" Mode="" Description="For example \.nfo\$" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="FTPGRAB_DOWNLOAD_SINCE" Target="FTPGRAB_DOWNLOAD_SINCE" Default="" Mode="" Description="For example 2019-02-01T18:50:05Z" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="FTPGRAB_DOWNLOAD_RETRY" Target="FTPGRAB_DOWNLOAD_RETRY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">5</Config>
+  <Config Name="FTPGRAB_NOTIF_MAIL_HOST" Target="FTPGRAB_NOTIF_MAIL_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">smtp.example.com</Config>
+  <Config Name="FTPGRAB_NOTIF_MAIL_PORT" Target="FTPGRAB_NOTIF_MAIL_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">25</Config>
+  <Config Name="FTPGRAB_NOTIF_MAIL_FROM" Target="FTPGRAB_NOTIF_MAIL_FROM" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">ftpgrab@example.com</Config>
+  <Config Name="FTPGRAB_NOTIF_MAIL_TO" Target="FTPGRAB_NOTIF_MAIL_TO" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">webmaster@example.com</Config>
+  <Config Name="FTPGRAB_DOWNLOAD_UID" Target="FTPGRAB_DOWNLOAD_UID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="FTPGRAB_DOWNLOAD_GID" Target="FTPGRAB_DOWNLOAD_GID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">info</Config>
+  <Config Name="LOG_JSON" Target="LOG_JSON" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+</Container>
