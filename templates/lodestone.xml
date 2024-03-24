@@ -10,7 +10,7 @@
   <Project>https://www.lodestone.cc/</Project>
   <Overview>A free, open source server hosting tool for Minecraft and other multiplayer games &#xD;
 After first boot Unraid CLI&#xD;
-chmod -R /mnt/user/appdata/lodestone/&#xD;
+chmod 777 -R /mnt/user/appdata/lodestone/&#xD;
 Then download the client from https://github.com/Lodestone-Team/lodestone/releases&#xD;
 Copy the Secert key from the docker log and login&#xD;
 Please note that for any Game server port add new port for it</Overview>
