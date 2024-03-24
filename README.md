@@ -67,7 +67,7 @@
 - [Pure-FTPd](#pure-ftpd)
   * [Notes](#notes-11)
 - [Quakejs](#quakejs)
-- [Notes](#notes-12)
+  * [Notes](#notes-12)
 - [Reactive-resume](#reactive-resume)
 - [Redis](#redis)
 - [Riot-web](#riot-web)
@@ -838,7 +838,7 @@ For more content https://wiki.kiwix.org/wiki/Content
 **Docker Hub:** https://hub.docker.com/r/treyyoder/quakejs/
 
 **Github:** https://github.com/treyyoder/quakejs-docker
-# Notes
+## Notes
 * Use Custom:br0 https://youtu.be/2VnQxxn00jU?t=121 put Fixed IP address
 * Copy the ip and access it using you broswer
 
