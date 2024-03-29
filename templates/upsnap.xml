@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>upsnap</Name>
+  <Repository>ghcr.io/seriousm4x/upsnap:4</Repository>
+  <Registry>https://github.com/seriousm4x/UpSnap/pkgs/container/upsnap</Registry>
+  <Network>host</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/seriousm4x/UpSnap/</Project>
+  <Overview>A simple wake on lan web app written with SvelteKit, Go and PocketBase. </Overview>
+  <Category>Tools: Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:8090]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/upsnap.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/upsnap.png</Icon>
+  <ExtraParams>--user=99:100</ExtraParams>
+  <Config Name="UPSNAP_INTERVAL" Target="UPSNAP_INTERVAL" Default="" Mode="" Description="Sets the interval in which the devices are pinged" Type="Variable" Display="always" Required="false" Mask="false">@every 10s</Config>
+  <Config Name="UPSNAP_SCAN_RANGE" Target="UPSNAP_SCAN_RANGE" Default="" Mode="" Description="Scan range is used for device discovery on local network" Type="Variable" Display="always" Required="false" Mask="false">192.168.0.0/24</Config>
+  <Config Name="UPSNAP_SCAN_TIMEOUT" Target="UPSNAP_SCAN_TIMEOUT" Default="" Mode="" Description="Scan timeout is nmap's --host-timeout value to wait for devices (https://nmap.org/book/man-performance.html)" Type="Variable" Display="always" Required="false" Mask="false">500ms</Config>
+  <Config Name="UPSNAP_WEBSITE_TITLE" Target="UPSNAP_WEBSITE_TITLE" Default="" Mode="" Description="Custom website title" Type="Variable" Display="always" Required="false" Mask="false">Custom name</Config>
+  <Config Name="Appdata Path" Target="/app/pb_data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/upsnap/</Config>
+  <Config Name="UPSNAP_PING_PRIVILEGED" Target="UPSNAP_PING_PRIVILEGED" Default="true|false" Mode="" Description="Set to false if you don't have root user permissions" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+</Container>
