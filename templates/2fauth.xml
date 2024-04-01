@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>2fauth</Name>
+  <Repository>2fauth/2fauth:latest</Repository>
+  <Registry>https://hub.docker.com/r/2fauth/2fauth/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://github.com/Bubka/2FAuth/tree/master</Project>
+  <Overview>A web app to manage your Two-Factor Authentication (2FA) accounts and generate their security codes&#xD;
+&#xD;
+Before running container Unraid CLI&#xD;
+&#xD;
+mkdir /mnt/user/appdata/2fauth&#xD;
+chown 1000:1000 /mnt/user/appdata/2fauth&#xD;
+&#xD;
+Register first username for admin user&#xD;
+&#xD;
+More info in https://github.com/Bubka/2FAuth/blob/master/docker/docker-compose.yml and advanced </Overview>
+  <Category>Security:</Category>
+  <WebUI>http://[IP]:[PORT:8000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/2fauth.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/2fauth.png</Icon>
+  <Requires>Read Overview</Requires>
+  <Config Name="Port" Target="8000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8805</Config>
+  <Config Name="Appdata Path" Target="/2fauth" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/2fauth/</Config>
+  <Config Name="APP_NAME" Target="APP_NAME" Default="" Mode="" Description="You can change the name of the app" Type="Variable" Display="always" Required="false" Mask="false">2FAuth</Config>
+  <Config Name="SITE_OWNER" Target="SITE_OWNER" Default="" Mode="" Description="This should be your email address" Type="Variable" Display="always" Required="false" Mask="false">mail@example.com</Config>
+  <Config Name="APP_KEY" Target="APP_KEY" Default="" Mode="" Description="The encryption key for  our database and sessions. Keep this very secure." Type="Variable" Display="always" Required="false" Mask="false">SomeRandomStringOf32CharsExactly</Config>
+  <Config Name="APP_URL" Target="APP_URL" Default="" Mode="" Description="This variable must match your installation's external address." Type="Variable" Display="always" Required="false" Mask="false">http://Unraid_IP:8805</Config>
+  <Config Name="APP_ENV" Target="APP_ENV" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">local</Config>
+  <Config Name="APP_DEBUG" Target="APP_DEBUG" Default="false|true" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="LOG_CHANNEL" Target="LOG_CHANNEL" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">daily</Config>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="info|debug|notice|warning|error|critical|alert|emergency" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">info</Config>
+  <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="" Mode="" Description="Database config (can only be sqlite)" Type="Variable" Display="advanced" Required="false" Mask="false">/srv/database/database.sqlite</Config>
+  <Config Name="CACHE_DRIVER" Target="CACHE_DRIVER" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">file</Config>
+  <Config Name="SESSION_DRIVER" Target="SESSION_DRIVER" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">file</Config>
+  <Config Name="MAIL_DRIVER" Target="MAIL_DRIVER" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">log</Config>
+  <Config Name="MAIL_HOST" Target="MAIL_HOST" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">smtp.mailtrap.io</Config>
+  <Config Name="MAIL_PORT" Target="MAIL_PORT" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">2525</Config>
+  <Config Name="MAIL_USERNAME" Target="MAIL_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">null</Config>
+  <Config Name="MAIL_USERNAME" Target="MAIL_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">null</Config>
+  <Config Name="MAIL_PASSWORD" Target="MAIL_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">null</Config>
+  <Config Name="MAIL_ENCRYPTION" Target="MAIL_ENCRYPTION" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">null</Config>
+  <Config Name="MAIL_FROM_NAME" Target="MAIL_FROM_NAME" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">null</Config>
+  <Config Name="MAIL_FROM_ADDRESS" Target="MAIL_FROM_ADDRESS" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">null</Config>
+  <Config Name="MAIL_VERIFY_SSL_PEER" Target="MAIL_VERIFY_SSL_PEER" Default="true|false" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="THROTTLE_API" Target="THROTTLE_API" Default="" Mode="" Description="Set to null to disable the API throttling." Type="Variable" Display="advanced" Required="false" Mask="false">60</Config>
+  <Config Name="LOGIN_THROTTLE" Target="LOGIN_THROTTLE" Default="" Mode="" Description="This setting applies to both email/password and webauthn login attemps." Type="Variable" Display="advanced" Required="false" Mask="false">5</Config>
+  <Config Name="AUTHENTICATION_GUARD" Target="AUTHENTICATION_GUARD" Default="web-guard|reverse-proxy-guard" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">web-guard</Config>
+  <Config Name="AUTH_PROXY_HEADER_FOR_USER" Target="AUTH_PROXY_HEADER_FOR_USER" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">null</Config>
+  <Config Name="AUTH_PROXY_HEADER_FOR_EMAIL" Target="AUTH_PROXY_HEADER_FOR_EMAIL" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">null</Config>
+  <Config Name="PROXY_LOGOUT_URL" Target="PROXY_LOGOUT_URL" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">null</Config>
+  <Config Name="WEBAUTHN_NAME" Target="WEBAUTHN_NAME" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">null</Config>
+  <Config Name="WEBAUTHN_ID" Target="WEBAUTHN_ID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">null</Config>
+  <Config Name="WEBAUTHN_ICON" Target="WEBAUTHN_ICON" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">null</Config>
+  <Config Name="WEBAUTHN_USER_VERIFICATION" Target="WEBAUTHN_USER_VERIFICATION" Default="preferred|required|discouraged" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">preferred</Config>
+  <Config Name="TRUSTED_PROXIES" Target="TRUSTED_PROXIES" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">*</Config>
+  <Config Name="PROXY_FOR_OUTGOING_REQUESTS" Target="PROXY_FOR_OUTGOING_REQUESTS" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">null</Config>
+</Container>
