@@ -17,4 +17,6 @@
   <Config Name="Host Path 1" Target="/pb_data" Default="" Mode="rw" Description="application config and data and should be mapped to your local file system to persist them" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pocketbase/pb_data/</Config>
   <Config Name="Host Path 2" Target="/pb_migrations/" Default="" Mode="rw" Description="directory allows you to version your DB structure" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pocketbase/pb_migrations/</Config>
   <Config Name="Host Path 3" Target="/pb_public" Default="" Mode="rw" Description="optional, and is only used for serving static files" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pocketbase/pb_public/</Config>
+  <Config Name="ROOT_ADMIN_EMAIL" Target="ROOT_ADMIN_EMAIL" Default="admin@grimoire.localhost" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">admin@grimoire.localhost</Config>
+  <Config Name="ROOT_ADMIN_PASSWORD" Target="ROOT_ADMIN_PASSWORD" Default="changeme" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">changeme</Config>
 </Container>
