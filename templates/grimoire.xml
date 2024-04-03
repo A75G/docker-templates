@@ -11,13 +11,18 @@
   <Overview>Unleash your inner sorcerer and conquer the chaos of bookmarks!&#xD;
 Access admin Login by Adding /admin Path in URL https://grimoire.pro/docs/getting-started/admin-panel&#xD;
 &#xD;
-Please Run the below in Unraid CLI after installing pocketbase&#xD;
+Please Run the below in Unraid CLI after installing pocketbase and before installing this&#xD;
 &#xD;
 git clone https://github.com/goniszewski/grimoire.git&#xD;
 mv grimoire/pb_migrations/* /mnt/user/appdata/pocketbase/pb_migrations/&#xD;
 rm -rf grimoire&#xD;
-&#xD;
-Restart pocketbase docker</Overview>
+docker stop pocketbase &#xD;
+rm -rf /mnt/user/appdata/pocketbase/pb_data/*&#xD;
+nano /mnt/user/appdata/pocketbase/pb_migrations/1700577970_created_admin.js &#xD;
+and change both admin@grimoire.localhost to you username for admin&#xD;
+and change cahngeme for password you would like &#xD;
+CTRL+X then Y then Enter&#xD;
+docker start pocketbase </Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:5173]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/grimoire.xml</TemplateURL>
