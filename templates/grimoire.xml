@@ -29,7 +29,7 @@ pocketbase&#xD;
   <Config Name="Pocketbase URL" Target="PUBLIC_POCKETBASE_URL" Default="" Mode="" Description="Change IP to your unraid IP" Type="Variable" Display="always" Required="false" Mask="false">http://UNRAID_IP:5170</Config>
   <Config Name="Admin Email" Target="ROOT_ADMIN_EMAIL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">admin@grimoire.localhost</Config>
   <Config Name="Admin Password" Target="ROOT_ADMIN_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">changeme</Config>
-  <Config Name="Origin" Target=" ORIGIN" Default="" Mode="" Description="Change IP to your unraid IP" Type="Variable" Display="always" Required="false" Mask="false">http://UNRAID_IP:5173</Config>
+  <Config Name="PUBLIC_ORIGIN" Target=" PUBLIC_ORIGIN" Default="" Mode="" Description="Change IP to your unraid IP" Type="Variable" Display="always" Required="false" Mask="false">http://UNRAID_IP:5173</Config>
   <Config Name="HTTPS_ONLY" Target="PUBLIC_HTTPS_ONLY" Default="false|true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="PUBLIC_SIGNUP_DISABLED" Target="PUBLIC_SIGNUP_DISABLED" Default="false|true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="PORT" Target="PORT" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">5173</Config>
