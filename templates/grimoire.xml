@@ -11,18 +11,15 @@
   <Overview>Unleash your inner sorcerer and conquer the chaos of bookmarks!&#xD;
 Access admin Login by Adding /admin Path in URL https://grimoire.pro/docs/getting-started/admin-panel&#xD;
 &#xD;
-Please Run the below in Unraid CLI after installing pocketbase and before installing this&#xD;
+Please Run the below in Unraid CLI after installing pocketbase&#xD;
 &#xD;
 git clone https://github.com/goniszewski/grimoire.git&#xD;
 mv grimoire/pb_migrations/* /mnt/user/appdata/pocketbase/pb_migrations/&#xD;
 rm -rf grimoire&#xD;
-docker stop pocketbase &#xD;
-rm -rf /mnt/user/appdata/pocketbase/pb_data/*&#xD;
-nano /mnt/user/appdata/pocketbase/pb_migrations/1700577970_created_admin.js &#xD;
-and change both admin@grimoire.localhost to you username for admin&#xD;
-and change cahngeme for password you would like &#xD;
-CTRL+X then Y then Enter&#xD;
-docker start pocketbase </Overview>
+docker stop pocketbase&#xD;
+docker start pocketbase&#xD;
+&#xD;
+Admin Username and Password is the one in pocketbase</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:5173]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/grimoire.xml</TemplateURL>
@@ -32,9 +29,7 @@ pocketbase&#xD;
 </Requires>
   <Config Name="Port" Target="5173" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5173</Config>
   <Config Name="Pocketbase URL" Target="PUBLIC_POCKETBASE_URL" Default="" Mode="" Description="Change IP to your unraid IP" Type="Variable" Display="always" Required="false" Mask="false">http://UNRAID_IP:5170</Config>
-  <Config Name="Admin Email" Target="ROOT_ADMIN_EMAIL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">admin@grimoire.localhost</Config>
-  <Config Name="Admin Password" Target="ROOT_ADMIN_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">changeme</Config>
-  <Config Name="PUBLIC_ORIGIN" Target=" PUBLIC_ORIGIN" Default="" Mode="" Description="Change IP to your unraid IP" Type="Variable" Display="always" Required="false" Mask="false">http://UNRAID_IP:5173</Config>
+  <Config Name="PUBLIC_ORIGIN" Target="PUBLIC_ORIGIN" Default="" Mode="" Description="Change IP to your unraid IP" Type="Variable" Display="always" Required="false" Mask="false">http://UNRAID_IP:5173</Config>
   <Config Name="HTTPS_ONLY" Target="PUBLIC_HTTPS_ONLY" Default="false|true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="PUBLIC_SIGNUP_DISABLED" Target="PUBLIC_SIGNUP_DISABLED" Default="false|true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="PORT" Target="PORT" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">5173</Config>
