@@ -1,26 +1,48 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>cryptpad</Name>
-  <Repository>cryptpad/cryptpad:version-5.6.0</Repository>
+  <Repository>cryptpad/cryptpad:version-5.7.0</Repository>
   <Registry>https://hub.docker.com/r/cryptpad/cryptpad/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://cryptpad.fr/</Project>
-  <Overview>CryptPad is the Zero Knowledge realtime collaborative editor.[br]mkdir -p /mnt/user/appdata/cryptpad/config [/br]wget -O /mnt/user/appdata/cryptpad/config/config.js https://raw.githubusercontent.com/xwiki-labs/cryptpad/main/config/config.example.js </Overview>
+  <Overview>CryptPad is the Zero Knowledge realtime collaborative editor.&#xD;
+&#xD;
+Before Installing the docker Unraid CLI&#xD;
+&#xD;
+cd /mnt/user/appdata &amp;amp;&amp;amp; mkdir cryptpad &amp;amp;&amp;amp; cd cryptpad&#xD;
+mkdir -p block customize data datastore config onlyoffice-dist onlyoffice-conf&#xD;
+chown -R 4001:4001 block customize data datastore onlyoffice-dist onlyoffice-conf&#xD;
+wget -O /mnt/user/appdata/cryptpad/config/config.js https://raw.githubusercontent.com/xwiki-labs/cryptpad/main/config/config.example.js&#xD;
+&#xD;
+Edit /mnt/user/appdata/cryptpad/config/config.js&#xD;
+&#xD;
+Change httpUnsafeOrigin:http://UNRAID_IP/DOMAIN:PORT&#xD;
+Example httpUnsafeOrigin: 'http://192.168.0.99:3000',&#xD;
+In httpAddress:  remove // and put httpAddress: '0.0.0.0',&#xD;
+&#xD;
+More info &#xD;
+https://docs.cryptpad.org/fr/admin_guide/installation.html#configure-cryptpad&#xD;
+</Overview>
   <Category>Productivity: Security:</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/cryptpad.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cryptpad.png</Icon>
-  <Description>CryptPad is the Zero Knowledge realtime collaborative editor.[br]mkdir -p /mnt/user/appdata/cryptpad/config [/br]wget -O /mnt/user/appdata/cryptpad/config/config.js https://raw.githubusercontent.com/xwiki-labs/cryptpad/main/config/config.example.js </Description>
+  <Requires>Read overview</Requires>
   <Config Name="Port 1" Target="3000" Default="3000" Mode="tcp" Description="Port 1" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Port 2" Target="3001" Default="3001" Mode="tcp" Description="Port 2" Type="Port" Display="always" Required="false" Mask="false">3001</Config>
-  <Config Name="Blob Path" Target="/cryptpad/blob" Default="/mnt/user/appdata/cryptpad/blob" Mode="rw" Description="Blob Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/blob</Config>
-  <Config Name="Block Path" Target="/cryptpad/block" Default="/mnt/user/appdata/cryptpad/block" Mode="rw" Description="Block Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/block</Config>
-  <Config Name="Customize Path" Target="/cryptpad/customize" Default="/mnt/user/appdata/cryptpad/customize" Mode="rw" Description="Customize Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/customize</Config>
-  <Config Name="Data Path" Target="/cryptpad/data" Default="/mnt/user/appdata/cryptpad/data" Mode="rw" Description="Data Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/data</Config>
-  <Config Name="Datastore Path" Target="/cryptpad/datastore" Default="/mnt/user/appdata/cryptpad/datastore" Mode="rw" Description="Datastore Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/datastore</Config>
-  <Config Name="Config Path" Target="/cryptpad/config/config.js" Default="/mnt/user/appdata/cryptpad/config/config.js" Mode="rw" Description="Config Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cryptpad/config/config.js</Config>
-  <Config Name="CPAD_CONF" Target="CPAD_CONF" Default="/cryptpad/config/config.js" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">/cryptpad/config/config.js</Config>
+  <Config Name="Port 3" Target="3003" Default="3003" Mode="tcp" Description="Port 3" Type="Port" Display="always" Required="false" Mask="false">3003</Config>
+  <Config Name="CPAD_MAIN_DOMAIN" Target="CPAD_MAIN_DOMAIN" Default="" Mode="" Description="If you changed the port change it here with the Unraid IP if you are using reverse proxy you may require to edit this too" Type="Variable" Display="always" Required="false" Mask="false">http://UNRAID_IP:3000</Config>
+  <Config Name="CPAD_INSTALL_ONLYOFFICE" Target="CPAD_INSTALL_ONLYOFFICE" Default="yes|no" Mode="" Description="https://github.com/ONLYOFFICE/web-apps/blob/master/LICENSE.txt" Type="Variable" Display="always" Required="false" Mask="false">yes</Config>
+  <Config Name="Blob Path" Target="/cryptpad/blob" Default="/mnt/user/appdata/cryptpad/blob" Mode="rw" Description="Blob Path" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/cryptpad/blob</Config>
+  <Config Name="Block Path" Target="/cryptpad/block" Default="/mnt/user/appdata/cryptpad/block" Mode="rw" Description="Block Path" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/cryptpad/block</Config>
+  <Config Name="Customize Path" Target="/cryptpad/customize" Default="/mnt/user/appdata/cryptpad/customize" Mode="rw" Description="Customize Path" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/cryptpad/customize</Config>
+  <Config Name="Data Path" Target="/cryptpad/data" Default="/mnt/user/appdata/cryptpad/data" Mode="rw" Description="Data Path" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/cryptpad/data</Config>
+  <Config Name="Datastore Path" Target="/cryptpad/datastore" Default="/mnt/user/appdata/cryptpad/datastore" Mode="rw" Description="Datastore Path" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/cryptpad/datastore</Config>
+  <Config Name="Config Path" Target="/cryptpad/config/config.js" Default="/mnt/user/appdata/cryptpad/config/config.js" Mode="rw" Description="Config Path" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/cryptpad/config/config.js</Config>
+  <Config Name="CPAD_CONF" Target="CPAD_CONF" Default="/cryptpad/config/config.js" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">/cryptpad/config/config.js</Config>
+  <Config Name="Onlyoffice Conf Path" Target="/cryptpad/onlyoffice-conf" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/cryptpad/onlyoffice-conf</Config>
+  <Config Name="Onlyoffice Dist Path" Target="/cryptpad/www/common/onlyoffice/dist" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/cryptpad/onlyoffice-dist</Config>
 </Container>
