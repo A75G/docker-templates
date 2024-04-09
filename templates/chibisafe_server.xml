@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>chibisafe</Name>
-  <Repository>chibisafe/chibisafe:latest</Repository>
+  <Name>chibisafe_server</Name>
+  <Repository>chibisafe/chibisafe-server:latest</Repository>
   <Registry>https://hub.docker.com/r/chibisafe/chibisafe/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
@@ -19,12 +19,15 @@ It's easily customizable and deploying your own instance is a breeze. &#xD;
 6. Access chibisafe using "http://Unraid_IP:24424"&#xD;
 6. Default login admin admin</Overview>
   <Category>Productivity: Tools:Utilities</Category>
-  <WebUI>http://[IP]:[PORT:8001]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/chibisafe.xml</TemplateURL>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/chibisafe_server.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/chibisafe.png</Icon>
   <Requires>Read Overview&#xD;
-chibisafe_server&#xD;
+chibisafe&#xD;
 chibisafe-caddy&#xD;
 docker network</Requires>
-  <Config Name="BASE_API_URL" Target="BASE_API_URL" Default="" Mode="" Description="Don't change this unless you know what you are doing " Type="Variable" Display="advanced" Required="false" Mask="false">http://chibisafe_server:8000</Config>
+  <Config Name="Database Path" Target="/app/database" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/chibisafe/database/</Config>
+  <Config Name="Uploads Path" Target="/app/uploads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/chibisafe/uploads/</Config>
+  <Config Name="Logs Path" Target="/app/logs" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/chibisafe/logs/</Config>
+  <Config Name="SERVE_UPLOADS_FROM" Target="SERVE_UPLOADS_FROM" Default="" Mode="" Description="Change it to Unraid IP" Type="Variable" Display="always" Required="false" Mask="false">http://Unraid_IP:24424</Config>
 </Container>

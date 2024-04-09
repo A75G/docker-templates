@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>chibisafe</Name>
-  <Repository>chibisafe/chibisafe:latest</Repository>
-  <Registry>https://hub.docker.com/r/chibisafe/chibisafe/</Registry>
+  <Name>chibisafe-caddy</Name>
+  <Repository>caddy:2-alpine</Repository>
+  <Registry>https://hub.docker.com/_/caddy/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -18,13 +18,16 @@ It's easily customizable and deploying your own instance is a breeze. &#xD;
 5. Install chibisafe-caddy and use it to access chibisafe&#xD;
 6. Access chibisafe using "http://Unraid_IP:24424"&#xD;
 6. Default login admin admin</Overview>
-  <Category>Productivity: Tools:Utilities</Category>
-  <WebUI>http://[IP]:[PORT:8001]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/chibisafe.xml</TemplateURL>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/chibisafe-caddy.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/chibisafe.png</Icon>
   <Requires>Read Overview&#xD;
 chibisafe_server&#xD;
-chibisafe-caddy&#xD;
+chibisafe&#xD;
 docker network</Requires>
-  <Config Name="BASE_API_URL" Target="BASE_API_URL" Default="" Mode="" Description="Don't change this unless you know what you are doing " Type="Variable" Display="advanced" Required="false" Mask="false">http://chibisafe_server:8000</Config>
+  <Config Name="Host Port 1" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">24424</Config>
+  <Config Name="CadyFile Path" Target="/etc/caddy/Caddyfile" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/chibisafe/Caddyfile</Config>
+  <Config Name="Uploads Path" Target="/app/uploads" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/chibisafe/uploads/</Config>
+  <Config Name="BASE_URL" Target="BASE_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">:80</Config>
 </Container>
