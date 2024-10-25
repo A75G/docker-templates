@@ -16,5 +16,8 @@ https://www.filestash.app/docs/install-and-upgrade/#optional-using-a-bind-mount-
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/filestash.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/filestash.png</Icon>
   <Description>A modern web client for SFTP, S3, FTP, WebDAV, Git, Minio, LDAP, CalDAV, CardDAV, Mysql, Backblaze, ...</Description>
+  <Requires>After installation Unraid Terminal&#xD;
+chmod 777 /mnt/user/appdata/filestash/</Requires>
   <Config Name="Port" Target="8334" Default="8334" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8334</Config>
+  <Config Name="Path 1" Target="/app/data/state/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/filestash</Config>
 </Container>
