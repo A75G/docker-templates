@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>cryptpad</Name>
-  <Repository>cryptpad/cryptpad:version-5.7.0</Repository>
+  <Repository>cryptpad/cryptpad:version-2024.12.0</Repository>
   <Registry>https://hub.docker.com/r/cryptpad/cryptpad/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
@@ -31,6 +31,8 @@ https://docs.cryptpad.org/fr/admin_guide/installation.html#configure-cryptpad&#x
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/cryptpad.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/cryptpad.png</Icon>
   <Requires>Read overview</Requires>
+  <DonateText>If you appreciate my work, donations are greatly appreciated!</DonateText>
+  <DonateLink>https://buymeacoffee.com/a75g</DonateLink>
   <Config Name="Port 1" Target="3000" Default="3000" Mode="tcp" Description="Port 1" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="Port 2" Target="3001" Default="3001" Mode="tcp" Description="Port 2" Type="Port" Display="always" Required="false" Mask="false">3001</Config>
   <Config Name="Port 3" Target="3003" Default="3003" Mode="tcp" Description="Port 3" Type="Port" Display="always" Required="false" Mask="false">3003</Config>
