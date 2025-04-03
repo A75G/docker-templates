@@ -25,7 +25,6 @@ mkdir -p /mnt/user/appdata/mattermost/{config,data,logs,plugins,client/plugins,b
   <Config Name="DATASOURCE" Target="MM_SQLSETTINGS_DATASOURCE" Default="MM_USERNAME:MM_PASSWORD@tcp(DB_HOST:DB_PORT_NUMBER)/MM_DBNAME?charset=utf8mb4,utf8&amp;amp;readTimeout=30s&amp;amp;writeTimeout=30s" Mode="" Description="https://docs.mattermost.com/configure/environment-configuration-settings.html" Type="Variable" Display="always" Required="true" Mask="false">MM_USERNAME:MM_PASSWORD@tcp(DB_HOST:DB_PORT_NUMBER)/MM_DBNAME?charset=utf8mb4,utf8&amp;readTimeout=30s&amp;writeTimeout=30s</Config>
   <Config Name="Bleve Indexes" Target="/mattermost/bleve-indexes" Default="" Mode="rw" Description="Bleve Indexes Path" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mattermost/bleve-indexes/</Config>
   <Config Name="Site URL" Target="MM_SERVICESETTINGS_SITEURL" Default="http://192.168.100.100:8065" Mode="" Description="Application host address" Type="Variable" Display="always" Required="true" Mask="false">http://192.168.100.100:8065</Config>
-  <Config Name="MM_SQLSETTINGS_DRIVERNAME" Target="MM_SQLSETTINGS_DRIVERNAME" Default="mysql" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">mysql</Config>
   <Config Name="Databse Type" Target="" Default="mysql|postgres" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">mysql</Config>
   <TailscaleStateDir/>
 </Container>
