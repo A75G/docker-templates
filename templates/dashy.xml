@@ -19,6 +19,7 @@ wget -O /mnt/user/appdata/dashy/conf.yml https://raw.githubusercontent.com/Lissy
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/dashy.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/dashy.png</Icon>
+  <TailscaleStateDir>/app/user-data/.tailscale_state</TailscaleStateDir>
   <Config Name="Port" Target="8080" Default="4000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="false" Mask="false">4000</Config>
   <Config Name="Config File" Target="/app/user-data/" Default="" Mode="rw" Description="Config File&#13;&#10;https://raw.githubusercontent.com/Lissy93/dashy/3.0.0/user-data/conf.yml" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/dashy/</Config>
   <Config Name="Icons Path" Target="/app/user-data/item-icons/" Default="" Mode="rw" Description="Icons Path" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/dashy/icons/</Config>
