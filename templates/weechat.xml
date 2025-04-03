@@ -11,7 +11,9 @@
 &#xD;
 Before Running:&#xD;
 mkdir -p /mnt/user/appdata/weechat/config /mnt/user/appdata/weechat/data /mnt/user/appdata/weechat/cache &amp;amp;&amp;amp; chmod 777 /mnt/user/appdata/weechat/config /mnt/user/appdata/weechat/data /mnt/user/appdata/weechat/cache&#xD;
-</Overview>
+&#xD;
+Access weechat using:&#xD;
+docker attach weechat</Overview>
   <Category>Network:Messenger</Category>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/weechat.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/weechat.png</Icon>
