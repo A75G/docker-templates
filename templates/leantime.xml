@@ -15,6 +15,8 @@
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/leantime.png</Icon>
   <Requires>after install&#xD;
 chmod -R 777 /mnt/user/appdata/leantime</Requires>
+  <DonateText>If you appreciate my work, donations are greatly appreciated!</DonateText>
+  <DonateLink>https://buymeacoffee.com/a75g</DonateLink>
   <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="Userfiles Path" Target="/var/www/html/userfiles" Default="" Mode="rw" Description="Original mount name for compatibility" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/leantime/userfiles</Config>
   <Config Name="Plugins Path" Target="/var/www/html/app/Plugins" Default="" Mode="rw" Description="Plugin storag" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/leantime/plugins</Config>
