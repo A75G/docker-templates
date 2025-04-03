@@ -4,7 +4,6 @@
   <Repository>caddy:2-alpine</Repository>
   <Registry>https://hub.docker.com/_/caddy/</Registry>
   <Network>bridge</Network>
-  <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://chibisafe.moe/</Project>
@@ -12,13 +11,13 @@
 It's easily customizable and deploying your own instance is a breeze. &#xD;
 &#xD;
 1. Create docker network - "docker network create NETOWK" https://www.youtube.com/watch?v=7fzBDCI8O2w&#xD;
-2. Install chibisafe-server put it in the docker network you create and change SERVE_UPLOADS_FROM variable to your IP example "http://192.168.0.100:24424" &#xD;
+2. Install chibisafe-server put it in the docker network you create&#xD;
 3. Install chibisafe put it in the docker network you create&#xD;
 4. Unraid CLI "wget -O /mnt/user/appdata/chibisafe/Caddyfile https://raw.githubusercontent.com/chibisafe/chibisafe/master/Caddyfile"&#xD;
 5. Install chibisafe-caddy and use it to access chibisafe&#xD;
 6. Access chibisafe using "http://Unraid_IP:24424"&#xD;
 6. Default login admin admin</Overview>
-  <Category>Productivity:</Category>
+  <Category>Productivity: Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/chibisafe-caddy.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/chibisafe.png</Icon>
@@ -26,8 +25,9 @@ It's easily customizable and deploying your own instance is a breeze. &#xD;
 chibisafe_server&#xD;
 chibisafe&#xD;
 docker network</Requires>
+  <DonateText>If you appreciate my work, donations are greatly appreciated!</DonateText>
+  <DonateLink>https://buymeacoffee.com/a75g</DonateLink>
   <Config Name="Host Port 1" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">24424</Config>
   <Config Name="CadyFile Path" Target="/etc/caddy/Caddyfile" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/chibisafe/Caddyfile</Config>
   <Config Name="Uploads Path" Target="/app/uploads" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/chibisafe/uploads/</Config>
-  <Config Name="BASE_URL" Target="BASE_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">:80</Config>
 </Container>
