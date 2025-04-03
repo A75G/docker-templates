@@ -15,6 +15,8 @@ Check advanced for more settings</Overview>
   <Category>Backup:</Category>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/db-backup.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/db-backup.png</Icon>
+  <DonateText>If you appreciate my work, donations are greatly appreciated!</DonateText>
+  <DonateLink>https://buymeacoffee.com/a75g</DonateLink>
   <Config Name="Backup Location" Target="/backup" Default="" Mode="rw" Description="Database Dump Location" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/backups/db/</Config>
   <Config Name="DB01_NAME" Target="DB01_NAME" Default="" Mode="" Description="Schema Name e.g. database or ALL to backup all databases the user has access to." Type="Variable" Display="always" Required="false" Mask="false">ALL</Config>
   <Config Name="DB01_TYPE" Target="DB01_TYPE" Default="mysql|pgsql|mongo|redis|influx|couch|mssql|sqlite3" Mode="" Description="Type of DB Server to backup couch influx mysql mssql pgsql mongo redis sqlite3" Type="Variable" Display="always" Required="false" Mask="false">mysql</Config>
