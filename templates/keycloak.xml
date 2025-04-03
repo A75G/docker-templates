@@ -4,7 +4,6 @@
   <Repository>bitnami/keycloak:latest</Repository>
   <Registry>https://hub.docker.com/r/bitnami/keycloak/</Registry>
   <Network>bridge</Network>
-  <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
   <Project>https://www.keycloak.org/</Project>
@@ -13,14 +12,21 @@
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/keycloak.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/keycloak.png</Icon>
-  <Description>Open Source Identity and Access Management.</Description>
+  <DonateText>If you appreciate my work, donations are greatly appreciated!</DonateText>
+  <DonateLink>https://buymeacoffee.com/a75g</DonateLink>
   <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
-  <Config Name="Keycloak Admin User" Target="KEYCLOAK_ADMIN_USER" Default="admin" Mode="" Description="Keycloak Admin User" Type="Variable" Display="always" Required="true" Mask="false">admin</Config>
+  <Config Name="Keycloak Hostname" Target="KEYCLOAK_HOSTNAME" Default="" Mode="" Description="Put your IP:PORT (192.168.100.100) or Hostname (auth.exmaple.com)" Type="Variable" Display="always" Required="true" Mask="false">192.168.100.100</Config>
+  <Config Name="Keycloak Admin User" Target="KEYCLOAK_ADMIN" Default="admin" Mode="" Description="Keycloak Admin User" Type="Variable" Display="always" Required="true" Mask="false">admin</Config>
   <Config Name="Keycloak Admin Password" Target="KEYCLOAK_ADMIN_PASSWORD" Default="password" Mode="" Description="Keycloak Admin Password" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
-  <Config Name="Postgres Database Hostname or IP" Target="KEYCLOAK_DATABASE_HOST" Default="192.168.0.100" Mode="" Description="Postgres Database Hostname or IP" Type="Variable" Display="always" Required="true" Mask="false">192.168.1.100</Config>
-  <Config Name="Postgres Database Port" Target="KEYCLOAK_DATABASE_PORT" Default="5432" Mode="" Description="Postgres Database Port" Type="Variable" Display="always" Required="true" Mask="false">5432</Config>
+  <Config Name="Postgres Database Hostname" Target="KEYCLOAK_DATABASE_HOST" Default="192.168.100.100" Mode="" Description="Postgres IP" Type="Variable" Display="always" Required="true" Mask="false">192.168.100.100</Config>
+  <Config Name="Postgres Port" Target="KEYCLOAK_DATABASE_PORT" Default="5432" Mode="" Description="Postgres Port" Type="Variable" Display="always" Required="true" Mask="false">5432</Config>
   <Config Name="Postgres Database User" Target="KEYCLOAK_DATABASE_USER" Default="keyclock" Mode="" Description="Postgres Database User" Type="Variable" Display="always" Required="true" Mask="false">keyclock</Config>
   <Config Name="Postgres Database Password" Target="KEYCLOAK_DATABASE_PASSWORD" Default="password" Mode="" Description="Postgres Database Password" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
-  <Config Name="Postgres Database Name" Target="KEYCLOAK_DATABASE_NAME" Default="keyclock" Mode="" Description="Postgres Database Name" Type="Variable" Display="always" Required="true" Mask="false">keyclock</Config>
-  <Config Name="Extra Argument" Target="KEYCLOAK_EXTRA_ARGS" Default="" Mode="" Description="https://forums.unraid.net/topic/89502-support-a75g-repo/?do=findComment&amp;amp;comment=1350537" Type="Variable" Display="always" Required="false" Mask="false">--proxy=edge</Config>
+  <Config Name="Postgres Database Name" Target="KEYCLOAK_DATABASE_NAME" Default="keyclock" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">keyclock</Config>
+  <Config Name="Keycloak Admin Hostname" Target="KEYCLOAK_HOSTNAME_ADMIN" Default="" Mode="" Description="URL for admin access, you can have this be the same as hostname if you want to have web access to Keycloak admin portal, or you can set to something else if you want to keep it local" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="KEYCLOAK_PRODUCTION" Target="KEYCLOAK_PRODUCTION" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="KEYCLOAK_HOSTNAME_STRICT" Target="KEYCLOAK_HOSTNAME_STRICT" Default="false|true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="KEYCLOAK_PROXY_HEADERS" Target="KEYCLOAK_PROXY_HEADERS" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">xforwarded</Config>
+  <Config Name="KEYCLOAK_EXTRA_ARGS" Target="KEYCLOAK_EXTRA_ARGS" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <TailscaleStateDir/>
 </Container>
