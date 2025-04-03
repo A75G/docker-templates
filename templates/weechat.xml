@@ -15,6 +15,8 @@ mkdir -p /mnt/user/appdata/weechat/config /mnt/user/appdata/weechat/data /mnt/us
   <Category>Network:Messenger</Category>
   <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/weechat.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/weechat.png</Icon>
+  <DonateText>If you appreciate my work, donations are greatly appreciated!</DonateText>
+  <DonateLink>https://buymeacoffee.com/a75g</DonateLink>
   <Description>WeeChat is a free and open-source Internet Relay Chat client, which is designed to be light and fast. </Description>
   <Config Name="AppData" Target="/home/user/.weechat" Default="/mnt/user/appdata/weechat/" Mode="rw" Description="AppData" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/weechat/</Config>
 </Container>
