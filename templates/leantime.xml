@@ -31,5 +31,6 @@ chmod -R 777 /mnt/user/appdata/leantime</Requires>
   <Config Name="LEAN_SESSION_PASSWORD" Target="LEAN_SESSION_PASSWORD" Default="" Mode="" Description="Salting sessions, replace with a strong password" Type="Variable" Display="always" Required="true" Mask="false">3evBlq9zdUEuzKvVJHWWx3QzsQhturBApxwcws2m</Config>
   <Config Name="LEAN_DEFAULT_TIMEZONE" Target="LEAN_DEFAULT_TIMEZONE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">America/Los_Angeles</Config>
   <Config Name="LEAN_TRUSTED_PROXIES" Target="LEAN_TRUSTED_PROXIES" Default="" Mode="" Description="Set trusted proxy ips. Can be used to restrict access or define access from certain proxies only" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1,REMOTE_ADDR</Config>
+  <Config Name="LEAN_SESSION_SECURE" Target="LEAN_SESSION_SECURE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">FALSE</Config>
   <TailscaleStateDir/>
 </Container>
