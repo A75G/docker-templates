@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>redis</Name>
-  <Repository>bitnami/redis:latest</Repository>
-  <Registry>https://hub.docker.com/r/bitnami/redis/</Registry>
+  <Repository>bitnamisecure/redis:latest</Repository>
+  <Registry>https://hub.docker.com/r/bitnamisecure/redis/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
