@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>memcached</Name>
-  <Repository>bitnami/memcached:latest</Repository>
-  <Registry>https://hub.docker.com/r/bitnami/memcached/</Registry>
+  <Repository>bitnamisecure/memcached:latest</Repository>
+  <Registry>https://hub.docker.com/r/bitnamisecure/memcached/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
