@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>solr</Name>
-  <Repository>bitnamisecure/solr:latest</Repository>
-  <Registry>https://hub.docker.com/r/bitnamisecure/solr/</Registry>
+  <Repository>bitnami/solr:latest</Repository>
+  <Registry>https://hub.docker.com/r/bitnami/solr/</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
